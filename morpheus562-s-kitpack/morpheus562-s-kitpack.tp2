@@ -39,7 +39,7 @@ LANGUAGE ~French~
 BEGIN @100 DESIGNATED 100 GROUP @1 LABEL Morpheus562sKitpackBattleMaster
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/battle_master.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/fighter/battle_master.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Psi Warrior                                                           //
@@ -47,7 +47,7 @@ INCLUDE ~morpheus562-s-kitpack/components/battle_master.tpa~
 BEGIN @110 DESIGNATED 110 GROUP @1 LABEL Morpheus562sKitpackPsiWarrior
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/psiwarrior.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/fighter/psiwarrior.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Shield Breaker                                                        //
@@ -55,7 +55,7 @@ INCLUDE ~morpheus562-s-kitpack/components/psiwarrior.tpa~
 BEGIN @120 DESIGNATED 120 GROUP @1 LABEL Morpheus562sKitpackShieldBreaker
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/shield_breaker.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/fighter/shield_breaker.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -70,16 +70,16 @@ BEGIN @201 DESIGNATED 201 SUBCOMPONENT @200 GROUP @2 LABEL Morpheus562sKitpackRa
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
 OUTER_SET minsc_rash=1 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
 
-BEGIN @602 DESIGNATED 602 SUBCOMPONENT @600 GROUP @6 LABEL Morpheus562sKitpackRashemaar2
+BEGIN @202 DESIGNATED 202 SUBCOMPONENT @200 GROUP @2 LABEL Morpheus562sKitpackRashemaar2
 
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
 OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
 // IWDEE ONLY
@@ -88,7 +88,7 @@ BEGIN @200 DESIGNATED 200 GROUP @2 LABEL Morpheus562sKitpackRashemaar3
 REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
 
 OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -102,7 +102,7 @@ INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
 BEGIN @900 DESIGNATED 900 GROUP @9 LABEL Morpheus562sKitpackEldritchScion
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/eldritch_scion.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/sorcerer/eldritch_scion.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Stormlord                                                             //
@@ -110,5 +110,5 @@ INCLUDE ~morpheus562-s-kitpack/components/eldritch_scion.tpa~
 BEGIN @1100 DESIGNATED 1100 GROUP @11 LABEL Morpheus562sKitpackStormlord
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/stormlord.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
 
