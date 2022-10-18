@@ -5,13 +5,13 @@ REM /* this initializes the values for the different variables referenced in com
 call "%~dp0..\ModPackaging\utilities\ie_games.bat"
 
 REM /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
-set "mod_name=Skills and Abilities"
-set "mod_version=v0.9.2-alpha"
-set mod_folder=skills-and-abilities
+set "mod_name=Morpheus562's Kitpack"
+set "mod_version=v0.1"
+set mod_folder=morpheus562-s-kitpack
 
 REM /* MODIFY: list here which IE games the mod is compatible with, from this list of possibilities: */
 REM /* %bgiiee%, %iwd1%, %iwdee%, %iwd2%, %iwd2ee%, %iwd-in-bg2%, %pst%, %pstee%, %eet% */
-set "compatible_games=%eet%, %bgee%, or %bgiiee%"
+set "compatible_games=%iwdee%, %eet%, %bgee%, or %bgiiee%"
 
 REM /* MODIFY: these variables have sensible default values but they may need to be tweaked to match your particular mod */
 REM /* the ico_folder is where your .ico files are stored, which is usually the mod's backup or style folder */
@@ -24,7 +24,7 @@ set audio_folder=%mod_folder%\audio
 set tispack_folder=%mod_folder%\tiz
 set tile2ee_folder=%mod_folder%\tools\tile2ee
 set iconv_folder=%mod_folder%\languages\iconv
-set mod_readme=https://github.com/Gibberlings3/Skills-and-Abilities/blob/main/README.md
+set mod_readme=https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.md
 
 REM /* MODIFY: if you don't need to build a specific package, you can disable it by setting the appropriate variable below to 0 */
 set build_windows=1

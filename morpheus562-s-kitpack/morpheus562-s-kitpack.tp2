@@ -7,7 +7,7 @@
 BACKUP ~morpheus562-s-kitpack/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v0.9.3-alpha~
+VERSION ~v0.1~
 README ~morpheus562-s-kitpack/readme.%LANGUAGE%.html~ ~morpheus562-s-kitpack/readme.html~
 AUTO_EVAL_STRINGS
 
@@ -19,513 +19,96 @@ AUTO_TRA ~morpheus562-s-kitpack/languages/%s~
 LANGUAGE ~English~
          ~english~
          ~morpheus562-s-kitpack/languages/english/setup.tra~
-         ~morpheus562-s-kitpack/languages/english/barbarian.tra~
-         ~morpheus562-s-kitpack/languages/english/bard.tra~
-         ~morpheus562-s-kitpack/languages/english/paladin.tra~
-         ~morpheus562-s-kitpack/languages/english/monk.tra~
-         ~morpheus562-s-kitpack/languages/english/proficiency_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/ranger.tra~
-         ~morpheus562-s-kitpack/languages/english/strength.tra~
-         ~morpheus562-s-kitpack/languages/english/wizard_slayer.tra~
-         ~morpheus562-s-kitpack/languages/english/hla_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/turn_undead.tra~
          ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/fighter.tra~
-         ~morpheus562-s-kitpack/languages/english/enchant_items.tra~
 LANGUAGE ~French~
          ~french~
          ~morpheus562-s-kitpack/languages/english/setup.tra~
-         ~morpheus562-s-kitpack/languages/english/barbarian.tra~
-         ~morpheus562-s-kitpack/languages/english/bard.tra~
-         ~morpheus562-s-kitpack/languages/english/paladin.tra~
-         ~morpheus562-s-kitpack/languages/english/monk.tra~
-         ~morpheus562-s-kitpack/languages/english/proficiency_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/ranger.tra~
-         ~morpheus562-s-kitpack/languages/english/strength.tra~
-         ~morpheus562-s-kitpack/languages/english/wizard_slayer.tra~
-         ~morpheus562-s-kitpack/languages/english/hla_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/turn_undead.tra~
          ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/english/fighter.tra~
-         ~morpheus562-s-kitpack/languages/english/enchant_items.tra~
          ~morpheus562-s-kitpack/languages/french/setup.tra~
-         ~morpheus562-s-kitpack/languages/french/barbarian.tra~
-         ~morpheus562-s-kitpack/languages/french/bard.tra~
-         ~morpheus562-s-kitpack/languages/french/paladin.tra~
-         ~morpheus562-s-kitpack/languages/french/monk.tra~
-         ~morpheus562-s-kitpack/languages/french/proficiency_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/french/ranger.tra~
-         ~morpheus562-s-kitpack/languages/french/strength.tra~
-         ~morpheus562-s-kitpack/languages/french/wizard_slayer.tra~
-         ~morpheus562-s-kitpack/languages/french/hla_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/french/turn_undead.tra~
          ~morpheus562-s-kitpack/languages/french/kit_descriptions.tra~
-         ~morpheus562-s-kitpack/languages/french/fighter.tra~
-         ~morpheus562-s-kitpack/languages/french/enchant_items.tra~		 
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-// New Kits (Group 6)                                                    //
+// Fighters (Group 1)                                                    //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Battle Master                                                         //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @100 DESIGNATED 100 GROUP @1 LABEL Morpheus562sKitpackBattleMaster
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/battle_master.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+// Psi Warrior                                                           //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @110 DESIGNATED 110 GROUP @1 LABEL Morpheus562sKitpackPsiWarrior
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/psiwarrior.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+// Shield Breaker                                                        //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @120 DESIGNATED 120 GROUP @1 LABEL Morpheus562sKitpackShieldBreaker
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/shield_breaker.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Rangers (Group 2)                                                     //
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////
 // Rashemaar Berserker                                                   //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @601 DESIGNATED 601 SUBCOMPONENT @600 GROUP @6 LABEL SkillsAndAbilitiesRashemaar1
+BEGIN @201 DESIGNATED 201 SUBCOMPONENT @200 GROUP @2 LABEL Morpheus562sKitpackRashemaar1
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
 OUTER_SET minsc_rash=1 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/kits/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
 
-BEGIN @602 DESIGNATED 602 SUBCOMPONENT @600 GROUP @6 LABEL SkillsAndAbilitiesRashemaar2
+BEGIN @602 DESIGNATED 602 SUBCOMPONENT @600 GROUP @6 LABEL Morpheus562sKitpackRashemaar2
 
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
 OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/kits/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
 // IWDEE ONLY
 
-BEGIN @600 DESIGNATED 600 GROUP @6 LABEL SkillsAndAbilitiesRashemaar3
+BEGIN @200 DESIGNATED 200 GROUP @2 LABEL Morpheus562sKitpackRashemaar3
 REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
 
 OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
-INCLUDE ~morpheus562-s-kitpack/components/kits/rashemaar.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/rashemaar.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
-// Psi Warrior                                                           //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @610 DESIGNATED 610 GROUP @6 LABEL SkillsAndAbilitiesPsiWarrior
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/kits/psiwarrior.tpa~
-
+// Sorcerers (Group 9)                                                   //
 ///////////////////////////////////////////////////////////////////////////
-// Shield Breaker                                                        //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @630 DESIGNATED 630 GROUP @6 LABEL SkillsAndAbilitiesShieldBreaker
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/kits/shield_breaker.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Battle Master                                                         //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @640 DESIGNATED 640 GROUP @6 LABEL SkillsAndAbilitiesBattleMaster
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/kits/battle_master.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Eldritch Scion                                                        //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @620 DESIGNATED 620 GROUP @6 LABEL SkillsAndAbilitiesEldritchScion
+BEGIN @900 DESIGNATED 900 GROUP @9 LABEL Morpheus562sKitpackEldritchScion
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/kits/eldritch_scion.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/eldritch_scion.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Stormlord                                                             //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @650 DESIGNATED 650 GROUP @6 LABEL SkillsAndAbilitiesStormlord
+BEGIN @1100 DESIGNATED 1100 GROUP @11 LABEL Morpheus562sKitpackStormlord
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
-INCLUDE ~morpheus562-s-kitpack/components/kits/stormlord.tpa~
+INCLUDE ~morpheus562-s-kitpack/components/stormlord.tpa~
 
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-// Class Skills Updates (Group 1)                                        //
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////
-// Assign Skills to Bards (EEex Required)                                //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @11 DESIGNATED 11 SUBCOMPONENT @10 GROUP @1 LABEL SkillsAndAbilitiesBard1 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET bard_skill=0 // Add Pick Locks
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_bard_skills.tpa~
-INCLUDE ~morpheus562-s-kitpack/components/item_updates_bard.tpa~
-
-////////////////////////////////////////////////////
-
-BEGIN @12 DESIGNATED 12 SUBCOMPONENT @10 GROUP @1 LABEL SkillsAndAbilitiesBard2 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET bard_skill=1 // Add Pick Locks and Find/Disarm Traps
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_bard_skills.tpa~
-INCLUDE ~morpheus562-s-kitpack/components/item_updates_bard.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Allow Blade Kit to Specialize in Melee Weapons                        //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @130 DESIGNATED 130 GROUP @1 LABEL SkillsAndAbilitiesBlade 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/blade_kit.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Add New Fighter Abilities                                             //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @150 DESIGNATED 150 GROUP @1 LABEL SkillsAndAbilitiesFighter
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/fighter_updates.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Allow Fighter Multiclasses to Achieve Higher than Specialized         //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @141 DESIGNATED 141 SUBCOMPONENT @140 GROUP @1 LABEL SkillsAndAbilitiesWeaponProf1 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-OUTER_SET weapon_prof=3 // Master (3 pips)
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/multiclass_fighter.tpa~
-
-////////////////////////////////////////////////////
-BEGIN @142 DESIGNATED 142 SUBCOMPONENT @140 GROUP @1 LABEL SkillsAndAbilitiesWeaponProf2 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-OUTER_SET weapon_prof=4 // High Master (4 pips)
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/multiclass_fighter.tpa~
-
-////////////////////////////////////////////////////
-BEGIN @143 DESIGNATED 143 SUBCOMPONENT @140 GROUP @1 LABEL SkillsAndAbilitiesWeaponProf3
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-OUTER_SET weapon_prof=5 // Grand Master (5 pips)
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/multiclass_fighter.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Assign Skills to Monks (EEex Required)                                //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @20 DESIGNATED 20 GROUP @1 LABEL SkillsAndAbilitiesMonk 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_monk_skills.tpa~
-INCLUDE ~morpheus562-s-kitpack/components/item_updates_monk.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Add New Monk Abilities                                                //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @70 DESIGNATED 70 GROUP @1 LABEL SkillsAndAbilitiesMonk2 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/monk_updates.tpa~
-
-/*
-///////////////////////////////////////////////////////////////////////////
-// Assign Skills to Barbarians (EEex Recommended)                                         //
-///////////////////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////
-//1e Barbarians (EEex Strongly Recommended): Adds Set Natural Snares, Hide in Natural Settings, Detect Illusions, and Removes Rage
-BEGIN @30 DESIGNATED 30 SUBCOMPONENT @3401 GROUP @1 LABEL SkillsAndAbilitiesBarb0
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-
-OUTER_SET remove_rage=1 // Remove rage-- only care about rage, all else automatically added
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_barbarian_skills.tpa~
-
-////////////////////////////////////////////////////
-//1e Barbarians (EEex Strongly Recommended): Adds Set Natural Snares, Hide in Natural Settings, Detect Illusions, and Keeps Rage
-BEGIN @31 DESIGNATED 31 SUBCOMPONENT @3401 GROUP @1 LABEL SkillsAndAbilitiesBarb1
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-
-OUTER_SET remove_rage=0 // Keep rage-- only care about rage, all else automatically added
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_barbarian_skills.tpa~
-
-////////////////////////////////////////////////////
-//Add Set Natural Snares
-BEGIN @32 DESIGNATED 32 GROUP @1 LABEL SkillsAndAbilitiesBarb2
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//exclude 30 and 31 above
-OUTER_SET barb_trap=1 // set natural snares
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_trap.tpa~
-
-////////////////////////////////////////////////////
-//Add Hide in Natural Settings (EEex Strongly Recommended)
-BEGIN @33 DESIGNATED 33 GROUP @1 LABEL SkillsAndAbilitiesBarb3
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-//exclude 30 and 31 above
-
-OUTER_SET barb_hide=1 // barb hide
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_hide.tpa~
-
-////////////////////////////////////////////////////
-//Add Detect Illusions as a thief (EEex Strongly Recommended)
-BEGIN @34 DESIGNATED 34 GROUP @1 LABEL SkillsAndAbilitiesBarb4
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET barb_detect=1 // barb detect
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_sense.tpa~
-
-////////////
-
-///////////////////////////////////////////////////////////////////////////
-// Assign Abilities to Barbarians                                        //
-///////////////////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////
-//Add Feral Senses as a spell-like ability
-BEGIN @35 DESIGNATED 35 SUBCOMPONENT @3402 GROUP @1 LABEL SkillsAndAbilitiesBarb5
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET barb_detect=2 // barb detect
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_sense.tpa~
-
-////////////
-
-////////////////////////////////////////////////////
-//Add Feral Senses as a thief-like ability
-BEGIN @36 DESIGNATED 36 SUBCOMPONENT @3402 GROUP @1 LABEL SkillsAndAbilitiesBarb6
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET barb_detect=3 // barb detect
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_sense.tpa~
-
-////////////
-
-////////////////////////////////////////////////////
-//Add Feral Senses as an improved thief-like ability while raging
-BEGIN @37 DESIGNATED 37 SUBCOMPONENT @3402 GROUP @1 LABEL SkillsAndAbilitiesBarb7
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-OUTER_SET barb_detect=4 // barb detect
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/barb_sense.tpa~
-
-////////////
-
-////////////////////////////////////////////////////
-//remove rage
-BEGIN @39 DESIGNATED 39 GROUP @1 LABEL SkillsAndAbilitiesBarb9
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3004 // Component requires BG: EE, BGII: EE, IWDEE, or EET
-REQUIRE_PREDICATE !(%remove_rage% = 2)                        @3003 // Barbarian Rage is required for Feral Senses~
-//add req not feral senses spl in game in case var gets reset @3003 // Barbarian Rage is required for Feral Senses~
-
-OUTER_SET remove_rage=1 // Remove rage
-OUTER_SET remove_rage_only=1 // Remove rage only
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_barbarian_skills.tpa~
-
-*/
-
-///////////////////////////////////////////////////////////////////////////
-// Assign Skills to Rangers                                              //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @40 DESIGNATED 40 GROUP @1 LABEL SkillsAndAbilitiesRang 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-// REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-// Modify class description
-// use REPLACE_TEXTUALLY to update set trap descriptions (check mods--Trap Revisions, what else?) 
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_ranger_skills.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Add Detect Illusion for Wizard Slayer (EEex Required)                 //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @50 DESIGNATED 50 GROUP @1 LABEL SkillsAndAbilitiesDI1 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_wiz_slayer_skills.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Assign New Abilities to Paladins                                      //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @80 DESIGNATED 80 GROUP @1 LABEL SkillsAndAbilitiesPaladin1
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/paladin_updates.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Replace Inquisitor True Seeing for Detect Illusion (EEex Required)    //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @60 DESIGNATED 60 GROUP @1 LABEL SkillsAndAbilitiesDI2
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/set_inquisitor_skills.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Allow Inquisitor's to Cast Divine Spells                              //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @100 DESIGNATED 100 GROUP @1 LABEL SkillsAndAbilitiesInquisitor1
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/inquisitor_updates.tpa~
-
-/*
-///////////////////////////////////////////////////////////////////////////
-// Add Cleric/Mage/Thief Class                                           //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @110 DESIGNATED 110 GROUP @1 LABEL SkillsAndAbilitiesClericMageThief
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/cleric_mage_thief.tpa~
-*/
-
-///////////////////////////////////////////////////////////////////////////
-// Turn Undead Overhaul                                                  //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @120 DESIGNATED 120 GROUP @1 LABEL SkillsAndAbilitiesTurnUndead
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/turn_undead.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Add New HLAs for ALL CLasses and Kits                                 //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @91 DESIGNATED 91 SUBCOMPONENT @90 GROUP @1 LABEL SkillsAndAbilitiesNewHLA1
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3006
-
-OUTER_SET existing_hla=1
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/new_hlas.tpa~
-
-////////////////////////////////////////////////////
-
-BEGIN @92 DESIGNATED 92 SUBCOMPONENT @90 GROUP @1 LABEL SkillsAndAbilitiesNewHLA2
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3006
-
-OUTER_SET existing_hla=0
-INCLUDE ~morpheus562-s-kitpack/components/class_skills/new_hlas.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-// New Skills and Pseudo-Skills (Group 2)                                //
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////
-// Craft Spell Scrolls                                                   //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @200 SUBCOMPONENT @3403 DESIGNATED 200 GROUP @2
-REQUIRE_PREDICATE (GAME_IS ~iwdee bgee bg2ee eet~) @3004
-
-LAM b_scroll_global_settings
-
-LAM b_scroll_level_settings
-
-//marker
-COPY_EXISTING ~SW1H04.itm~ ~override/B_sna200.itm~
-
-INCLUDE ~%folder%/components/class_skills/scroll_crafting.tpa~
-
-////////////////////////////////////////////////////
-
-BEGIN @201 SUBCOMPONENT @3403 DESIGNATED 201
-REQUIRE_PREDICATE (GAME_IS ~iwdee bgee bg2ee eet~) @3004
-//REQUIRE_PREDICATE (CHECK FOR NO SCROLLS) @3007  //~Priest scrolls have already been added!~
-
-LAM b_scroll_global_settings
-
-LAM b_scroll_level_settings
-
-//marker
-COPY_EXISTING ~SW1H04.itm~ ~override/B_sna201.itm~
-
-INCLUDE ~%folder%/lib/Setup_Priest_Scrolls.tpa~
-
-INCLUDE ~%folder%/components/class_skills/scroll_crafting.tpa~
-
-
-
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-// New Proficiencies (Group 3)                                           //
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////
-// Update Weapon Fighting Styles                                         //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @300 DESIGNATED 300 GROUP @3 LABEL SkillsAndAbilitiesWeapStyle
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-LOAD_TRA ~morpheus562-s-kitpack/languages/%LANGUAGE%/proficiency_descriptions.tra~
-
-INCLUDE ~morpheus562-s-kitpack/components/proficiencies/weapon_style_revisions.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-// Overhaul Proficiency System - Add New Proficiencies and Weapon Styles //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @311 DESIGNATED 311 SUBCOMPONENT @310 GROUP @3 LABEL SkillsAndAbilitiesNewProf1
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-LOAD_TRA ~morpheus562-s-kitpack/languages/%LANGUAGE%/proficiency_descriptions.tra~
-
-OUTER_SET accelerated_profs=0 // Vanilla Prof Progression
-OUTER_SET nwn_profs=0         // NWN2 Style Prof Progression
-INCLUDE ~morpheus562-s-kitpack/components/proficiencies/proficiency_overhaul.tpa~
-
-////////////////////////////////////////////////////
-
-BEGIN @312 DESIGNATED 312 SUBCOMPONENT @310 GROUP @3 LABEL SkillsAndAbilitiesNewProf2
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-LOAD_TRA ~morpheus562-s-kitpack/languages/%LANGUAGE%/proficiency_descriptions.tra~
-
-OUTER_SET accelerated_profs=1 // Accelerated Prof Progression
-OUTER_SET nwn_profs=0         // NWN2 Style Prof Progression
-INCLUDE ~morpheus562-s-kitpack/components/proficiencies/proficiency_overhaul.tpa~
-
-////////////////////////////////////////////////////
-
-BEGIN @313 DESIGNATED 313 SUBCOMPONENT @310 GROUP @3 LABEL SkillsAndAbilitiesNewProf3
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-LOAD_TRA ~morpheus562-s-kitpack/languages/%LANGUAGE%/proficiency_descriptions.tra~
-
-OUTER_SET accelerated_profs=0 // Accelerated Prof Progression
-OUTER_SET nwn_profs=1         // NWN2 Style Prof Progression
-INCLUDE ~morpheus562-s-kitpack/components/proficiencies/proficiency_overhaul.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-// More Meaningful Stat Bonuses (Group 4)                                //
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////
-// 2H Weapon Additional Strength Bonus                                   //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @400 DESIGNATED 400 GROUP @4 LABEL SkillsAndAbilitiesSTR
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-//REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-
-INCLUDE ~morpheus562-s-kitpack/components/stat_bonus/str_bonus.tpa~
-
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-// Improved Turning/Wild Sense (Group 5)                                 //
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-/*
-///////////////////////////////////////////////////////////////////////////
-// First Component                                                       //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @X DESIGNATED X 
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ @3002 //EEX required!
-*/

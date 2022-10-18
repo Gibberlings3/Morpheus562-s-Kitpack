@@ -10,23 +10,19 @@ ACTION_IF !VARIABLE_IS_SET ~initialise~ BEGIN
   CLEAR_EVERYTHING            // occasionally, e.g. after installing IWD spells, we call this again. Make sure we get a fresh start.
   //SILENT
   OUTER_SET initialise=1
-  OUTER_SET monk_skills=0
 
 ///////////////////////////////////////////////////////////////////////////
 // General variables, macros and functions                               //
 ///////////////////////////////////////////////////////////////////////////
-   INCLUDE ~skills-and-abilities/craft_settings.ini~
-   INCLUDE ~skills-and-abilities/lib/hla_actions.tpa~
-   INCLUDE ~skills-and-abilities/lib/more_hla.tpa~
-   INCLUDE ~skills-and-abilities/lib/lib.tpa~
-   INCLUDE ~skills-and-abilities/lib/item_in_store.tpa~
-   INCLUDE ~skills-and-abilities/lib/effect_return.tpa~
-   INCLUDE ~skills-and-abilities/lib/functions.tpa~
-   INCLUDE ~skills-and-abilities/lib/splprot_kits.tpa~
-   INCLUDE ~skills-and-abilities/lib/qd_multiclass.tpa~
-   INCLUDE ~skills-and-abilities/lib/fl#add_kit_ee.tpa~
-   OUTER_SPRINT ~folder~ ~skills-and-abilities~
-   //INCLUDE ~skills-and-abilities/lib/splprot_attributes.tpa~ // Already present in splprot.2da
+   INCLUDE ~morpheus562-s-kitpack/lib/hla_actions.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/more_hla.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/lib.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/effect_return.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/functions.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/qd_multiclass.tpa~
+   INCLUDE ~morpheus562-s-kitpack/lib/fl#add_kit_ee.tpa~
+   OUTER_SPRINT ~folder~ ~morpheus562-s-kitpack~
+   //INCLUDE ~morpheus562-s-kitpack/lib/splprot_attributes.tpa~ // Already present in splprot.2da
    //SILENT
 
 ///////////////////////////////////////////////////////////////////////////
