@@ -1,0 +1,2980 @@
+/*************************************************************************/
+///////////////////////////////////////////////////////////////////////////
+// Skills and Abilities - Proficiency Overhaul                           //
+///////////////////////////////////////////////////////////////////////////
+/*************************************************************************/
+
+///////////////////////////////////////////////////////////////////////////
+// Import Files                                                          //
+///////////////////////////////////////////////////////////////////////////
+COPY ~skills-and-abilities/2da/RACETHAC.2da~                ~override~ // Remove Racial Thac0 Modifiers to weapons (will be added differently)
+COPY ~skills-and-abilities/itm/moprof.itm~                  ~override~ // For tracking of this mod component
+COPY ~skills-and-abilities/spl/proficiencies/bdhaerpr.spl~  ~override~ // Haer'Dalis Large Sword Specialization
+COPY ~skills-and-abilities/eff/proficiencies/MOARC01.EFF~   ~override~ // Archery Weapon Style
+COPY ~skills-and-abilities/eff/proficiencies/MOARC02.EFF~   ~override~ // Archery Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOARC01.SPL~   ~override~ // Archery Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOARC02.SPL~   ~override~ // Archery Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOARM06.SPL~   ~override~ // Armor 6th pip
+COPY ~skills-and-abilities/spl/proficiencies/MOARM66.SPL~   ~override~ // Armor 6th pip
+COPY ~skills-and-abilities/eff/proficiencies/MOARM06.EFF~   ~override~ // Armor 6th pip
+/*
+COPY ~skills-and-abilities/spl/proficiencies/MOCRS01.SPL~   ~override~ // Critical Striker Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOCRS02.SPL~   ~override~ // Critical Striker Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOCRS03.SPL~   ~override~ // Critical Striker Weapon Style
+COPY ~skills-and-abilities/spl/proficiencies/MOCRSC4.SPL~   ~override~ // Improved Critical
+COPY ~skills-and-abilities/spl/proficiencies/MOCRS04.SPL~   ~override~ // Improved Critical
+COPY ~skills-and-abilities/spl/proficiencies/MOCRS44.SPL~   ~override~ // Improved Critical
+COPY ~skills-and-abilities/eff/proficiencies/MOCRS04.EFF~   ~override~ // Improved Critical
+*/
+COPY ~skills-and-abilities/eff/proficiencies/MORATHA.EFF~   ~override~ // Racial Thac0 Modifier on weapons
+//COPY ~skills-and-abilities/spl/proficiencies/MODEV3C.SPL~   ~override~ // Divine Vengeance Damage
+
+ACTION_IF fighter_overhaul THEN BEGIN
+  COPY ~skills-and-abilities/spl/proficiencies/c0fig04.SPL~ ~override~ // Artisan Kitpack Updates
+END
+
+ACTION_IF accelerated_profs THEN BEGIN
+  COPY ~skills-and-abilities/2da/prof01.2DA~                ~override/PROFS.2DA~
+  COPY ~skills-and-abilities/2da/profsmax.2da~              ~override~ 
+END ELSE ACTION_IF nwn_profs THEN BEGIN
+  COPY ~skills-and-abilities/2da/prof02.2DA~                ~override/PROFS.2DA~
+  COPY ~skills-and-abilities/2da/profsmax.2da~              ~override~ 
+END
+
+ACTION_IF eeex_present THEN BEGIN
+  COPY ~skills-and-abilities/spl/proficiencies/MOSPEN1.SPL~   ~override~ // Spell Penetration
+    SAY NAME1 @7138
+    SAY NAME2 @7138
+  COPY ~skills-and-abilities/spl/proficiencies/MOSPEN2.SPL~   ~override~ // Greater Spell Penetration
+    SAY NAME1 @7139
+    SAY NAME2 @7139
+  /*
+  COPY ~skills-and-abilities/spl/proficiencies/MOAPEN1.SPL~   ~override~ // Armor Penetration
+    SAY NAME1 @7142
+    SAY NAME2 @7142
+  COPY ~skills-and-abilities/spl/proficiencies/MOAPEN2.SPL~   ~override~ // Greater Armor Penetration
+    SAY NAME1 @7143
+    SAY NAME2 @7143
+  */
+END
+
+ACTION_IF fighter_overhaul THEN BEGIN
+  ACTION_FOR_EACH power_prof IN
+        1 // Enhanced Power Attack - Power Attack
+        2 // Enhanced Power Attack - Improved Power Attack
+        3 // Supreme Power Attack - Power Attack
+        4 // Supreme Power Attack - Improved Power Attack
+      BEGIN
+        // Power Striker Prof
+        COPY ~skills-and-abilities/spl/proficiencies/MOPOW0%power_prof%.SPL~            ~override~
+        COPY ~skills-and-abilities/spl/proficiencies/MOPOW%power_prof%%power_prof%.SPL~ ~override~
+        COPY ~skills-and-abilities/eff/proficiencies/MOPOW0%power_prof%.EFF~            ~override~
+      END
+END
+
+ACTION_FOR_EACH prof IN
+      1
+      2
+      3
+      4
+      5 
+    BEGIN
+      // Armor Prof
+      COPY ~skills-and-abilities/spl/proficiencies/MOARM0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOARM%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MOARM0%prof%.EFF~       ~override~
+      // Spellcraft Profs
+      COPY ~skills-and-abilities/spl/proficiencies/MOSPL0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOSPL%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MOSPL0%prof%.EFF~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOSPLC%prof%.SPL~       ~override~
+      // Devotion Profs
+      COPY ~skills-and-abilities/spl/proficiencies/MODEV0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MODEV%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MODEV0%prof%.EFF~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MODEVC%prof%.SPL~       ~override~
+      // Conditioning Profs
+      COPY ~skills-and-abilities/spl/proficiencies/MOCON0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOCON%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MOCON0%prof%.EFF~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOCONC%prof%.SPL~       ~override~
+      // Swiftblade Prof
+      COPY ~skills-and-abilities/spl/proficiencies/MOHAS0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOHAS%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MOHAS0%prof%.EFF~       ~override~
+      // Pale Master Profs
+      COPY ~skills-and-abilities/spl/proficiencies/MOPMA0%prof%.SPL~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOPMA%prof%%prof%.SPL~  ~override~
+      COPY ~skills-and-abilities/eff/proficiencies/MOPMA0%prof%.EFF~       ~override~
+      COPY ~skills-and-abilities/spl/proficiencies/MOPMAC%prof%.SPL~       ~override~
+    END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mobtm01a.spl~ THEN BEGIN
+  COPY_EXISTING ~mocon44.spl~ ~override~ 
+      LPF CLONE_EFFECT INT_VAR match_opcode = 318 opcode = 318 STR_VAR resource = ~mobtm01a~ END
+END
+
+// Import Blank Wizard/Sorcerer CLAB Files
+ACTION_FOR_EACH wiz_clab IN
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+    BEGIN
+      ACTION_IF !FILE_EXISTS_IN_GAME ~CLABMA0%wiz_clab%.2DA~ THEN BEGIN
+        COPY ~skills-and-abilities/2da/CLABMA01.2DA~ ~override/CLABMA0%wiz_clab%.2DA~
+      END
+END
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Move Proficiencies into OG BG1 Weapon Groups                          //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Move Proficiency Points to Weapon Groups                              //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+    READ_2DA_ENTRIES_NOW weapprof 3
+    COUNT_2DA_COLS cols
+    FOR (col = 2; col < cols; ++col) BEGIN
+        // Bows
+        READ_2DA_ENTRY 24 col cols bow // longbow
+        READ_2DA_ENTRY 25 col cols shortbow
+        PATCH_IF (bow < shortbow) BEGIN SET bow = shortbow END
+
+        // Spiked
+        READ_2DA_ENTRY 20 col cols spiked
+
+        // Small Sword
+        READ_2DA_ENTRY 10 col cols ssword // short sword
+        READ_2DA_ENTRY 15 col cols dagger
+        PATCH_IF (ssword < dagger) BEGIN SET ssword = dagger END
+
+        // Large Sword
+        READ_2DA_ENTRY 8 col cols lsword // bastard
+        READ_2DA_ENTRY 9 col cols longsword
+        READ_2DA_ENTRY 12 col cols twohanded
+        PATCH_IF (lsword < longsword) BEGIN SET lsword = longsword END
+        PATCH_IF (lsword < twohanded) BEGIN SET lsword = twohanded END
+
+        // Exotic Sword
+        READ_2DA_ENTRY 13 col cols exotic
+        READ_2DA_ENTRY 14 col cols scimitar
+        PATCH_IF (exotic < scimitar) BEGIN SET exotic = scimitar END
+
+        // Axe
+        READ_2DA_ENTRY 11 col cols axe
+
+        // Blunt
+        READ_2DA_ENTRY 16 col cols blunt // warhammer
+        READ_2DA_ENTRY 17 col cols club
+        READ_2DA_ENTRY 21 col cols mace
+        PATCH_IF (blunt < club) BEGIN SET blunt = club END
+        PATCH_IF (blunt < mace) BEGIN SET blunt = mace END
+
+        // Missile
+        READ_2DA_ENTRY 23 col cols missile // crossbow
+        READ_2DA_ENTRY 26 col cols dart
+        READ_2DA_ENTRY 27 col cols sling
+        PATCH_IF (missile < dart) BEGIN SET missile = dart END
+        PATCH_IF (missile < sling) BEGIN SET missile = sling END
+
+        // Spear
+        READ_2DA_ENTRY 20 col cols spear
+        READ_2DA_ENTRY 19 col cols halberd
+        READ_2DA_ENTRY 22 col cols staff
+        PATCH_IF (spear < halberd) BEGIN SET spear = halberd END
+        PATCH_IF (spear < staff) BEGIN SET spear = staff END
+
+        // Set Old Proficiencies to 0 - These will be reused/updated to new ones
+        FOR (row = 11; row < 31; ++row) BEGIN
+            SET_2DA_ENTRY row col 1 ~0~
+        END
+
+        // Set New Proficiency Points
+        SET_2DA_ENTRY 19 col 1 ~%bow%~
+        SET_2DA_ENTRY 21 col 1 ~%spiked%~
+        SET_2DA_ENTRY 22 col 1 ~%ssword%~
+        SET_2DA_ENTRY 23 col 1 ~%lsword%~
+        SET_2DA_ENTRY 24 col 1 ~%exotic%~
+        SET_2DA_ENTRY 25 col 1 ~%axe%~
+        SET_2DA_ENTRY 26 col 1 ~%blunt%~
+        SET_2DA_ENTRY 27 col 1 ~%missile%~
+        SET_2DA_ENTRY 28 col 1 ~%spear%~
+
+    END
+    SET_2DA_ENTRY 19 0 1 ~BOW~
+    SET_2DA_ENTRY 19 2 1 ~mobow1~
+    SET_2DA_ENTRY 19 3 1 ~mobow2~    
+    SET_2DA_ENTRY 21 0 1 ~SPIKED~
+    SET_2DA_ENTRY 21 2 1 ~mospike1~
+    SET_2DA_ENTRY 21 3 1 ~mospike2~
+    SET_2DA_ENTRY 22 0 1 ~SMALL_SWORD~
+    SET_2DA_ENTRY 22 2 1 ~mossword1~
+    SET_2DA_ENTRY 22 3 1 ~mossword2~
+    SET_2DA_ENTRY 23 0 1 ~LARGE_SWORD~
+    SET_2DA_ENTRY 23 2 1 ~molsword1~
+    SET_2DA_ENTRY 23 3 1 ~molsword2~
+    SET_2DA_ENTRY 24 0 1 ~EXOTIC_SWORD~
+    SET_2DA_ENTRY 24 2 1 ~moexotic1~
+    SET_2DA_ENTRY 24 3 1 ~moexotic2~
+    SET_2DA_ENTRY 25 0 1 ~AXE~
+    SET_2DA_ENTRY 25 2 1 ~moaxe1~
+    SET_2DA_ENTRY 25 3 1 ~moaxe2~
+    SET_2DA_ENTRY 26 0 1 ~BLUNT~
+    SET_2DA_ENTRY 26 2 1 ~moblunt1~
+    SET_2DA_ENTRY 26 3 1 ~moblunt2~
+    SET_2DA_ENTRY 27 0 1 ~MISSILE~
+    SET_2DA_ENTRY 27 2 1 ~momiss1~
+    SET_2DA_ENTRY 27 3 1 ~momiss2~
+    SET_2DA_ENTRY 28 0 1 ~POLEARM~
+    SET_2DA_ENTRY 28 2 1 ~mospear1~
+    SET_2DA_ENTRY 28 3 1 ~mospear2~
+    PRETTY_PRINT_2DA
+    BUT_ONLY
+
+// Set Name and Description
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+REPLACE ~mobow1~    @7100
+REPLACE ~mobow2~    @7101
+REPLACE ~mospike1~  @7102
+REPLACE ~mospike2~  @7103
+REPLACE ~mossword1~ @7104
+REPLACE ~mossword2~ @7105
+REPLACE ~molsword1~ @7106
+REPLACE ~molsword2~ @7107
+REPLACE ~moexotic1~ @7136
+REPLACE ~moexotic2~ @7137
+REPLACE ~moaxe1~    @7108
+REPLACE ~moaxe2~    @7109
+REPLACE ~moblunt1~  @7110
+REPLACE ~moblunt2~  @7111
+REPLACE ~momiss1~   @7112
+REPLACE ~momiss2~   @7113
+REPLACE ~mospear1~  @7114
+REPLACE ~mospear2~  @7115
+PRETTY_PRINT_2DA
+
+// Append to Stats.IDS
+APPEND ~stats.ids~ ~97 BOW~           UNLESS ~97 BOW~
+APPEND ~stats.ids~ ~98 SPIKED~        UNLESS ~98 SPIKED~
+APPEND ~stats.ids~ ~99 SMALL_SWORD~   UNLESS ~99 SMALL_SWORD~
+APPEND ~stats.ids~ ~100 LARGE_SWORD~  UNLESS ~100 LARGE_SWORD~
+APPEND ~stats.ids~ ~101 EXOTIC_SWORD~ UNLESS ~101 EXOTIC_SWORD~
+APPEND ~stats.ids~ ~102 AXE~          UNLESS ~102 AXE~
+APPEND ~stats.ids~ ~103 BLUNT~        UNLESS ~103 BLUNT~
+APPEND ~stats.ids~ ~104 MISSILE~      UNLESS ~104 MISSILE~
+APPEND ~stats.ids~ ~105 POLEARM~      UNLESS ~105 POLEARM~
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Add New Proficiencies                                                 //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Add to WEAPPROF.2DA                                                   //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+    SET_2DA_ENTRY 11 0 1 ~ARMOR~
+    SET_2DA_ENTRY 11 2 1 ~moarm1~
+    SET_2DA_ENTRY 11 3 1 ~moarm2~
+    SET_2DA_ENTRY 12 0 1 ~SPELLCRAFT~
+    SET_2DA_ENTRY 12 2 1 ~mospl1~
+    SET_2DA_ENTRY 12 3 1 ~mospl2~
+    SET_2DA_ENTRY 13 0 1 ~DEVOTION~
+    SET_2DA_ENTRY 13 2 1 ~modev1~
+    SET_2DA_ENTRY 13 3 1 ~modev2~
+    SET_2DA_ENTRY 14 0 1 ~CONDITIONING~
+    SET_2DA_ENTRY 14 2 1 ~mocon1~
+    SET_2DA_ENTRY 14 3 1 ~mocon2~
+    SET_2DA_ENTRY 15 0 1 ~SWIFTBLADE~
+    SET_2DA_ENTRY 15 2 1 ~mohas1~
+    SET_2DA_ENTRY 15 3 1 ~mohas2~
+    SET_2DA_ENTRY 16 0 1 ~PALEMASTER~
+    SET_2DA_ENTRY 16 2 1 ~mopma1~
+    SET_2DA_ENTRY 16 3 1 ~mopma2~
+
+    PATCH_IF fighter_overhaul THEN BEGIN
+      SET_2DA_ENTRY 29 0 1 ~POWER~
+      SET_2DA_ENTRY 29 2 1 ~mopow1~
+      SET_2DA_ENTRY 29 3 1 ~mopow2~
+    END
+    PATCH_IF eeex_present THEN BEGIN
+      SET_2DA_ENTRY 17 0 1 ~SPELLPEN~
+      SET_2DA_ENTRY 17 2 1 ~mospen1~
+      SET_2DA_ENTRY 17 3 1 ~mospen2~
+      //SET_2DA_ENTRY 18 0 1 ~ARMORPEN~
+      //SET_2DA_ENTRY 18 2 1 ~moapen1~
+      //SET_2DA_ENTRY 18 3 1 ~moapen2~
+    END
+    //SET_2DA_ENTRY 29 0 1 ~CRITICAL~
+    //SET_2DA_ENTRY 29 2 1 ~mocri1~
+    //SET_2DA_ENTRY 29 3 1 ~mocri2~
+    SET_2DA_ENTRY 30 0 1 ~ARCHERY~
+    SET_2DA_ENTRY 30 2 1 ~moarc1~
+    SET_2DA_ENTRY 30 3 1 ~moarc2~     
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// Set Name and Description
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+REPLACE ~moarm1~    @7116
+REPLACE ~moarm2~    @7117
+REPLACE ~mospl1~    @7118
+REPLACE ~mospl2~    @7119
+REPLACE ~modev1~    @7120
+REPLACE ~modev2~    @7121
+REPLACE ~mocon1~    @7122
+REPLACE ~mocon2~    @7123
+REPLACE ~mohas1~    @7130
+REPLACE ~mohas2~    @7131
+REPLACE ~mopma1~    @7126
+REPLACE ~mopma2~    @7127
+
+PATCH_IF fighter_overhaul THEN BEGIN
+  REPLACE ~mopow1~  @7132
+  REPLACE ~mopow2~  @7133
+END
+
+PATCH_IF eeex_present THEN BEGIN
+  REPLACE ~mospen1~   @7124
+  REPLACE ~mospen2~   @7125
+  //REPLACE ~moapen1~   @7140
+  //REPLACE ~moapen2~   @7141
+END
+
+//REPLACE ~mocri1~    @7134
+//REPLACE ~mocri2~    @7135
+REPLACE ~moarc1~    @7128
+REPLACE ~moarc2~    @7129
+PRETTY_PRINT_2DA
+
+///////////////////////////////////////////////////////////////////////////
+// Append to STATS.IDS                                                   //
+///////////////////////////////////////////////////////////////////////////
+APPEND ~stats.ids~ ~89 ARMOR_PROF~      UNLESS ~89 ARMOR_PROF~
+APPEND ~stats.ids~ ~90 SPELLCRAFT~      UNLESS ~90 SPELLCRAFT~
+APPEND ~stats.ids~ ~91 DEVOTION~        UNLESS ~91 DEVOTION~
+APPEND ~stats.ids~ ~92 CONDITIONING~    UNLESS ~92 CONDITIONING~
+APPEND ~stats.ids~ ~93 SWIFTBLADE~      UNLESS ~93 SWIFTBLADE~
+APPEND ~stats.ids~ ~94 PALEMASTER~      UNLESS ~94 PALEMASTER~
+
+ACTION_IF eeex_present THEN BEGIN
+  APPEND ~stats.ids~ ~95 SPELLPEN~      UNLESS ~95 SPELLPEN~
+  //APPEND ~stats.ids~ ~96 ARMORPEN~      UNLESS ~96 ARMORPEN~
+END
+
+ACTION_IF fighter_overhaul THEN BEGIN
+  APPEND ~stats.ids~ ~106 POWER~        UNLESS ~106 POWER~
+END
+
+//APPEND ~stats.ids~ ~106 CRITICAL~       UNLESS ~106 CRITICAL~
+APPEND ~stats.ids~ ~107 ARCHERY~        UNLESS ~107 ARCHERY~
+
+///////////////////////////////////////////////////////////////////////////
+// Append to SPLPROT.2DA                                                 //
+///////////////////////////////////////////////////////////////////////////
+// Armor Prof
+ACTION_FOR_EACH armor IN
+      0
+      1
+      2
+      3
+      4
+      5 
+    BEGIN
+      APPEND ~splprot.2da~ ~mo_armor_prof%armor%%TAB%89%TAB%%armor%%TAB%1~
+    END
+
+// Spellcraft/Devotion Prof
+ACTION_FOR_EACH spell IN
+      1
+      2
+      3
+      4
+      5
+    BEGIN
+      APPEND ~splprot.2da~ ~mo_spl_prof%spell%%TAB%90%TAB%%spell%%TAB%4~ // Spellcraft
+      APPEND ~splprot.2da~ ~mo_dev_prof%spell%%TAB%91%TAB%%spell%%TAB%4~ // Devotion
+      APPEND ~splprot.2da~ ~mo_con_prof%spell%%TAB%92%TAB%%spell%%TAB%4~ // Conditioning
+      APPEND ~splprot.2da~ ~mo_has_prof%spell%%TAB%93%TAB%%spell%%TAB%4~ // Swiftblade
+      APPEND ~splprot.2da~ ~mo_pma_prof%spell%%TAB%94%TAB%%spell%%TAB%4~ // Pale Master
+    END
+
+// Archery Weapon Style
+APPEND ~splprot.2da~ ~mo_arch_prof1%TAB%107%TAB%1%TAB%2~
+APPEND ~splprot.2da~ ~mo_arch_prof2%TAB%107%TAB%2%TAB%2~
+
+// Spell/Armor Penetration
+ACTION_IF eeex_present THEN BEGIN
+  APPEND ~splprot.2da~ ~mo_spell_pen1%TAB%95%TAB%1%TAB%1~
+  APPEND ~splprot.2da~ ~mo_spell_pen2%TAB%95%TAB%2%TAB%1~
+  //APPEND ~splprot.2da~ ~mo_armor_pen1%TAB%96%TAB%1%TAB%1~
+  //APPEND ~splprot.2da~ ~mo_armor_pen2%TAB%96%TAB%2%TAB%1~
+END
+
+// Power Striker
+APPEND ~splprot.2da~ ~mo_pow_prof1%TAB%106%TAB%1%TAB%1~
+APPEND ~splprot.2da~ ~mo_pow_prof2%TAB%106%TAB%2%TAB%1~
+
+/*
+// Critical Stiker Weapon Style
+APPEND ~splprot.2da~ ~mo_crit_prof1%TAB%106%TAB%1%TAB%5~
+APPEND ~splprot.2da~ ~mo_crit_prof2%TAB%106%TAB%2%TAB%5~
+APPEND ~splprot.2da~ ~mo_crit_prof3%TAB%106%TAB%3%TAB%5~
+APPEND ~splprot.2da~ ~mo_crit_prof4%TAB%106%TAB%2%TAB%4~
+*/
+
+// Update all imported files so they point in the correct direction.
+COPY_EXISTING ~splprot.2da~ ~override~
+    COUNT_2DA_COLS cols
+    READ_2DA_ENTRIES_NOW rows cols
+    FOR (row = 1; row < rows; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER rows row 0 ~stat~
+      
+      // ARMOR ----------------------------------------------------------------//
+      // Armor Prof - 0 Pips
+      PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof0~ BEGIN 
+        SET armor_prof0 = %row%
+      // Armor Prof - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof1~ BEGIN
+        SET armor_prof1 = %row%
+      // Armor Prof - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof2~ BEGIN
+        SET armor_prof2 = %row%
+      // Armor Prof - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof3~ BEGIN
+        SET armor_prof3 = %row%
+      // Armor Prof - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof4~ BEGIN
+        SET armor_prof4 = %row%
+      // Armor Prof - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_prof5~ BEGIN
+        SET armor_prof5 = %row%
+      
+      // SPELLCRAFT -----------------------------------------------------------//
+      // Spellcraft - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spl_prof1~ BEGIN
+        SET spl_prof1 = %row%
+      // Spellcraft - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spl_prof2~ BEGIN
+        SET spl_prof2 = %row%
+      // Spellcraft - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spl_prof3~ BEGIN
+        SET spl_prof3 = %row%
+      // Spellcraft - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spl_prof4~ BEGIN
+        SET spl_prof4 = %row%
+      // Spellcraft - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spl_prof5~ BEGIN
+        SET spl_prof5 = %row%
+
+      // DEVOTION -------------------------------------------------------------//
+      // Devotion - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_dev_prof1~ BEGIN
+        SET dev_prof1 = %row%
+      // Devotion - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_dev_prof2~ BEGIN
+        SET dev_prof2 = %row%
+      // Devotion - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_dev_prof3~ BEGIN
+        SET dev_prof3 = %row%
+      // Devotion - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_dev_prof4~ BEGIN
+        SET dev_prof4 = %row%
+      // Devotion - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_dev_prof5~ BEGIN
+        SET dev_prof5 = %row%
+
+      // CONDITIONING ---------------------------------------------------------//
+      // Conditioning - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_con_prof1~ BEGIN
+        SET con_prof1 = %row%
+      // Conditioning - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_con_prof2~ BEGIN
+        SET con_prof2 = %row%
+      // Conditioning - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_con_prof3~ BEGIN
+        SET con_prof3 = %row%
+      // Conditioning - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_con_prof4~ BEGIN
+        SET con_prof4 = %row%
+      // Conditioning - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_con_prof5~ BEGIN
+        SET con_prof5 = %row%
+
+      // SWIFTBLADE -----------------------------------------------------------//
+      // Swiftblade - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_has_prof1~ BEGIN
+        SET has_prof1 = %row%
+      // Swiftblade - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_has_prof2~ BEGIN
+        SET has_prof2 = %row%
+      // Swiftblade - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_has_prof3~ BEGIN
+        SET has_prof3 = %row%
+      // Swiftblade - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_has_prof4~ BEGIN
+        SET has_prof4 = %row%
+      // Swiftblade - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_has_prof5~ BEGIN
+        SET has_prof5 = %row%
+
+      // PALE MASTER ----------------------------------------------------------//
+      // Pale Master - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pma_prof1~ BEGIN
+        SET pma_prof1 = %row%
+      // Pale Master - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pma_prof2~ BEGIN
+        SET pma_prof2 = %row%
+      // Pale Master - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pma_prof3~ BEGIN
+        SET pma_prof3 = %row%
+      // Pale Master - 4 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pma_prof4~ BEGIN
+        SET pma_prof4 = %row%
+      // Pale Master - 5 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pma_prof5~ BEGIN
+        SET pma_prof5 = %row%
+
+      // SPELL PENETRATION ----------------------------------------------------//
+      // Spell Penetration - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spell_pen1~ BEGIN
+        SET spell_pen1 = %row%
+      // Spell Penetration - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_spell_pen2~ BEGIN
+        SET spell_pen2 = %row%
+
+      /*
+      // ARMOR PENETRATION ----------------------------------------------------//
+      // Armor Penetration - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_pen1~ BEGIN
+        SET armor_pen1 = %row%
+      // Armor Penetration - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_armor_pen2~ BEGIN
+        SET armor_pen2 = %row%
+      */
+
+      // POWER STRIKER --------------------------------------------------------//
+      // Power Striker - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pow_prof1~ BEGIN
+        SET pow_prof1 = %row%
+      // Power Striker - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_pow_prof2~ BEGIN
+        SET pow_prof2 = %row%
+
+      /*
+      // CRITICAL STRIKER -----------------------------------------------------//
+      // Critical Striker - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_crit_prof1~ BEGIN
+        SET crit_prof1 = %row%
+      // Critical Striker - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_crit_prof2~ BEGIN
+        SET crit_prof2 = %row%
+      // Critical Striker - 3 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_crit_prof3~ BEGIN
+        SET crit_prof3 = %row%
+      // Critical Striker - 2 Pips (Improved Critical)
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_crit_prof4~ BEGIN
+        SET crit_prof4 = %row%
+      */
+
+      // ARCHERY --------------------------------------------------------------//
+      // Archery - 1 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_arch_prof1~ BEGIN
+        SET arch_prof1 = %row%
+      // Archery - 2 Pips
+      END ELSE PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~mo_arch_prof2~ BEGIN
+        SET arch_prof2 = %row%
+      END
+    END
+
+// Armor Prof
+COPY_EXISTING ~moarm01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof0% END
+COPY_EXISTING ~moarm02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof1% END
+COPY_EXISTING ~moarm03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof2% END
+COPY_EXISTING ~moarm04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof3% END
+COPY_EXISTING ~moarm05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof4% END
+COPY_EXISTING ~moarm06.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %armor_prof5% END
+
+// Spellcraft Prof
+COPY_EXISTING ~mospl01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %spl_prof1% END
+COPY_EXISTING ~mospl02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %spl_prof2% END
+COPY_EXISTING ~mospl03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %spl_prof3% END
+COPY_EXISTING ~mospl04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %spl_prof4% END
+COPY_EXISTING ~mospl05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %spl_prof5% END
+
+// Devotion Prof
+COPY_EXISTING ~modev01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %dev_prof1% END
+COPY_EXISTING ~modev02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %dev_prof2% END
+COPY_EXISTING ~modev03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %dev_prof3% END
+COPY_EXISTING ~modev04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %dev_prof4% END
+COPY_EXISTING ~modev05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %dev_prof5% END
+
+// Conditioning Prof
+COPY_EXISTING ~mocon01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %con_prof1% END
+COPY_EXISTING ~mocon02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %con_prof2% END
+COPY_EXISTING ~mocon03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %con_prof3% END
+COPY_EXISTING ~mocon04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %con_prof4% END
+COPY_EXISTING ~mocon05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %con_prof5% END
+
+// Swiftblade Prof
+COPY_EXISTING ~mohas01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %has_prof1% END
+COPY_EXISTING ~mohas02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %has_prof2% END
+COPY_EXISTING ~mohas03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %has_prof3% END
+COPY_EXISTING ~mohas04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %has_prof4% END
+COPY_EXISTING ~mohas05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %has_prof5% END
+
+// Pale Master Prof
+COPY_EXISTING ~mopma01.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pma_prof1% END
+COPY_EXISTING ~mopma02.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pma_prof2% END
+COPY_EXISTING ~mopma03.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pma_prof3% END
+COPY_EXISTING ~mopma04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pma_prof4% END
+COPY_EXISTING ~mopma05.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pma_prof5% END
+
+// Power Striker Prof
+ACTION_IF fighter_overhaul THEN BEGIN
+  COPY_EXISTING ~mopow01.spl~ ~override~
+      LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pow_prof1% END
+  COPY_EXISTING ~mopow02.spl~ ~override~
+      LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pow_prof1% END
+  COPY_EXISTING ~mopow03.spl~ ~override~
+      LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pow_prof2% END
+  COPY_EXISTING ~mopow04.spl~ ~override~
+      LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %pow_prof2% END
+END
+
+/*
+// Critical Striker Prof
+COPY_EXISTING ~mocrs04.spl~ ~override~
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %crit_prof4% END
+*/
+
+///////////////////////////////////////////////////////////////////////////
+// Update ALL Classes/Kits in WEAPPROF.2DA                               //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+    // Set here if all classes are NOT getting the same amount
+    SET_2DA_ENTRY 12  4 1 ~5~   // MAGE - Spellcraft Prof
+    SET_2DA_ENTRY 13  4 1 ~1~   // MAGE - Devotion Prof
+    SET_2DA_ENTRY 16  4 1 ~5~   // MAGE - Pale Master
+    SET_2DA_ENTRY 11  5 1 ~5~   // FIGHTER - Armor Prof
+    SET_2DA_ENTRY 12  5 1 ~1~   // FIGHTER - Spellcraft Prof
+    SET_2DA_ENTRY 13  5 1 ~1~   // FIGHTER - Devotion Prof
+    SET_2DA_ENTRY 16  5 1 ~1~   // FIGHTER - Pale Master
+    SET_2DA_ENTRY 11  6 1 ~2~   // CLERIC - Armor Prof
+    SET_2DA_ENTRY 12  6 1 ~1~   // CLERIC - Spellcraft Prof
+    SET_2DA_ENTRY 13  6 1 ~5~   // CLERIC - Devotion Prof
+    SET_2DA_ENTRY 16  6 1 ~1~   // CLERIC - Pale Master
+    SET_2DA_ENTRY 12  7 1 ~1~   // THIEF - Spellcraft Prof
+    SET_2DA_ENTRY 13  7 1 ~1~   // THIEF - Devotion Prof
+    SET_2DA_ENTRY 16  7 1 ~1~   // THIEF - Pale Master
+    SET_2DA_ENTRY 12  8 1 ~5~   // BARD - Spellcraft Prof
+    SET_2DA_ENTRY 13  8 1 ~1~   // BARD - Devotion Prof
+    SET_2DA_ENTRY 16  8 1 ~1~   // BARD - Pale Master
+    SET_2DA_ENTRY 11  9 1 ~5~   // PALADIN - Armor Prof
+    SET_2DA_ENTRY 12  9 1 ~1~   // PALADIN - Spellcraft Prof
+    SET_2DA_ENTRY 13  9 1 ~5~   // PALADIN - Devotion Prof
+    SET_2DA_ENTRY 11 10 1 ~2~   // DRUID - Armor Prof
+    SET_2DA_ENTRY 12 10 1 ~1~   // DRUID - Spellcraft Prof
+    SET_2DA_ENTRY 13 10 1 ~5~   // DRUID - Devotion Prof
+    SET_2DA_ENTRY 11 11 1 ~5~   // RANGER - Armor Prof
+    SET_2DA_ENTRY 12 11 1 ~1~   // RANGER - Spellcraft Prof
+    SET_2DA_ENTRY 13 11 1 ~5~   // RANGER - Devotion Prof
+    SET_2DA_ENTRY 11 12 1 ~5~   // FIGHTER_MAGE - Armor Prof
+    SET_2DA_ENTRY 12 12 1 ~5~   // FIGHTER_MAGE - Spellcraft Prof
+    SET_2DA_ENTRY 13 12 1 ~1~   // FIGHTER_MAGE - Devotion Prof
+    SET_2DA_ENTRY 16 12 1 ~5~   // FIGHTER_MAGE - Pale Master
+    SET_2DA_ENTRY 11 13 1 ~5~   // FIGHTER_CLERIC - Armor Prof
+    SET_2DA_ENTRY 12 13 1 ~1~   // FIGHTER_CLERIC - Spellcraft Prof
+    SET_2DA_ENTRY 13 13 1 ~5~   // FIGHTER_CLERIC - Devotion Prof
+    SET_2DA_ENTRY 11 14 1 ~5~   // FIGHTER_THIEF - Armor Prof
+    SET_2DA_ENTRY 12 14 1 ~1~   // FIGHTER_THIEF - Spellcraft Prof
+    SET_2DA_ENTRY 13 14 1 ~1~   // FIGHTER_THIEF - Devotion Prof
+    SET_2DA_ENTRY 11 15 1 ~5~   // FIGHTER_MAGE_THIEF - Armor Prof
+    SET_2DA_ENTRY 12 15 1 ~5~   // FIGHTER_MAGE_THIEF - Spellcraft Prof
+    SET_2DA_ENTRY 13 15 1 ~1~   // FIGHTER_MAGE_THIEF - Devotion Prof
+    SET_2DA_ENTRY 16 15 1 ~5~   // FIGHTER_MAGE_THIEF - Pale Master
+    SET_2DA_ENTRY 12 16 1 ~5~   // MAGE_THIEF - Spellcraft Prof
+    SET_2DA_ENTRY 13 16 1 ~1~   // MAGE_THIEF - Devotion Prof
+    SET_2DA_ENTRY 16 16 1 ~5~   // MAGE_THIEF - Pale Master
+    SET_2DA_ENTRY 11 17 1 ~2~   // CLERIC_MAGE - Armor Prof
+    SET_2DA_ENTRY 12 17 1 ~5~   // CLERIC_MAGE - Spellcraft Prof
+    SET_2DA_ENTRY 13 17 1 ~5~   // CLERIC_MAGE - Devotion Prof
+    SET_2DA_ENTRY 16 17 1 ~5~   // CLERIC_MAGE - Pale Master
+    SET_2DA_ENTRY 11 18 1 ~2~   // CLERIC_THIEF - Armor Prof
+    SET_2DA_ENTRY 12 18 1 ~1~   // CLERIC_THIEF - Spellcraft Prof
+    SET_2DA_ENTRY 13 18 1 ~5~   // CLERIC_THIEF - Devotion Prof
+    SET_2DA_ENTRY 11 19 1 ~5~   // FIGHTER_DRUID - Armor Prof
+    SET_2DA_ENTRY 12 19 1 ~1~   // FIGHTER_DRUID - Spellcraft Prof
+    SET_2DA_ENTRY 13 19 1 ~5~   // FIGHTER_DRUID - Devotion Prof
+    SET_2DA_ENTRY 11 20 1 ~5~   // FIGHTER_MAGE_CLERIC - Armor Prof
+    SET_2DA_ENTRY 12 20 1 ~5~   // FIGHTER_MAGE_CLERIC - Spellcraft Prof
+    SET_2DA_ENTRY 13 20 1 ~5~   // FIGHTER_MAGE_CLERIC - Devotion Prof
+    SET_2DA_ENTRY 16 20 1 ~5~   // FIGHTER_MAGE_CLERIC - Pale Master
+    SET_2DA_ENTRY 11 21 1 ~5~   // CLERIC_RANGER - Armor Prof
+    SET_2DA_ENTRY 12 21 1 ~1~   // CLERIC_RANGER - Spellcraft Prof
+    SET_2DA_ENTRY 13 21 1 ~5~   // CLERIC_RANGER - Devotion Prof
+    SET_2DA_ENTRY 12 22 1 ~5~   // ABJURER - Spellcraft Prof
+    SET_2DA_ENTRY 13 22 1 ~1~   // ABJURER - Devotion Prof
+    SET_2DA_ENTRY 16 22 1 ~5~   // ABJURER - Pale Master
+    SET_2DA_ENTRY 12 51 1 ~1~   // MONK - Spellcraft Prof
+    SET_2DA_ENTRY 13 51 1 ~1~   // MONK - Devotion Prof
+    SET_2DA_ENTRY 11 60 1 ~2~   // SHAMAN - Armor Prof
+    SET_2DA_ENTRY 12 60 1 ~1~   // SHAMAN - Spellcraft Prof
+    SET_2DA_ENTRY 13 60 1 ~5~   // SHAMAN - Devotion Prof
+    
+    // This is used if ALL Classes are getting the same prof
+    PATCH_FOR_EACH class_prof IN
+          4  // MAGE
+          5  // FIGHTER
+          6  // CLERIC
+          7  // THIEF
+          8  // BARD
+          9  // PALADIN
+          10 // DRUID
+          11 // RANGER
+          12 // FIGHTER_MAGE
+          13 // FIGHTER_CLERIC
+          14 // FIGHTER_THIEF
+          15 // FIGHTER_MAGE_THIEF
+          16 // MAGE_THIEF
+          17 // CLERIC_MAGE
+          18 // CLERIC_THIEF
+          19 // FIGHTER_DRUID
+          20 // FIGHTER_MAGE_CLERIC
+          21 // CLERIC_RANGER
+          22 // ABJURERER
+          51 // MONK
+          60 // SHAMAN
+        BEGIN
+          SET_2DA_ENTRY 14 class_prof 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 class_prof 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 class_prof 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 class_prof 1 ~2~   // Armor Penetration
+          END
+          SET_2DA_ENTRY 15 class_prof 1 ~5~   // Swiftblade Prof
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 class_prof 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 class_prof 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 class_prof 1 ~2~   // Archery Weapon Style
+        END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// MAGE/SORCERER BASE CLASS CLAB
+COPY_EXISTING ~CLABMA01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC5 END
+    PRETTY_PRINT_2DA
+BUT_ONLY
+
+// FIGHTER BASE CLASS CLAB
+COPY_EXISTING ~CLABFI01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+    PRETTY_PRINT_2DA
+BUT_ONLY
+
+// CLERIC BASE CLASS CLAB
+COPY_EXISTING ~CLABPR01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// THIEF BASE CLASS CLAB
+COPY_EXISTING ~CLABTH01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+    PRETTY_PRINT_2DA
+BUT_ONLY
+
+// BARD BASE CLASS CLAB
+COPY_EXISTING ~CLABBA01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// PALADIN BASE CLASS CLAB
+COPY_EXISTING ~CLABPA01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// DRUID BASE CLASS CLAB
+COPY_EXISTING ~CLABDR01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// RANGER BASE CLASS CLAB
+COPY_EXISTING ~CLABRN01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+// MONK BASE CLASS CLAB
+COPY_EXISTING ~CLABMO01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    PRETTY_PRINT_2DA
+BUT_ONLY
+
+// SHAMAN BASE CLASS CLAB
+COPY_EXISTING ~CLABSH01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+COPY_EXISTING ~KITLIST.2DA~ ~override~
+  READ_2DA_ENTRIES_NOW ~all_kitlist~ 10
+  FOR (row = 1; row < all_kitlist; row += 1) BEGIN
+  READ_2DA_ENTRY_FORMER ~all_kitlist~ row 5 kit_clab
+  READ_2DA_ENTRY_FORMER ~all_kitlist~ row 1 kit_label
+  READ_2DA_ENTRY_FORMER ~all_kitlist~ row 8 kit_class
+  PATCH_PRINT ~%kit_label% proficiencies are being updated.~
+
+  // MAGE KITS
+  PATCH_IF (%kit_class% = 1) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABMA01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC5 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // FIGHTER KITS
+  PATCH_IF (%kit_class% = 2) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF ("%column_name%" STRING_EQUAL_CASE "%kit_label%") AND !("%kit_label%" STRING_EQUAL_CASE "KENSAI") BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~1~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END ELSE PATCH_IF ("%column_name%" STRING_EQUAL_CASE "%kit_label%") AND ("%kit_label%" STRING_EQUAL_CASE "KENSAI") BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~1~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          PRETTY_PRINT_2DA
+      END
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABFI01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // CLERIC KITS
+  PATCH_IF (%kit_class% = 3) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~2~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~1~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABPR01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // THIEF KITS
+  PATCH_IF (%kit_class% = 4) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~1~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABTH01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+  
+  // BARD KITS
+  PATCH_IF (%kit_class% = 5) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~1~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABBA01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // PALADIN KITS
+  PATCH_IF (%kit_class% = 6) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABPA01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // FIGHTER_MAGE KITS
+  PATCH_IF (%kit_class% = 7) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // FIGHTER_CLERIC KITS
+  PATCH_IF (%kit_class% = 8) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // FIGHTER_THIEF KITS
+  PATCH_IF (%kit_class% = 9) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 0; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // FIGHTER_MAGE_THIEF KITS
+  PATCH_IF (%kit_class% = 10) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // DRUID KITS
+  PATCH_IF (%kit_class% = 11) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~2~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Devotion Prof
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABDR01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // RANGER KITS
+  PATCH_IF (%kit_class% = 12) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABRN01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // MAGE_THIEF KITS
+  PATCH_IF (%kit_class% = 13) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+
+  // CLERIC_MAGE KITS
+  PATCH_IF (%kit_class% = 14) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~2~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // CLERIC_THIEF KITS
+  PATCH_IF (%kit_class% = 15) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~2~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // FIGHTER_DRUID KITS
+  PATCH_IF (%kit_class% = 16) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // FIGHTER_MAGE_CLERIC KITS
+  PATCH_IF (%kit_class% = 17) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+
+  // CLERIC_RANGER KITS
+  PATCH_IF (%kit_class% = 18) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+  END
+  
+  // SORCERER KITS
+  PATCH_IF (%kit_class% = 19) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~5~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          SET_2DA_ENTRY 16 (col + 1) 1 ~5~   // Pale Master
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABMA01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOPMAC5 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // MONK KITS
+  PATCH_IF (%kit_class% = 20) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~1~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABMO01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+
+  // SHAMAN KITS
+  PATCH_IF (%kit_class% = 21) BEGIN
+    INNER_ACTION BEGIN
+    COPY_EXISTING ~WEAPPROF.2DA~ ~override~
+      READ_2DA_ENTRIES_NOW kitnames 3
+      COUNT_2DA_COLS cols
+      FOR (col = 22; col < cols - 1; ++col) BEGIN
+      READ_2DA_ENTRY_FORMER kitnames 0 col column_name
+      PATCH_IF "%column_name%" STRING_EQUAL_CASE "%kit_label%" BEGIN
+          SET_2DA_ENTRY 11 (col + 1) 1 ~5~   // Armor Prof
+          SET_2DA_ENTRY 12 (col + 1) 1 ~1~   // Spellcraft Prof
+          SET_2DA_ENTRY 13 (col + 1) 1 ~5~   // Devotion Prof
+          SET_2DA_ENTRY 14 (col + 1) 1 ~5~   // Conditioning Prof
+          SET_2DA_ENTRY 15 (col + 1) 1 ~5~   // Swiftblade Prof
+          PATCH_IF eeex_present THEN BEGIN
+            SET_2DA_ENTRY 17 (col + 1) 1 ~2~   // Spell Penetration
+            //SET_2DA_ENTRY 18 (col + 1) 1 ~2~   // Armor Penetration
+          END
+          PATCH_IF fighter_overhaul THEN BEGIN
+            SET_2DA_ENTRY 29 (col + 1) 1 ~2~   // Power Striker Weapon Style
+          END
+          //SET_2DA_ENTRY 29 (col + 1) 1 ~3~   // Critical Striker Weapon Style
+          SET_2DA_ENTRY 30 (col + 1) 1 ~2~   // Archery Weapon Style
+          PRETTY_PRINT_2DA
+      END 
+      END
+    END
+
+    // Proficiencies
+    PATCH_IF !("%kit_clab%" STRING_EQUAL_CASE "CLABSH01") BEGIN
+    PATCH_IF FILE_EXISTS_IN_GAME ~%kit_clab%.2DA~ BEGIN
+      INNER_ACTION BEGIN
+      COPY_EXISTING ~%kit_clab%.2DA~ override
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MODEVC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOSPLC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC1 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC2 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC3 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC4 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCONC5 END
+            LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 f_Increment = 1 STR_VAR f_Entry = AP_MOCRSC4 END
+            PRETTY_PRINT_2DA
+          BUT_ONLY
+      END
+    END
+    END
+  END
+  END
+
+///////////////////////////////////////////////////////////////////////////
+// Assign Proficiencies to Items                                         //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  SPRINT weapon_name ~%SOURCE_FILE%~
+  READ_BYTE  0x31 prof
+  READ_SHORT 0x1c type
+  //READ_LONG  0x22 appearance
+  READ_ASCII 0x22 appearance (2)
+
+  // Heavy Armor Proficiency
+  //PATCH_IF (type = 2) AND (appearance = 16692) BEGIN
+  PATCH_IF (type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) BEGIN 
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm01~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm02~ END // Basically No Effect
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm03~ END 
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm04~ END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm05~ END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 STR_VAR resource = ~moarm06~ END
+  END
+
+  // Archery Weapon Style
+  PATCH_IF (prof = 104) OR  // Longbow
+        (prof = 105) OR     // Shortbow
+        (prof = 103) OR     // Crossbow
+        (prof = 106) OR     // Dart
+        (prof = 107) BEGIN  // Sling
+    PATCH_IF !(type = 5) AND !(type = 14) AND !(type = 31) BEGIN
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOARC02~ END 
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 1 parameter1 = 0 parameter2 = %arch_prof2% timing = 2 STR_VAR resource = ~MOARC02~ END
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 0 parameter2 = 2 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOARC01~ END 
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 1 parameter1 = 0 parameter2 = %arch_prof1% timing = 2 STR_VAR resource = ~MOARC01~ END
+    END
+  END
+
+/*
+  // Armor Penetration  
+  PATCH_IF (prof = 89) OR // Bastard Sword
+      (prof = 92)  OR     // Axe
+      (prof = 99)  OR     // Halberd
+      (prof = 94)  OR     // Katana
+      (prof = 102) OR     // Quarterstaff
+      (prof = 98)  OR     // Spear
+      (prof = 93)  OR     // Two-Handed Sword
+      (prof = 90)  OR     // Longsword
+      (prof = 91)  OR     // Short Sword        
+      (prof = 95)  OR     // Scimitar Wakizashi NinjaTo
+      (prof = 96)  OR     // Dagger
+      (prof = 97)  OR     // Warhammer
+      (prof = 100) OR     // Flail Morningstar
+      (prof = 101) OR     // Mace
+      (prof = 103) OR     // Crossbow
+      (prof = 104) OR     // Long Bow
+      (prof = 105) OR     // Short Bow
+      (prof = 106) OR     // Dart
+      (prof = 107) OR     // Sling
+      (prof = 108) OR     // Black Jack
+      (prof = 115) BEGIN  // Club
+    LPF ADD_ITEM_EFFECT INT_VAR header = 1 opcode = 326 target = 2 parameter1 = 0 parameter2 = %armor_pen2% timing = 1 dispel_resist = 0 probability1 = 100 insert_point = 0 special = 2 STR_VAR resource = ~MOAPEN2~ END
+    LPF ADD_ITEM_EFFECT INT_VAR header = 1 opcode = 326 target = 2 parameter1 = 0 parameter2 = %armor_pen1% timing = 1 dispel_resist = 0 probability1 = 100 insert_point = 0 special = 2 STR_VAR resource = ~MOAPEN1~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS03~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS02~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS01~ END 
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof3% timing = 2 STR_VAR resource = ~MOCRS03~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof2% timing = 2 STR_VAR resource = ~MOCRS02~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof1% timing = 2 STR_VAR resource = ~MOCRS01~ END
+  END ELSE PATCH_IF (prof = 0) && (type = 28) BEGIN // Fist Weapons
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS03~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS02~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 341 target = 1 parameter2 = 1 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MOCRS01~ END 
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof3% timing = 2 STR_VAR resource = ~MOCRS03~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof2% timing = 2 STR_VAR resource = ~MOCRS02~ END
+    //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 318 target = 2 parameter1 = 0 parameter2 = %crit_prof1% timing = 2 STR_VAR resource = ~MOCRS01~ END
+  END
+*/
+
+  // Bow Weapon Group
+  PATCH_IF ((prof = 104) OR (prof = 105)) AND !(type = 5) BEGIN
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 2 parameter2 = 4 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MORATHA~ END // Add +1 Thac0 to Bows for Elfs
+    WRITE_BYTE 0x31 97
+    PATCH_PRINT ~Moving %weapon_name% to the Bow weapon group~
+  END
+
+  // Spiked Weapon Group
+  PATCH_IF (prof = 100) BEGIN
+    WRITE_BYTE 0x31 98
+    PATCH_PRINT ~Moving %weapon_name% to the Spiked weapon group~
+  END
+
+  // Add +1 Thac0 to Short Swords if Elf
+  PATCH_IF (prof = 91) BEGIN
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 2 parameter2 = 4 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MORATHA~ END 
+  END
+
+  // Small Sword Weapon Group
+  PATCH_IF (prof = 91) OR (prof = 96) BEGIN
+    WRITE_BYTE 0x31 99
+    PATCH_PRINT ~Moving %weapon_name% to the Small Sword weapon group~
+  END
+
+  // Add +1 Thac0 to Long Swords if Elf
+  PATCH_IF (prof = 90) BEGIN
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 2 parameter2 = 4 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MORATHA~ END 
+  END
+
+  // Large Sword Weapon Group
+  PATCH_IF (prof = 89) OR   // Bastard Sword
+        (prof = 90) OR      // Long Sword
+        (prof = 93) BEGIN   // Two-Handed Sword
+    WRITE_BYTE 0x31 100
+    PATCH_PRINT ~Moving %weapon_name% to the Large Sword weapon group~
+  END
+
+  // Exotic Sword Weapon Group
+  PATCH_IF (prof = 94) OR   // Katana
+        (prof = 95) BEGIN   // Scimitar
+    WRITE_BYTE 0x31 101
+    PATCH_PRINT ~Moving %weapon_name% to the Exotic Sword weapon group~
+  END
+
+  // Axe Weapon Group
+  PATCH_IF (prof = 92) BEGIN
+    WRITE_BYTE 0x31 102
+  END
+
+  // Blunt Weapon Group
+  PATCH_IF (prof = 97) OR   // Warhammer
+        (prof = 115) OR     // Club
+        (prof = 101) BEGIN  // Mace
+    WRITE_BYTE 0x31 103
+    PATCH_PRINT ~Moving %weapon_name% to the Blunt weapon group~
+  END
+
+  // Add EFF +1 Thac0 to Slings if Halfling
+  PATCH_IF (prof = 107) AND !(type = 14) BEGIN
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter1 = 5 parameter2 = 4 timing = 2 resist_dispel = 0 probability1 = 100 STR_VAR resource = ~MORATHA~ END 
+  END
+
+  // Missile Weapon Group
+  PATCH_IF (prof = 103) OR  // Crossbow
+        (prof = 106) OR     // Dart
+        (prof = 107) BEGIN  // Sling
+    WRITE_BYTE 0x31 104
+    PATCH_PRINT ~Moving %weapon_name% to the Missile weapon group~
+  END
+
+  // Polearm Weapon Group
+  PATCH_IF (prof = 98) OR  // Spear
+      (prof = 99) OR       // Halberd
+      (prof = 102) BEGIN   // Quarterstaff
+    WRITE_BYTE 0x31 105
+    PATCH_IF (prof = 99) BEGIN
+        PATCH_PRINT ~Moving %weapon_name% to the Polearm weapon group~
+    END
+  END
+
+  // Update Item Descriptions with New Weapon Group
+  PATCH_IF ((prof >= 89) AND (prof < 108)) OR (prof = 115) BEGIN 
+    // update descriptions
+    PATCH_FOR_EACH offset IN 0x50 0x54 BEGIN
+        READ_LONG ~%offset%~ desc_strref
+        PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+          READ_STRREF ~%offset%~ desc
+          // Bastard Sword
+          PATCH_IF (prof = 89) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Bastard Sword~ ~Proficiency Type: Large Sword~
+              END
+          // Long Sword
+          END ELSE PATCH_IF (prof = 90) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Long Sword~ ~Proficiency Type: Large Sword~
+              END
+          // Short Sword
+          END ELSE PATCH_IF (prof = 91) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Short Sword~ ~Proficiency Type: Small Sword~
+              END
+          // Two-Handed Sword
+          END ELSE PATCH_IF (prof = 93) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Two-handed Sword~ ~Proficiency Type: Large Sword~
+              END
+          // Katana
+          END ELSE PATCH_IF (prof = 94) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Katana~ ~Proficiency Type: Exotic Sword~
+              END
+          // Scimitar/Wakizashi/Ninjatō
+          END ELSE PATCH_IF (prof = 95) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Scimitar/Wakizashi/Ninjatō~ ~Proficiency Type: Exotic Sword~
+              END
+          // Dagger    
+          END ELSE PATCH_IF (prof = 96) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Dagger~ ~Proficiency Type: Small Sword~
+              END
+          // Warhammer    
+          END ELSE PATCH_IF (prof = 97) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: War Hammer~ ~Proficiency Type: Blunt~
+              END
+          // Spear   
+          END ELSE PATCH_IF (prof = 98) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Spear~ ~Proficiency Type: Polearm~
+              END
+          // Halberd    
+          END ELSE PATCH_IF (prof = 99) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Halberd~ ~Proficiency Type: Polearm~
+              END
+          // Flail/Morningstar    
+          END ELSE PATCH_IF (prof = 100) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Flail/Morning Star~ ~Proficiency Type: Spiked~
+              END
+          // Mace    
+          END ELSE PATCH_IF (prof = 101) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Mace~ ~Proficiency Type: Blunt~
+              END
+          // Quarterstaff    
+          END ELSE PATCH_IF (prof = 102) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Quarterstaff~ ~Proficiency Type: Polearm~
+              END
+          // Crossbow    
+          END ELSE PATCH_IF (prof = 103) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Crossbow~ ~Proficiency Type: Missile~
+              END
+          // Longbow     
+          END ELSE PATCH_IF (prof = 104) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Longbow~ ~Proficiency Type: Bow~
+              END
+          // Shortbow    
+          END ELSE PATCH_IF (prof = 105) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Shortbow~ ~Proficiency Type: Bow~
+              END
+          // Dart    
+          END ELSE PATCH_IF (prof = 106) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Dart~ ~Proficiency Type: Missile~
+              END
+          // Sling    
+          END ELSE PATCH_IF (prof = 107) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Sling~ ~Proficiency Type: Missile~
+              END
+          // Club    
+          END ELSE PATCH_IF (prof = 115) BEGIN
+              INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+                REPLACE_TEXTUALLY ~Proficiency Type: Club~ ~Proficiency Type: Blunt~
+              END
+          END
+
+          SAY_EVALUATED ~%offset%~ ~%desc%~
+        END
+    END
+  END
+  BUT_ONLY
+
+///////////////////////////////////////////////////////////////////////////
+// Assign Proficiencies to Spells                                        //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
+  SPRINT spell_name ~%SOURCE_FILE%~
+  
+  // Swiftblade
+  LPF HASTE_EFF RET haste_value = haste_value END
+  PATCH_IF haste_value BEGIN
+    PATCH_PRINT ~Adding Swiftblade to: %spell_name%~
+    LPF CLONE_EFFECT INT_VAR match_opcode = 16 opcode = 177 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~MOHAS01~ END
+    LPF CLONE_EFFECT INT_VAR match_opcode = 16 opcode = 177 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~MOHAS02~ END
+    LPF CLONE_EFFECT INT_VAR match_opcode = 16 opcode = 177 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~MOHAS03~ END
+    LPF CLONE_EFFECT INT_VAR match_opcode = 16 opcode = 177 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~MOHAS04~ END
+    LPF CLONE_EFFECT INT_VAR match_opcode = 16 opcode = 177 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~MOHAS05~ END
+  END
+//BUT_ONLY
+
+  LPF SPELL_PEN_EFF RET spen_value = spen_value END
+  PATCH_IF spen_value AND eeex_present BEGIN
+    PATCH_PRINT ~Adding Spell Penetration to: %spell_name%~
+    /*
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 1 duration = 0 resist_dispel = 0 probability1 = 100 insert_point = 0 STR_VAR resource = ~MOSPEN2~ END 
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 0 parameter2 = %spell_pen2% timing = 0 duration = 0 insert_point = 0 STR_VAR resource = ~MOSPEN2~ END
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 1 duration = 0 resist_dispel = 0 probability1 = 100 insert_point = 0 STR_VAR resource = ~MOSPEN1~ END 
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 target = 9 parameter1 = 0 parameter2 = %spell_pen1% timing = 0 duration = 0 insert_point = 0 STR_VAR resource = ~MOSPEN1~ END
+    */
+    // -------------------------------------------
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 parameter1 = 0 parameter2 = %spell_pen2% timing = 1 dispel_resist = 0 probability1 = 100 insert_point = 0 special = 2 STR_VAR resource = ~MOSPEN2~ END
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 2 parameter1 = 0 parameter2 = %spell_pen1% timing = 1 dispel_resist = 0 probability1 = 100 insert_point = 0 special = 2 STR_VAR resource = ~MOSPEN1~ END
+  END
+
+BUT_ONLY
+
+ACTION_IF fighter_overhaul THEN BEGIN
+  COPY_EXISTING ~c0fig01a.spl~ ~override~
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 9 resist_dispel = 2 probability1 = 100 STR_VAR resource = ~mopow01~ END
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 9 resist_dispel = 2 probability1 = 100 STR_VAR resource = ~mopow03~ END
+
+  COPY_EXISTING ~c0fig01b.spl~ ~override~
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 9 resist_dispel = 2 probability1 = 100 STR_VAR resource = ~mopow02~ END
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 2 parameter1 = 0 parameter2 = 2 timing = 9 resist_dispel = 2 probability1 = 100 STR_VAR resource = ~mopow04~ END
+END
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Update Proficiency Stats for all Creatures                            //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~
+SPRINT source ~%SOURCE_FILE%~
+READ_LONG 0x2c4 fx_off ELSE 0
+READ_LONG 0x2c8 fx_num ELSE 0
+READ_BYTE 0x33  fx_type ELSE 2
+READ_ASCII  0x280 deathvar
+READ_SHORT 0x010 dual
+READ_BYTE 0x234 level
+READ_BYTE 0x235 level_second
+READ_BYTE 0x273 class
+// READ_LONG  0x1cc biography ELSE 0
+SET free_pips = 0
+SET bow = 0
+SET spiked = 0
+SET ssword = 0
+SET lsword = 0
+SET exotic = 0
+SET axe = 0
+SET blunt = 0
+SET missile = 0
+SET spear = 0
+SET is_ranged = 0
+SET is_twohanded = 0
+SET is_heavyarmor = 0
+SET twohanded = 0
+SET swordandshield = 0
+SET singleweapon = 0
+SET twoweapon = 0
+SET assigned_pips = 0
+SET new_pip_amount = 0
+// Grabs the armor appearance for the creature
+READ_LONG 0x2b8 item_slots_offset ELSE 0
+READ_LONG 0x2bc items_offset ELSE 0
+READ_SSHORT (item_slots_offset + 0x02) armor_slot
+PATCH_IF !(armor_slot = ~-1~) BEGIN
+  READ_ASCII (items_offset + armor_slot * 0x14) armor
+  PATCH_IF FILE_EXISTS_IN_GAME ~%armor%.itm~ BEGIN
+  INNER_ACTION BEGIN
+    COPY_EXISTING - ~%armor%.itm~ override
+      //READ_LONG 0x22 appearance
+      READ_ASCII 0x22 appearance (2)
+      //PATCH_IF (appearance = 16692) BEGIN
+      PATCH_IF (~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) BEGIN
+        is_heavyarmor = 1
+      END
+  END
+  END
+END
+PATCH_PRINT ~Determining and assigning proficiencies for: %source%~
+
+FOR (index = 0 ; index < fx_num ; ++index) BEGIN
+  READ_SHORT (fx_off        + (0x08 * fx_type) + (index * (0x30 + (0xd8 * fx_type)))) opcode
+  PATCH_IF (opcode = 233) BEGIN
+    READ_LONG  (fx_off + 0x04 + (0x10 * fx_type) + (index * (0x30 + (0xd8 * fx_type)))) pips
+    READ_LONG  (fx_off + 0x08 + (0x10 * fx_type) + (index * (0x30 + (0xd8 * fx_type)))) type
+    
+    // Checks if 2h weapon is equipped
+    PATCH_IF (type = 93) OR
+        (type = 98) OR
+        (type = 99) OR
+        (type = 102) BEGIN
+        is_twohanded = 1
+    END
+
+    // Bows
+    PATCH_IF (type = 104) OR (type = 105) BEGIN
+        is_ranged = 1
+        PATCH_IF (pips > bow) BEGIN
+            free_pips += bow
+            bow = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Spiked
+    PATCH_IF (type = 100) BEGIN
+        spiked = pips
+    END
+
+    // Small Sword
+    PATCH_IF (type = 91) OR (type = 96) BEGIN
+        PATCH_IF (pips > ssword) BEGIN
+            free_pips += ssword
+            ssword = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Large Sword
+    PATCH_IF (type = 89) OR 
+        (type = 90) OR
+        (type = 93) BEGIN
+        PATCH_IF (pips > lsword) BEGIN
+            free_pips += lsword
+            lsword = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Exotic Sword
+    PATCH_IF (type = 94) OR (type = 95) BEGIN
+        PATCH_IF (pips > exotic) BEGIN
+            free_pips += exotic
+            exotic = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Axe
+    PATCH_IF (type = 92) BEGIN
+        axe = pips
+    END
+
+    // Blunt
+    PATCH_IF (type = 97) OR 
+        (type = 115) OR
+        (type = 101) BEGIN
+        PATCH_IF (pips > blunt) BEGIN
+            free_pips += blunt
+            blunt = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Missile
+    PATCH_IF (type = 103) OR (type = 106) OR (type = 107) BEGIN
+        is_ranged = 1
+        PATCH_IF (pips > missile) BEGIN
+            free_pips += missile
+            missile = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+    END
+
+    // Spear
+    PATCH_IF (type = 98) OR 
+        (type = 99) OR
+        (type = 102) BEGIN
+        PATCH_IF (pips > spear) BEGIN
+            free_pips += spear
+            spear = pips
+        END ELSE BEGIN
+            free_pips += pips
+        END
+     END
+
+    // Two-Handed Weapon Style
+    PATCH_IF (type = 111) BEGIN
+        twohanded = pips
+    END
+
+    // Sword and Shield Weapon Style
+    PATCH_IF (type = 112) BEGIN
+        swordandshield = pips
+    END
+
+    // Single Weapon Style
+    PATCH_IF (type = 113) BEGIN
+        singleweapon = pips
+    END
+
+    // Two Weapon Style
+    PATCH_IF (type = 114) BEGIN
+        twoweapon = pips
+    END
+  END
+END
+
+///////////////////////////////////////////////////////////////////////////
+// Accelerated or NWN2 Style Prof Points                                 //
+///////////////////////////////////////////////////////////////////////////
+PATCH_IF (accelerated_profs OR nwn_profs) AND (FILE_CONTAINS_EVALUATED(~pdialog.2da~ ~%deathvar%~)) BEGIN
+  
+  // Cycle through all Warriors to capture starting pips
+  PATCH_IF ((class = 2) OR                                    // Fighter
+            (class = 6) OR                                    // Paladin
+            ((class =  7) AND !((dual & BIT4) = BIT4)) OR     // Fighter_Mage
+            ((class =  8) AND !((dual & BIT5) = BIT5)) OR     // Fighter_Cleric
+            ((class =  9) AND !((dual & BIT6) = BIT6)) OR     // Fighter_Thief
+            (class = 10) OR                                   // FMT
+            (class = 12) OR                                   // Ranger    
+            ((class = 16) AND !((dual & BIT7) = BIT7)) OR     // Fighter_Druid
+            (class = 17) OR                                   // FMC
+            ((class = 18) AND !((dual & BIT5) = BIT5))) BEGIN // Cleric_Ranger
+              PATCH_IF (level > 0) BEGIN
+                new_pip_amount += 4 // 4 pips at level 1
+              END
+            END
+
+  // Add 2 pips in two weapon fighting for rangers
+  PATCH_IF ((class = 12) OR                                   // Ranger   
+            (class = 18)) BEGIN                               // Cleric_Ranger (all multi/dual)
+              PATCH_IF (level > 0) BEGIN
+                new_pip_amount += 2 // 2 pips at level 1
+              END
+            END
+
+/* OLD STYLE WITH 1 PIP FOR MAGES
+  // Cycle through all Mage and Sorcerer to capture starting pips
+  PATCH_IF ((class = 1) OR                                    // Mage
+            ((class =  7) AND ((dual & BIT4) = BIT4)) OR      // Mage->Fighter
+            ((class = 13) AND ((dual & BIT4) = BIT4)) OR      // Mage->Thief
+            ((class = 14) AND ((dual & BIT4) = BIT4)) OR      // Mage->Cleric
+            (class = 19)) BEGIN                               // Sorcerer
+              PATCH_IF (level > 0) BEGIN
+                new_pip_amount += 1 // 1 pip at level 1
+              END
+            END
+
+  // Cycle through all clerics, druids, shamans, monks, theives, and bards to capture starting pips
+  PATCH_IF ((class = 3) OR                                    // Cleric
+            (class = 4) OR                                    // Thief
+            (class = 5) OR                                    // Bard
+            ((class =  8) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Fighter
+            ((class =  9) AND ((dual & BIT6) = BIT6)) OR      // Thief->Fighter
+            (class = 11) OR                                   // Druid
+            ((class = 13) AND !((dual & BIT4) = BIT4)) OR     // Thief_Mage
+            ((class = 14) AND !((dual & BIT4) = BIT4)) OR     // Cleric_Mage
+            (class = 15) OR                                   // Cleric_Thief
+            ((class = 16) AND ((dual & BIT7) = BIT7)) OR      // Druid->Fighter
+            ((class = 18) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Ranger
+            (class = 20) OR                                   // Monk
+            (class = 21)) BEGIN                               // Shaman
+              PATCH_IF (level > 0) BEGIN
+                new_pip_amount += 2 // 2 pips at level 1
+              END
+            END
+*/
+
+  // Cycle through all mages, sorcerers, clerics, druids, shamans, monks, theives, and bards to capture starting pips
+  PATCH_IF ((class = 1) OR                                    // Mage
+            ((class = 3) OR                                   // Cleric
+            (class = 4) OR                                    // Thief
+            (class = 5) OR                                    // Bard
+            ((class =  7) AND ((dual & BIT4) = BIT4)) OR      // Mage->Fighter
+            ((class =  8) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Fighter
+            ((class =  9) AND ((dual & BIT6) = BIT6)) OR      // Thief->Fighter
+            (class = 11) OR                                   // Druid
+            ((class = 13) AND ((dual & BIT4) = BIT4)) OR      // Mage->Thief
+            ((class = 13) AND !((dual & BIT4) = BIT4)) OR     // Thief_Mage
+            ((class = 14) AND ((dual & BIT4) = BIT4)) OR      // Mage->Cleric
+            ((class = 14) AND !((dual & BIT4) = BIT4)) OR     // Cleric_Mage
+            (class = 15) OR                                   // Cleric_Thief
+            ((class = 16) AND ((dual & BIT7) = BIT7)) OR      // Druid->Fighter
+            ((class = 18) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Ranger
+            (class = 19)) OR                                  // Sorcerer
+            (class = 20) OR                                   // Monk
+            (class = 21)) BEGIN                               // Shaman
+              PATCH_IF (level > 0) BEGIN
+                new_pip_amount += 2 // 2 pips at level 1
+              END
+            END
+  // Accelerated Profs
+  PATCH_IF accelerated_profs BEGIN
+    
+    // Cycle through all Warriors to capture pips
+    PATCH_IF ((class = 2) OR                                    // Fighter
+              (class = 6) OR                                    // Paladin
+              ((class =  7) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Mage
+              ((class =  8) AND !((dual & BIT5) = BIT5)) OR     // Fighter_Cleric
+              ((class =  9) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Thief
+              (class = 10) OR                                   // FMT
+              (class = 12) OR                                   // Ranger
+              ((class = 16) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Druid
+              (class = 17) OR                                   // FMC
+              ((class = 18) AND !((dual & BIT8) = BIT8))) BEGIN // Cleric_Ranger
+                FOR (i = 2; i <= 50; i += 2) BEGIN
+                  PATCH_IF (level >= i) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 2 levels
+                  END
+                END
+              END
+
+    // Cycle through all Mage and Sorcerer to capture pips
+    PATCH_IF ((class = 1) OR                                    // Mage
+              ((class =  7) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Mage
+              ((class = 13) AND ((dual & BIT6) = BIT6)) OR      // Thief->Mage
+              ((class = 14) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Mage
+              (class = 19)) BEGIN                               // Sorcerer
+                FOR (j = 4; j <= 50; j += 4) BEGIN
+                  PATCH_IF (level >= j) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 4 levels
+                  END
+                END
+              END
+    
+    // Cycle through all clerics, druids, shamans, monks, theives, and bards to capture starting pips
+    PATCH_IF ((class = 3) OR                                    // Cleric
+              (class = 4) OR                                    // Thief
+              (class = 5) OR                                    // Bard
+              ((class =  8) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Cleric
+              ((class =  9) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Thief
+              (class = 11) OR                                   // Druid
+              ((class = 13) AND !((dual & BIT6) = BIT6)) OR     // Mage_Thief
+              ((class = 14) AND !((dual & BIT5) = BIT5)) OR     // Cleric_Mage
+              (class = 15) OR                                   // Cleric_Thief
+              ((class = 16) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Druid
+              ((class = 18) AND ((dual & BIT8) = BIT8)) OR      // Ranger->Cleric
+              (class = 20) OR                                   // Monk
+              (class = 21)) BEGIN                               // Shaman
+                FOR (k = 3; k <= 50; k += 3) BEGIN
+                  PATCH_IF (level >= k) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 3 levels
+                  END
+                END
+              END
+
+    // Cycle through all Fighter/Ranger Starting Classes (Pre-Dual) for pips
+    PATCH_IF (((class =  7) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Mage
+              ((class =  8) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Cleric
+              ((class =  9) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Thief
+              ((class = 16) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Druid
+              ((class = 18) AND ((dual & BIT8) = BIT8))) BEGIN  // Ranger->Cleric
+                FOR (l = 2; l <= 50; l += 2) BEGIN
+                  PATCH_IF (level_second >= l) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 2 levels
+                  END
+                END
+              END
+
+    // Cycle through all Mage Starting Classes (Pre-Dual) for Pips
+    PATCH_IF (((class =  7) AND ((dual & BIT4) = BIT4)) OR      // Mage->Fighter
+              ((class = 13) AND ((dual & BIT4) = BIT4)) OR      // Mage->Thief
+              ((class = 14) AND ((dual & BIT4) = BIT4))) BEGIN  // Mage->Cleric
+                FOR (m = 4; m <= 50; m += 4) BEGIN
+                  PATCH_IF (level_second >= m) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 4 levels
+                  END
+                END
+              END
+
+    // Cycle through all Thief, Cleric, and Druid Starting Clases (Pre-Dual) for pips
+    PATCH_IF (((class =  8) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Fighter
+              ((class =  9) AND ((dual & BIT6) = BIT6)) OR      // Thief->Fighter
+              ((class = 13) AND ((dual & BIT6) = BIT6)) OR      // Thief->Mage
+              ((class = 14) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Mage
+              ((class = 15) AND ((dual & BIT6) = BIT6)) OR      // Thief->Cleric
+              ((class = 15) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Thief
+              ((class = 16) AND ((dual & BIT7) = BIT7)) OR      // Druid->Fighter
+              ((class = 18) AND ((dual & BIT5) = BIT5))) BEGIN  // Cleric->Ranger
+                FOR (n = 3; n <= 50; n += 3) BEGIN
+                  PATCH_IF (level_second >= n) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 3 levels
+                  END
+                END
+              END
+  END
+
+  // NWN2 Style Profs
+  PATCH_IF nwn_profs BEGIN
+    
+    // Cycle through all Warriors to capture pips
+    PATCH_IF ((class = 2) OR                                    // Fighter
+              ((class =  7) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Mage
+              ((class =  8) AND !((dual & BIT5) = BIT5)) OR     // Fighter_Cleric
+              ((class =  9) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Thief
+              (class = 10) OR                                   // FMT
+              ((class = 16) AND !((dual & BIT3) = BIT3)) OR     // Fighter_Druid
+              (class = 17)) BEGIN                               // FMC
+                FOR (o = 2; o <= 50; o += 2) BEGIN
+                  PATCH_IF (level >= o) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 2 levels
+                  END
+                END
+              END ELSE BEGIN
+                FOR (p = 3; p <= 50; p += 3) BEGIN
+                  PATCH_IF (level >= p) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 3 levels
+                  END
+                END
+              END
+
+    // Cycle through all Fighter Starting Classes (Pre-Dual) for pips
+    PATCH_IF (((class =  7) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Mage
+              ((class =  8) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Cleric
+              ((class =  9) AND ((dual & BIT3) = BIT3)) OR      // Fighter->Thief
+              ((class = 16) AND ((dual & BIT3) = BIT3))) BEGIN  // Fighter->Druid
+                FOR (q = 2; q <= 50; q += 2) BEGIN
+                  PATCH_IF (level_second >= q) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 2 levels
+                  END
+                END
+              END
+
+    // Cycle through all other Starting Classes (Pre-Dual) for pips
+    PATCH_IF (((class =  7) AND ((dual & BIT4) = BIT4)) OR      // Mage->Fighter
+              ((class =  8) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Fighter
+              ((class =  9) AND ((dual & BIT6) = BIT6)) OR      // Thief->Fighter
+              ((class = 13) AND ((dual & BIT6) = BIT6)) OR      // Thief->Mage
+              ((class = 13) AND ((dual & BIT4) = BIT4)) OR      // Mage->Thief
+              ((class = 14) AND ((dual & BIT4) = BIT4)) OR      // Mage->Cleric
+              ((class = 14) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Mage
+              ((class = 15) AND ((dual & BIT6) = BIT6)) OR      // Thief->Cleric
+              ((class = 15) AND ((dual & BIT5) = BIT5)) OR      // Cleric->Thief
+              ((class = 16) AND ((dual & BIT7) = BIT7)) OR      // Druid->Fighter
+              ((class = 18) AND ((dual & BIT5) = BIT5)) OR      // Ranger->Cleric
+              ((class = 18) AND ((dual & BIT5) = BIT5))) BEGIN  // Cleric->Ranger
+                FOR (r = 3; r <= 50; r += 3) BEGIN
+                  PATCH_IF (level_second >= r) BEGIN
+                    new_pip_amount += 1 // Receive a new pip every 3 levels
+                  END
+                END
+              END
+  END
+
+  assigned_pips = bow + spiked + ssword + lsword + exotic + axe + blunt + missile + spear + twohanded + swordandshield + singleweapon + twoweapon
+  free_pips = new_pip_amount - assigned_pips
+
+END
+
+///////////////////////////////////////////////////////////////////////////
+// Assign Pips                                                           //
+///////////////////////////////////////////////////////////////////////////
+// Remove all old profs, these will be replaced
+LPF DELETE_EFFECT INT_VAR match_opcode = 233 END
+
+// Bow
+PATCH_IF (bow > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = bow parameter2 = 97 timing = 9 END
+END
+
+// Spiked
+PATCH_IF (spiked > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = spiked parameter2 = 98 timing = 9 END
+END
+
+// Small Sword
+PATCH_IF (ssword > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = ssword parameter2 = 99 timing = 9 END
+END
+
+// Large Sword
+PATCH_IF (lsword > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = lsword parameter2 = 100 timing = 9 END
+END
+
+// Exotic Sword
+PATCH_IF (exotic > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = exotic parameter2 = 101 timing = 9 END
+END
+
+// Axe
+PATCH_IF (axe > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = axe parameter2 = 102 timing = 9 END
+END
+
+// Blunt
+PATCH_IF (blunt > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = blunt parameter2 = 103 timing = 9 END
+END
+
+// Missile
+PATCH_IF (missile > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = missile parameter2 = 104 timing = 9 END
+END
+
+// Spear
+PATCH_IF (spear > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = spear parameter2 = 105 timing = 9 END
+END
+
+// Two-Handed Weapon Style
+PATCH_IF (twohanded > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = twohanded parameter2 = 111 timing = 9 END
+END
+
+// Sword and Shield Style
+PATCH_IF (swordandshield > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = swordandshield parameter2 = 112 timing = 9 END
+END
+
+// Single Weapon Style
+PATCH_IF (singleweapon > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = singleweapon parameter2 = 113 timing = 9 END
+END
+
+// Two Weapon Style
+PATCH_IF (twoweapon > 0) BEGIN
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = twoweapon parameter2 = 114 timing = 9 END
+END
+
+// Assign profs to joinable NPC with free pips
+PATCH_IF (FILE_CONTAINS_EVALUATED(~pdialog.2da~ ~%deathvar%~)) AND (level > 0) BEGIN
+    // 1 Pip Heavy Armor if NOT a Fighter and is wearing plate armor
+    PATCH_IF !(class = 2) AND (is_heavyarmor = 1) BEGIN 
+        PATCH_IF (free_pips > 0) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 89 timing = 9 END
+            free_pips -= 1
+        END
+    END    
+    // CLERICs and DRUIDs 
+    PATCH_IF (class = 3) OR // CLERIC
+        (class = 8)  OR // FIGHTER_CLERIC
+        (class = 11) OR // DRUID
+        (class = 15) OR // CLERIC_THIEF
+        (class = 16) OR // FIGHTER_DRUID
+        (class = 18) OR // CLERIC_RANGER
+        (class = 21) BEGIN // Shaman
+        // Devotion
+        PATCH_IF (free_pips >= 5) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+            free_pips -= 5
+        END ELSE PATCH_IF (free_pips = 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 91 timing = 9 END
+            free_pips -= 4
+        END ELSE PATCH_IF (free_pips = 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 91 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+            free_pips -= 1
+        END
+    END
+
+    // CLERIC_MAGE and FIGHTER_MAGE_CLERIC
+    PATCH_IF (class = 14) OR (class = 17) BEGIN
+        // Spellcraft
+        PATCH_IF (free_pips >= 5) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 90 timing = 9 END
+            free_pips -= 5
+        END ELSE PATCH_IF (free_pips = 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 90 timing = 9 END
+            free_pips -= 4
+        END ELSE PATCH_IF (free_pips = 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 90 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 90 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+            free_pips -= 1
+        END
+        // Devotion
+        PATCH_IF (free_pips >= 5) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+            free_pips -= 5
+        END ELSE PATCH_IF (free_pips = 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 91 timing = 9 END
+            free_pips -= 4
+        END ELSE PATCH_IF (free_pips = 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 91 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+            free_pips -= 1
+        END
+    END
+
+    // MAGES, BARDS, and SORCERER
+    PATCH_IF (class = 1) OR // MAGE
+        (class = 5)  OR     // BARD
+        (class = 7)  OR     // FIGHTER_MAGE
+        (class = 10) OR     // FIGHTER_MAGE_THIEF
+        (class = 13) OR     // MAGE_THIEF
+        (class = 19) BEGIN  // SORCERER
+        // Spellcraft
+        PATCH_IF (free_pips >= 5) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 90 timing = 9 END
+            free_pips -= 5
+        END ELSE PATCH_IF (free_pips = 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 90 timing = 9 END
+            free_pips -= 4
+        END ELSE PATCH_IF (free_pips = 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 90 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 90 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+            free_pips -= 1
+        END
+    END
+
+    // If pips in a 2h weapon but does not have the 2h weapon style, this will add the weapon style
+    PATCH_IF (is_twohanded = 1) AND (twohanded = 0) BEGIN
+        PATCH_IF (free_pips >= 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 111 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 111 timing = 9 END
+            free_pips -= 1
+        END
+    END
+
+    // PALADIN and RANGER
+    PATCH_IF (class = 6) OR (class = 12) BEGIN 
+        // Devotion
+        PATCH_IF (free_pips >= 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+            free_pips -= 1
+        END
+    END
+
+    PATCH_IF (free_pips > 0) BEGIN
+        // Heavy Armor - Is FIGHTER and wearing plate armor
+        PATCH_IF (class = 2) AND (is_heavyarmor = 1) BEGIN
+            PATCH_IF (free_pips >= 5) BEGIN
+                LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 89 timing = 9 END
+                free_pips -= 5
+            END ELSE PATCH_IF (free_pips = 4) BEGIN
+                LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 89 timing = 9 END
+                free_pips -= 4
+            END ELSE PATCH_IF (free_pips = 3) BEGIN
+                LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 89 timing = 9 END
+                free_pips -= 3
+            END ELSE PATCH_IF (free_pips = 2) BEGIN
+                LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 89 timing = 9 END
+                free_pips -= 2
+            END ELSE PATCH_IF (free_pips = 1) BEGIN
+                LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 89 timing = 9 END
+                free_pips -= 1
+            END
+        END
+
+        // Archery
+        PATCH_IF (free_pips >= 2) AND (is_ranged = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 107 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) AND (is_ranged = 1)  BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 107 timing = 9 END
+            free_pips -= 1
+        END
+
+        // Conditioning
+        PATCH_IF (free_pips >= 5) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 92 timing = 9 END
+            free_pips -= 5
+        END ELSE PATCH_IF (free_pips = 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 92 timing = 9 END
+            free_pips -= 4
+        END ELSE PATCH_IF (free_pips = 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 92 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 92 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 92 timing = 9 END
+            free_pips -= 1
+        END
+        
+        /*    
+        // Critical Striker
+        PATCH_IF (free_pips >= 3) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 106 timing = 9 END
+            free_pips -= 3
+        END ELSE PATCH_IF (free_pips = 2) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 106 timing = 9 END
+            free_pips -= 2
+        END ELSE PATCH_IF (free_pips = 1) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 106 timing = 9 END
+            free_pips -= 1
+        END
+        */
+
+      END
+    
+// Assign to all remaining creatures
+// PLEASE NOTE: These are assigned based off level and NOT if the creature has the prerequisite amount of pips
+END ELSE BEGIN
+    // If pips in a 2h weapon but does not have the 2h weapon style
+    PATCH_IF (is_twohanded = 1) AND (twohanded = 0) BEGIN
+        LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 111 timing = 9 END
+    END
+
+    // Archery, assigned to all NPCs regardless if they have a ranged weapon
+    PATCH_IF (level >= 4) AND (is_ranged = 1) BEGIN
+        LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 107 timing = 9 END
+    END ELSE PATCH_IF (level < 4) AND (is_ranged = 1)  BEGIN
+        LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 107 timing = 9 END
+    END
+
+    // Heavy Armor
+    PATCH_IF (is_heavyarmor = 1) BEGIN
+        PATCH_IF (level >= 16) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 89 timing = 9 END
+        END ELSE PATCH_IF (level >= 12) AND (level < 16) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 89 timing = 9 END
+        END ELSE PATCH_IF (level >= 8) AND (level < 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 89 timing = 9 END
+        END ELSE PATCH_IF (level >= 4) AND (level < 8) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 89 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 89 timing = 9 END
+        END
+    END
+
+    // Conditioning FIGHTER ONLY
+    PATCH_IF (class = 2) BEGIN
+        PATCH_IF (level >= 16) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 92 timing = 9 END
+        END ELSE PATCH_IF (level >= 12) AND (level < 16) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 92 timing = 9 END
+        END ELSE PATCH_IF (level >= 8) AND (level < 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 92 timing = 9 END
+        END ELSE PATCH_IF (level >= 4) AND (level < 8) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 92 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 92 timing = 9 END
+        END
+    END
+    // PALADIN and RANGER
+    PATCH_IF (class = 6) OR (class = 12) BEGIN 
+        // Devotion
+        PATCH_IF (level >= 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+        END
+    END
+
+    // CLERICs and DRUIDs 
+    PATCH_IF (class = 3) OR // CLERIC
+        (class = 8)  OR // FIGHTER_CLERIC
+        (class = 11) OR // DRUID
+        (class = 15) OR // CLERIC_THIEF
+        (class = 16) OR // FIGHTER_DRUID
+        (class = 18) OR // CLERIC_RANGER
+        (class = 21) BEGIN // Shaman
+        // Devotion
+        PATCH_IF (level >= 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+        END ELSE PATCH_IF (level >= 8) AND (level < 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 91 timing = 9 END
+        END ELSE PATCH_IF (level >= 4) AND (level < 8) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 91 timing = 9 END
+        END ELSE PATCH_IF (level > 1) AND (level < 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+        END
+    END
+
+    // CLERIC_MAGE and FIGHTER_MAGE_CLERIC
+    PATCH_IF (class = 14) OR (class = 17) BEGIN
+        // Hybrid Spellcraft and Devotion 
+        // PATCH_IF (level >= 20) AND (level < 24) BEGIN
+        PATCH_IF (level >= 20) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 16) AND (level < 20) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 12) AND (level < 16) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 8) AND (level < 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 4) AND (level < 8) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 91 timing = 9 END
+        END ELSE PATCH_IF (level > 1) AND (level < 4) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 91 timing = 9 END
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+        END
+    END
+
+    // MAGES, BARDS, and SORCERER
+    PATCH_IF (class = 1) OR // MAGE
+        (class = 5)  OR     // BARD
+        (class = 7)  OR     // FIGHTER_MAGE
+        (class = 10) OR     // FIGHTER_MAGE_THIEF
+        (class = 13) OR     // MAGE_THIEF
+        (class = 19) BEGIN  // SORCERER
+        // Spellcraft
+        PATCH_IF (level >= 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 5 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 8) AND (level < 12) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 4 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level >= 4) AND (level < 8) BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 3 parameter2 = 90 timing = 9 END
+        END ELSE PATCH_IF (level > 1) AND (level < 4)  BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 2 parameter2 = 90 timing = 9 END
+        END ELSE BEGIN
+            LPF ADD_CRE_EFFECT INT_VAR opcode = 233 parameter1 = 1 parameter2 = 90 timing = 9 END
+        END
+    END
+END
+BUT_ONLY

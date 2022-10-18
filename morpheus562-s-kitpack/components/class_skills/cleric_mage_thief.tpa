@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Sets Wizard Slayer Skills                                             //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Add Required Files to Override                                        //
+///////////////////////////////////////////////////////////////////////////
+ACTION_IF !FILE_EXISTS_IN_GAME ~M_B3THI1.lua~ THEN BEGIN
+  COPY ~skills-and-abilities/lua/M_B3THI1.lua~  ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
+END
+
+COPY ~skills-and-abilities/lua/M_B3THI8.lua~   ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
+
+  // NEED TO UPDATE ALL OF THESE
+  ADD_KIT ~MO_ClericMageThief~
+    ~MO_ClericMageThief 0 0 0 0 0 0 0 0~ // clasweap.2da
+    ~MO_ClericMageThief 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //weapprof.2da
+    ~MO_ClericMageThief 0 9 0 9 9 0~ //abclasrq
+    ~MO_ClericMageThief 0 0 0 0 0 0~ // abclsmod
+    ~MO_ClericMageThief 0 0 0 0 0 0~ //abdcedsrq
+    ~MO_ClericMageThief 0 0 0 0 0 0~ //abdcscrq
+    ~MO_ClericMageThief 1 1 1 1 1 1 1 1 1~ // Alignment
+    ~MO_ClericMageThief 0 0 0 0 0 0~ // Dualclass
+    ~houserules/2da/moblank.2DA~ // CLAB
+    ~K_FMC_HE~ 
+    ~0x00004000 17~
+    ~MOCMT0~  // Need to create custom LU file for CMT 
+    ~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,20 STAF20~
+    SAY @9001
+    SAY @9002
+    SAY @9003
+
+  LAF fl#add_kit_ee 
+    STR_VAR 
+      kit_name = MO_ClericMageThief
+      hpclass = HPFMT 
+  END
+
+  LAF qd_multiclass
+  STR_VAR
+    kit_name = MO_ClericMageThief
+    kit_clab = CLABTH01 // This needs to change with custom one to reduce thac0 progression and apr gained from fighter levels
+    base_class = ~F~
+    mc_dir = ~%MOD_FOLDER%/2das~
+END
+
+///////////////////////////////////////////////////////////////////////////
+// Modify LUA File                                                       //
+///////////////////////////////////////////////////////////////////////////
+// Replace kit in LUA file to point to CMT
+
+///////////////////////////////////////////////////////////////////////////
+// Modify THIEFSKL.2da to Allow Cleric/Mage/Thief to Gain Skills         //
+///////////////////////////////////////////////////////////////////////////
+APPEND ~THIEFSKL.2da~ ~CLERIC_MAGE_THIEF 40 25~         // 40 Skill points at Level 1 then 25 skill points per level up

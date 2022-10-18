@@ -1,0 +1,276 @@
+// Skills and Abilities, American English
+// Proficiency range @7001 to @8000
+///////////////////////////////////////////////////////////////////////////
+// Groups                                                                //
+///////////////////////////////////////////////////////////////////////////
+@7001 = ~TWO-HANDED: This fighting style allows the character to use a two-handed melee weapon and receive special bonuses.
+
+Proficient (1 slot): The wielder gets a +1 bonus to damage rolls and a -2 bonus to Speed Factor when using a two-handed weapon.
+
+Specialized (2 slots): The wielder gets a +2 bonus to damage rolls, a -4 bonus to Speed Factor, and an extra 1/2 attack per round when using a two-handed weapon.
+
+NOTE: Magical two-handed weapons are more powerful than their single-handed counterparts. This counterbalances the fact that you can't use a second weapon or shield when using a two-handed weapon. The Holy Avenger and Vorpal Sword are examples of weapons that are two-handed.~
+
+@7002 = ~SWORD AND SHIELD: Anyone can pick up a shield and get its basic protection bonuses, but by spending slots on this fighting style, an adventurer can maximize the benefits received.
+
+Proficient (1 slot): The wielder gets a -1 bonus to AC and an additional -1 bonus to AC against missile weapons.
+
+Specialized (2 slots): The wielder gets a -2 bonus to AC, an additional -2 bonus to AC against missile weapons, and 10% damage reduction to all physical attacks.
+
+NOTE: Despite the name of this style, any one-handed melee weapon in combination with a shield will receive the aforementioned bonuses.~
+
+@7003 = ~SINGLE-WEAPON: This fighting style is for characters who do not wish to use a shield but want some bonus when using a one-handed melee weapon.
+
+Proficient (1 slot): The wielder gets a +1 bonus to damage rolls, -1 bonus to Thaco, -1 bonus to AC, and inflicts critical damage on an attack roll of 19 or 20.
+
+Specialized (2 slots): The wielder gets a +2 bonus to damage rolls, -2 bonus to Thaco, -2 bonus to AC, and inflicts critical damage on an attack roll of 18 to 20.~
+
+@7004 = ~TWO-WEAPON: This fighting style allows the character to use two melee weapons at the same time with fewer penalties. A character wielding two weapons without a slot in this fighting style would incur a -4 penalty to attack rolls with the main weapon, a -8 penalty with the off-hand weapon, and a -4 penalty to damage rolls for both weapons. 
+
+Proficient (1 slot): The wielder's penalties are reduced to -2, attack and damage rolls, with the main weapon and -6 attack roll and -4 damage roll with the off-hand weapon.
+
+Specialized (2 slots): The wielder's penalties are reduced to 0 attack roll with the main weapon, a -4 attack roll with the off-hand weapon, and a -2 penalty to damage rolls for both weapons.
+
+Master (3 slots): The wielder's penalties to attack and damage rolls are reduced to 0 with the main weapon and -2 with the off-hand weapon.~
+
+@7100 = ~Bow~ 
+@7101 = ~BOW:  This weapon class allows the character to use Long bows, Composite Long bows, and Short bows. Only Fighters, Rangers, and Paladins can use the Composite Long bow. Thieves can choose this category, but are restricted to Short Bows only. 
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7102 = ~Spiked Weapons~
+@7103 = ~SPIKED WEAPONS:  This weapon class allows the character to use Morning Stars and Flails.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7104 = ~Small Sword~
+@7105 = ~SMALL SWORD:  This weapon class allows the character to use Daggers and Short swords. A Mage or Druid can select this class, but they are restricted to Daggers only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7106 = ~Large Sword~
+@7107 = ~LARGE SWORD:  This weapon class allows the character to use Bastard swords, Two handed swords, and Long Swords.  The Thief is able to take this weapon class, but he is only allowed to use the Long Sword. 
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7108 = ~Axe~
+@7109 = ~AXE:  This weapon class allows the character to use Battle axes and Throwing axes.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7110 = ~Blunt Weapons~
+@7111 = ~BLUNT WEAPONS:  This weapon class allows the character to use Maces, Clubs, and Warhammers. Druids and thieves can choose this category, but are limited to the Club only. 
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7112 = ~Missile Weapons~
+@7113 = ~MISSILE WEAPONS: This weapon class allows the character to use Slings, Darts, and Crossbows. Mages and Druids can choose this proficiency but are restricted to Slings and Darts. Thieves can choose this proficiency but are restricted to Slings, Darts, and Light Crossbows. Clerics can choose this proficiency but are restricted to Slings alone.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7114 = ~Polearm~
+@7115 = ~POLEARM:  This weapon class allows the character to use Spears, Staffs, and Halberds.  Druids can choose this class, but are restricted to Spears and Staffs only. Mages can choose this category, but are limited to the Staff alone.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7116 = ~Heavy Armor~
+@7117 = ~HEAVY ARMOR:  This proficiency grants the knowledge to make effective use of Plate Mail and Full Plate armors. A character wearing heavy armor without a slot in this proficiency would incur a 10% loss in movement speed, -1 penalty to speed factor, and a -1 penalty to Thac0. All abilities are cumulative. 
+
+Heavy Armor Proficiency (1 slot): The character receives no penalties while wearing heavy armor.
+
+Heavy Armor Specialization (2 slots): The character receives a -1 bonus to AC vs. missile attacks while wearing heavy armor.
+
+Heavy Armor Optimization (3 slots): The character receives a -1 bonus to AC while wearing heavy armor.
+
+Greater Heavy Armor Optimization (4 slots): The character's bonus to AC increases to -2 while wearing heavy armor.
+
+Epic Heavy Armor Optimization (5 slots): The character receives a 10% damage reduction to all physical attacks while wearing heavy armor.~
+
+@7118 = ~Spellcraft~
+@7119 = ~SPELLCRAFT:  This proficiency grants additional abilities and benefits to arcane spellcasters. All abilities are cumulative.
+
+Courteous Magocracy (1 slot): Character gains a +10 bonus to Lore.
+
+Silent Spell (2 slots): The character gains permanent Vocalize.
+
+Practiced Spellcaster (3 slots): Caster level is increased by 1.
+
+Arcane Defense (4 slots): Character gains +10% Magic Resistance and a +2 bonus to save vs. spells.
+
+Quicken Spell (5 slots): The character decreases spellcasting time by 2.~
+
+@7120 = ~Divine~
+@7121 = ~DIVINE:  This proficiency grants additional abilities and benefits to all divine spellcasters. All abilities are cumulative.
+
+Divine Shield (1 slot): The character gains -1 bonus to AC.
+
+Divine Fortune (2 slots): The character gains a +2 bonus to all saving throws.
+
+Divine Agent (3 slots): The character becomes immune to hold and paralysis.
+
+Divine Armor (4 slots): The character receives a 5% damage reduction to all physical attacks.
+
+Divine Vigor (5 slots): The character receives a +0.5 bonus to APR.~
+
+@7122 = ~Conditioning~
+@7123 = ~CONDITIONING:  This proficiency epitomizes pushing ones body harder, faster, and further. All abilities are cumulative.
+
+Fortitude (1 slot): The character gains a +2 bonus to save vs. Paralysis / Poison / Death
+
+Dash (2 slots): The character is able to move 10% faster.
+
+Blind-Fight (3 slots): The character maintains the ability to fight well, and becomes immune to becoming blinded. 
+
+Tireless (4 slots): The character does not become fatigued to include after using rage or frenzy.
+
+Fast Healing (5 slots): The character regenerates 1 hit point per round. This will stack with other methods of regeneration.~
+
+@7124 = ~Spell Penetration~
+@7125 = ~SPELL PENETRATION: This proficiency allows a caster to bypass a portion of a target's magic resistance.
+
+Spell Penetration (1 slot): The wizard can bypass 10% of a target's magic resistance.
+
+Greater Spell Penetration (2 slots): The wizard can bypass 25% of a target's magic resistance.~
+
+@7126 = ~Pale Master~
+@7127 = ~PALE MASTER: This proficiency path allows one to master the deathless arts. With this proficiency, one draws on a font of special lore that provides a macabre power all its own.
+
+Darkvision (1 slot): The character gains the ability to see in the dark.
+
+Bone Skin (2 slots): The character's flesh becomes tough and cadaverous providing +2 bonus to AC. 
+
+Deathless Vigor (3 slots): The character gains a +2 bonus to save vs. Paralysis / Poison / Death
+
+Tough as Bone (4 slots): The character becomes immune to hold, paralysis, and stun effects.
+
+Deathless Mastery (5 slots): The character gains immunity to all forms of death magic.~
+
+@7128 = ~Archery Weapon Style~
+@7129 = ~ARCHERY:  This weapon style improves the character's use of ranged weaponry to include: Bows, Crossbows, Slings, and Darts.
+
+Marksman (1 slot): The character gains a +2 bonus to damage rolls.
+
+Rapid Shot/Reload (2 slots): The character gains an extra 1/2 attack per round when using ranged weapons.~
+
+@7130 = ~Swiftblade~
+@7131 = ~SWIFTBLADE: This proficiency allows one to combine arcane-assisted speed with melee skill to turn a first strike into a deadly assault. With this proficiency, one discovers unconventional ways to utilize the haste spell. All abilities are cumulative.
+
+Arcane Reflexes (1 slot): The character gains a -2 bonus to Speed Factor while under the effects of a haste spell.
+
+Swift Surge (2 slots): The character gains +1 bonus to Thac0 and AC while under the effects of a haste spell.
+
+Blurred Alacrity (3 slots): The character becomes blurred while under the effects of a haste spell.
+
+Greater Swift Surge (4 slots): The character gains an additional bonus to Thac0 and AC bringing it to +2 while under the effects of a haste spell.
+
+Evasive Celerity (5 slots): The character gains +10% magic resistance while under the effects of a haste spell.~
+
+@7132 = ~Power Striker Weapon Style~
+@7133 = ~POWER STRIKER: This proficiency allows a warrior to attack with more ferocious Power Attacks. 
+
+Enhanced Power Attack (1 slot): The character gains a +5 damage bonus (instead of +3) when using the Power Attack modal. When using the Improved Power Attack modal, the character gains a +10 damage bonus (instead of +6).
+
+Supreme Power Attack (2 slots): The character gains a +6 damage bonus (instead of +3) when using the Power Attack modal. When using the Improved Power Attack modal, the character gains a +12 damage bonus (instead of +6).
+
+NOTE: Even though other classes may have access to this weapon style, only Fighters will be able to use it to improve their Power Attack modal.~
+
+@7134 = ~Critical Striker Weapon Style~
+@7135 = ~CRITICAL STRIKER:  This weapon style makes the character's critical hits more damaging.
+
+Power Critical (1 slot): The character deals an additional +10 damage on critical hit with any weapon.
+
+Improved Critical (2 slots): The character increases their critical threat range by 2. For example, a longsword that normally threatens a critical on a roll of 19-20 would now threaten a critical on a roll of 17-20. 
+
+Overwhelming Critical (3 slots): The character deals an additional +20 damage on critical hit with any weapon.~
+
+@7136 = ~Exotic Sword~
+@7137 = ~EXOTIC SWORD:  This weapon class allows the character to use Katanas, Ninjatos, Wakizashis, and Scimitars. The Druid is able to select this class, but is limited to Scimitars alone.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~
+
+@7138 = ~Spell Penetration~
+@7139 = ~Greater Spell Penetration~
+
+@7140 = ~Armor Penetration~
+@7141 = ~ARMOR PENETRATION: This proficiency allows a character to bypass a portion of a target's physical damage resistance.
+
+Armor Penetration (1 slot): The character can bypass 5% of a target's physical damage resistance.
+
+Greater Armor Penetration (2 slots): The character can bypass 10% of a target's physical damage resistance.~
+
+@7142 = ~Armor Penetration~
+@7143 = ~Greater Armor Penetration~
+
+@8000 = ~[LAST TRA HERE]~

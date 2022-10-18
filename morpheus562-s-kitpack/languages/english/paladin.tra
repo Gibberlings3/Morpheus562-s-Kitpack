@@ -1,0 +1,49 @@
+// Skills and Abilities, American English
+//Inquisitor range @6001 to @6500
+///////////////////////////////////////////////////////////////////////////
+// Groups                                                                //
+///////////////////////////////////////////////////////////////////////////
+@6001 = ~May cast True Sight once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.~
+@6002 = ~Detect Illusion is set to 100.~
+
+@6003 = ~Sanctify Strikes~
+@6004 = ~Sanctify Strikes
+You deal 2 extra points of magic damage with your attacks.~
+
+@6005 = ~Hit Die: d10~
+@6006 = ~Hit Die: d10
+
+- 1st Level: May use the Smite ability once per day.
+
+SMITE: This ability allows the paladin to make a special attack against any enemy. Paladins apply their Charisma modifier to their attack roll and damage roll for one round. Smite may be used once per day at 1st level. At 5th level and every five levels after that, the paladin gains an additional use per day.
+
+- 3rd Level: Gains the Aura of Courage passive ability.
+
+AURA OF COURAGE: This ability grants protection against all forms of panic and boosts morale for the character and all allies within 15 feet.~
+
+@6007 = ~level: May use the Aura of Despair ability once per day.
+
+AURA OF DESPAIR: When this ability is activated, all enemies within 15 feet of the Blackguard suffer ill effects based on the Blackguard's level:
+  3rd level - All enemies suffer a -1 penalty to hit and damage rolls and a -2 penalty to Armor Class for 1 turn.
+  6th level - All enemies suffer a -2 penalty to hit and damage rolls and a -2 penalty to Armor Class for 1 turn.
+  15th level - All enemies suffer a -4 penalty to hit and damage rolls and a -4 penalty to Armor Class for 1 turn; enemies with 8 or fewer Hit Dice are panicked as well.
+  20th Level - All enemies suffer a -4 penalty to hit and damage rolls and a -4 penalty to Armor Class for 1 turn; enemies with 18 or fewer Hit Dice are panicked as well.~
+@6008 = ~Level: Gains the Aura of Despair passive ability instead of Aura of Courage.
+
+AURA OF DESPAIR: The blackguard radiates a malign aura that causes all enemies within 15 feet of <PRO_HIMHER> to suffer a -2 penalty on all saving throws.~
+
+@6009 = ~Smite~
+@6010 = ~Smite
+This ability allows the paladin to make a special attack against any enemy. Paladins apply their Charisma modifier to their attack roll and damage roll for one round.~
+
+@6011 = ~– May not cast priest spells.~
+@6012 = ~~
+
+@6013 = ~20% resistance to fire and acid.~
+@6014 = ~20% resistance to fire and acid.
+
+- 3rd Level: Gains the Aura of Protection passive ability instead of the Aura of Courage.
+
+AURA OF PROTECTION: This ability grants -2 bonus to AC and +5% physical damage resistance for the character and all allies within 15 feet.~
+
+@6500 = ~[LAST TRA HERE]~

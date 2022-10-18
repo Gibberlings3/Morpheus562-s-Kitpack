@@ -1,0 +1,6 @@
+*.7z
+*.rar
+*.zip
+*.tar.gz
+*.exe
+!iconv.exe

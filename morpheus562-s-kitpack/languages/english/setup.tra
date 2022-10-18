@@ -1,0 +1,97 @@
+// Skills and Abilities, American English
+//range @1 to @3500
+///////////////////////////////////////////////////////////////////////////
+// Groups                                                                //
+///////////////////////////////////////////////////////////////////////////
+@1 = ~Class Updates~
+@2 = ~Skills and Pseudo-Skills~
+@3 = ~Proficiencies~
+@4 = ~More Meaningful Stat Bonuses~
+@5 = ~Improved Turning/Wild Sense~
+@6 = ~New Kits~
+
+///////////////////////////////////////////////////////////////////////////
+// Components/Sub-Components                                             //
+///////////////////////////////////////////////////////////////////////////
+// Group 1 (Update 100-199)
+@10 = ~Update Skills for Bards~ 				
+@11 = ~Add Lockpicking~ 					
+@12 = ~Add Lockpicking and Find/Disarm Traps~	
+@20 = ~Update Skills for Monks~	
+
+@30 = ~1e Barbarians (EEex Strongly Recommended): Adds Set Natural Snares, Hide in Natural Settings, Detect Illusions, and Removes Rage~
+@31 = ~1e Barbarians (EEex Strongly Recommended): Adds Set Natural Snares, Hide in Natural Settings, Detect Illusions, and Keeps Rage~
+@32 = ~Add Set Natural Snares~
+@33 = ~Add Hide in Natural Settings (EEex Strongly Recommended)~			
+@34 = ~Add Detect Illusions as a thief (EEex Strongly Recommended)~
+@35 = ~Add Feral Senses (detect illusions as a spell like ability during rage).~
+@36 = ~Add Feral Senses (detect illusions as a thief-like ability during rage).~
+@37 = ~Add Feral Senses (detect illusions as an improved thief-like ability during rage).~
+
+@39 = ~Remove Rage~
+
+@40 = ~Update Skills for Rangers~
+@50 = ~Add Detect Illusion for Wizard Slayer~
+@60 = ~Replace Inquisitor True Seeing for Detect Illusion Skill~
+@70 = ~Add New Monk Abilities~
+@80 = ~Add New Paladin Abilities~
+@90 = ~Add New HLAs for ALL Classes and Kits~
+@91 = ~Update Existing HLAs in Addition to Adding New HLAs~
+@92 = ~ONLY Add New HLAs~
+@100 = ~Allow Inquisitor Kit to Cast Divine Spells~
+@110 = ~Add Cleric/Mage/Thief Class~
+@120 = ~Turn Undead Overhaul~
+@130 = ~Allow Blade Kit to Specialize in Melee Weapons~
+@140 = ~Allow Fighter Multiclasses to Achieve Higher than Specialized (2 pips) in Weapons Proficiencies~
+@141 = ~Allow Fighter Multiclasses to Achieve Master (3 pips) in Weapon Proficiencies~
+@142 = ~Allow Fighter Multiclasses to Achieve High Master (4 pips) in Weapon Proficiencies~
+@143 = ~Allow Fighter Multiclasses to Achieve Grand Master (5 pips) in Weapon Proficiencies~
+@150 = ~Add New Fighter Abilities~
+
+// Group 2 (Update 200-299)
+@200 = ~Add Spell Scroll Crafting~
+@201 = ~Add Spell Scroll Crafting (add missing priest scrolls)~
+
+// Group 3 (Update 300-399)
+@300 = ~Update Weapon Fighting Styles~
+@310 = ~Overhaul Proficiency System - Add New Proficiencies and Weapon Styles~
+@311 = ~Vanilla Proficiency Progression~
+@312 = ~Accelerated Proficiency Progression~
+@313 = ~NWN2 Style Proficiency Progression~
+
+// Group 4 (Update 400-499)
+@400 = ~2H Weapon Additional Strength Bonus~
+
+// Group 5 (Update 500-599)
+
+// Group 6 (Update 600-699)
+@600 = ~Install Rashemaar Berserker Kit for Rangers~
+@601 = ~Assign kit to Minsc~
+@602 = ~Do NOT assign kit to Minsc~
+@610 = ~Install Psi Warrior Kit for Fighters~
+@620 = ~Install Eldritch Scion Kit for Sorcerers~
+@630 = ~Install Shield Breaker Kit for Fighters~
+@640 = ~Install Battle Master Kit for Fighters~
+@650 = ~Install Stormlord Multiclass Kit for Fighter/Druids~
+
+///////////////////////////////////////////////////////////////////////////
+// Requirements                                                          //
+///////////////////////////////////////////////////////////////////////////
+@3000 = ~Component requires BG: EE, BGII: EE, or EET~
+@3001 = ~DLCMerger is needed before modding SoD games~
+@3002 = ~EEex is required for installation~
+@3003 = ~Barbarian Rage is required for Feral Senses~
+@3004 = ~Component requires BG: EE, BGII: EE, IWDEE, or EET~
+@3005 = ~Barbarian Rage has been removed~
+@3006 = ~Component requires BGII: EE or EET~
+@3007 = ~Priest scrolls have already been added!~
+
+///////////////////////////////////////////////////////////////////////////
+// Misc                                                          //
+///////////////////////////////////////////////////////////////////////////
+
+@3401 = ~1e Barbarian 'package'~
+@3402 = ~Add Feral Senses~
+@3403 = ~Scroll Crafting~
+
+@3500 = ~[LAST TRA HERE]~

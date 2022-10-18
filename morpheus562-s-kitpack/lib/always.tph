@@ -1,0 +1,85 @@
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Things to do only once - Borrowed and modified from SCS               //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+ACTION_IF !VARIABLE_IS_SET ~initialise~ BEGIN
+
+  ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @3001 END // Modmerge check
+
+  CLEAR_EVERYTHING            // occasionally, e.g. after installing IWD spells, we call this again. Make sure we get a fresh start.
+  //SILENT
+  OUTER_SET initialise=1
+  OUTER_SET monk_skills=0
+
+///////////////////////////////////////////////////////////////////////////
+// General variables, macros and functions                               //
+///////////////////////////////////////////////////////////////////////////
+   INCLUDE ~skills-and-abilities/craft_settings.ini~
+   INCLUDE ~skills-and-abilities/lib/hla_actions.tpa~
+   INCLUDE ~skills-and-abilities/lib/more_hla.tpa~
+   INCLUDE ~skills-and-abilities/lib/lib.tpa~
+   INCLUDE ~skills-and-abilities/lib/item_in_store.tpa~
+   INCLUDE ~skills-and-abilities/lib/effect_return.tpa~
+   INCLUDE ~skills-and-abilities/lib/functions.tpa~
+   INCLUDE ~skills-and-abilities/lib/splprot_kits.tpa~
+   INCLUDE ~skills-and-abilities/lib/qd_multiclass.tpa~
+   INCLUDE ~skills-and-abilities/lib/fl#add_kit_ee.tpa~
+   OUTER_SPRINT ~folder~ ~skills-and-abilities~
+   //INCLUDE ~skills-and-abilities/lib/splprot_attributes.tpa~ // Already present in splprot.2da
+   //SILENT
+
+///////////////////////////////////////////////////////////////////////////
+// Detect third-party mods                                               //
+///////////////////////////////////////////////////////////////////////////
+
+   // Tweaks Anthology Loosen Cleric Restriction
+   ACTION_IF MOD_IS_INSTALLED ~setup-cdtweaks.tp2~ ~2420~ BEGIN
+      OUTER_SET tweaks_cleric_prof=1
+   END ELSE BEGIN
+      OUTER_SET tweaks_cleric_prof=0
+   END
+
+   // Tweaks Anthology Loosen Druid Restriction
+   ACTION_IF MOD_IS_INSTALLED ~setup-cdtweaks.tp2~ ~2430~ BEGIN
+      OUTER_SET tweaks_druid_prof=1
+   END ELSE BEGIN
+      OUTER_SET tweaks_druid_prof=0
+   END
+
+   // Item Revisions Clerics ONLY      
+   ACTION_IF MOD_IS_INSTALLED "item_rev.tp2" 1090 BEGIN
+      OUTER_SET ir_cleric=1
+   END ELSE BEGIN
+      OUTER_SET ir_cleric=0
+   END
+
+   // Item Revisions Druids ONLY      
+   ACTION_IF MOD_IS_INSTALLED "item_rev.tp2" 1094 BEGIN
+      OUTER_SET ir_druid=1
+   END ELSE BEGIN
+      OUTER_SET ir_druid=0
+   END
+
+   // Item Revisions Clerics & Druids      
+   ACTION_IF MOD_IS_INSTALLED "item_rev.tp2" 1091 BEGIN
+      OUTER_SET ir_cleric_druid=1
+   END ELSE BEGIN
+      OUTER_SET ir_cleric_druid=0
+   END
+
+   // Artisan's Kitpack
+   ACTION_IF MOD_IS_INSTALLED ~ArtisansKitpack.tp2~ ~1100~ BEGIN
+      OUTER_SET fighter_overhaul=1
+   END ELSE BEGIN
+      OUTER_SET fighter_overhaul=0
+   END
+
+   // Detect EEex
+   ACTION_IF FILE_EXISTS_IN_GAME ~EEex_Actionbar.lua~ BEGIN
+      OUTER_SET eeex_present=1
+   END ELSE BEGIN
+      OUTER_SET eeex_present=0
+   END
+
+END
