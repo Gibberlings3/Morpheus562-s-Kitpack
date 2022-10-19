@@ -50,7 +50,7 @@ ACTION_IF minsc_rash THEN BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%creature%.cre~ THEN BEGIN
       COPY_EXISTING ~%creature%.cre~ ~override~
         WRITE_SHORT 0x246 0x4000 + ~%MO_RASHEMAAR%~
-        REMOVE_KNOWN_SPELLS ~spin117~
+        REMOVE_KNOWN_SPELL ~spin117~
     END
   END
 END
