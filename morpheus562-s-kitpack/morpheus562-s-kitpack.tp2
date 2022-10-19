@@ -135,7 +135,7 @@ INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
 ////////////////////////////////////////////////////
 // IWDEE ONLY
 
-BEGIN @1100 DESIGNATED 1100 SUBCOMPONENT @1100 GROUP @11 LABEL Morpheus562sKitpackStormlord4
+BEGIN @1100 DESIGNATED 1100 GROUP @11 LABEL Morpheus562sKitpackStormlord4
 REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
 
 OUTER_SET jaheira_storm_spear=0 // Assign kit to Jaheira (NOT Spear Focus)
