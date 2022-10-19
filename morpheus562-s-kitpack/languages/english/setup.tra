@@ -83,6 +83,9 @@
 ///////////////////////////////////////////////////////////////////////////
 // Group 11 (Update 1100-1199)
 @1100 = ~Install Stormlord Multiclass Kit for Fighter/Druids~
+@1101 = ~Assign kit to Jaheira (Spear Focus)~
+@1102 = ~Assign kit to Jaheira (Throwing Axe Focus)~
+@1103 = ~Do NOT assign kit to Jaheira~
 
 ///////////////////////////////////////////////////////////////////////////
 // Requirements                                                          //

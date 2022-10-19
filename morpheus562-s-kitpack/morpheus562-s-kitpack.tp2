@@ -107,8 +107,37 @@ INCLUDE ~morpheus562-s-kitpack/components/sorcerer/eldritch_scion.tpa~
 ///////////////////////////////////////////////////////////////////////////
 // Stormlord                                                             //
 ///////////////////////////////////////////////////////////////////////////
-BEGIN @1100 DESIGNATED 1100 GROUP @11 LABEL Morpheus562sKitpackStormlord
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+BEGIN @1101 DESIGNATED 1101 SUBCOMPONENT @1100 GROUP @11 LABEL Morpheus562sKitpackStormlord1
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
+OUTER_SET jaheira_storm_spear=1 // Assign kit to Jaheira (Spear Focus)
+OUTER_SET jaheira_storm_axe=0 // Assign kit to Jaheira (NOT Throwing Axe Focus)
 INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
 
+////////////////////////////////////////////////////
+
+BEGIN @1102 DESIGNATED 1102 SUBCOMPONENT @1100 GROUP @11 LABEL Morpheus562sKitpackStormlord2
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
+
+OUTER_SET jaheira_storm_spear=0 // Assign kit to Jaheira (NOT Spear Focus)
+OUTER_SET jaheira_storm_axe=1 // Assign kit to Jaheira (Throwing Axe Focus)
+INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
+
+////////////////////////////////////////////////////
+
+BEGIN @1103 DESIGNATED 1103 SUBCOMPONENT @1100 GROUP @11 LABEL Morpheus562sKitpackStormlord3
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
+
+OUTER_SET jaheira_storm_spear=0 // Assign kit to Jaheira (NOT Spear Focus)
+OUTER_SET jaheira_storm_axe=0 // Assign kit to Jaheira (NOT Throwing Axe Focus)
+INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
+
+////////////////////////////////////////////////////
+// IWDEE ONLY
+
+BEGIN @1100 DESIGNATED 1100 SUBCOMPONENT @1100 GROUP @11 LABEL Morpheus562sKitpackStormlord4
+REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
+
+OUTER_SET jaheira_storm_spear=0 // Assign kit to Jaheira (NOT Spear Focus)
+OUTER_SET jaheira_storm_axe=0 // Assign kit to Jaheira (NOT Throwing Axe Focus)
+INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
