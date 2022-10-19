@@ -28,24 +28,14 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_ASCII 0x22 appearance (2)
 
   // Heavy Armor Restriction
-  //PATCH_IF (type = 2) AND (appearance = 16692) BEGIN
   PATCH_IF (type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) BEGIN 
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %rashemaar_code% parameter2 = 9 power = 0 timing = 2 END
   END
   BUT_ONLY
 
-COPY ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~         ~override~ // kit
-//COPY ~morpheus562-s-kitpack/spl/rashemaar/morash.spl~ ~override~ // title change
+COPY ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~ ~override~ // kit
 
 ACTION_IF minsc_rash THEN BEGIN
-  /*
-  ACTION_FOR_EACH script IN minsc mins25 _minsc bgminsc minsc_ bdminsc BEGIN
-    ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ THEN BEGIN 
-      EXTEND_BOTTOM ~%script%.bcs~  ~morpheus562-s-kitpack/baf/rashemaar.baf~
-    END
-  END
-  */
-
   ACTION_FOR_EACH creature IN minsc minsc10 minsc12 minsc14 minsc2 minsc4 minsc6 minsc7 minsc7_ minsc8 minsc9 ohb1mnsc ttminsc BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%creature%.cre~ THEN BEGIN
       COPY_EXISTING ~%creature%.cre~ ~override~
