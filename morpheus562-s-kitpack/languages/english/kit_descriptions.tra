@@ -245,7 +245,7 @@ ELEGANT STRIKE: The Champion of the Wild becomes able to place attacks where the
 
 – 4th Level: May use the Wrath of the Wild ability once per day and gains an additional use every 4 levels thereafter.
 
-WRATH OF THE WILD: The Champion of the Wild gains the ability to briefly channel the divine power of a wild diety, enveloping <PRO_HISHER> weapons in a veil of incandescent light. The character gains a +2 bonus to Thac0 and deals an extra 2d6 points of melee damage with each melee attacks <PRO_HESHE> makes for a number of rounds equal to 4 + <PRO_HISHER> charisma modifier.
+WRATH OF THE WILD: The Champion of the Wild gains the ability to briefly channel the divine power of a wild diety, enveloping <PRO_HISHER> weapons in a veil of incandescent light. The character gains a +2 bonus to Thac0 and deals an extra 2d6 points of melee damage with each melee attack for 10 seconds.
 
 – 6th Level: Gains the Superior Defense passive ability.
 
@@ -256,3 +256,7 @@ Disadvantages:
 – May not wear armor heavier than studded leather.
 – May only assign proficiency points in one-handed swords.
 – May not charm animals.~
+
+@5545 = ~Wrath of the Wild~
+@5546 = ~Wrath of the Wild
+The Champion of the Wild gains the ability to briefly channel the divine power of a wild diety, enveloping <PRO_HISHER> weapons in a veil of incandescent light. The character gains a +2 bonus to Thac0 and deals an extra 2d6 points of melee damage with each melee attack for 10 seconds.~
