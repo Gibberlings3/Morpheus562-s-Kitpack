@@ -221,3 +221,38 @@ NOTE: Stormlords may take the axe proficiency but will only be able to use throw
 The Stormlord adds 1d8 Electricity damage to their weapon for 2 turns (if they are wielding a Stormlord weapon: Spear, Throwing Axe, or Dart).~
 
 @5541 = ~The relentless assault state has ended and you are now winded.~
+
+@5542 = ~champion of the wild~
+@5543 = ~Champion of the Wild~
+@5544 = ~CHAMPION OF THE WILD: Champions of the Wild embody discipline and skill and relies on quickness, agility, and an almost scholarly study of the most difficult and advanced techniques of swordplay instead of brute power. In order to become a Champion of the Wild, an initiate must excel in swordplay and exhibit patience, grace, and compassion. To take joy only in feat of arms is to live a crude and diminished life. There is more to life than fighting well, and the true champion knows this.
+
+Advantages:
+– May use Lay On Hands ability once per day to heal a target for 2 Hit Points per level of the Champion of the Wild.
+
+– 2nd Level: Gains the Elegant Strike passive ability. 
+
+ELEGANT STRIKE: The Champion of the Wild becomes able to place attacks where they deal greater damage. The character applies <PRO_HISHER> Dexterity bonus as a bonus on damage rolls (in addition to any Strength bonus <PRO_HESHE> may have). Elegant Strike gains the following damage bonuses:
+  16 Dexterity: +1 bonus to melee damage
+  17 Dexterity: +2 bonus to melee damage
+  18 Dexterity: +2 bonus to melee damage
+  19 Dexterity: +3 bonus to melee damage
+  20 Dexterity: +3 bonus to melee damage
+  21 Dexterity: +4 bonus to melee damage
+  22 Dexterity: +4 bonus to melee damage
+  23 Dexterity: +4 bonus to melee damage
+  24 Dexterity: +5 bonus to melee damage
+  25 Dexterity: +6 bonus to melee damage
+
+– 4th Level: May use the Wrath of the Wild ability once per day and gains an additional use every 4 levels thereafter.
+
+WRATH OF THE WILD: The Champion of the Wild gains the ability to briefly channel the divine power of a wild diety, enveloping <PRO_HISHER> weapons in a veil of incandescent light. The character gains a +2 bonus to Thac0 and deals an extra 2d6 points of melee damage with each melee attacks <PRO_HESHE> makes for a number of rounds equal to 4 + <PRO_HISHER> charisma modifier.
+
+– 6th Level: Gains the Superior Defense passive ability.
+
+SUPERIOR DEFENSE: The Champion of the Wild learns special techniques for making the best use of <PRO_HISHER> natural agility even while wearing restrictive armor. The character gains a +1 AC bonus at 6th level. At 9th level the bonus improves to +2 and at 12th level it increases to +3.
+
+Disadvantages:
+– Receives a -1 max strength penalty.
+– May not wear armor heavier than studded leather.
+– May only assign proficiency points in one-handed swords.
+– May not charm animals.~

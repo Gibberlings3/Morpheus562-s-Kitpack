@@ -81,6 +81,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   END
   BUT_ONLY
 
+// Jaheira can become a Stormlord
 ACTION_IF jaheira_storm_spear THEN BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~jaheir.cre~ THEN BEGIN
     COPY_EXISTING ~jaheir.cre~ ~override~

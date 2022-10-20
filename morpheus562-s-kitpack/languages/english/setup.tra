@@ -28,7 +28,8 @@
 // Group 2 (Update 200-299)
 @200 = ~Install Rashemaar Berserker Kit~ 				
 @201 = ~Assign kit to Minsc~ 					
-@202 = ~Do NOT assign kit to Minsc~	
+@202 = ~Do NOT assign kit to Minsc~
+@210 = ~Install Champion of the Wild Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Paladin                                                               //

@@ -1,22 +1,22 @@
 // Champion of the Wild Kit 
 
 ADD_KIT ~MO_CHAMPIONWILD~
-  ~MO_CHAMPIONWILD 0 0 0 0 0 0 0 0~
-  ~MO_CHAMPIONWILD 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_CHAMPIONWILD 1 1 1 1 1 1 1 1~
+  ~MO_CHAMPIONWILD 0 0 0 0 0 0 0 0 2 2 2 0 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~MO_CHAMPIONWILD 0 0 12 0 0 0~
-  ~MO_CHAMPIONWILD 0 0 0 0 0 0~
+  ~MO_CHAMPIONWILD -1 0 0 0 0 0~
   ~MO_CHAMPIONWILD 0 0 17 0 0 0~
   ~MO_CHAMPIONWILD 0 0 15 0 0 0~
   ~MO_CHAMPIONWILD 1 0 0 1 0 0 1 0 0~
-  ~MO_CHAMPIONWILD 0 1 0 0 0 0~
-  ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~
-  ~K_R_H~
+  ~MO_CHAMPIONWILD 0 0 0 0 0 0~
+  ~morpheus562-s-kitpack/2da/mo_chw01.2DA~
+  ~K_R_H K_R_E K_R_HE~
   ~0x00004000 12~
   ~Ra0~
   ~LEAT14 * HELM07 BAG24 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW18 SW1H39 STAF08~
-  SAY @5501
-  SAY @5502
-  SAY @5503
+  SAY @5542
+  SAY @5543
+  SAY @5544
 
 LAF fl#add_kit_ee STR_VAR kit_name = MO_CHAMPIONWILD END
 
@@ -27,11 +27,10 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT 0x1c type
   READ_ASCII 0x22 appearance (2)
 
-  // Heavy Armor Restriction
-  //PATCH_IF (type = 2) AND (appearance = 16692) BEGIN
+  // Armor Restriction
   PATCH_IF (type = 2) AND ((~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) OR (~%appearance%~ STRING_COMPARE_CASE ~3a~ = 0)) BEGIN 
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %championwild_code% parameter2 = 9 power = 0 timing = 2 END
   END
   BUT_ONLY
 
-COPY ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~            ~override~ // kit
+COPY ~morpheus562-s-kitpack/2da/mo_chw01.2DA~ ~override~ // kit
