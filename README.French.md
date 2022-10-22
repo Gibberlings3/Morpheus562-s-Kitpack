@@ -171,16 +171,23 @@ Avantages :
 – 2ème niveau : Gagne la capacité passive « Finesse ».
 
 FINESSE : Le Champion de la nature devient capable de porter des attaques qui infligent des dégâts considérables toute en finesse. Le personnage applique un modificateur lié à la Dextérité pour améliorer son jet de dégâts (en plus des potentiels bonus lié à la Force). Les bonus sont les suivants :
-  16 en Dextérité : Bonus de 1 point de dégâts avec une arme de mêlée
-  17 en Dextérité : Bonus de 2 point de dégâts avec une arme de mêlée
-  18 en Dextérité : Bonus de 2 point de dégâts avec une arme de mêlée
-  19 en Dextérité : Bonus de 3 point de dégâts avec une arme de mêlée
-  20 en Dextérité : Bonus de 3 point de dégâts avec une arme de mêlée
-  21 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
-  22 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
-  23 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
-  24 en Dextérité : Bonus de 5 point de dégâts avec une arme de mêlée
-  25 en Dextérité : Bonus de 6 point de dégâts avec une arme de mêlée
+<details>
+  <summary>Détails des dégâts</summary>
+  
+```	
+	16 en Dextérité : Bonus de 1 point de dégâts avec une arme de mêlée
+	17 en Dextérité : Bonus de 2 point de dégâts avec une arme de mêlée
+	18 en Dextérité : Bonus de 2 point de dégâts avec une arme de mêlée
+	19 en Dextérité : Bonus de 3 point de dégâts avec une arme de mêlée
+	20 en Dextérité : Bonus de 3 point de dégâts avec une arme de mêlée
+	21 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
+	22 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
+	23 en Dextérité : Bonus de 4 point de dégâts avec une arme de mêlée
+	24 en Dextérité : Bonus de 5 point de dégâts avec une arme de mêlée
+	25 en Dextérité : Bonus de 6 point de dégâts avec une arme de mêlée
+  ```
+
+</details>
 
 – 4ème niveau : Peut utiliser la capacité « Fureur sauvage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
