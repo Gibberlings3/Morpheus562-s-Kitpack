@@ -42,6 +42,14 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 INCLUDE ~morpheus562-s-kitpack/components/fighter/battle_master.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
+// Dragoon                                                               //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @130 DESIGNATED 130 GROUP @1 LABEL Morpheus562sKitpackDragoon
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/fighter/dragoon.tpa~
+
+///////////////////////////////////////////////////////////////////////////
 // Psi Warrior                                                           //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @110 DESIGNATED 110 GROUP @1 LABEL Morpheus562sKitpackPsiWarrior

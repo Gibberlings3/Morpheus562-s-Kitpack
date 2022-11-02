@@ -1,0 +1,35 @@
+// Dragoon Kit 
+
+ADD_KIT ~MO_DRAGOON~
+  ~MO_DRAGOON 1 1 1 1 1 1 1 1~
+  ~MO_DRAGOON 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 5 5 1 1 5 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_DRAGOON 9 0 0 0 0 0~ // Minimum Ability
+  ~MO_DRAGOON 0 0 0 0 0 0~ // Kit Ability Modifiers
+  ~MO_DRAGOON 0 0 17 0 0 0~ // Requirement to Dual Class (to)
+  ~MO_DRAGOON 0 0 15 0 0 0~ // Requirements to Dual Class (from)
+  ~MO_DRAGOON 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~MO_DRAGOON 0 0 0 0 0 0~ // Dual Class Options
+  ~morpheus562-s-kitpack/2da/mo_dra01.2DA~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @5529
+  SAY @5530
+  SAY @5531
+
+LAF fl#add_kit_ee STR_VAR kit_name = MO_DRAGOON END
+
+OUTER_SET dragoon_code = (0x4000 + %MO_DRAGOON%)
+
+COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~ ~override~ // Polearm Master
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1a.eff~ ~override~ // Knockback
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1b.eff~ ~override~ // +1 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1c.eff~ ~override~ // +1d4 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1d.eff~ ~override~ // +1d6 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1e.eff~ ~override~ // +1d8 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1f.eff~ ~override~ // +2d4 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1g.eff~ ~override~ // +1d10 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1h.eff~ ~override~ // +2d6 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra1i.eff~ ~override~ // +1d20 damage

@@ -20,7 +20,8 @@
 // Group 1 (Update 100-199)
 @100 = ~Install Battle Master Kit~ 				
 @110 = ~Install Psi Warrior Kit~ 					
-@120 = ~Install Shield Breaker Kit~	
+@120 = ~Install Shield Breaker Kit~
+@130 = ~Install Dragoon Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
