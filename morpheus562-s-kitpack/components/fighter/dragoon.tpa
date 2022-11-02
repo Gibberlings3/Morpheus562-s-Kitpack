@@ -14,9 +14,9 @@ ADD_KIT ~MO_DRAGOON~
   ~0x00004000 2~
   ~Fi0~
   ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
-  SAY @5529
-  SAY @5530
-  SAY @5531
+  SAY @5547
+  SAY @5548
+  SAY @5549
 
 LAF fl#add_kit_ee STR_VAR kit_name = MO_DRAGOON END
 
@@ -24,12 +24,5 @@ OUTER_SET dragoon_code = (0x4000 + %MO_DRAGOON%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~ ~override~ // Polearm Master
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1a.eff~ ~override~ // Knockback
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1b.eff~ ~override~ // +1 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1c.eff~ ~override~ // +1d4 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1d.eff~ ~override~ // +1d6 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1e.eff~ ~override~ // +1d8 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1f.eff~ ~override~ // +2d4 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1g.eff~ ~override~ // +1d10 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1h.eff~ ~override~ // +2d6 damage
-COPY ~morpheus562-s-kitpack/eff/dragoon/modra1i.eff~ ~override~ // +1d20 damage
+COPY ~morpheus562-s-kitpack/eff/dragoon/modra01.eff~ ~override~ // Effect to cast actual spell
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra11.spl~ ~override~ // Spell that casts per level
