@@ -28,6 +28,12 @@ COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01.spl~  ~override~ // Relentl
   SAY UNIDENTIFIED_DESC @5533
 COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01a.spl~ ~override~ // Winded
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5541) STR_VAR END
+COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm02.spl~ ~override~ // Trip Attack
+  SAY NAME1 @5552
+  SAY UNIDENTIFIED_DESC @5553
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2a.eff~ ~override~ // Trip Attack - Level 1
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2b.eff~ ~override~ // Trip Attack - Level 14
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2c.eff~ ~override~ // Trip Attack - Level 20
 COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm03.spl~  ~override~ // Dash
   SAY NAME1 @5534
   SAY UNIDENTIFIED_DESC @5535

@@ -173,7 +173,11 @@ Advantages:
 
 CHARGE: The Battle Master is able to increase <PRO_HISHER> movement speed by +5 for 3 seconds.
 
-– 4th Level: May use the Relentless Assault ability once per day and gains an additional use every 4 levels thereafter.
+– 2nd Level: May use the Trip Attack ability once per day and gains an additional use every 4 levels thereafter.
+
+TRIP ATTACK: When you hit a creature with a weapon attack within the next round, they will fall to the ground for 3 seconds. A successful save vs. Death negates the fall. This increases to save vs. Death at -2 at level 14 and -4 at level 20 to resist being tripped.
+
+– 5th Level: May use the Relentless Assault ability once per day and gains an additional use every 5 levels thereafter.
 
 RELENTLESS ASSAULT: The Battle Master is able to unleash a flurry of blows and doubles the amount of attacks they can do for 5 rounds.
 
@@ -287,3 +291,7 @@ Disadvantages:
 @5550 = ~Sentinel~
 @5551 = ~Sentinel
 The Dragoon masters the techniques to root an enemy in their current location. For the next 10 seconds, each enemy struck will have their movement speed set to 0 for the next round. A successful save vs. Death with a -4 penalty negates being rooted to the spot.~
+
+@5552 = ~Trip Attack~
+@5553 = ~Trip Attack
+When you hit a creature with a weapon attack within the next round, they will fall to the ground for 3 seconds. A successful save vs. Death negates the fall. This increases to save vs. Death at -2 at level 14 and -4 at level 20 to resist being tripped.~
