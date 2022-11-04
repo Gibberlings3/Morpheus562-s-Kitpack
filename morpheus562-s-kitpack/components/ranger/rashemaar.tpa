@@ -2,7 +2,7 @@
 
 ADD_KIT ~MO_RASHEMAAR~
   ~MO_RASHEMAAR 1 1 1 1 1 1 1 1~
-  ~MO_RASHEMAAR 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_RASHEMAAR 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~MO_RASHEMAAR 0 0 12 0 0 0~
   ~MO_RASHEMAAR 0 0 0 0 0 0~
   ~MO_RASHEMAAR 0 0 17 0 0 0~
@@ -22,6 +22,7 @@ LAF fl#add_kit_ee STR_VAR kit_name = MO_RASHEMAAR END
 
 OUTER_SET rashemaar_code = (0x4000 + %MO_RASHEMAAR%)
 
+/*
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   SPRINT weapon_name ~%SOURCE_FILE%~
   READ_SHORT 0x1c type
@@ -32,8 +33,34 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %rashemaar_code% parameter2 = 9 power = 0 timing = 2 END
   END
   BUT_ONLY
+*/
 
-COPY ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~ ~override~ // kit
+COPY_EXISTING ~THIEFSCL.2DA~ ~override~
+  READ_2DA_ENTRIES_NOW thiefscl 3
+  COUNT_2DA_COLS cols
+  FOR (col = 0; col < cols - 1; ++col) BEGIN
+    READ_2DA_ENTRY_FORMER thiefscl 0 col column_name
+    PATCH_IF "%column_name%" STRING_EQUAL_CASE "MO_RASHEMAAR" BEGIN
+      SET_2DA_ENTRY 6 (col + 1) 1 ~0~   // MOVE_SILENTLY
+      SET_2DA_ENTRY 7 (col + 1) 1 ~0~   // HIDE_IN_SHADOWS
+      PRETTY_PRINT_2DA
+    END
+  END
+
+COPY_EXISTING ~CLASISKL.2DA~ ~override~
+  READ_2DA_ENTRIES_NOW clasiskl 3
+  COUNT_2DA_COLS cols
+  FOR (col = 0; col < cols - 1; ++col) BEGIN
+    READ_2DA_ENTRY_FORMER clasiskl 0 col column_name
+    PATCH_IF "%column_name%" STRING_EQUAL_CASE "MO_RASHEMAAR" BEGIN
+      SET_2DA_ENTRY 6 (col + 1) 1 ~0~   // MOVE_SILENTLY
+      SET_2DA_ENTRY 7 (col + 1) 1 ~0~   // HIDE_IN_SHADOWS
+      PRETTY_PRINT_2DA
+    END
+  END
+
+COPY ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~          ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/rashemaar/moras01.spl~ ~override~ // Disable Stealth
 
 ACTION_IF minsc_rash THEN BEGIN
   ACTION_FOR_EACH creature IN minsc minsc10 minsc12 minsc14 minsc2 minsc4 minsc6 minsc7 minsc7_ minsc8 minsc9 ohb1mnsc ttminsc BEGIN

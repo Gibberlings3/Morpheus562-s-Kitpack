@@ -11,7 +11,9 @@ Advantages:
 RAGE: The enraged state lasts for 1 turn. While enraged, a Berserker gains a bonus of +2 to <PRO_HISHER> attack and damage rolls as well as to <PRO_HISHER> Armor Class, and becomes immune to charm, confusion, fear, feeblemind, hold, imprisonment, level drain, maze, stun, and sleep. The Berserker also gains 15 temporary Hit Points which are taken away at the end of <PRO_HISHER> berserk spree, possibly knocking <PRO_HIMHER> unconscious.
 
 Disadvantages:
-– May not wear armor heavier than splint mail.~
+– Race restricted to human.
+– May not use stealth.
+– May not Specialize in ranged weapons.~
 
 @5504 = ~psi warrior~
 @5505 = ~Psi Warrior~
@@ -280,17 +282,18 @@ Advantages:
   Level 18-20: 2d6 piercing
   Level 21+: 1d20 piercing
 
-– 4th Level: May use the Sentinel ability once per day and gains an additional use every 4 levels thereafter.
+– 4th Level: May use the Hamstring ability once per day and gains an additional use every 4 levels thereafter.
 
-SENTINEL: The Dragoon masters the techniques to root an enemy to their current location. For the next 10 seconds, each enemy struck will have their movement speed set to 0 for the next round. A successful save vs. Death with a -4 penalty negates being rooted to the spot. 
+HAMSTRING: The Dragoon's attacks for the next 10 seconds will progressively slow the movement of any struck enemy by -2. The penalty from each hit is cumulative and will last for 2 rounds. A successful save vs. Death with a -4 penalty negates the penalty to movement speed. 
 
 Disadvantages:
 – May not dual class.
-– May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.~
+– May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
+– I NEED MORE HERE~
 
-@5550 = ~Sentinel~
-@5551 = ~Sentinel
-The Dragoon masters the techniques to root an enemy in their current location. For the next 10 seconds, each enemy struck will have their movement speed set to 0 for the next round. A successful save vs. Death with a -4 penalty negates being rooted to the spot.~
+@5550 = ~Hamstring~
+@5551 = ~Hamstring
+The Dragoon's attacks for the next 10 seconds will progressively slow the movement of any struck enemy by -2. The penalty from each hit is cumulative and will last for 2 rounds. A successful save vs. Death with a -4 penalty negates the penalty to movement speed. ~
 
 @5552 = ~Trip Attack~
 @5553 = ~Trip Attack
