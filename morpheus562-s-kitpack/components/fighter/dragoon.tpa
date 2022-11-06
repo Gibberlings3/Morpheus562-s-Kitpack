@@ -26,10 +26,8 @@ COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~ ~override~ // Polearm Master
 COPY ~morpheus562-s-kitpack/eff/dragoon/modra01.eff~ ~override~ // Effect to cast actual spell
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra11.spl~ ~override~ // Spell that casts per level
-/*
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra02.spl~ ~override~ // Hamstring
   SAY NAME1 @5550
   SAY UNIDENTIFIED_DESC @5551
 COPY ~morpheus562-s-kitpack/eff/dragoon/modra02.eff~ ~override~ // Hamstring
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra22.spl~ ~override~ // Spell that casts Hamstring
-*/
