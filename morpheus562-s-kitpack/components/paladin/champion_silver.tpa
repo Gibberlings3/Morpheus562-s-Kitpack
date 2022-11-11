@@ -50,4 +50,5 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   END
   BUT_ONLY
 
-COPY ~morpheus562-s-kitpack/2da/mo_chs01.2DA~ ~override~ // kit
+COPY ~morpheus562-s-kitpack/2da/mo_chs01.2DA~                ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs01.spl~ ~override~ // Blessing of the Champion
