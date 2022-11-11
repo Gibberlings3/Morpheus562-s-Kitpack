@@ -38,6 +38,30 @@ INDOMITABLE: The Battle Master gains +1 bonus to all saving throws. This increas
 Disadvantages:
 - May only attain Grandmaster in two-handed weapons while all other weapons can only attain Proficient.
 
+### Dragoon
+
+Dragoons are heavily armored warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while maneuvering around the battlefield at the expense of their own protection.
+
+Advantages:
+- Moves 2 points faster than other characters.
+- Skill with polearms (quarterstaff, spear, and halberd) allows the Dragoon to have a 20% chance to knock an enemy back a few feet when hit and deal additional piercing damage. A successful save vs. Death with a -2 penalty negates being knocked back. Damage dealt increases with levels as follows:
+  Level 1-2: 1 piercing
+  Level 3-5: 1d4 piercing
+  Level 6-8: 1d6 piercing
+  Level 9-11: 1d8 piercing
+  Level 12-14: 2d4 piercing
+  Level 15-17: 1d10 piercing
+  Level 18-20: 2d6 piercing
+  Level 21+: 1d20 piercing
+
+- 4th Level: May use the Hamstring ability once per day and gains an additional use every 4 levels thereafter.
+
+HAMSTRING: The Dragoon's attacks for the next 10 seconds will progressively slow the movement of any struck enemy by -1. The penalty from each hit is cumulative and will last for 2 rounds. A successful save vs. Death with a -4 penalty negates the penalty to movement speed. 
+
+Disadvantages:
+- May not dual class.
+- May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
+
 ### Psi Warrior
 
 A Psi Warrior is a fighter who augments their physical might with psi-infused weapon strikes, telekinetic lashes, and barriers of mental force. Psi Warriors hone their skills and psionic abilities through solo discipline, unlocked under the tutelage of a master, or refined it at an academy dedicated to wielding the mind's power as both weapon and shield.

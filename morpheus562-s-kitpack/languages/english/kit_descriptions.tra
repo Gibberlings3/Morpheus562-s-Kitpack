@@ -268,7 +268,7 @@ The Champion of the Wild gains the ability to briefly channel the divine power o
 
 @5547 = ~dragoon~
 @5548 = ~Dragoon~
-@5549 = ~DRAGOON: Dragoons are heavily armored warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while maneuvering around the battlefield.
+@5549 = ~DRAGOON: Dragoons are heavily armored warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while maneuvering around the battlefield at the expense of their own protection.
 
 Advantages:
 – Moves 2 points faster than other characters.
@@ -288,8 +288,7 @@ HAMSTRING: The Dragoon's attacks for the next 10 seconds will progressively slow
 
 Disadvantages:
 – May not dual class.
-– May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
-– I NEED MORE HERE~
+– May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.~
 
 @5550 = ~Hamstring~
 @5551 = ~Hamstring
@@ -298,3 +297,30 @@ The Dragoon's attacks for the next 10 seconds will progressively slow the moveme
 @5552 = ~Trip Attack~
 @5553 = ~Trip Attack
 When you hit a creature with a weapon attack within the next round, they will fall to the ground for 3 seconds. A successful save vs. Death negates the fall. This increases to save vs. Death at -2 at level 14 and -4 at level 20 to resist being tripped.~
+
+@5554 = ~champion of the silver flame~
+@5555 = ~Champion of the Silver Flame~
+@5556 = ~CHAMPION OF THE SILVER FLAME: Champions of the Silver Flame are dedicated to fighting supernatural forces of evil and extraplanar threats. They are spiritual heroes who channel the power of the Silver Flame to ward off evil outsiders, destroy evil spirits, and smite the material forms of the forces of evil. They are paragons of good and stand as the bulwarks of faith between the darkness and the light.
+
+Advantages:
+– 1st Level: Gains the Blessing of the Champion passive ability. 
+
+BLESSING OF THE CHAMPION: A Champion of the Silver Flame dispenses the fury of the Silver Flame with <PRO_HISHER> weapons. The champion gains a +1 bonus to Thac0 and damage.
+
+– 3rd Level: Gains Infravision passive ability.
+
+– 6th Level: Gains the Weapons of Flame passive ability.
+
+WEAPONS OF FLAME: The Champion of the Silver Flame deals an extra +2 fire damage on a successful hit.
+
+– 10th Level: Gains the Warding Flame passive ability.
+
+WARDING FLAME: The Champion of the Flame bathes <PRO_HIMHER>self in silver flame gaining +2 bonus Armor Class and Saving Throws. In addition, <PRO_HESHE> gains Magic Resistance of 10% + character level.
+
+– 16th Level: Gains the Weapons of Sacred Flame passive ability.
+
+WEAPONS OF THE SACRED FLAME: The Champion of the Silver Flame further improves the Weapons of Flame and it now deals +1d6 fire damage on a successful hit.
+
+Disadvantages:
+– May not use ranged weapons.
+– May not use the Lay On Hands ability.~

@@ -31,3 +31,4 @@ COPY ~morpheus562-s-kitpack/spl/dragoon/modra02.spl~ ~override~ // Hamstring
   SAY UNIDENTIFIED_DESC @5551
 COPY ~morpheus562-s-kitpack/eff/dragoon/modra02.eff~ ~override~ // Hamstring
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra22.spl~ ~override~ // Spell that casts Hamstring
+//COPY ~morpheus562-s-kitpack/spl/dragoon/modra03.spl~ ~override~ // -2 Penalty to AC
