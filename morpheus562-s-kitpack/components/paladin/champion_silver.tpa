@@ -52,3 +52,11 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 
 COPY ~morpheus562-s-kitpack/2da/mo_chs01.2DA~                ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs01.spl~ ~override~ // Blessing of the Champion
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs02.spl~ ~override~ // Infravision
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs03.spl~ ~override~ // Weapons of Flame
+COPY ~morpheus562-s-kitpack/eff/champion_silver/mochs3a.eff~ ~override~ // Weapons of Flame +2 Fire
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs3a.spl~ ~override~ // Weapons of Flame +2 Fire
+COPY ~morpheus562-s-kitpack/eff/champion_silver/mochs3b.eff~ ~override~ // Weapons of Flame +1d6 Fire
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs3b.spl~ ~override~ // Weapons of Flame +1d6 Fire
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs04.spl~ ~override~ // Warding Flame lvl 10
+COPY ~morpheus562-s-kitpack/spl/champion_silver/mochs05.spl~ ~override~ // Warding Flame +1% MR
