@@ -1,16 +1,78 @@
-## Nouveaux Kits
+# Morpheus562's Kitpack
 
-### Rashemaar Berserker - Kit de Rôdeur
+[![Latest Release](https://img.shields.io/github/v/release/gibberlings3/Morpheus562-s-Kitpack?include_prereleases)](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/releases/latest)
+![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french&color=informational)
+![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 
-Aussi appelés Rashemi Berserkers, ces défenseurs légendaires de la Rashéménie sont redoutés pour leur frénésie quasiment surnaturelle sur le champ de bataille et après les vénérés Wychlarans, ils font partie des membres les plus respectés de cette société.
+[A Gibberlings Three Mod](https://www.gibberlings3.net/)
 
-Avantages :  
-- Peut utiliser « Furie » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
+**Auteur **: [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/)
 
-FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé aux charmes, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
+**Sur le Web **: [Forum de discussion](https://www.gibberlings3.net/forums/topic/36095-morpheus562s-kitpack/)
 
-Inconvénients :  
-- Ne peut pas porter d'armure plus lourde que l'armure feuilletée.
+## Introduction
+
+Ces kits ont des inspirations multiples afin d'inclure les sous-classes de la 5e edition ainsi que les classes de prestige de NWN2. Je voudrais souligner le travail phénoménal que Kaedrin a fait en introduisant de nombreuses classes de prestige dans NWN2 et j'emprunte à ses idées pour les intégrer dans le moteur Infinity Engine. Les kits mentionnés ci-dessous sont entièrement fonctionnels et de nouveaux kits sont actuellement en cours de développement. 
+
+## Kits de Guerrier
+
+### Maître de Bataille - Kit de Guerrier
+
+Expert dans les armes à deux mains, le Maître de Bataille est capable de faire des ravages sur les champs de bataille. D'une férocité et d'une résistance sans pareil, Ils déferlent sur leurs ennemis qui redoutent leur capacité à attaquer encore et encore sans faillir. 
+
+Avantages :
+– 1er niveau : Peut utiliser « Charge » une fois par jour, obtient une utilisation supplémentaire au niveau 3, puis tous les 3 niveaux.
+
+CHARGE : Le Maître de Bataille est capable d'augmenter sa vitesse de déplacement de 5 pendant 3 secondes.
+
+– 2ème niveau : Peut utiliser Croche-pied une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+CROCHE-PIED : Lorsque réussissez une attaque sur une créature au cours du prochain round, celle-ci se retrouve au sol pendant 3 secondes. Un jet de sauvegarde contre la mort permet d'échapper à la chute. Le jet de sauvegarde contre la mort passe à -2 au niveau 14 et à -4 au niveau 20.
+
+– 5ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+DÉFERLANTE : Le Maître de Bataille est capable de déchaîner une avalanche de coups, le nombre d'attaques qu'il peut effectuer pendant 5 rounds est doublé.
+
+Après une telle attaque, le personnage est essoufflé et subit une pénalité de 2 à sa classe d'armure, aux jets d'attaque et aux jets de dégâts, pendant 2 rounds.
+
+– 9ème niveau : Gagne la capacité passive « Irréductible ».
+
+IRRÉDUCTIBLE : Le Maître de Bataille bénéficie d'un bonus de 1 à tous ses jets de sauvegarde. Ce bonus passe à 2 au niveau 13 et à 3 au niveau 17.
+
+Inconvénients :
+– Ne peut atteindre la grande maîtrise qu'avec les armes à deux mains, pour toutes les autres armes il ne pourra être que compétent.
+
+### Lancier Dragon - Kit de Guerrier 
+
+Les Lanciers Dragons sont des guerriers lourdement cuirassés qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers s'efforcent de maintenir leurs ennemis à distance tout en progressant sur le champ de bataille au détriment de leur propre défense.
+
+Avantages :
+
+– Vitesse de déplacement augmenté de 2.
+– La compétence avec les armes d'hast ( bâton, lance et hallebarde) donne au Lancier Dragon 20 % de chances de repousser un ennemi lors d'une attaque réussie et de lui infliger des dégâts perforants supplémentaires. Un jet de sauvegarde contre la mort à -2 permet à la cible d'éviter d'être projeté en arrière. Les dégâts supplémentaires augmentent avec les niveaux :
+<details>
+  <summary>Détails des dégâts</summary>
+  
+```	
+  Niveau 1 à 2 : Inflige 1 point de dégâts perforants supplémentaires
+  Niveau 3 à 5 : Inflige 1d4 points de dégâts perforants supplémentaires
+  Niveau 6 à 8 : Inflige 1d6 points de dégâts perforants supplémentaires
+  Niveau 9 à 11 : Inflige 1d8 points de dégâts perforants supplémentaires
+  Niveau 12 à 14 : Inflige 2d4 points de dégâts perforants supplémentaires
+  Niveau 15 à 17 : Inflige 1d10 points de dégâts perforants supplémentaires
+  Niveau 18-20 : Inflige 2d6 points de dégâts perforants supplémentaires
+  Niveau 21 : Inflige 1d20 points de dégâts perforants supplémentaires
+```
+
+</details>
+
+– 4ème Niveau : Peut utiliser la capacité « Entrave » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+ENTRAVE : Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets. 
+
+Inconvénients :
+– Ne peut se jumeler.
+– Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.
 
 ### Esprit Guerrier - Kit de Guerrier 
 
@@ -78,8 +140,7 @@ MAÎTRISE CINÉTIQUE : Le maître Esprit Guerrier est capable de catapulter au l
 
 Inconvénients :
 - Ne peut se jumeler.
-- Réservé aux humains.
-- Dés de vie : d8
+- Pénalité de 2 en constitution à la création de personnage.
 
 ### Pourfendeur de Bouclier - Kit de Guerrier
 
@@ -94,72 +155,25 @@ SILLAGE : Le Pourfendeur de Bouclier trace un sillon dans la terre avant de frap
 REMARQUE : La réduction de la résistance aux dégâts physiques n'est pas cumulable en utilisant Sillage de multiples fois.
 
 Inconvénients :
-– Les armes reçoivent une pénalité de 2 aux jets de dégâts..
+– Les armes reçoivent une pénalité de 2 aux jets de dégâts.
 – Ne peut utiliser des armes à distance.
 – Ne peut utiliser de boucliers.
 
-### Maître de Bataille - Kit de Guerrier
+## Kits de Rôdeur
 
-Expert dans les armes à deux mains, le Maître de Bataille est capable de faire des ravages sur les champs de bataille. D'une férocité et d'une résistance sans pareil, Ils déferlent sur leurs ennemis qui redoutent leur capacité à attaquer encore et encore sans faillir. 
+### Rashemaar Berserker - Kit de Rôdeur
 
-Avantages :
-– 1er niveau : Peut utiliser « Charge » une fois par jour, obtient une utilisation supplémentaire au niveau 3, puis tous les 3 niveaux.
+Aussi appelés Rashemi Berserkers, ces défenseurs légendaires de la Rashéménie sont redoutés pour leur frénésie quasiment surnaturelle sur le champ de bataille et après les vénérés Wychlarans, ils font partie des membres les plus respectés de cette société.
 
-CHARGE : Le Maître de Bataille est capable d'augmenter sa vitesse de déplacement de 5 pendant 3 secondes.
+Avantages :  
+- Peut utiliser « Furie » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
 
-– 4ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé aux charmes, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
 
-DÉFERLANTE : Le Maître de Bataille est capable de déchaîner une avalanche de coups, le nombre d'attaques qu'il peut effectuer pendant 5 rounds est doublé.
-
-Après une telle attaque, le personnage est essoufflé et subit une pénalité de 2 à sa classe d'armure, aux jets d'attaque et aux jets de dégâts, pendant 2 rounds.
-
-– 9ème niveau : Gagne la capacité passive « Irréductible ».
-
-IRRÉDUCTIBLE : Le Maître de Bataille bénéficie d'un bonus de 1 à tous ses jets de sauvegarde. Ce bonus passe à 2 au niveau 13 et à 3 au niveau 17.
-
-Inconvénients :
-– Ne peut atteindre la grande maîtrise qu'avec les armes à deux mains, pour toutes les autres armes il ne pourra être que compétent.
-
-### Eldritch Scion - Kit d'Ensorceleur
-
-À la différence des mages traditionnels, l'Eldritch Scion ne passe pas son temps à étudier magie ou à concilier ses compétences martiales et ses talents de magicien. En effet, ses aptitudes se développent spontanément. 
-
-L'Eldritch Scion bénéficie de la plupart des caractéristiques de l'ensorceleur, tout en étant capable de prouesses martiales.
-
-Avantages :
-– Dés de vie : d8
-– Peut atteindre la spécialisation (2 points de compétence) pour toutes les armes de mêlée.
-– Peut porter les armures en cotte de mailles et les armure en écailles (les restrictions pour le lancement des sorts s'appliquent toujours).
-– Progression du TAC0 personnalisé, hybride entre le guerrier et l'ensorceleur.
-– Obtient la capacité Arme acérée.
-
-ARME ACÉRÉE : L'Eldritch Scion imprègne naturellement son arme avec sa magie ce qui lui permet d'infliger des dégâts additionnels. Il génère un point de dégât magique supplémentaire tous les cinq niveaux, pour un maximum de cinq points de dégâts magiques au niveau 20. La résistance à la magie de la cible aura une influence.
-
-– 8ème niveau : Acquiert une demi attaque supplémentaire par round.
-– 15ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
-
-Inconvénients :
-– Pénalité de -2 au temps d'incantation des sorts.
-– Pénalité de -2 au niveau du lanceur de sorts.
-
-### Seigneur de l'Orage - Kit de Guerrier / Druide
-
-Les seigneurs de l'orage manipulent le tonnerre et la foudre comme les guerrier manient leur épée. En raison de leur maîtrise de l'un des éléments les plus destructeurs de la nature, ils sont perçus avec crainte et admiration par les gens ordinaires, quelle que soit leur motivation.
-
-Avantages :
-– 1er niveau : Bonus de 1 aux jets de toucher et de dégâts, gagne un bonus supplémentaire au 6ème niveau et un autre au 9ème niveau.
-
-– 3ème niveau : Peut utiliser « Induction » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
-
-INDUCTION : Le Seigneur de l'Orage insuffle 1d8 points de dégâts d'électricité à son arme pendant 2 tours.
-
-– 4ème niveau : Le Seigneur de l'Orage gagne 25 % d'immunité aux dégâts électriques. Cette immunité passe à 50 % au niveau 8, 75 % au niveau 12 et 100 % au niveau 14.
-
-Inconvénients :
-- Le Seigneur de l'Orage est limité aux armes suivantes : Lance, Hache de jet et fléchette.
-- Ne bénéficie pas des résistances élémentaires traditionnelles des druides.
-
-REMARQUE : Les Seigneurs de l'Orage peuvent investir des points de compétence pour les haches, mais ne pourront utiliser que des haches de jet.
+Inconvénients :  
+– Réservé aux humains.
+– Ne peut pas utiliser la Furtivité.
+– Ne peut pas se spécialiser dans les armes à distance.
 
 ### Champion de la nature - Kit de Rôdeur
 
@@ -195,10 +209,106 @@ FUREUR SAUVAGE : Le Champion de la nature est en mesure de canaliser momentaném
 
 – 6ème niveau : Gagne la capacité passive « Garde supérieur ».
 
-GARDE SUPÉRIEUR : Le champion de la nature apprend des techniques très spéciales lui permettant de préserver sa liberté de mouvement, même en portant une armure encombrante. Le personnage gagne un bonus de 1 à la CA au 6ème niveau. Au 9e niveau, se bonus passe à 2, pour finalement atteindre un bonus de 3 au 12e niveau.
+GARDE SUPÉRIEUR : Le champion de la nature apprend des techniques très spéciales lui permettant de préserver sa liberté de mouvement, même en portant une armure encombrante. Le personnage gagne un bonus de 1 à la CA au 6ème niveau. Au 9e niveau, ce bonus passe à 2, pour finalement atteindre un bonus de 3 au 12e niveau.
 
 Inconvénients :
 – Pénalité de 1 en force à la création du personnage.
 – Ne peut porter d'armure plus lourde que la besantine.
 – Ne peut acquérir des points de compétence que pour les épées à une main.
 – Ne peut utiliser « Charme-animal »
+
+## Kits de Paladin
+
+### Défenseur de la Flamme d'Argent - Kit de Paladin
+
+Les Défenseurs de la Flamme d'Argent vouent leur vie à lutter contre les forces maléfiques surnaturelles et les menaces en provenance des autres plans. Ce sont des héros mystiques qui canalisent le pouvoir de la Flamme d'Argent pour repousser les envahisseurs démoniaques, détruire les mauvais esprits et châtier les incarnations des forces du mal. Ces parangons du bien sont avant tout des saints qui se dressent entre les ténèbres et la lumière.
+
+Avantages :
+– 1er Niveau : Gagne la capacité passive « Flamme sacrée ».
+
+FLAMME SACRÉE : Un Défenseur de la Flamme canalise et déverse la colère de la Flamme d'Argent. Il bénéficie d'un bonus de 1 au TAC0 et aux dégâts.
+
+– 3ème Niveau : Gagne la capacité passive « Infravision ».
+
+– 6ème Niveau : Gagne la capacité passive « Flamme Brûlante ».
+
+FLAMME BRÛLANTE : Le Défenseur de la Flamme d'Argent inflige 2 points de dégâts de feu supplémentaires en cas d'attaque réussie.
+
+– 10ème Niveau : Gagne la capacité passive « Flamme gardienne ».
+
+FLAMME GARDIENNE : Le Défenseur de la Flamme est imprégné par la flamme d'argent ce qui lui octroie un bonus de 2 à la CA et à ses jets de sauvegarde. Il acquiert aussi une résistance à la magie de 10 % à laquelle s'ajoute le niveau du personnage.
+
+– 16ème Niveau : Gagne la capacité passive « Flamme Flamboyante ».
+
+FLAMME FLAMBOYANTE : Le Défenseur de la Flamme d'Argent améliore « Flamme Brûlante », qui inflige désormais 1d6 points de dégâts de feu en cas d'attaque réussie.
+
+Inconvénients :
+– Ne peut utiliser des armes à distance.
+– Ne peut utiliser « Imposition des mains »
+
+## Kits de Clerc
+
+## Kits de Druide
+
+## Kits de Mage
+
+## Kits de Voleur
+
+## Kits de Barde
+
+## Kits d'Ensorceleur
+
+### Eldritch Scion - Kit d'Ensorceleur
+
+À la différence des mages traditionnels, l'Eldritch Scion ne passe pas son temps à étudier magie ou à concilier ses compétences martiales et ses talents de magicien. En effet, ses aptitudes se développent spontanément. 
+
+L'Eldritch Scion bénéficie de la plupart des caractéristiques de l'ensorceleur, tout en étant capable de prouesses martiales.
+
+Avantages :
+– Dés de vie : d8
+– Peut atteindre la spécialisation (2 points de compétence) pour toutes les armes de mêlée.
+– Peut porter les armures en cotte de mailles et les armure en écailles (les restrictions pour le lancement des sorts s'appliquent toujours).
+– Progression du TAC0 personnalisé, hybride entre le guerrier et l'ensorceleur.
+– Obtient la capacité Arme acérée.
+
+ARME ACÉRÉE : L'Eldritch Scion imprègne naturellement son arme avec sa magie ce qui lui permet d'infliger des dégâts additionnels. Il génère un point de dégât magique supplémentaire tous les cinq niveaux, pour un maximum de cinq points de dégâts magiques au niveau 20. La résistance à la magie de la cible aura une influence.
+
+– 8ème niveau : Acquiert une demi attaque supplémentaire par round.
+– 15ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
+
+Inconvénients :
+– Pénalité de -2 au temps d'incantation des sorts.
+– Pénalité de -2 au niveau du lanceur de sorts.
+
+## Kits de Chaman
+
+## Kits Multiclasse
+
+### Seigneur de l'Orage - Kit de Guerrier / Druide
+
+Les seigneurs de l'orage manipulent le tonnerre et la foudre comme les guerrier manient leur épée. En raison de leur maîtrise de l'un des éléments les plus destructeurs de la nature, ils sont perçus avec crainte et admiration par les gens ordinaires, quelle que soit leur motivation.
+
+Avantages :
+– 1er niveau : Bonus de 1 aux jets de toucher et de dégâts, gagne un bonus supplémentaire au 6ème niveau et un autre au 9ème niveau.
+
+– 3ème niveau : Peut utiliser « Induction » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+INDUCTION : Le Seigneur de l'Orage insuffle 1d8 points de dégâts d'électricité à son arme pendant 2 tours.
+
+– 4ème niveau : Le Seigneur de l'Orage gagne 25 % d'immunité aux dégâts électriques. Cette immunité passe à 50 % au niveau 8, 75 % au niveau 12 et 100 % au niveau 14.
+
+Inconvénients :
+- Le Seigneur de l'Orage est limité aux armes suivantes : Lance, Hache de jet et fléchette.
+- Ne bénéficie pas des résistances élémentaires traditionnelles des druides.
+
+REMARQUE : Les Seigneurs de l'Orage peuvent investir des points de compétence pour les haches, mais ne pourront utiliser que des haches de jet.
+
+## Compatibilité
+
+Installez Morpheus562's Kitpack après les mods ajoutants des objets, car les restrictions d'utilisation seront mises à jours pour certain d'entre eux.
+
+## Remerciements
+
+- CamDawg_G3 for all of the help and support
+- JohnBob for the French translation.
+- Kaedrin for creating an amazing NWN2 kitpack

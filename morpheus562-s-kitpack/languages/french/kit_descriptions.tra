@@ -11,7 +11,9 @@ Avantages :
 FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé aux charmes, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
 
 Inconvénients :
-- Ne peut pas porter d'armure plus lourde que l'armure feuilletée.~
+– Réservé aux humains.
+– Ne peut pas utiliser la Furtivité.
+– Ne peut pas se spécialiser dans les armes à distance.~
 
 @5504 = ~esprit guerrier~
 @5505 = ~Esprit Guerrier~
@@ -65,8 +67,7 @@ MAÎTRISE CINÉTIQUE : Le maître Esprit Guerrier est capable de catapulter au l
 
 Inconvénients :
 – Ne peut se jumeler.
-– Réservé aux humains.
-– Dés de vie : d8~
+– Pénalité de 2 en constitution à la création de personnage.~
 
 @5507 = ~Choc psionique~
 @5508 = ~Choc psionique
@@ -174,7 +175,11 @@ Avantages :
 
 CHARGE : Le Maître de Bataille est capable d'augmenter sa vitesse de déplacement de 5 pendant 3 secondes.
 
-– 4ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+– 2ème niveau : Peut utiliser Croche-pied une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+CROCHE-PIED : Lorsque réussissez une attaque sur une créature au cours du prochain round, celle-ci se retrouve au sol pendant 3 secondes. Un jet de sauvegarde contre la mort permet d'échapper à la chute. Le jet de sauvegarde contre la mort passe à -2 au niveau 14 et à -4 au niveau 20.
+
+– 5ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 DÉFERLANTE : Le Maître de Bataille est capable de déchaîner une avalanche de coups, le nombre d'attaques qu'il peut effectuer pendant 5 rounds est doublé.
 
@@ -247,9 +252,9 @@ FINESSE : Le Champion de la nature devient capable de porter des attaques qui in
 
 FUREUR SAUVAGE : Le Champion de la nature est en mesure de canaliser momentanément la puissance d'une des divinités de la nature en enveloppant ses armes d'un voile incandescent. Pendant 10 secondes, le personnage gagne un bonus de 2 à son TAC0 et inflige 2d6 points de dégâts supplémentaires à chaque attaque avec une arme de mêlée.
 
-– 6ème niveau : Gagne la capacité passive « Garde supérieur ».
+– 6ème niveau : Gagne la capacité passive « Garde supérieure ».
 
-GARDE SUPÉRIEUR : Le champion de la nature apprend des techniques très spéciales lui permettant de préserver sa liberté de mouvement, même en portant une armure encombrante. Le personnage gagne un bonus de 1 à la CA au 6ème niveau. Au 9e niveau, se bonus passe à 2, pour finalement atteindre un bonus de 3 au 12e niveau.
+GARDE SUPÉRIEURE : Le champion de la nature apprend des techniques très spéciales lui permettant de préserver sa liberté de mouvement, même en portant une armure encombrante. Le personnage gagne un bonus de 1 à la CA au 6ème niveau. Au 9e niveau, ce bonus passe à 2, pour finalement atteindre un bonus de 3 au 12e niveau.
 
 Inconvénients :
 – Pénalité de 1 en force à la création du personnage.
@@ -260,3 +265,62 @@ Inconvénients :
 @5545 = ~Fureur sauvage~
 @5546 = ~Fureur sauvage
 Le Champion de la nature est en mesure de canaliser momentanément la puissance d'une des divinités de la nature en enveloppant son arme d'un voile incandescent. Pendant 10 secondes, le personnage gagne un bonus de 2 à son TAC0 et inflige 2d6 points de dégâts supplémentaires à chaque attaque avec une arme de mêlée.~
+
+@5547 = ~lancier dragon~
+@5548 = ~Lancier Dragon~
+@5549 = ~LANCIER DRAGON : Les Lanciers Dragons Dragons sont des guerriers lourdement cuirassés qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers s'efforcent de maintenir leurs ennemis à distance tout en progressant sur le champ de bataille au détriment de leur propre défense.
+
+Avantages :
+– Vitesse de déplacement augmenté de 2.
+– La compétence avec les armes d'hast ( bâton, lance et hallebarde) donne au Lancier Dragon 20 % de chances de repousser un ennemi lors d'une attaque réussie et de lui infliger des dégâts perforants supplémentaires. Un jet de sauvegarde contre la mort à -2 permet à la cible d'éviter d'être projeté en arrière. Les dégâts supplémentaires augmentent avec les niveaux :
+  Niveau 1 à 2 : Inflige 1 point de dégâts perforants supplémentaires
+  Niveau 3 à 5 : Inflige 1d4 points de dégâts perforants supplémentaires
+  Niveau 6 à 8 : Inflige 1d6 points de dégâts perforants supplémentaires
+  Niveau 9 à 11 : Inflige 1d8 points de dégâts perforants supplémentaires
+  Niveau 12 à 14 : Inflige 2d4 points de dégâts perforants supplémentaires
+  Niveau 15 à 17 : Inflige 1d10 points de dégâts perforants supplémentaires
+  Niveau 18-20 : Inflige 2d6 points de dégâts perforants supplémentaires
+  Niveau 21 : Inflige 1d20 points de dégâts perforants supplémentaires
+
+– 4ème Niveau : Peut utiliser la capacité « Entrave » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+ENTRAVE : Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets. 
+
+Inconvénients :
+– Ne peut se jumeler.
+– Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.~
+
+@5550 = ~Entrave~
+@5551 = ~Entrave
+Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets.~
+
+@5552 = ~Croche-pied~
+@5553 = ~Croche-pied
+Lorsque réussissez une attaque sur une créature au cours du prochain round, celle-ci se retrouve au sol pendant 3 secondes. Un jet de sauvegarde contre la mort permet d'échapper à la chute. Le jet de sauvegarde contre la mort passe à -2 au niveau 14 et à -4 au niveau 20.~
+
+@5554 = ~défenseur de la flamme d'argent~
+@5555 = ~Défenseur de la Flamme d'Argent~
+@5556 = ~DÉFENSEUR DE LA FLAMME D'ARGENT : Les Défenseurs de la Flamme d'Argent vouent leur vie à lutter contre les forces maléfiques surnaturelles et les menaces en provenance des autres plans. Ce sont des héros mystiques qui canalisent le pouvoir de la Flamme d'Argent pour repousser les envahisseurs démoniaques, détruire les mauvais esprits et châtier les incarnations des forces du mal. Ces parangons du bien sont avant tout des saints qui se dressent entre les ténèbres et la lumière.
+
+Avantages :
+– 1er Niveau : Gagne la capacité passive « Flamme sacrée ».
+
+FLAMME SACRÉE : Un Défenseur de la Flamme canalise et déverse la colère de la Flamme d'Argent. Il bénéficie d'un bonus de 1 au TAC0 et aux dégâts.
+
+– 3ème Niveau : Gagne la capacité passive « Infravision ».
+
+– 6ème Niveau : Gagne la capacité passive « Flamme Brûlante ».
+
+FLAMME BRÛLANTE : Le Défenseur de la Flamme d'Argent inflige 2 points de dégâts de feu supplémentaires en cas d'attaque réussie.
+
+– 10ème Niveau : Gagne la capacité passive « Flamme gardienne ».
+
+FLAMME GARDIENNE : Le Défenseur de la Flamme est imprégné par la flamme d'argent ce qui lui octroie un bonus de 2 à la CA et à ses jets de sauvegarde. Il acquiert aussi une résistance à la magie de 10 % à laquelle s'ajoute le niveau du personnage.
+
+– 16ème Niveau : Gagne la capacité passive « Flamme Flamboyante ».
+
+FLAMME FLAMBOYANTE : Le Défenseur de la Flamme d'Argent améliore « Flamme Brûlante », qui inflige désormais 1d6 points de dégâts de feu en cas d'attaque réussie.
+
+Inconvénients :
+– Ne peut utiliser des armes à distance.
+– Ne peut utiliser « Imposition des mains »~					 
