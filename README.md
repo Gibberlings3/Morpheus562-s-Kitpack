@@ -203,6 +203,35 @@ Disadvantages:
 - May only assign proficiency points in one-handed swords.
 - May not charm animals.
 
+## Paladins
+
+### Champion of the Silver Flame
+
+Champions of the Silver Flame are dedicated to fighting supernatural forces of evil and extraplanar threats. They are spiritual heroes who channel the power of the Silver Flame to ward off evil outsiders, destroy evil spirits, and smite the material forms of the forces of evil. They are paragons of good and stand as the bulwarks of faith between the darkness and the light.
+
+Advantages:
+- 1st Level: Gains the Blessing of the Champion passive ability. 
+
+BLESSING OF THE CHAMPION: A Champion of the Silver Flame dispenses the fury of the Silver Flame with <PRO_HISHER> weapons. The champion gains a +1 bonus to Thac0 and damage.
+
+- 3rd Level: Gains Infravision passive ability.
+
+- 6th Level: Gains the Weapons of Flame passive ability.
+
+WEAPONS OF FLAME: The Champion of the Silver Flame deals an extra +2 fire damage on a successful hit.
+
+- 10th Level: Gains the Warding Flame passive ability.
+
+WARDING FLAME: The Champion of the Flame bathes <PRO_HIMHER>self in silver flame gaining +2 bonus Armor Class and Saving Throws. In addition, <PRO_HESHE> gains Magic Resistance of 10% + character level.
+
+- 16th Level: Gains the Weapons of Sacred Flame passive ability.
+
+WEAPONS OF THE SACRED FLAME: The Champion of the Silver Flame further improves the Weapons of Flame and it now deals +1d6 fire damage on a successful hit.
+
+Disadvantages:
+- May not use ranged weapons.
+- May not use the Lay On Hands ability.
+
 ## Sorcerers
 
 ### Eldritch Scion
@@ -226,8 +255,6 @@ ENHANCE WEAPON: The Eldritch Scion passively imbues <PRO_HISHER> melee weapon wi
 Disadvantages:
 - Receive a -2 penalty to casting speed.
 - Receive a -2 penalty to casting level.
-
-## Paladins
 
 ## Multiclass
 
