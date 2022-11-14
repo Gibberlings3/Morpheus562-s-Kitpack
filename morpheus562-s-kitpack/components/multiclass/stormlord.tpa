@@ -3,12 +3,12 @@
 ADD_KIT ~MO_STORMLORD~
   ~MO_STORMLORD 0 0 0 0 0 0 0 0~
   ~MO_STORMLORD 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_STORMLORD 9 0 0 0 12 15~
-  ~MO_STORMLORD 0 0 0 0 0 0~
-  ~MO_STORMLORD 0 0 0 0 0 0~
-  ~MO_STORMLORD 0 0 0 0 0 0~
-  ~MO_STORMLORD 0 0 0 0 1 0 0 0 0~
-  ~MO_STORMLORD 0 0 0 0 0 0~
+  ~MO_STORMLORD 9 0 0 0 12 15~ // Minimum Ability - abclasrq
+  ~MO_STORMLORD 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_STORMLORD 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_STORMLORD 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_STORMLORD 0 0 0 0 1 0 0 0 0~ // Alignment
+  ~MO_STORMLORD 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_stl01.2DA~
   ~K_FD_H K_FD_HE~
   ~0x00004000 16~

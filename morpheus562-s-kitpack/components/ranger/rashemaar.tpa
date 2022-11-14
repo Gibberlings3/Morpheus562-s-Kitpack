@@ -3,12 +3,12 @@
 ADD_KIT ~MO_RASHEMAAR~
   ~MO_RASHEMAAR 1 1 1 1 1 1 1 1~
   ~MO_RASHEMAAR 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_RASHEMAAR 0 0 12 0 0 0~
-  ~MO_RASHEMAAR 0 0 0 0 0 0~
-  ~MO_RASHEMAAR 0 0 17 0 0 0~
-  ~MO_RASHEMAAR 0 0 15 0 0 0~
-  ~MO_RASHEMAAR 1 0 0 1 0 0 1 0 0~
-  ~MO_RASHEMAAR 0 1 0 0 0 0~
+  ~MO_RASHEMAAR 0 0 12 0 0 0~ // Minimum Ability - abclasrq
+  ~MO_RASHEMAAR 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_RASHEMAAR 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_RASHEMAAR 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_RASHEMAAR 1 0 0 1 0 0 1 0 0~ // Alignment
+  ~MO_RASHEMAAR 0 1 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/CLABRNMO.2DA~
   ~K_R_H~
   ~0x00004000 12~

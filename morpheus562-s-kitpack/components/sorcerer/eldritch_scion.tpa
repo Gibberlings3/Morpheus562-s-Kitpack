@@ -3,10 +3,10 @@
 ADD_KIT ~MO_ELDRITCH~
   ~MO_ELDRITCH 0 0 0 0 0 0 0 0~ // clasweap.2da
   ~MO_ELDRITCH 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //weapprof.2da
-  ~MO_ELDRITCH 9 0 0 9 0 9~ //abclasrq
-  ~MO_ELDRITCH 0 0 0 0 0 0~ // abclsmod
-  ~MO_ELDRITCH 0 0 0 0 0 0~ //abdcedsrq
-  ~MO_ELDRITCH 0 0 0 0 0 0~ //abdcscrq
+  ~MO_ELDRITCH 9 0 0 9 0 9~ // Minimum Ability - abclasrq
+  ~MO_ELDRITCH 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_ELDRITCH 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_ELDRITCH 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
   ~MO_ELDRITCH 1 1 1 1 1 1 1 1 1~ // Alignment
   ~MO_ELDRITCH 0 0 0 0 0 0~ // Dualclass
   ~morpheus562-s-kitpack/2da/MO_ELD01.2DA~ // CLAB
