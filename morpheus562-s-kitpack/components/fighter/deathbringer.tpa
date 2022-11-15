@@ -22,11 +22,33 @@ LAF fl#add_kit_ee STR_VAR kit_name = MO_DEATHBRINGER END
 
 OUTER_SET deathbringer_code = (0x4000 + %MO_DEATHBRINGER%)
 
+///////////////////////////////////////////////////////////////////////////
+// Import                                                                //
+///////////////////////////////////////////////////////////////////////////
 COPY ~morpheus562-s-kitpack/2da/mo_dbr01.2DA~             ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr01.spl~ ~override~ // Deathbringer Assault
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr02.spl~ ~override~ // Regeneration 1hp per round
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr03.spl~ ~override~ // +5% Resistances
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr04.spl~ ~override~ // Opcode 177
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr04.eff~ ~override~ // Set AI Script
 
+///////////////////////////////////////////////////////////////////////////
+// Update Fighter Kit                                                    //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~CLABFI01.2DA~ override
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 15 f_MaxLevel = 15 STR_VAR f_Entry = AP_MODBR04 END
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY ~morpheus562-s-kitpack/baf/upload/modbr1.baf~ ~override~
+  COMPILE_BAF_TO_BCS
+
+///////////////////////////////////////////////////////////////////////////
+// Sarevok                                                               //
+///////////////////////////////////////////////////////////////////////////
 ACTION_IF sarevok THEN BEGIN
   ACTION_FOR_EACH creature IN sarevok BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%creature%.cre~ THEN BEGIN
