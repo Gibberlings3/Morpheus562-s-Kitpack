@@ -18,16 +18,17 @@
 // Fighter                                                               //
 ///////////////////////////////////////////////////////////////////////////
 // Group 1 (Update 100-199)
-@100 = ~Installer le kit de guerrier "Maitre de Bataille"~ 				
-@110 = ~Installer le kit "Esprit Guerrier" qui comme son nom l'indique est un kit de guerrier~ 					
-@120 = ~Installer le kit de guerrier "Pourfendeur de Bouclier"~	
+@100 = ~Installer le kit de guerrier "Maitre de Bataille"~
+@110 = ~Installer le kit "Esprit Guerrier" qui comme son nom l'indique est un kit de guerrier~
+@120 = ~Installer le kit de guerrier "Pourfendeur de Bouclier"~
+@130 = ~Installer le kit de guerrier "Lancier Dragon"~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
 ///////////////////////////////////////////////////////////////////////////
 // Group 2 (Update 200-299)
-@200 = ~Installer le kit de rodeur "Rashemaar Berserker"~ 				
-@201 = ~Assigner le kit a Minsc~ 					
+@200 = ~Installer le kit de rodeur "Rashemaar Berserker"~	
+@201 = ~Assigner le kit a Minsc~
 @202 = ~Ne pas assigner le kit a Minsc~
 @210 = ~Installer le kit de rodeur "Champion de la nature"~
 
@@ -35,7 +36,7 @@
 // Paladin                                                               //
 ///////////////////////////////////////////////////////////////////////////
 // Group 3 (Update 300-399)
-@300 = ~~ 
+@300 = ~Installer le kit de paladin "Defenseur de la Flamme d'Argent"~ 
 
 ///////////////////////////////////////////////////////////////////////////
 // Cleric                                                                //
@@ -71,7 +72,7 @@
 // Sorcerer                                                              //
 ///////////////////////////////////////////////////////////////////////////
 // Group 9 (Update 900-999)
-@900 = ~Installer le kit d'ensorceleur "Eldritch Scion"~ 
+@900 = ~Installer le kit d'ensorceleur "Eldritch Scion"~
 
 ///////////////////////////////////////////////////////////////////////////
 // Shaman                                                                //
@@ -91,7 +92,7 @@
 ///////////////////////////////////////////////////////////////////////////
 // Requirements                                                          //
 ///////////////////////////////////////////////////////////////////////////
-@3000 = ~Ce composant necessite BG: EE, BGII: EE ou EET~
+@3000 = ~Ce composant necessite BG: EE, BGII: EE, EET ou IWD: EE~
 @3001 = ~DLCMerger est necessaire avant d'installer des mods sur les jeux SoD~
 
 /* =============== *
