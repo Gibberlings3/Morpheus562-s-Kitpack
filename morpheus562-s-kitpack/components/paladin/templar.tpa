@@ -50,6 +50,7 @@ COPY_EXISTING ~splprot.2da~ ~override~
 
       PATCH_IF ~%stat%~ STRING_EQUAL_CASE ~STAT(CHR)=n~ BEGIN 
         SET cha_n = %row%
+      END
     END
 
 COPY_EXISTING ~motmp02.spl~ ~override~
