@@ -3,12 +3,12 @@
 ADD_KIT ~MO_PSIWARRIOR~
   ~MO_PSIWARRIOR 1 1 1 1 1 1 1 1~
   ~MO_PSIWARRIOR 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_PSIWARRIOR 9 0 0 11 0 0~
-  ~MO_PSIWARRIOR 0 0 -2 0 0 0~
-  ~MO_PSIWARRIOR 0 0 17 0 0 0~
-  ~MO_PSIWARRIOR 0 0 15 0 0 0~
-  ~MO_PSIWARRIOR 1 1 1 1 1 1 1 1 1~
-  ~MO_PSIWARRIOR 0 0 0 0 0 0~
+  ~MO_PSIWARRIOR 9 0 0 11 0 0~ // Minimum Ability - abclasrq
+  ~MO_PSIWARRIOR 0 0 -2 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_PSIWARRIOR 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_PSIWARRIOR 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_PSIWARRIOR 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~MO_PSIWARRIOR 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_psi01.2DA~
   ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
   ~0x00004000 2~

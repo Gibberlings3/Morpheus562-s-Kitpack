@@ -3,12 +3,12 @@
 ADD_KIT ~MO_CHAMPIONWILD~
   ~MO_CHAMPIONWILD 1 1 1 1 1 1 1 1~
   ~MO_CHAMPIONWILD 0 0 0 0 0 0 0 0 2 2 2 0 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_CHAMPIONWILD 0 0 12 0 0 0~
-  ~MO_CHAMPIONWILD -1 0 0 0 0 0~
-  ~MO_CHAMPIONWILD 0 0 17 0 0 0~
-  ~MO_CHAMPIONWILD 0 0 15 0 0 0~
-  ~MO_CHAMPIONWILD 1 0 0 1 0 0 1 0 0~
-  ~MO_CHAMPIONWILD 0 0 0 0 0 0~
+  ~MO_CHAMPIONWILD 0 0 12 0 0 0~ // Minimum Ability - abclasrq
+  ~MO_CHAMPIONWILD -1 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_CHAMPIONWILD 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_CHAMPIONWILD 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_CHAMPIONWILD 1 0 0 1 0 0 1 0 0~ // Alignment
+  ~MO_CHAMPIONWILD 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_chw01.2DA~
   ~K_R_H K_R_E K_R_HE~
   ~0x00004000 12~

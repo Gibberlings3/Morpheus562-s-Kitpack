@@ -36,7 +36,8 @@
 // Paladin                                                               //
 ///////////////////////////////////////////////////////////////////////////
 // Group 3 (Update 300-399)
-@300 = ~Champion of the Silver Flame~ 
+@300 = ~Install Champion of the Silver Flame~
+@310 = ~Install Templar Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Cleric                                                                //

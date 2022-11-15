@@ -3,10 +3,10 @@
 ADD_KIT ~MO_CHAMPIONSILVER~
   ~MO_CHAMPIONSILVER 1 1 1 1 1 1 1 1~
   ~MO_CHAMPIONSILVER 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_CHAMPIONSILVER 12 0 9 0 13 17~ // Minimum Ability
-  ~MO_CHAMPIONSILVER 0 0 0 0 0 0~ // Kit Ability Modifiers
-  ~MO_CHAMPIONSILVER 0 0 17 0 0 0~ // Requirement to Dual Class (to)
-  ~MO_CHAMPIONSILVER 0 0 15 0 0 0~ // Requirements to Dual Class (from)
+  ~MO_CHAMPIONSILVER 12 0 9 0 13 17~ // Minimum Ability - abclasrq
+  ~MO_CHAMPIONSILVER 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_CHAMPIONSILVER 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_CHAMPIONSILVER 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
   ~MO_CHAMPIONSILVER 1 0 0 0 0 0 0 0 0~ // Alignment
   ~MO_CHAMPIONSILVER 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_chs01.2DA~
