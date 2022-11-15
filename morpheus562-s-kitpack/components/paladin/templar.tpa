@@ -24,6 +24,10 @@ OUTER_SET templar_code = (0x4000 + %MO_TEMPLAR%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_tmp01.2DA~        ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/templar/motmp01.spl~ ~override~ // Immune to Hold and Paralysis
+COPY ~morpheus562-s-kitpack/spl/templar/motmp03.spl~ ~override~ // Immune to Hold and Paralysis
+  SAY NAME1 @5562
+  SAY UNIDENTIFIED_DESC @5563
+/*
 COPY ~morpheus562-s-kitpack/spl/templar/motmp02.spl~ ~override~ // Turn the Tide
   SAY NAME1 @5560
   SAY UNIDENTIFIED_DESC @5561
@@ -55,3 +59,4 @@ COPY_EXISTING ~splprot.2da~ ~override~
 
 COPY_EXISTING ~motmp02.spl~ ~override~
     LPF ALTER_EFFECT INT_VAR match_opcode = 326 parameter2 = %cha_n% END
+*/
