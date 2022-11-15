@@ -355,3 +355,20 @@ Area of Effect: 15-ft. radius
 Saving Throw: None
 
 When casting this spell, the priest must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. Upon completion, all party members within a 15-ft. radius of the caster are healed 1d8 + 1/level Hit Points. Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal—or can be cured—just as any normal injury.~
+
+@5564 = ~deathbringer~
+@5565 = ~Deathbringer~
+@5566 = ~DEATHBRINGER: Deathbringers are a special group of warriors of Bhaal trained in the art of intimidation and war. Those trained in the ways of the Deathbringer may fell their foes with a single blow. They are also a group of scattered cultists that are still trying to revive Bhaal, even though his essence is locked up in the Upper Planes.
+
+Advantages:
+– 15th Level: Deathbringer will regenerate 1 Hit Point every round.
+
+– 17th Level: Gains the Deathbringer Assault passive ability.
+
+DEATHBRINGER ASSAULT: The Deathbringer has a 3% on hit of dealing an additional +200 slashing damage with a 10% of stunning the target for 2 rounds. A successful save vs. Spell with a -4 penalty negates being stunned.
+
+– 20th Level: Gains 5% resistance to crushing, slashing, piercing, missile damage, acid, cold, electrical, fire, and magic at level 20 and every 5 levels thereafter.
+
+Disadvantages:
+– Alignment restricted to evil.
+– May not dual class.~

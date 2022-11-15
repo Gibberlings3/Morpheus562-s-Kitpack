@@ -66,6 +66,22 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 INCLUDE ~morpheus562-s-kitpack/components/fighter/shield_breaker.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
+// Deathbringer                                                          //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @141 DESIGNATED 141 SUBCOMPONENT @140 GROUP @1 LABEL Morpheus562sKitpackDBSarevok
+REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3002
+
+OUTER_SET sarevok=1 // Sarevok becomes a Deathbringer
+INCLUDE ~morpheus562-s-kitpack/components/fighter/deathbringer.tpa~
+
+////////////////////////////////////////////////////
+BEGIN @142 DESIGNATED 142 SUBCOMPONENT @140 GROUP @1 LABEL Morpheus562sKitpackDBNOSarevok
+REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3002
+
+OUTER_SET sarevok=0 // Sarevok does NOT become a Deathbringer
+INCLUDE ~morpheus562-s-kitpack/components/fighter/deathbringer.tpa~
+
+///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 // Rangers (Group 2)                                                     //
 ///////////////////////////////////////////////////////////////////////////
@@ -81,12 +97,10 @@ OUTER_SET minsc_rash=1 // Minsc becomes Rashemaar Berserker
 INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
-
 BEGIN @202 DESIGNATED 202 SUBCOMPONENT @200 GROUP @2 LABEL Morpheus562sKitpackRashemaar2
-
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @3000
 
-OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
+OUTER_SET minsc_rash=0 // Minsc does NOT become Rashemaar Berserker
 INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ////////////////////////////////////////////////////
@@ -95,7 +109,7 @@ INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 BEGIN @200 DESIGNATED 200 GROUP @2 LABEL Morpheus562sKitpackRashemaar3
 REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
 
-OUTER_SET minsc_rash=0 // Minsc becomes Rashemaar Berserker
+OUTER_SET minsc_rash=0 // Minsc does NOT become Rashemaar Berserker
 INCLUDE ~morpheus562-s-kitpack/components/ranger/rashemaar.tpa~
 
 ///////////////////////////////////////////////////////////////////////////

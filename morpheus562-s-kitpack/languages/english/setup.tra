@@ -22,6 +22,9 @@
 @110 = ~Install Psi Warrior Kit~ 					
 @120 = ~Install Shield Breaker Kit~
 @130 = ~Install Dragoon Kit~
+@140 = ~Install Deathbringer Prestige Kit~
+@141 = ~Assign kit to Sarevok~
+@142 = ~Do NOT assign kit to Sarevok~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
@@ -95,3 +98,4 @@
 ///////////////////////////////////////////////////////////////////////////
 @3000 = ~Component requires BG: EE, BGII: EE, IWDEE, or EET~
 @3001 = ~DLCMerger is needed before modding SoD games~
+@3002 = ~Component requires BGII: EE or EET~

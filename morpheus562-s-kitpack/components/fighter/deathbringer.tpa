@@ -1,0 +1,37 @@
+// Deathbringer Kit 
+
+ADD_KIT ~MO_DEATHBRINGER~
+  ~MO_DEATHBRINGER 0 0 0 0 0 0 0 0~
+  ~MO_DEATHBRINGER 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_DEATHBRINGER 9 0 0 0 0 0~ // Minimum Ability - abclasrq
+  ~MO_DEATHBRINGER 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_DEATHBRINGER 17 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_DEATHBRINGER 15 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_DEATHBRINGER 0 0 1 0 0 1 0 0 1~ // Alignment
+  ~MO_DEATHBRINGER 0 0 0 0 0 0~ // Dual Class Options
+  ~morpheus562-s-kitpack/2da/mo_dbr01.2DA~
+  ~~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @5564
+  SAY @5565
+  SAY @5566
+
+LAF fl#add_kit_ee STR_VAR kit_name = MO_DEATHBRINGER END
+
+OUTER_SET deathbringer_code = (0x4000 + %MO_DEATHBRINGER%)
+
+COPY ~morpheus562-s-kitpack/2da/mo_dbr01.2DA~             ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr01.spl~ ~override~ // Deathbringer Assault
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr02.spl~ ~override~ // Regeneration 1hp per round
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr03.spl~ ~override~ // +5% Resistances
+
+ACTION_IF sarevok THEN BEGIN
+  ACTION_FOR_EACH creature IN sarevok BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%creature%.cre~ THEN BEGIN
+      COPY_EXISTING ~%creature%.cre~ ~override~
+        WRITE_SHORT 0x246 0x4000 + ~%MO_DEATHBRINGER%~
+    END
+  END
+END
