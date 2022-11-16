@@ -16,7 +16,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("MO_DeathbringerCheck","GLOBAL",1)
-    CreateCreatureObject("MOBHAAL1",Player1,0,0,0)
+    CreateCreatureObject("MOBHAAL",Player1,0,0,0)
     //AddKit(MO_DEATHBRINGER)
     //ChangeAIScript("",GENERAL)
 END
@@ -26,6 +26,8 @@ IF
   !Kit(Player1,MO_DEATHBRINGER)
 THEN
   RESPONSE #100
+    CreateVisualEffectObject("SPGRWHRL",Player1)
+    PlaySound("WWATTACK")
     AddKit(MO_DEATHBRINGER)
     ChangeAIScript("",GENERAL)
 END
