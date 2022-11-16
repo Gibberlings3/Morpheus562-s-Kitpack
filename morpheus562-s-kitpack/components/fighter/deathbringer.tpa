@@ -37,6 +37,7 @@ COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr06.spl~ ~override~ // Savage B
   SAY NAME1 @5568
   SAY UNIDENTIFIED_DESC @5569
 COPY ~morpheus562-s-kitpack/eff/deathbringer/modbr06.eff~ ~override~ // Set AI Script
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr07.spl~ ~override~ // Screen Shake
 COPY ~morpheus562-s-kitpack/cre/mobhaal.cre~              ~override~ // Essence of Bhaal
   SAY NAME1 @5567
   SAY NAME2 @5567

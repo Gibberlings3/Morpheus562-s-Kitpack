@@ -17,6 +17,7 @@ THEN
   RESPONSE #100
     SetGlobal("MO_DeathbringerCheck","GLOBAL",1)
     CreateCreatureObject("MOBHAAL",Player1,0,0,0)
+    ApplySpellRES("modbr07",Player1)
     //AddKit(MO_DEATHBRINGER)
     //ChangeAIScript("",GENERAL)
 END
@@ -28,6 +29,7 @@ THEN
   RESPONSE #100
     CreateVisualEffectObject("SPGRWHRL",Player1)
     PlaySound("WWATTACK")
+    DisplayStringHead(Myself,@5570)
     AddKit(MO_DEATHBRINGER)
     ChangeAIScript("",GENERAL)
 END
