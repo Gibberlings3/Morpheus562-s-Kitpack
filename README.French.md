@@ -16,7 +16,7 @@ Ces kits ont des inspirations multiples afin d'inclure les sous-classes de la 5e
 
 ---
 
-[Kits de Guerrier](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-guerrier) / [Kits de Rôdeur](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-r%C3%B4deur) / [Kits de Paladin](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-paladin) / [Kits d'Ensorceleur](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-densorceleur) / [Kits Kits Multiclasse](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-multiclasse) / [Classes de Prestige](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#classes-de-prestige) 
+[Kits de Guerrier](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-guerrier) / [Kits de Rôdeur](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-r%C3%B4deur) / [Kits de Paladin](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-paladin) / [Kits d'Ensorceleur](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-densorceleur) / [Kits Multiclasse](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-multiclasse) / [Classes de Prestige](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/blob/main/README.French.md#classes-de-prestige) 
 
 ---
 
@@ -355,3 +355,4 @@ Installez Morpheus562's Kitpack après les mods ajoutants des objets, car les re
 - CamDawg_G3 for all of the help and support
 - JohnBob for the French translation.
 - Kaedrin for creating an amazing NWN2 kitpack
+- lowman for providing essence of bhaal dialog to become a Deathbringer
