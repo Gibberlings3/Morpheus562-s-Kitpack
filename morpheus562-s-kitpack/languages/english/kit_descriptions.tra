@@ -358,10 +358,12 @@ When casting this spell, the priest must picture the faces of <PRO_HISHER> fello
 
 @5564 = ~deathbringer~
 @5565 = ~Deathbringer~
-@5566 = ~DEATHBRINGER: Deathbringers are a special group of warriors of Bhaal trained in the art of intimidation and war. Those trained in the ways of the Deathbringer may fell their foes with a single blow. They are also a group of scattered cultists that are still trying to revive Bhaal, even though his essence is locked up in the Upper Planes.
+@5566 = ~DEATHBRINGER: Deathbringers are a special group of warriors of Bhaal trained in the art of intimidation and war. Those trained in the ways of the Deathbringer may fell their foes with a single blow, and every enemy slain at their hand fuels their rage and ferocity.. They are also a group of scattered cultists that are still trying to revive Bhaal, even though his essence is locked up in the Upper Planes.
 
 Advantages:
-– 15th Level: Deathbringer will regenerate 1 Hit Point every round.
+– 15th Level: Gains the Carnage passive ability.
+
+CARNAGE: When the Deathbringer slays an opponent, <PRO_HESHE> will fuel their rage and ferocity dealing an additional +10% physical damage for one round.
 
 – 17th Level: Gains the Deathbringer Assault passive ability.
 
@@ -372,3 +374,5 @@ DEATHBRINGER ASSAULT: The Deathbringer has a 3% on hit of dealing an additional 
 Disadvantages:
 – Alignment restricted to evil.
 – May not dual class.~
+
+@5567 = ~Essence of Bhaal~

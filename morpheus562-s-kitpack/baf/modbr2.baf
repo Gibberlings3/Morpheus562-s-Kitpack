@@ -1,0 +1,47 @@
+IF
+  Global("MO_DeathbringerCheck","GLOBAL",0)
+  !ActuallyInCombat()
+  !See([EVILCUTOFF])
+  Class(Player1,FIGHTER)
+  Kit(Player1,TRUECLASS)
+  !Class(Player1,DRUID_ALL)
+  !Class(Player1,CLERIC_ALL)
+  !Class(Player1,THIEF_ALL)
+  !Class(Player1,MAGE_ALL)
+  Level(Player1,15)
+  OR(3)
+    Alignment(Player1,LAWFUL_EVIL)
+    Alignment(Player1,NEUTRAL_EVIL)
+    Alignment(Player1,CHAOTIC_EVIL)
+THEN
+  RESPONSE #100
+    SetGlobal("MO_DeathbringerCheck","GLOBAL",1)
+    CreateCreatureObject("MOBHAAL1",Player1,0,0,0)
+    //AddKit(MO_DEATHBRINGER)
+    //ChangeAIScript("",GENERAL)
+END
+
+IF
+  Global("MO_BecomeDeathbringer","GLOBAL",1)
+  !Kit(Player1,MO_DEATHBRINGER)
+THEN
+  RESPONSE #100
+    AddKit(MO_DEATHBRINGER)
+    ChangeAIScript("",GENERAL)
+END
+
+IF
+  Global("MO_NoDeathbringer","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ChangeAIScript("",GENERAL)
+END
+
+IF
+  !ActuallyInCombat()
+  !See([EVILCUTOFF])
+  Global("MO_DeathbringerCheck","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ChangeAIScript("",GENERAL)
+END

@@ -31,6 +31,11 @@ COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr02.spl~ ~override~ // Regenera
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr03.spl~ ~override~ // +5% Resistances
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr04.spl~ ~override~ // Opcode 177
 COPY ~morpheus562-s-kitpack/eff/deathbringer/modbr04.eff~ ~override~ // Set AI Script
+COPY ~morpheus562-s-kitpack/cre/mobhaal.cre~              ~override~ // Essence of Bhaal
+  SAY NAME1 @5567
+  SAY NAME2 @5567
+
+COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/modbr1.d~
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Fighter Kit                                                    //
@@ -44,6 +49,7 @@ COPY_EXISTING ~CLABFI01.2DA~ override
 // Copy .BCS file to override folder                                     //
 ///////////////////////////////////////////////////////////////////////////
 COPY ~morpheus562-s-kitpack/baf/modbr1.baf~ ~override/modbr1.bcs~
+     ~morpheus562-s-kitpack/baf/modbr2.baf~ ~override/modbr2.bcs~
   COMPILE_BAF_TO_BCS
 
 ///////////////////////////////////////////////////////////////////////////

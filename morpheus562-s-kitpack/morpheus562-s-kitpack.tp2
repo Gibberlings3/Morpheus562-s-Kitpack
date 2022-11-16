@@ -18,6 +18,7 @@ END
 AUTO_TRA ~morpheus562-s-kitpack/languages/%s~
 LANGUAGE ~English~
          ~english~
+         ~morpheus562-s-kitpack/languages/english/dialog.tra~
          ~morpheus562-s-kitpack/languages/english/setup.tra~
          ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
 LANGUAGE ~French~

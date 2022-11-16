@@ -232,6 +232,20 @@ Disadvantages:
 - May not use ranged weapons.
 - May not use the Lay On Hands ability.
 
+### Templar
+
+Templars are the favored knights of their god, defending the faith more effectively than a steel wall. Templars function best when they have something to protect and are often the first line of defense in any party.
+
+Advantages:
+- Immune to hold and paralysis.
+- Gains 5% resistance to crushing, slashing, piercing, and missile damage every 5 levels to a maximum of 20% at level 20.
+
+- 3rd Level: May use the Mass Cure Wounds ability once per day and gains an additional use every 3 levels thereafter. The spell is cast at Speed Factor 1.
+
+Disadvantages:
+- May not turn undead.
+- May not exceed Proficient (one slot) in ranged or two-handed weapons.
+
 ## Sorcerers
 
 ### Eldritch Scion
