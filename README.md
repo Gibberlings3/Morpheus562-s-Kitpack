@@ -154,7 +154,7 @@ Deathbringers are a special group of warriors of Bhaal trained in the art of int
 Advantages:
 - 15th Level: Gains the Carnage passive ability.
 
-CARNAGE: When the Deathbringer slays an opponent, his rage and ferocity is fueled dealing an additional +10% physical damage for one round.
+CARNAGE: When the Deathbringer slays an opponent, his rage and ferocity is fueled dealing an additional +10% physical damage for two rounds. This ability stacks with itself.
 
 - 17th Level: Gains the Deathbringer Assault passive ability.
 

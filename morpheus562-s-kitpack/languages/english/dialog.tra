@@ -9,3 +9,26 @@
 @6006 = ~Those trained in the ways of the Deathbringer may fell their foes with a single blow, and every enemy slain at their hand fuels their rage and ferocity.~
 @6007 = ~Rise and venture forth as a Deathbringer of Bhaal!~
 @6008 = ~Bah, resist me at your own peril!~
+
+/*
+Lowman provided dialog
+
+[Log box/Explanation Text/Blue Text in Log]
+A silence grips the very air in this place and has a weight beyond fathom—an eternity.  You do not get to ponder it long before a tremendous force pulls upon your blood and a clarion dirge horn’s wail vibrates through your being, announcing the arrival of another in this space.  There can be no question—you stand now before the slain essence of your father.  Unlike your previous dreams, which seemed a great distance in the sending, you can feel the proximity of Bhaal here and intuitively understand that you can communicate with it directly if desired.
+[Dialogue begins]
+Essence of Bhaal: Greetings scion.  I call upon you to offer my boon.  You of sundered steel, shattered bone, and ravaged flesh have left a roiling ocean of blood in your wake.  Yet, you’ve kept yourself in death’s palm; chosen to feel the kiss of steel upon your flesh, welcomed the embrace of that which must ultimately consume you.  You have walked the path of murder—I demand you become it!  Embrace your birthright, receive my boon, and become my Deathbringer! 
+PC:
+1.    I have no need of power from a slain divinity.  My might and will are all I require to conquer destiny. [No]
+2.    I accept the gift of my father and may the realms quake in my passing atrocity. [Yes]
+3.    You have intrigued me wraith—tell me, what benefit does your boon provide? [explanation]
+[3/Explanation]
+Essence of Bhaal: You would question power when offered freely?  Very well [son/daughter], I will perfect you in my image.  You will strike with my fury, each death blow a sacrifice exalting murder’s supremacy.  Your gaze will avail the mortal terror of lesser beings, paralyzing them in the descent of your predation.  Now! What say you child?
+
+PC:
+1.    I have no need of power from a slain divinity.  My might and will are all I require to conquer destiny. [No]
+2.    I accept the gift of my father and may the realms quake in my passing atrocity. [Yes]
+[1]
+Essence of Bhaal: You speak with the arrogance of a god, but would refuse his strength?  You are a fool my [son/daughter], and before I am restored you shall surely fall to those who would except the strength of my boon.  [end sequence/fade to black]
+[2]
+Essence of Bhaal:  So be it my [son/daughter]—I bestow upon you my might of arms.  May your path leave a bloody weal in the sky for those of thine ilk to adulate and all others to dread.  Go forth—my Deathbringer!
+*/
