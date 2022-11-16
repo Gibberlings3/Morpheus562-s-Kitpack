@@ -175,6 +175,7 @@ Disadvantages:
 - May not dual class.
 
 Please note, this prestige kit requires a player meet the following prerequisite requirements:
+- Must be the protagonist
 - Character level 15 in pure class fighter
 - No kits nor multi/dual classing
 - Must be evil alignment 
