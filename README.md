@@ -324,3 +324,4 @@ Install after item mods since these will make some item useability updates.
 - CamDawg_G3 for all of the help and support
 - JohnBob for the French translation.
 - Kaedrin for creating an amazing NWN2 kitpack
+- lowman for providing essence of bhaal dialog to become a Deathbringer
