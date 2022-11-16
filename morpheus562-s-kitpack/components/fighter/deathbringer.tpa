@@ -30,7 +30,7 @@ COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr01.spl~ ~override~ // Deathbri
 //COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr02.spl~ ~override~ // Regeneration 1hp per round
 //COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr03.spl~ ~override~ // +5% Resistances
 //COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr04.spl~ ~override~ // Opcode 177
-//COPY ~morpheus562-s-kitpack/eff/deathbringer/modbr04.eff~ ~override~ // Set AI Script
+COPY ~morpheus562-s-kitpack/eff/deathbringer/modbr04.eff~ ~override~ // Set AI Script
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr05.spl~ ~override~ // Carnage
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr5a.spl~ ~override~ // Carnage
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr06.spl~ ~override~ // Savage Blows
