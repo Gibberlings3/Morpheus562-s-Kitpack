@@ -14,6 +14,12 @@
 
 Ces kits ont des inspirations multiples afin d'inclure les sous-classes de la 5e edition ainsi que les classes de prestige de NWN2. Je voudrais souligner le travail phénoménal que Kaedrin a fait en introduisant de nombreuses classes de prestige dans NWN2 et j'emprunte à ses idées pour les intégrer dans le moteur Infinity Engine. Les kits mentionnés ci-dessous sont entièrement fonctionnels et de nouveaux kits sont actuellement en cours de développement. 
 
+---
+
+[Kits de Guerrier](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-guerrier) / [Kits de Rôdeur](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-r%C3%B4deur) / [Kits de Paladin](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-de-paladin) / [Kits d'Ensorceleur](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-densorceleur) / [Kits Kits Multiclasse](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#kits-multiclasse) / [Classes de Prestige](https://github.com/11jo/Morpheus562-s-Kitpack/blob/main/README.French.md#classes-de-prestige) 
+
+---
+
 ## Kits de Guerrier
 
 ### Maître de Bataille - Kit de Guerrier
@@ -326,7 +332,7 @@ Les Semeurs de mort sont des guerriers de Bhaal spécialement formés à l'art d
 Avantages :
 – 15ème Niveau : Gagne la capacité passive « Carnage »
 
-CARNAGE : Lorsque le Semeur de Mort tue un adversaire, il alimente sa haine et sa fureur, ce qui lui permet d'infliger 10 % de dégâts physiques supplémentaires pendant un round.
+CARNAGE : Lorsque le Semeur de Mort tue un adversaire, il alimente sa haine et sa fureur, ce qui lui permet d'infliger 10 % de dégâts physiques supplémentaires pendant 2 rounds. Cette capacité est cumulative.
 
 – 17ème Niveau : Gagne la capacité passive « Sème la Mort »
 
