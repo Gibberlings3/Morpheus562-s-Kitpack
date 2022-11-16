@@ -12,7 +12,13 @@
 
 ## Introduction
 
-These kits are inspired from various areas to include 5e subclasses and NWN2 Prestige Classes. I would like to explicitly note the phenomenal work that Kaedrin did with introducing many new Prestige Classes to NWN2 and I borrow from his work to bring them into the Infinity Engine. There is more to come, but what is listed below is fully functional. 
+These kits are inspired from various areas to include 5e subclasses and NWN2 Prestige Classes. I would like to explicitly note the phenomenal work that Kaedrin did with introducing many new Prestige Classes to NWN2 and I borrow from his work to bring them into the Infinity Engine. There is more to come, but what is listed below is fully functional.
+
+---
+
+[Fighters Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#fighters) / [Rangers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#rangers) / [Paladins Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#paladins) / [Sorcerers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#sorcerers) / [Multiclass Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#multiclass) 
+
+---
 
 ## Fighters
 
