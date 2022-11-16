@@ -138,7 +138,7 @@ Advantages:
 - Each successful hit has a 25% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 4 rounds.
 - 4th Level: May use Sunder ability once per day and gains an additional use every 4 levels thereafter.
 
-SUNDER: The Shield Breaker sunders the earth before <PRO_HIMHER> striking all enemies within a 15-ft. radius. Enemies struck will receive 2d4 crushing damage, -25% reduction in physical damage resistance for 5 rounds, and falls to the ground for 3 seconds. A successful Saving Throw vs. Spell with a -4 penalty negates the fall. 
+SUNDER: The Shield Breaker sunders the earth before him striking all enemies within a 15-ft. radius. Enemies struck will receive 2d4 crushing damage, -25% reduction in physical damage resistance for 5 rounds, and falls to the ground for 3 seconds. A successful Saving Throw vs. Spell with a -4 penalty negates the fall. 
 
 NOTE: The reduction in physical damage resistance is not stackable with multiple uses of Sunder.
 
@@ -146,6 +146,32 @@ Disadvantages:
 - Weapons receive a -2 penalty to all damage rolls.
 - May not use ranged weapons.
 - May not use shields.
+
+### Deathbringer (Prestige Kit)
+
+Deathbringers are a special group of warriors of Bhaal trained in the art of intimidation and war. Those trained in the ways of the Deathbringer may fell their foes with a single blow, and every enemy slain at their hand fuels their rage and ferocity.. They are also a group of scattered cultists that are still trying to revive Bhaal, even though his essence is locked up in the Upper Planes.
+
+Advantages:
+- 15th Level: Gains the Carnage passive ability.
+
+CARNAGE: When the Deathbringer slays an opponent, he will fuel their rage and ferocity dealing an additional +10% physical damage for one round.
+
+- 17th Level: Gains the Deathbringer Assault passive ability.
+
+DEATHBRINGER ASSAULT: The Deathbringer has a 3% on hit of dealing an additional +200 slashing damage with a 10% of stunning the target for 2 rounds. A successful save vs. Spell with a -4 penalty negates being stunned.
+
+- 20th Level: May use the Savage Blows ability once per day and gains an additional use every 5 levels thereafter.
+
+SAVAGE BLOWS: The Deathbringer's attacks for the next 10 seconds will progressively weaken the any struck opponent. The hit target will lose 1 point of strength per hit for the next 2 rounds.
+
+Disadvantages:
+- Alignment restricted to evil.
+- May not dual class.
+
+Please note, this prestige kit requires a player meet the following prerequisite requirements:
+- Character level 15 in pure class fighter
+- No kits nor multi/dual classing
+- Must be evil alignment 
 
 ## Rangers
 
