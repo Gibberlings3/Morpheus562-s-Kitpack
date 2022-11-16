@@ -22,6 +22,9 @@
 @110 = ~Installer le kit "Esprit Guerrier" qui comme son nom l'indique est un kit de guerrier~
 @120 = ~Installer le kit de guerrier "Pourfendeur de Bouclier"~
 @130 = ~Installer le kit de guerrier "Lancier Dragon"~
+@140 = ~Installer le "Semeur de Mort", un kit de classe de prestige~
+@141 = ~Assigner le kit a Sarevok~
+@142 = ~Ne pas assigner le kit a Sarevok~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
@@ -37,6 +40,7 @@
 ///////////////////////////////////////////////////////////////////////////
 // Group 3 (Update 300-399)
 @300 = ~Installer le kit de paladin "Defenseur de la Flamme d'Argent"~ 
+@310 = ~Installer le kit de paladin "Chevalier du temple"~
 
 ///////////////////////////////////////////////////////////////////////////
 // Cleric                                                                //

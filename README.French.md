@@ -6,9 +6,9 @@
 
 [A Gibberlings Three Mod](https://www.gibberlings3.net/)
 
-**Auteur **: [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/)
+**Auteur** : [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/)
 
-**Sur le Web **: [Forum de discussion](https://www.gibberlings3.net/forums/topic/36095-morpheus562s-kitpack/)
+**Sur le Web** : [Forum de discussion](https://www.gibberlings3.net/forums/topic/36095-morpheus562s-kitpack/)
 
 ## Introduction
 
@@ -246,6 +246,20 @@ Inconvénients :
 – Ne peut utiliser des armes à distance.
 – Ne peut utiliser « Imposition des mains »
 
+### Chevalier du temple - Kit de Paladin
+
+Les Chevaliers du temple ont les faveurs de leur dieu et défendent leur foi avec plus d'ardeur qu'un rempart d'acier. Ils sont particulièrement efficaces lorsqu'ils ont quelque chose à protéger et sont souvent la première ligne de défense d'un groupe.
+
+Avantages :
+- Immunité à l'immobilisation et la paralysie.
+– Gagne 5 % de résistance contre les dégâts contondants, tranchants, perforants et les projectiles tout les cinq niveaux, avec un maximum de 20 % au niveau 20.
+
+– 3ème Niveau : Peut utiliser la capacité « Guérison de masse » une fois par jour, puis une fois supplémentaire tous les 3 niveaux. le temps d'incantation du sort est de 1.
+
+Inconvénients :
+– Ne peut pas utiliser la capacité Repousser les morts-vivants.
+– Ne peut pas investir plus d'un point de compétence dans les armes à deux mains et les armes à distance.
+
 ## Kits de Clerc
 
 ## Kits de Druide
@@ -302,6 +316,29 @@ Inconvénients :
 - Ne bénéficie pas des résistances élémentaires traditionnelles des druides.
 
 REMARQUE : Les Seigneurs de l'Orage peuvent investir des points de compétence pour les haches, mais ne pourront utiliser que des haches de jet.
+
+## Classes de Prestige
+
+### Semeur de Mort - Classe de Guerrier
+
+Les Semeurs de mort sont des guerriers de Bhaal spécialement formés à l'art de la guerre et de l'intimidation. Ceux qui empruntent la voie du Semeurs de mort sont capables d'abattre leurs ennemis d'un seul coup et chaque victime assassinée de leur main alimente leur haine et leur fureur... Aujourd'hui, ils appartiennent à un groupe épars de fanatiques qui tentent de ramener Bhaal à la vie, malgré que son essence soit enfermée sur d'autres plans.
+
+Avantages :
+– 15ème Niveau : Gagne la capacité passive « Carnage »
+
+CARNAGE : Lorsque le Semeur de Mort tue un adversaire, il alimente sa haine et sa fureur, ce qui lui permet d'infliger 10 % de dégâts physiques supplémentaires pendant un round.
+
+– 17ème Niveau : Gagne la capacité passive « Sème la Mort »
+
+SÈME LA MORT : Le Semeur de Mort a 3 % de chances d'infliger 200 points de dégâts supplémentaires en cas d'attaque réussie et 10 % de chances d'étourdir la cible pendant 2 rounds. Un jet de sauvegarde contre les sort à -4 annule l'étourdissement.
+
+– 20ème Niveau : Peut utiliser la capacité « Sauvagerie » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+SAUVAGERIE : Au cours des 10 secondes qui suivent les attaques du Semeur de Mort affaiblissent progressivement ses adversaires en leur faisant perdre 1 point de force pendant 2 rounds.
+
+Inconvénients :
+– Alignement mauvais uniquement.
+– Ne peut se jumeler.
 
 ## Compatibilité
 
