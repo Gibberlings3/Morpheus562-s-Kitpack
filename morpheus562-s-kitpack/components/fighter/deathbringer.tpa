@@ -45,6 +45,14 @@ COPY ~morpheus562-s-kitpack/cre/mobhaal.cre~              ~override~ // Essence 
 COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/modbr1.d~
 
 ///////////////////////////////////////////////////////////////////////////
+// Update Deathbringer Assault                                           //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~SAREVEFF.SPL~ override
+  LPF DELETE_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 10 END
+  LPF DELETE_EFFECT INT_VAR match_opcode = 45 END
+  LPF DELETE_EFFECT INT_VAR match_opcode = 142 END
+
+///////////////////////////////////////////////////////////////////////////
 // Update Fighter Kit                                                    //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~CLABFI01.2DA~ override
