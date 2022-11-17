@@ -336,7 +336,7 @@ CARNAGE : Lorsque le Semeur de Mort tue un adversaire, il alimente sa haine et s
 
 – 17ème Niveau : Gagne la capacité passive « Sème la Mort »
 
-SÈME LA MORT : Le Semeur de Mort a 3 % de chances d'infliger 200 points de dégâts supplémentaires en cas d'attaque réussie et 10 % de chances d'étourdir la cible pendant 2 rounds. Un jet de sauvegarde contre les sort à -4 annule l'étourdissement.
+SÈME LA MORT : Le Semeur de Mort a 3 % de chances d'infliger 200 points de dégâts supplémentaires en cas d'attaque réussie.
 
 – 20ème Niveau : Peut utiliser la capacité « Sauvagerie » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
@@ -344,6 +344,30 @@ SAUVAGERIE : Au cours des 10 secondes qui suivent les attaques du Semeur de Mort
 
 Inconvénients :
 – Alignement mauvais uniquement.
+– Ne peut se jumeler.
+
+### Archimage - Classe de Mage
+
+Les Archimages sont des maîtres en magie très puissant et généralement d'un âge avancé, il se consacrent à l'étude des arcanes. Ceux qui sont bienveillants conseillent souvent les rois et les reines, tandis que les Archimages maléfiques règnent en tyrans et aspirent souvent à la vie éternelle par tous les moyen, même la transformation en liche. Ceux qui ne sont ni l'un ni l'autre s'enferment dans des tours reculées pour pratiquer leur magie sans être importunés.
+
+Avantages :
+– Bonus de 1 au niveau du lanceur de sort.
+
+– 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+
+FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige 1d6 points de dégâts par niveau d'Archimage.
+
+– 21ème Niveau : Peut utiliser la capacité « Tisseur de sort » une fois par jour.
+
+TISSEUR DE SORT : L'Archimage a acquis une compréhension approfondie de la magie et de ses mécanismes. Une fois par jour, il peut utiliser Souhait mineur comme capacité spéciale.  
+
+– 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant toutes les créatures touchées sont également affectées par une Dissipation de la magie.
+
+– 25ème Niveau : Peut utiliser la capacité « Haut-Mage » une fois par jour.
+
+HAUT-MAGE: L'incantation de cette capacité dure un round complet et permet à l'Archimage de remettre en mémoire tous ses sortilèges. 
+
+Inconvénients :
 – Ne peut se jumeler.
 
 ## Compatibilité
