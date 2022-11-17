@@ -1,0 +1,30 @@
+// Achmage Prestige kit for Mages
+
+ADD_KIT ~MO_ARCHMAGE~
+  ~MO_ARCHMAGE 0 0 0 0 0 0 0 0~ // clasweap.2da
+  ~MO_ARCHMAGE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //weapprof.2da
+  ~MO_ARCHMAGE 0 0 0 9 0 0~ // Minimum Ability - abclasrq
+  ~MO_ARCHMAGE 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_ARCHMAGE 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_ARCHMAGE 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_ARCHMAGE 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~MO_ARCHMAGE 0 0 0 0 0 0~ // Dualclass
+  ~morpheus562-s-kitpack/2da/MO_ARC01.2DA~ // CLAB
+  ~~ 
+  ~0x00004000 1~
+  ~Ma0~ 
+  ~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,20 STAF20~
+  SAY @5571
+  SAY @5572
+  SAY @5573
+
+LAF fl#add_kit_ee STR_VAR kit_name = MO_ARCHMAGE END
+
+OUTER_SET archmage_code = (0x4000 + %MO_ARCHMAGE%)
+
+///////////////////////////////////////////////////////////////////////////
+// Import                                                                //
+///////////////////////////////////////////////////////////////////////////
+COPY ~morpheus562-s-kitpack/2da/MO_ARC01.2DA~         ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/archmage/moarc01.SPL~ ~override~ // +1 Spell Caster Level
+  
