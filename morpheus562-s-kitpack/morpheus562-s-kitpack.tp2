@@ -23,8 +23,10 @@ LANGUAGE ~English~
          ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
 LANGUAGE ~French~
          ~french~
+         ~morpheus562-s-kitpack/languages/english/dialog.tra~
          ~morpheus562-s-kitpack/languages/english/setup.tra~
          ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
+         ~morpheus562-s-kitpack/languages/french/dialog.tra~
          ~morpheus562-s-kitpack/languages/french/setup.tra~
          ~morpheus562-s-kitpack/languages/french/kit_descriptions.tra~
 
