@@ -9,6 +9,8 @@ IF
   !Class(Player1,THIEF_ALL)
   !Class(Player1,MAGE_ALL)
   Level(Player1,15)
+  CheckStatGT(Player1,17,STR)
+  CheckStatGT(Player1,17,CON)
   OR(3)
     Alignment(Player1,LAWFUL_EVIL)
     Alignment(Player1,NEUTRAL_EVIL)

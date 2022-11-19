@@ -174,10 +174,11 @@ Disadvantages:
 - Alignment restricted to evil.
 - May not dual class.
 
-Please note, this prestige kit requires a player meet the following prerequisite requirements:
+Please note, this prestige kit requires a player meet the following prerequisites:
 - Must be the protagonist
 - Character level 15 in pure class fighter
 - No kits nor multi/dual classing
+- Must have 18 or greater strength and constitution
 - Must be evil alignment 
 
 ## Rangers
