@@ -26,9 +26,13 @@ COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~ ~override~ // Polearm Master
 COPY ~morpheus562-s-kitpack/eff/dragoon/modra01.eff~ ~override~ // Effect to cast actual spell
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra11.spl~ ~override~ // Spell that casts per level
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Hamstring~) STR_VAR bam_file = SPWI221C RET MODRA2A = icon END
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra02.spl~ ~override~ // Hamstring
   SAY NAME1 @5550
   SAY UNIDENTIFIED_DESC @5551
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODRA2A~ END
+
 COPY ~morpheus562-s-kitpack/eff/dragoon/modra02.eff~ ~override~ // Hamstring
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra22.spl~ ~override~ // Spell that casts Hamstring
 //COPY ~morpheus562-s-kitpack/spl/dragoon/modra03.spl~ ~override~ // -2 Penalty to AC
