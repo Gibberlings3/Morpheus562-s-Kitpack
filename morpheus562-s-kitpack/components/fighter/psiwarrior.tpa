@@ -28,20 +28,27 @@ LAF fl#add_kit_ee STR_VAR kit_name = MO_PSIWARRIOR END
 
 COPY ~morpheus562-s-kitpack/2da/mo_psi01.2DA~     ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi01.SPL~ ~override~ // Guarded Mind
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Psionic Strike~) STR_VAR bam_file = SPWI511C RET MOPSI2A = icon END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic2.SPL~ ~override~ // Psionic Strike
   SAY NAME1 @5507
   SAY UNIDENTIFIED_DESC @5508
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOPSI2A~ END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi21.SPL~ ~override~ // Psionic Strike +1 Dmg
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi22.SPL~ ~override~ // Psionic Strike +3 Dmg
 //COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi03.SPL~ ~override~ // Protective Field
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Protective Field~) STR_VAR bam_file = SPWI114C RET MOPSI3A = icon END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic3.SPL~ ~override~ // Protective Field
   SAY NAME1 @5513
   SAY UNIDENTIFIED_DESC @5514
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOPSI3A~ END
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi31.SPL~ ~override~ // Protective Field +2% DR
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi32.SPL~ ~override~ // Protective Field +6% DR
+
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic4.SPL~ ~override~ // Psi-Powered Leap
   SAY NAME1 @5509
   SAY UNIDENTIFIED_DESC @5510
-COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi31.SPL~ ~override~ // Protective Field +2% DR
-COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi32.SPL~ ~override~ // Protective Field +6% DR
 
 COPY ~morpheus562-s-kitpack/2da/mo_psi03.2da~ ~override~ // Telekinetic Movement  
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic5.SPL~ ~override~ // Telekinetic Master
