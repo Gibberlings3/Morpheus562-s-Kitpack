@@ -28,7 +28,7 @@ LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Relentless Assault~) 
 COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01.spl~  ~override~ // Relentless Assault
   SAY NAME1 @5532
   SAY UNIDENTIFIED_DESC @5533
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOPAL3A~ END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBTM1A~ END
 COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01a.spl~ ~override~ // Winded
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5541) STR_VAR END
 
