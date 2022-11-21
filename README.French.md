@@ -27,26 +27,26 @@ Ces kits ont des inspirations multiples afin d'inclure les sous-classes de la 5e
 Expert dans les armes à deux mains, le Maître de Bataille est capable de faire des ravages sur les champs de bataille. D'une férocité et d'une résistance sans pareil, Ils déferlent sur leurs ennemis qui redoutent leur capacité à attaquer encore et encore sans faillir. 
 
 Avantages :
-– 1er niveau : Peut utiliser « Charge » une fois par jour, obtient une utilisation supplémentaire au niveau 3, puis tous les 3 niveaux.
+- 1er niveau : Peut utiliser « Charge » une fois par jour, obtient une utilisation supplémentaire au niveau 3, puis tous les 3 niveaux.
 
 CHARGE : Le Maître de Bataille est capable d'augmenter sa vitesse de déplacement de 5 pendant 3 secondes.
 
-– 2ème niveau : Peut utiliser Croche-pied une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- 2ème niveau : Peut utiliser Croche-pied une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 CROCHE-PIED : Lorsque réussissez une attaque sur une créature au cours du prochain round, celle-ci se retrouve au sol pendant 3 secondes. Un jet de sauvegarde contre la mort permet d'échapper à la chute. Le jet de sauvegarde contre la mort passe à -2 au niveau 14 et à -4 au niveau 20.
 
-– 5ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- 5ème niveau : Peut utiliser « Déferlante » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 DÉFERLANTE : Le Maître de Bataille est capable de déchaîner une avalanche de coups, le nombre d'attaques qu'il peut effectuer pendant 5 rounds est doublé.
 
 Après une telle attaque, le personnage est essoufflé et subit une pénalité de 2 à sa classe d'armure, aux jets d'attaque et aux jets de dégâts, pendant 2 rounds.
 
-– 9ème niveau : Gagne la capacité passive « Irréductible ».
+- 9ème niveau : Gagne la capacité passive « Irréductible ».
 
 IRRÉDUCTIBLE : Le Maître de Bataille bénéficie d'un bonus de 1 à tous ses jets de sauvegarde. Ce bonus passe à 2 au niveau 13 et à 3 au niveau 17.
 
 Inconvénients :
-– Ne peut atteindre la grande maîtrise qu'avec les armes à deux mains, pour toutes les autres armes il ne pourra être que compétent.
+- Ne peut atteindre la grande maîtrise qu'avec les armes à deux mains, pour toutes les autres armes il ne pourra être que compétent.
 
 ### Lancier Dragon - Kit de Guerrier 
 
@@ -54,8 +54,8 @@ Les Lanciers Dragons sont des guerriers lourdement cuirassés qui consacrent leu
 
 Avantages :
 
-– Vitesse de déplacement augmenté de 2.
-– La compétence avec les armes d'hast ( bâton, lance et hallebarde) donne au Lancier Dragon 20 % de chances de repousser un ennemi lors d'une attaque réussie et de lui infliger des dégâts perforants supplémentaires. Un jet de sauvegarde contre la mort à -2 permet à la cible d'éviter d'être projeté en arrière. Les dégâts supplémentaires augmentent avec les niveaux :
+- Vitesse de déplacement augmenté de 2.
+- La compétence avec les armes d'hast ( bâton, lance et hallebarde) donne au Lancier Dragon 20 % de chances de repousser un ennemi lors d'une attaque réussie et de lui infliger des dégâts perforants supplémentaires. Un jet de sauvegarde contre la mort à -2 permet à la cible d'éviter d'être projeté en arrière. Les dégâts supplémentaires augmentent avec les niveaux :
 <details>
   <summary>Détails des dégâts</summary>
   
@@ -72,13 +72,13 @@ Avantages :
 
 </details>
 
-– 4ème Niveau : Peut utiliser la capacité « Entrave » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- 4ème Niveau : Peut utiliser la capacité « Entrave » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 ENTRAVE : Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets. 
 
 Inconvénients :
-– Ne peut se jumeler.
-– Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.
+- Ne peut se jumeler.
+- Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.
 
 ### Esprit Guerrier - Kit de Guerrier 
 
@@ -153,17 +153,17 @@ Inconvénients :
 Les Pourfendeurs de bouclier sont des guerriers spécialement formés pour enfoncer les rangs et les défenses ennemies. Ils endommageront les armures et les boucliers permettant ainsi à leurs alliés d'exploiter de nouvelles vulnérabilités chez l'adversaire. Par conséquent, ses attaques ne feront pas de gros dégâts, puisqu'elles sont conçues pour briser armures et boucliers, et non pour sectionner os et tendons.
 
 Avantages :
-– Chaque coup réussi à 25 % de chances d’abaisser de 10 % la résistance aux dégâts physiques de la cible, les effets sont cumulables et durent 4 rounds.
-– 4ème niveau : Peut utiliser « Sillage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- Chaque coup réussi à 25 % de chances d’abaisser de 10 % la résistance aux dégâts physiques de la cible, les effets sont cumulables et durent 4 rounds.
+- 4ème niveau : Peut utiliser « Sillage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 SILLAGE : Le Pourfendeur de Bouclier trace un sillon dans la terre avant de frapper tous les ennemis présents dans un rayon de 4,5 m. Les ennemis touchés subissent 2d4 points de dégâts contondants, une réduction de 25 % de leur résistance aux dégâts physiques pendant 5 rounds, et se retrouvent au sol pendant 3 secondes. Réussir un jet de sauvegarde contre les sorts à -4 annule la chute. 
 
 REMARQUE : La réduction de la résistance aux dégâts physiques n'est pas cumulable en utilisant Sillage de multiples fois.
 
 Inconvénients :
-– Les armes reçoivent une pénalité de 2 aux jets de dégâts.
-– Ne peut utiliser des armes à distance.
-– Ne peut utiliser de boucliers.
+- Les armes reçoivent une pénalité de 2 aux jets de dégâts.
+- Ne peut utiliser des armes à distance.
+- Ne peut utiliser de boucliers.
 
 ## Kits de Rôdeur
 
@@ -177,18 +177,18 @@ Avantages :
 FURIE : Cet état dure 1 tour. Sous Furie, le berserker gagne +2 aux jets de toucher et de dégâts ainsi qu'à la classe d'armure, et devient immunisé aux charmes, à l'immobilisation, à la terreur, à la confusion, à la débilité, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il gagne également 15 points de vie temporaires, qui sont retirés à la fin de la Furie, pouvant rendre le personnage inconscient.
 
 Inconvénients :  
-– Réservé aux humains.
-– Ne peut pas utiliser la Furtivité.
-– Ne peut pas se spécialiser dans les armes à distance.
+- Réservé aux humains.
+- Ne peut pas utiliser la Furtivité.
+- Ne peut pas se spécialiser dans les armes à distance.
 
 ### Champion de la nature - Kit de Rôdeur
 
 Les champions de la nature symbolisent la discipline et le savoir-faire, ils s'appuient sur la rapidité, l'agilité et un apprentissage extrêmement poussé des techniques de combat les plus exigeantes et sophistiquées plutôt que de miser sur la force brute. Pour devenir un champion de la nature, un aspirant doit exceller dans le maniement de l'épée et faire preuve d'une patience à toute épreuve, de grâce et de compassion. Ne vivre que par l'épée, c'est se contenter d'une vie sans élégance et sans valeur. Il y a plus important dans l’existence que les prouesses au combat, et ça un vrai champion le sait.
 
 Avantages :
-– Peut lancer « Imposition des mains » une fois par jour pour rendre à une créature un maximum de 2 points de vie par niveau du Champion de la nature
+- Peut lancer « Imposition des mains » une fois par jour pour rendre à une créature un maximum de 2 points de vie par niveau du Champion de la nature
 
-– 2ème niveau : Gagne la capacité passive « Finesse ».
+- 2ème niveau : Gagne la capacité passive « Finesse ».
 
 FINESSE : Le Champion de la nature devient capable de porter des attaques qui infligent des dégâts considérables toute en finesse. Le personnage applique un modificateur lié à la Dextérité pour améliorer son jet de dégâts (en plus des potentiels bonus lié à la Force). Les bonus sont les suivants :
 <details>
@@ -209,19 +209,19 @@ FINESSE : Le Champion de la nature devient capable de porter des attaques qui in
 
 </details>
 
-– 4ème niveau : Peut utiliser la capacité « Fureur sauvage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- 4ème niveau : Peut utiliser la capacité « Fureur sauvage » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 FUREUR SAUVAGE : Le Champion de la nature est en mesure de canaliser momentanément la puissance d'une des divinités de la nature en enveloppant ses armes d'un voile incandescent. Pendant 10 secondes, le personnage gagne un bonus de 2 à son TAC0 et inflige 2d6 points de dégâts supplémentaires à chaque attaque avec une arme de mêlée.
 
-– 6ème niveau : Gagne la capacité passive « Garde supérieur ».
+- 6ème niveau : Gagne la capacité passive « Garde supérieur ».
 
 GARDE SUPÉRIEUR : Le champion de la nature apprend des techniques très spéciales lui permettant de préserver sa liberté de mouvement, même en portant une armure encombrante. Le personnage gagne un bonus de 1 à la CA au 6ème niveau. Au 9e niveau, ce bonus passe à 2, pour finalement atteindre un bonus de 3 au 12e niveau.
 
 Inconvénients :
-– Pénalité de 1 en force à la création du personnage.
-– Ne peut porter d'armure plus lourde que la besantine.
-– Ne peut acquérir des points de compétence que pour les épées à une main.
-– Ne peut utiliser « Charme-animal »
+- Pénalité de 1 en force à la création du personnage.
+- Ne peut porter d'armure plus lourde que la besantine.
+- Ne peut acquérir des points de compétence que pour les épées à une main.
+- Ne peut utiliser « Charme-animal »
 
 ## Kits de Paladin
 
@@ -230,27 +230,27 @@ Inconvénients :
 Les Défenseurs de la Flamme d'Argent vouent leur vie à lutter contre les forces maléfiques surnaturelles et les menaces en provenance des autres plans. Ce sont des héros mystiques qui canalisent le pouvoir de la Flamme d'Argent pour repousser les envahisseurs démoniaques, détruire les mauvais esprits et châtier les incarnations des forces du mal. Ces parangons du bien sont avant tout des saints qui se dressent entre les ténèbres et la lumière.
 
 Avantages :
-– 1er Niveau : Gagne la capacité passive « Flamme sacrée ».
+- 1er Niveau : Gagne la capacité passive « Flamme sacrée ».
 
 FLAMME SACRÉE : Un Défenseur de la Flamme canalise et déverse la colère de la Flamme d'Argent. Il bénéficie d'un bonus de 1 au TAC0 et aux dégâts.
 
-– 3ème Niveau : Gagne la capacité passive « Infravision ».
+- 3ème Niveau : Gagne la capacité passive « Infravision ».
 
-– 6ème Niveau : Gagne la capacité passive « Flamme Brûlante ».
+- 6ème Niveau : Gagne la capacité passive « Flamme Brûlante ».
 
 FLAMME BRÛLANTE : Le Défenseur de la Flamme d'Argent inflige 2 points de dégâts de feu supplémentaires en cas d'attaque réussie.
 
-– 10ème Niveau : Gagne la capacité passive « Flamme gardienne ».
+- 10ème Niveau : Gagne la capacité passive « Flamme gardienne ».
 
 FLAMME GARDIENNE : Le Défenseur de la Flamme est imprégné par la flamme d'argent ce qui lui octroie un bonus de 2 à la CA et à ses jets de sauvegarde. Il acquiert aussi une résistance à la magie de 10 % à laquelle s'ajoute le niveau du personnage.
 
-– 16ème Niveau : Gagne la capacité passive « Flamme Flamboyante ».
+- 16ème Niveau : Gagne la capacité passive « Flamme Flamboyante ».
 
 FLAMME FLAMBOYANTE : Le Défenseur de la Flamme d'Argent améliore « Flamme Brûlante », qui inflige désormais 1d6 points de dégâts de feu en cas d'attaque réussie.
 
 Inconvénients :
-– Ne peut utiliser des armes à distance.
-– Ne peut utiliser « Imposition des mains »
+- Ne peut utiliser des armes à distance.
+- Ne peut utiliser « Imposition des mains »
 
 ### Chevalier du temple - Kit de Paladin
 
@@ -258,13 +258,13 @@ Les Chevaliers du temple ont les faveurs de leur dieu et défendent leur foi ave
 
 Avantages :
 - Immunité à l'immobilisation et la paralysie.
-– Gagne 5 % de résistance contre les dégâts contondants, tranchants, perforants et les projectiles tout les cinq niveaux, avec un maximum de 20 % au niveau 20.
+- Gagne 5 % de résistance contre les dégâts contondants, tranchants, perforants et les projectiles tout les cinq niveaux, avec un maximum de 20 % au niveau 20.
 
-– 3ème Niveau : Peut utiliser la capacité « Guérison de masse » une fois par jour, puis une fois supplémentaire tous les 3 niveaux. le temps d'incantation du sort est de 1.
+- 3ème Niveau : Peut utiliser la capacité « Guérison de masse » une fois par jour, puis une fois supplémentaire tous les 3 niveaux. le temps d'incantation du sort est de 1.
 
 Inconvénients :
-– Ne peut pas utiliser la capacité Repousser les morts-vivants.
-– Ne peut pas investir plus d'un point de compétence dans les armes à deux mains et les armes à distance.
+- Ne peut pas utiliser la capacité Repousser les morts-vivants.
+- Ne peut pas investir plus d'un point de compétence dans les armes à deux mains et les armes à distance.
 
 ## Kits de Clerc
 
@@ -285,20 +285,20 @@ Inconvénients :
 L'Eldritch Scion bénéficie de la plupart des caractéristiques de l'ensorceleur, tout en étant capable de prouesses martiales.
 
 Avantages :
-– Dés de vie : d8
-– Peut atteindre la spécialisation (2 points de compétence) pour toutes les armes de mêlée.
-– Peut porter les armures en cotte de mailles et les armure en écailles (les restrictions pour le lancement des sorts s'appliquent toujours).
-– Progression du TAC0 personnalisé, hybride entre le guerrier et l'ensorceleur.
-– Obtient la capacité Arme acérée.
+- Dés de vie : d8
+- Peut atteindre la spécialisation (2 points de compétence) pour toutes les armes de mêlée.
+- Peut porter les armures en cotte de mailles et les armure en écailles (les restrictions pour le lancement des sorts s'appliquent toujours).
+- Progression du TAC0 personnalisé, hybride entre le guerrier et l'ensorceleur.
+- Obtient la capacité Arme acérée.
 
 ARME ACÉRÉE : L'Eldritch Scion imprègne naturellement son arme avec sa magie ce qui lui permet d'infliger des dégâts additionnels. Il génère un point de dégât magique supplémentaire tous les cinq niveaux, pour un maximum de cinq points de dégâts magiques au niveau 20. La résistance à la magie de la cible aura une influence.
 
-– 8ème niveau : Acquiert une demi attaque supplémentaire par round.
-– 15ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
+- 8ème niveau : Acquiert une demi attaque supplémentaire par round.
+- 15ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
 
 Inconvénients :
-– Pénalité de -2 au temps d'incantation des sorts.
-– Pénalité de -2 au niveau du lanceur de sorts.
+- Pénalité de -2 au temps d'incantation des sorts.
+- Pénalité de -2 au niveau du lanceur de sorts.
 
 ## Kits de Chaman
 
@@ -309,13 +309,13 @@ Inconvénients :
 Les seigneurs de l'orage manipulent le tonnerre et la foudre comme les guerrier manient leur épée. En raison de leur maîtrise de l'un des éléments les plus destructeurs de la nature, ils sont perçus avec crainte et admiration par les gens ordinaires, quelle que soit leur motivation.
 
 Avantages :
-– 1er niveau : Bonus de 1 aux jets de toucher et de dégâts, gagne un bonus supplémentaire au 6ème niveau et un autre au 9ème niveau.
+- 1er niveau : Bonus de 1 aux jets de toucher et de dégâts, gagne un bonus supplémentaire au 6ème niveau et un autre au 9ème niveau.
 
-– 3ème niveau : Peut utiliser « Induction » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+- 3ème niveau : Peut utiliser « Induction » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
 INDUCTION : Le Seigneur de l'Orage insuffle 1d8 points de dégâts d'électricité à son arme pendant 2 tours.
 
-– 4ème niveau : Le Seigneur de l'Orage gagne 25 % d'immunité aux dégâts électriques. Cette immunité passe à 50 % au niveau 8, 75 % au niveau 12 et 100 % au niveau 14.
+- 4ème niveau : Le Seigneur de l'Orage gagne 25 % d'immunité aux dégâts électriques. Cette immunité passe à 50 % au niveau 8, 75 % au niveau 12 et 100 % au niveau 14.
 
 Inconvénients :
 - Le Seigneur de l'Orage est limité aux armes suivantes : Lance, Hache de jet et fléchette.
@@ -330,45 +330,53 @@ REMARQUE : Les Seigneurs de l'Orage peuvent investir des points de compétence p
 Les Semeurs de mort sont des guerriers de Bhaal spécialement formés à l'art de la guerre et de l'intimidation. Ceux qui empruntent la voie du Semeurs de mort sont capables d'abattre leurs ennemis d'un seul coup et chaque victime assassinée de leur main alimente leur haine et leur fureur... Aujourd'hui, ils appartiennent à un groupe épars de fanatiques qui tentent de ramener Bhaal à la vie, malgré que son essence soit enfermée sur d'autres plans.
 
 Avantages :
-– 15ème Niveau : Gagne la capacité passive « Carnage »
+- 15ème Niveau : Gagne la capacité passive « Carnage »
 
 CARNAGE : Lorsque le Semeur de Mort tue un adversaire, il alimente sa haine et sa fureur, ce qui lui permet d'infliger 10 % de dégâts physiques supplémentaires pendant 2 rounds. Cette capacité est cumulative.
 
-– 17ème Niveau : Gagne la capacité passive « Sème la Mort »
+- 17ème Niveau : Gagne la capacité passive « Sème la Mort »
 
 SÈME LA MORT : Le Semeur de Mort a 3 % de chances d'infliger 200 points de dégâts supplémentaires en cas d'attaque réussie.
 
-– 20ème Niveau : Peut utiliser la capacité « Sauvagerie » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+- 20ème Niveau : Peut utiliser la capacité « Sauvagerie » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
 SAUVAGERIE : Au cours des 10 secondes qui suivent les attaques du Semeur de Mort affaiblissent progressivement ses adversaires en leur faisant perdre 1 point de force pendant 2 rounds.
 
 Inconvénients :
-– Alignement mauvais uniquement.
-– Ne peut se jumeler.
+- Alignement mauvais uniquement.
+- Ne peut se jumeler.
+
+Remarque : cette classe de prestige exige que le joueur réunisse les conditions suivantes :
+
+- Être le protagoniste
+- Classe de guerrier de niveau 15
+- Ne pas avoir de kit, ne pas être multiclassé ou jumelé
+- Doit avoir une Force et une Constitution de 18 ou plus
+- Doit être d'alignement maléfique
 
 ### Archimage - Classe de Mage
 
 Les Archimages sont des maîtres en magie très puissant et généralement d'un âge avancé, il se consacrent à l'étude des arcanes. Ceux qui sont bienveillants conseillent souvent les rois et les reines, tandis que les Archimages maléfiques règnent en tyrans et aspirent souvent à la vie éternelle par tous les moyen, même la transformation en liche. Ceux qui ne sont ni l'un ni l'autre s'enferment dans des tours reculées pour pratiquer leur magie sans être importunés.
 
 Avantages :
-– Bonus de 1 au niveau du lanceur de sort.
+- Bonus de 1 au niveau du lanceur de sort.
 
-– 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+- 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
 
 FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige 1d6 points de dégâts par niveau d'Archimage.
 
-– 21ème Niveau : Peut utiliser la capacité « Tisseur de sort » une fois par jour.
+- 21ème Niveau : Peut utiliser la capacité « Tisseur de sort » une fois par jour.
 
 TISSEUR DE SORT : L'Archimage a acquis une compréhension approfondie de la magie et de ses mécanismes. Une fois par jour, il peut utiliser Souhait mineur comme capacité spéciale.  
 
-– 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant toutes les créatures touchées sont également affectées par une Dissipation de la magie.
+- 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant toutes les créatures touchées sont également affectées par une Dissipation de la magie.
 
-– 25ème Niveau : Peut utiliser la capacité « Haut-Mage » une fois par jour.
+- 25ème Niveau : Peut utiliser la capacité « Haut-Mage » une fois par jour.
 
 HAUT-MAGE: L'incantation de cette capacité dure un round complet et permet à l'Archimage de remettre en mémoire tous ses sortilèges. 
 
 Inconvénients :
-– Ne peut se jumeler.
+- Ne peut se jumeler.
 
 ## Compatibilité
 
