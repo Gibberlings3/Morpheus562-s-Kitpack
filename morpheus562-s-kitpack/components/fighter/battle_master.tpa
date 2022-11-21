@@ -24,7 +24,7 @@ OUTER_SET battlemaster_code = (0x4000 + %MO_BATTLEMASTER%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_btm01.2DA~              ~override~ // kit
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Relentless Assault~) STR_VAR bam_file = SCL238D RET MOBTM1A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Relentless Assault~) STR_VAR bam_file = SPCL238D RET MOBTM1A = icon END
 COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01.spl~  ~override~ // Relentless Assault
   SAY NAME1 @5532
   SAY UNIDENTIFIED_DESC @5533
