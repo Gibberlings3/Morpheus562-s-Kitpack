@@ -284,7 +284,7 @@ Disadvantages:
 
 ### Archmage
 
- Archmages are powerful, and usually quite old, spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
+Archmages are powerful, and usually quite old, spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
 
 Advantages:
 - Gains a +1 bonus to casting level.
