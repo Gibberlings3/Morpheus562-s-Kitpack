@@ -280,6 +280,39 @@ Disadvantages:
 - May not turn undead.
 - May not exceed Proficient (one slot) in ranged or two-handed weapons.
 
+## Mage
+
+### Archmage
+
+ Archmages are powerful, and usually quite old, spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
+
+Advantages:
+- Gains a +1 bonus to casting level.
+
+- 18th Level: May use the Arcane Fire ability once per day and gains an additional use every 4 levels thereafter.
+
+ARCANE FIRE: Archmage learns to channel arcane energy as a weapon, ensuring they are armed even when their spells run dry. This ability allows the Archmage to fire a pulse of magical energy that deals 1d6/class level damage to a single creature. Magic Resistance is bypassed by this ability.
+
+- 21st Level: May use the Spell Weaver ability once per day.
+
+SPELL WEAVER: The Archmage has developed an understanding of how magic works at its most fundamental level, and once per day may use Limited Wish as a spell like ability.  
+
+- 23rd Level: The Archmage improves the Arcane Fire ability and it becomes Greater Arcane Fire. Any creature struck by the Archmage's Arcane Fire are also affected by a Dispel Magic effect.
+
+- 25th Level: May use the Grand Mage ability once per day.
+
+GRAND MAGE: Using this ability takes an entire round and allows the Archmage to rememorize any spent magic.
+
+Disadvantages:
+- May not dual class.
+
+Please note, this prestige kit requires a player meet the following prerequisites:
+- Must be the protagonist
+- Character level 18 in pure class Mage (non-specialist)
+- No kits nor multi/dual classing
+- Must have 19 or greater intelligence
+- Must have 15 or greater wisdom 
+
 ## Sorcerers
 
 ### Eldritch Scion
