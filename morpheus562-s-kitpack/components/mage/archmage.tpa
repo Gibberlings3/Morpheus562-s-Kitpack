@@ -55,7 +55,7 @@ COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/moarc1.d~
 // Update Fighter Kit                                                    //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~CLABMA01.2DA~ override
-    LPF set_clab_2da_entries INT_VAR f_MinLevel = 15 f_MaxLevel = 15 STR_VAR f_Entry = AP_MOARC05 END
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 18 f_MaxLevel = 18 STR_VAR f_Entry = AP_MOARC05 END
     PRETTY_PRINT_2DA
   BUT_ONLY
 
