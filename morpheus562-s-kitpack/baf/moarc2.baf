@@ -1,0 +1,49 @@
+IF
+  Global("MO_ArchmageCheck","GLOBAL",0)
+  !ActuallyInCombat()
+  !See([EVILCUTOFF])
+  Class(Player1,MAGE)
+  Kit(Player1,TRUECLASS)
+  !Class(Player1,FIGHTER_ALL)
+  !Class(Player1,SORCERER)
+  !Class(Player1,CLERIC_ALL)
+  !Class(Player1,THIEF_ALL)
+  LevelGT(Player1,17)
+  CheckStatGT(Player1,18,INT)
+  CheckStatGT(Player1,14,WIS)
+THEN
+  RESPONSE #100
+    SetGlobal("MO_ArchmageCheck","GLOBAL",1)
+    CreateCreatureObject("MOBHAAL",Player1,0,0,0)
+    ApplySpellRES("modbr07",Player1)
+    //AddKit(MO_ARCHMAGE)
+    //ChangeAIScript("",GENERAL)
+END
+
+IF
+  Global("MO_BecomeArchmage","GLOBAL",1)
+  !Kit(Player1,MO_ARCHMAGE)
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("SPGRWHRL",Player1)
+    PlaySound("WWATTACK")
+    DisplayStringHead(Myself,@5580)
+    AddKit(MO_ARCHMAGE)
+    ChangeAIScript("",GENERAL)
+END
+
+IF
+  Global("MO_NoArchmage","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ChangeAIScript("",GENERAL)
+END
+
+IF
+  !ActuallyInCombat()
+  !See([EVILCUTOFF])
+  Global("MO_ArchmageCheck","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ChangeAIScript("",GENERAL)
+END

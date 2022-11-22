@@ -408,3 +408,25 @@ GRAND MAGE: Using this ability takes an entire round and allows the Archmage to 
 
 Disadvantages:
 – May not dual class.~
+
+@5574 = ~Arcane Fire~
+@5575 = ~Arcane Fire
+
+Level: 0
+Range: 60 ft.
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None 
+
+Archmage learns to channel arcane energy as a weapon, ensuring they are armed even when their spells run dry. This ability allows the Archmage to fire a pulse of magical energy that deals 1d6/class level damage.~
+
+@5576 = ~Spell Weaver~
+@5577 = ~Spell Weaver
+The Archmage has developed an understanding of how magic works at its most fundamental level, and once per day may use Limited Wish as a spell like ability.~
+
+@5578 = ~Grand Mage~
+@5579 = ~Using this ability takes an entire round and allows the Archmage to rememorize any spent magic.~
+
+@5580 = ~<CHARNAME> has become an Archmage!~
+@5581 = ~The Weave~

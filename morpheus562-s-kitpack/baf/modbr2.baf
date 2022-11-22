@@ -8,7 +8,7 @@ IF
   !Class(Player1,CLERIC_ALL)
   !Class(Player1,THIEF_ALL)
   !Class(Player1,MAGE_ALL)
-  Level(Player1,15)
+  LevelGT(Player1,14)
   CheckStatGT(Player1,17,STR)
   CheckStatGT(Player1,17,CON)
   OR(3)

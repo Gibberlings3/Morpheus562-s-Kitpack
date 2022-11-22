@@ -1,0 +1,8 @@
+IF
+  See(Player1)
+  Global("MO_ARCHMAGE_TALKED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("MO_ARCHMAGE_TALKED","LOCALS",1)
+    StartDialogNoSet(Player1)
+END

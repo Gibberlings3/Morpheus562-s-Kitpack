@@ -10,6 +10,16 @@
 @6007 = ~Rise and venture forth as a Deathbringer of Bhaal!~
 @6008 = ~Bah, resist me at your own peril!~
 
+
+@6101 = ~You feel a tingle in the air and energy coursing through your veins. The weave itself appears to materialize in your thoughts.~
+@6102 = ~You see images of power and sense the weave is offering you to become an Archmage.~ 
+@6103 = ~No, I wish to pursue my current path of magical study.~
+@6104 = ~Yes, I wish to become an Archmage.~
+@6105 = ~What exactly will I gain by becoming an Archmage?~
+@6106 = ~You sense increased spellcasting power and the abilities to channel energy directly from the weave to damage your foes from afar, daily limited wish, and to rememorize any spent magic once per day.~
+@6107 = ~You feel an energy surge within you as you become an Archmage.~
+@6108 = ~The weave retreats, though you can feel it is not accepting of your answer.~
+
 /*
 Lowman provided dialog
 
