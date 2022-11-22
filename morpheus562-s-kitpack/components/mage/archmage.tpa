@@ -39,7 +39,7 @@ COPY ~morpheus562-s-kitpack/spl/archmage/moarc03.SPL~ ~override~ // Spell Weaver
   SAY NAME1 @5576
   SAY UNIDENTIFIED_DESC @5577
 COPY ~morpheus562-s-kitpack/spl/archmage/moarc04.SPL~ ~override~ // Grand Mage
-  AY NAME1 @5578
+  SAY NAME1 @5578
   SAY UNIDENTIFIED_DESC @5579
 COPY ~morpheus562-s-kitpack/spl/archmage/moarc05.spl~ ~override~ // Opcode 177
 COPY ~morpheus562-s-kitpack/eff/archmage/moarc05.eff~ ~override~ // Set AI Script
