@@ -14,8 +14,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("MO_ArchmageCheck","GLOBAL",1)
-    CreateCreatureObject("MOBHAAL",Player1,0,0,0)
-    ApplySpellRES("modbr07",Player1)
+    CreateCreatureObject("MOWEAVE",Player1,0,0,0)
     //AddKit(MO_ARCHMAGE)
     //ChangeAIScript("",GENERAL)
 END
