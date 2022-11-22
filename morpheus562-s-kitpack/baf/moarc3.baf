@@ -1,0 +1,7 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    RemoveSpellRES("moarc04")  // Grand Mage
+    ChangeAIScript("",OVERRIDE)
+END

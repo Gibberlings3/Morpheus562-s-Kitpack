@@ -62,4 +62,5 @@ COPY_EXISTING ~CLABMA01.2DA~ override
 ///////////////////////////////////////////////////////////////////////////
 COPY ~morpheus562-s-kitpack/baf/moarc1.baf~ ~override/moarc1.bcs~
      ~morpheus562-s-kitpack/baf/moarc2.baf~ ~override/moarc2.bcs~
+     ~morpheus562-s-kitpack/baf/moarc3.baf~ ~override/moarc3.bcs~
   COMPILE_BAF_TO_BCS  
