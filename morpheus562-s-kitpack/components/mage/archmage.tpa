@@ -36,7 +36,7 @@ COPY ~morpheus562-s-kitpack/spl/archmage/moarc02.SPL~ ~override~ // Arcane Fire
   SAY NAME1 @5574
   SAY UNIDENTIFIED_DESC @5575
 COPY ~morpheus562-s-kitpack/spl/archmage/moarc03.SPL~ ~override~ // Spell Weaver
-  AY NAME1 @5576
+  SAY NAME1 @5576
   SAY UNIDENTIFIED_DESC @5577
 COPY ~morpheus562-s-kitpack/spl/archmage/moarc04.SPL~ ~override~ // Grand Mage
   AY NAME1 @5578
