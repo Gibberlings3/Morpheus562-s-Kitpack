@@ -7,8 +7,18 @@
 @6004 = ~J'accepte ce cadeau et suis prêt à poursuivre ma route en tant que Semeur de Mort~ ~J'accepte ce cadeau et suis prête à poursuivre ma route en tant que Semeur de Mort~
 @6005 = ~Tu as éveillé ma curiosité. Dis-moi, quel sont les avantages que tu m'offres ?~
 @6006 = ~Ce qui suivent la voie du Semeur de Mort sont capables de terrasser leurs ennemis d'un seul coup, et chacune de leurs victimes nourrit leur haine et leur fureur.~
-@6007 = ~Lève toi et embrasse ta destinée en tant que Semeur de Mort au service de Bhaal!~
+@6007 = ~Lève toi et embrasse ta destinée en tant que Semeur de Mort au service de Bhaal le Seigneur du Meurtre!~
 @6008 = ~Bah, si tu refuses mon pouvoir, tu en affronteras les conséquences !~
+
+
+@6101 = ~Vous ressentez comme un picotement alors qu'une puissante énergie se propage dans vos veines. La Toile elle-même semble se manifester dans votre esprit.~
+@6102 = ~Des visions de pouvoir vous envahissent et vous percevez que la Toile vous invite à embrasser la voie de l'Archimage.~ 
+@6103 = ~Non, je souhaite poursuivre mon chemin et continuer à découvrir la magie par moi même.~
+@6104 = ~Oui, je souhaite atteindre le statut d'Archimage.~
+@6105 = ~Quels seront les avantages si j'accepte de devenir un Archimage ?~ ~Quels seront les avantages si j'accepte de devenir une Archimage ?~
+@6106 = ~Vous êtes submergé par une puissance hors du commun qui renforce votre lien avec la Toile et votre capacité à canaliser son énergie, vous permettant d'atteindre vos ennemis à bonne distance, de faire un vœu quotidien, et de remémorer tous vos sorts une fois par jour.~
+@6107 = ~Vous ressentez une vague d'énergie en votre fort intérieur alors que vous accédez au rang d'Archimage.~
+@6108 = ~La Toile recule, mais vous pouvez ressentir sa désapprobation face à votre refus.~
 
 /*
 Lowman provided dialog

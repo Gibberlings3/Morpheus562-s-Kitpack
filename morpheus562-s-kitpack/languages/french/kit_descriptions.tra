@@ -392,15 +392,15 @@ Au cours des 10 secondes qui suivent les attaques du Semeur de Mort affaiblissen
 Avantages :
 – Bonus de 1 au niveau du lanceur de sort.
 
-– 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+– 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
-FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige 1d6 points de dégâts par niveau d'Archimage.
+FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige à une créature 1d6 points de dégâts par niveau d'Archimage. La résistance à la magie de la cible est ignorée par cette capacité.
 
 – 21ème Niveau : Peut utiliser la capacité « Tisseur de sort » une fois par jour.
 
 TISSEUR DE SORT : L'Archimage a acquis une compréhension approfondie de la magie et de ses mécanismes. Une fois par jour, il peut utiliser Souhait mineur comme capacité spéciale.  
 
-– 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant toutes les créatures touchées sont également affectées par une Dissipation de la magie.
+– 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant la créature touchée est également affectée par une Dissipation de la magie.
 
 – 25ème Niveau : Peut utiliser la capacité « Haut-Mage » une fois par jour.
 
@@ -408,3 +408,27 @@ HAUT-MAGE: L'incantation de cette capacité dure un round complet et permet à l
 
 Inconvénients :
 – Ne peut se jumeler.~
+
+@5574 = ~Feu des arcanes~
+@5575 = ~Feu des arcanes
+
+Niveau : 0
+Portée : 18 mètres.
+Durée : Instantané
+Temps d'incantation : 1
+Zone d'effet : 1 créature
+Jet de sauvegarde : Aucun
+
+L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige à une créature 1d6 points de dégâts par niveau d'Archimage. La résistance à la magie de la cible est ignorée par cette capacité.
+
+Au 23ème niveau, l'Archimage améliore la capacité « Feu des arcanes ». Maintenant la créature touchée est également affectée par une Dissipation de la magie.~
+
+@5576 = ~Tisseur de sort~
+@5577 = ~Tisseur de sort
+L'Archimage a acquis une compréhension approfondie de la magie et de ses mécanismes. Une fois par jour, il peut utiliser Souhait mineur comme capacité spéciale.~
+
+@5578 = ~Haut-Mage~
+@5579 = ~L'incantation de cette capacité dure un round complet et permet à l'Archimage de remettre en mémoire tous ses sortilèges.~
+
+@5580 = ~<CHARNAME> est désormais un Archimage !~
+@5581 = ~La Toile~
