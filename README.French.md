@@ -346,7 +346,7 @@ Inconvénients :
 - Alignement mauvais uniquement.
 - Ne peut se jumeler.
 
-Remarque : cette classe de prestige exige que le joueur réunisse les conditions suivantes :
+Remarque : Cette classe de prestige exige que le joueur réunisse les conditions suivantes :
 
 - Être le protagoniste
 - Classe de guerrier de niveau 15
@@ -361,15 +361,15 @@ Les Archimages sont des maîtres en magie très puissant et généralement d'un 
 Avantages :
 - Bonus de 1 au niveau du lanceur de sort.
 
-- 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+- 18ème Niveau : Peut utiliser la capacité « Feu des arcanes » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
 
-FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige 1d6 points de dégâts par niveau d'Archimage.
+FEU DES ARCANES : L'Archimage apprend à canaliser l'énergie des arcanes pour s'en servir comme une arme, ce qui lui permet d'être capable de se défendre même lorsque ses sorts sont épuisés. Cette capacité lui permet de libérer une impulsion d'énergie magique qui inflige à une créature 1d6 points de dégâts par niveau d'Archimage. La résistance à la magie de la cible est ignorée par cette capacité.
 
 - 21ème Niveau : Peut utiliser la capacité « Tisseur de sort » une fois par jour.
 
 TISSEUR DE SORT : L'Archimage a acquis une compréhension approfondie de la magie et de ses mécanismes. Une fois par jour, il peut utiliser Souhait mineur comme capacité spéciale.  
 
-- 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant toutes les créatures touchées sont également affectées par une Dissipation de la magie.
+- 23ème Niveau : L'Archimage améliore la capacité « Feu des arcanes ». Maintenant la créature touchée est également affectée par une Dissipation de la magie.
 
 - 25ème Niveau : Peut utiliser la capacité « Haut-Mage » une fois par jour.
 
@@ -377,6 +377,14 @@ HAUT-MAGE: L'incantation de cette capacité dure un round complet et permet à l
 
 Inconvénients :
 - Ne peut se jumeler.
+
+Remarque : Cette classe de prestige exige que le joueur réunisse les conditions suivantes :
+
+- Être le protagoniste
+- Classe de mage non spécialiste de niveau 18
+- Ne pas avoir de kit, ne pas être multiclassé ou jumelé
+- Avoir une Intelligence de 19 ou plus
+- Avoir une Sagesse de 15 ou plus
 
 ## Compatibilité
 
