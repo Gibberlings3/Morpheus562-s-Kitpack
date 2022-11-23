@@ -8,7 +8,7 @@
 
 **Author**: [morpheus562](https://www.gibberlings3.net/profile/11591-morpheus562/)
 
-**On the Web**: [Discussion Topic](https://www.gibberlings3.net/forums/topic/36095-morpheus562s-kitpack/)
+**On the Web**: [Home Page](https://www.gibberlings3.net/mods/kits/morpheus-kitpack/) and [Discussion Topic](https://www.gibberlings3.net/forums/topic/36095-morpheus562s-kitpack/)
 
 ## Introduction
 
