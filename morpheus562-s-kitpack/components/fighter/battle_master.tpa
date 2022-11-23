@@ -46,6 +46,8 @@ COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm03.spl~ ~override~ // Dash
   SAY NAME1 @5534
   SAY UNIDENTIFIED_DESC @5535
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBTM3A~ END
+/*
 COPY ~morpheus562-s-kitpack/spl/battlemaster/MO#IND01.SPL~ ~override~ // Indomitable 1
 COPY ~morpheus562-s-kitpack/spl/battlemaster/MO#IND02.SPL~ ~override~ // Indomitable 2
 COPY ~morpheus562-s-kitpack/spl/battlemaster/MO#IND03.SPL~ ~override~ // Indomitable 3
+*/
