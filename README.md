@@ -16,7 +16,7 @@ These kits are inspired from various areas to include 5e subclasses and NWN2 Pre
 
 ---
 
-[Fighters Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#fighters) / [Rangers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#rangers) / [Paladins Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#paladins) / [Sorcerers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#sorcerers) / [Multiclass Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#multiclass) 
+[Fighters Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#fighters) / [Rangers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#rangers) / [Paladins Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#paladins) / [Mages Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#mages) / [Sorcerers Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#sorcerers) / [Multiclass Kits](https://github.com/Gibberlings3/Morpheus562-s-Kitpack#multiclass) 
 
 ---
 
@@ -189,7 +189,9 @@ Advantages:
 RAGE: The enraged state lasts for 1 turn. While enraged, a Berserker gains a bonus of +2 to his attack and damage rolls as well as to his Armor Class, and becomes immune to charm, confusion, fear, feeblemind, hold, imprisonment, level drain, maze, stun, and sleep. The Berserker also gains 15 temporary Hit Points which are taken away at the end of his berserk spree, possibly knocking him unconscious.
 
 Disadvantages:
-- May not wear armor heavier than splint mail.
+- Race restricted to human.
+- May not use stealth.
+- May not Specialize in ranged weapons.
 
 ### Champion of the Wild
 
