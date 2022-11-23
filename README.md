@@ -164,7 +164,7 @@ DEATHBRINGER ASSAULT: The Deathbringer has a 3% on hit of dealing an additional 
 
 - 20th Level: May use the Savage Blows ability once per day and gains an additional use every 5 levels thereafter.
 
-SAVAGE BLOWS: The Deathbringer's attacks for the next 10 seconds will progressively weaken any struck opponent. The hit target will lose 1 point of strength per hit for the next 2 rounds.
+SAVAGE BLOWS: The Deathbringer's attacks for the next 10 seconds will progressively weaken any struck opponent. The hit target will lose 1 point of constitution per hit for the next 2 rounds.
 
 Disadvantages:
 - Alignment restricted to evil.

@@ -336,7 +336,7 @@ SÈME LA MORT : Le Semeur de Mort a 3 % de chances d'infliger 200 points de dég
 
 - 20ème Niveau : Peut utiliser la capacité « Sauvagerie » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
-SAUVAGERIE : Au cours des 10 secondes qui suivent les attaques du Semeur de Mort affaiblissent progressivement ses adversaires en leur faisant perdre 1 point de force pendant 2 rounds.
+SAUVAGERIE : Au cours des 10 secondes qui suivent les attaques du Semeur de Mort affaiblissent progressivement ses adversaires en leur faisant perdre 1 point de constitution pendant 2 rounds.
 
 Inconvénients :
 - Alignement mauvais uniquement.
