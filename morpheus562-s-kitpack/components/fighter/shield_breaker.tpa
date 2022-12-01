@@ -60,3 +60,7 @@ COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3a.eff~ ~override~ // -10% S
 COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3b.eff~ ~override~ // -10% Crushing Effect
 COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3c.eff~ ~override~ // -10% Piercing Effect
 COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3d.eff~ ~override~ // -10% Missile Effect
+COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3e.eff~ ~override~ // Weakened Armor
+  SAY 0x1C @5582
+COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3f.eff~ ~override~ // Visual Display
+COPY ~morpheus562-s-kitpack/eff/shield_breaker/moshb3g.eff~ ~override~ // Sound
