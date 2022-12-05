@@ -46,7 +46,7 @@ Inconvénients :
 
 ### Lancier Dragon - Kit de Guerrier 
 
-Les Lanciers Dragons sont des guerriers lourdement cuirassés qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers s'efforcent de maintenir leurs ennemis à distance tout en progressant sur le champ de bataille au détriment de leur propre défense.
+Les Lanciers Dragons sont des guerriers qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers s'efforcent de maintenir leurs ennemis à distance tout en progressant le plus rapidement possible sur le champ de bataille.
 
 Avantages :
 
@@ -73,7 +73,6 @@ Avantages :
 ENTRAVE : Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets. 
 
 Inconvénients :
-- Ne peut se jumeler.
 - Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.
 
 ### Esprit Guerrier - Kit de Guerrier 
