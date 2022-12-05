@@ -42,7 +42,7 @@ Disadvantages:
 
 ### Dragoon
 
-Dragoons are heavily armored warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while maneuvering around the battlefield at the expense of their own protection.
+Dragoons are warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while quickly maneuvering around the battlefield.
 
 Advantages:
 - Moves 2 points faster than other characters.
