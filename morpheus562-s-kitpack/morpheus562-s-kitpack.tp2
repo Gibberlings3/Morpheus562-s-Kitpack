@@ -7,7 +7,7 @@
 BACKUP ~morpheus562-s-kitpack/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v1.0~
+VERSION ~v1.1~
 README ~morpheus562-s-kitpack/readme.%LANGUAGE%.html~ ~morpheus562-s-kitpack/readme.html~
 AUTO_EVAL_STRINGS
 
