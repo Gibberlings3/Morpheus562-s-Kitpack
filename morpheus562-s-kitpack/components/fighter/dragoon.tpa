@@ -8,7 +8,7 @@ ADD_KIT ~MO_DRAGOON~
   ~MO_DRAGOON 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
   ~MO_DRAGOON 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
   ~MO_DRAGOON 1 1 1 1 1 1 1 1 1~ // Alignment
-  ~MO_DRAGOON 0 0 0 0 0 0~ // Dual Class Options
+  ~MO_DRAGOON 0 1 1 1 1 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_dra01.2DA~ 
   ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
   ~0x00004000 2~

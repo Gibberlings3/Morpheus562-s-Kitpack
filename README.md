@@ -61,7 +61,6 @@ Advantages:
 HAMSTRING: The Dragoon's attacks for the next 10 seconds will progressively slow the movement of any struck enemy by -1. The penalty from each hit is cumulative and will last for 2 rounds. A successful save vs. Death with a -4 penalty negates the penalty to movement speed. 
 
 Disadvantages:
-- May not dual class.
 - May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
 
 ### Psi Warrior
