@@ -437,20 +437,7 @@ The Archmage has developed an understanding of how magic works at its most funda
 Advantages:
 – May use Siphon Life ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.
 
-SIPHON LIFE: Each hit within the next 10 seconds drains 1d4 + the Reaver's Charisma modifier Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points. The Charisma modifier applied to the damage is:
-  13 Charisma: +1 damage
-  14 Charisma: +2 damage
-  15 Charisma: +3 damage
-  16 Charisma: +4 damage
-  17 Charisma: +4 damage
-  18 Charisma: +5 damage
-  19 Charisma: +8 damage
-  20 Charisma: +9 damage
-  21 Charisma: +10 damage
-  22 Charisma: +11 damage
-  23 Charisma: +12 damage
-  24 Charisma: +13 damage
-  25 Charisma: +14 damage
+SIPHON LIFE: Each hit within the next 10 seconds drains 1d4 Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points.
 
 – 5th Level: Gains the Devour Soul passive ability.
 
@@ -462,17 +449,6 @@ Disadvantages:
 
 @5586 = ~Siphon Life~
 @5587 = ~Siphon Life
-Each hit within the next 10 seconds drains 1d4 + the Reaver's Charisma modifier Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points. The Charisma modifier applied to the damage is:
-  13 Charisma: +1 damage
-  14 Charisma: +2 damage
-  15 Charisma: +3 damage
-  16 Charisma: +4 damage
-  17 Charisma: +4 damage
-  18 Charisma: +5 damage
-  19 Charisma: +8 damage
-  20 Charisma: +9 damage
-  21 Charisma: +10 damage
-  22 Charisma: +11 damage
-  23 Charisma: +12 damage
-  24 Charisma: +13 damage
-  25 Charisma: +14 damage~
+Each hit within the next 10 seconds drains 1d4 Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points.~
+
+@5588 = ~Devoured Enemie's Soul~

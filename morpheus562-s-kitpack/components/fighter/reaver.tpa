@@ -28,9 +28,16 @@ END
 
 OUTER_SET reaver_code = (0x4000 + %MO_REAVER%)
 
-COPY ~morpheus562-s-kitpack/2da/mo_rvr01.2DA~       ~override~   // kit
+COPY ~morpheus562-s-kitpack/2da/mo_rvr01.2DA~       ~override~ // kit
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Siphon Life~) STR_VAR bam_file = SPWI608C RET MORVR1A = icon END
 COPY ~morpheus562-s-kitpack/spl/reaver/morvr01.spl~ ~override~ // Siphon Life
   SAY NAME1 @5586
   SAY UNIDENTIFIED_DESC @5587
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MORVR1A~ END
+COPY ~morpheus562-s-kitpack/eff/reaver/morvr01.EFF~ ~override~ // Effect
+COPY ~morpheus562-s-kitpack/spl/reaver/morvr11.SPL~ ~override~ // Spell
 
 COPY ~morpheus562-s-kitpack/spl/reaver/morvr02.spl~ ~override~ // Devour Soul
+COPY ~morpheus562-s-kitpack/spl/reaver/morvr2a.spl~ ~override~ // Devour Soul
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5588) STR_VAR END
