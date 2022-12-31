@@ -30,7 +30,7 @@ OUTER_SET reaver_code = (0x4000 + %MO_REAVER%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_rvr01.2DA~       ~override~ // kit
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Siphon Life~) STR_VAR bam_file = SPWI608C RET MORVR1A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Siphon Life~) STR_VAR bam_file = SPPR608C RET MORVR1A = icon END
 COPY ~morpheus562-s-kitpack/spl/reaver/morvr01.spl~ ~override~ // Siphon Life
   SAY NAME1 @5586
   SAY UNIDENTIFIED_DESC @5587
