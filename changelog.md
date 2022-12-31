@@ -1,3 +1,11 @@
+## Version 2.0
+
+January XX, 2023
+
+### Changed
+
+- Added the Reaver Fighter kit.
+
 ## Version 1.1 
 
 December 5, 2022

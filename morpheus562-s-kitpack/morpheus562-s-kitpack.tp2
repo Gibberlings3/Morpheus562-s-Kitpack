@@ -7,7 +7,7 @@
 BACKUP ~morpheus562-s-kitpack/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v1.1~
+VERSION ~v2.0~
 README ~morpheus562-s-kitpack/readme.%LANGUAGE%.html~ ~morpheus562-s-kitpack/readme.html~
 AUTO_EVAL_STRINGS
 
@@ -67,6 +67,14 @@ BEGIN @120 DESIGNATED 120 GROUP @1 LABEL Morpheus562sKitpackShieldBreaker
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/fighter/shield_breaker.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+// Reaver                                                                //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @150 DESIGNATED 150 GROUP @1 LABEL Morpheus562sKitpackReaver
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/fighter/reaver.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 // Deathbringer                                                          //

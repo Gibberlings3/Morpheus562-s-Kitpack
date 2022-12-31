@@ -25,6 +25,7 @@
 @140 = ~Install Deathbringer Prestige Kit~
 @141 = ~Assign kit to Sarevok~
 @142 = ~Do NOT assign kit to Sarevok~
+@150 = ~Install Reaver Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
