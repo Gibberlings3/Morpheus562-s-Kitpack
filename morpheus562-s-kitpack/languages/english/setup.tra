@@ -25,7 +25,6 @@
 @140 = ~Install Deathbringer Prestige Kit~
 @141 = ~Assign kit to Sarevok~
 @142 = ~Do NOT assign kit to Sarevok~
-@150 = ~Install Reaver Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
@@ -42,6 +41,7 @@
 // Group 3 (Update 300-399)
 @300 = ~Install Champion of the Silver Flame~
 @310 = ~Install Templar Kit~
+@320 = ~Install Reaver Kit~
 
 ///////////////////////////////////////////////////////////////////////////
 // Cleric                                                                //

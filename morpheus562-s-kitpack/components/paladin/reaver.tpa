@@ -3,28 +3,22 @@
 ADD_KIT ~MO_REAVER~
   ~MO_REAVER 0 0 0 0 0 0 0 0~
   ~MO_REAVER 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~MO_REAVER 9 0 0 0 0 0~ // Minimum Ability - abclasrq
+  ~MO_REAVER 12 0 9 0 13 17~ // Minimum Ability - abclasrq
   ~MO_REAVER 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~MO_REAVER 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
   ~MO_REAVER 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
   ~MO_REAVER 0 0 1 0 0 1 0 0 1~ // Alignment
-  ~MO_REAVER 0 1 1 1 1 0~ // Dual Class Options
+  ~MO_REAVER 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_rvr01.2DA~
-  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
-  ~0x00004000 2~
-  ~Fi0~
-  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  ~K_P_H~
+  ~0x00004000 6~
+  ~Pa0~
+  ~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
   SAY @5583
   SAY @5584
   SAY @5585
 
-LAF fl#add_kit_ee
-  INT_VAR
-    briefdesc = RESOLVE_STR_REF (@5585) 
-  STR_VAR 
-    kit_name = MO_REAVER
-    hpclass = HPPRS
-END
+LAF fl#add_kit_ee STR_VAR kit_name = MO_REAVER END
 
 OUTER_SET reaver_code = (0x4000 + %MO_REAVER%)
 

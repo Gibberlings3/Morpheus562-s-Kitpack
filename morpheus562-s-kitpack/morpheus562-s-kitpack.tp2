@@ -69,14 +69,6 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 INCLUDE ~morpheus562-s-kitpack/components/fighter/shield_breaker.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
-// Reaver                                                                //
-///////////////////////////////////////////////////////////////////////////
-BEGIN @150 DESIGNATED 150 GROUP @1 LABEL Morpheus562sKitpackReaver
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
-
-INCLUDE ~morpheus562-s-kitpack/components/fighter/reaver.tpa~
-
-///////////////////////////////////////////////////////////////////////////
 // Deathbringer                                                          //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @141 DESIGNATED 141 SUBCOMPONENT @140 GROUP @1 LABEL Morpheus562sKitpackDBSarevok
@@ -152,6 +144,14 @@ BEGIN @310 DESIGNATED 310 GROUP @3 LABEL Morpheus562sKitpackTemplar
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/paladin/templar.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+// Reaver                                                                //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @320 DESIGNATED 320 GROUP @3 LABEL Morpheus562sKitpackReaver
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/paladin/reaver.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
