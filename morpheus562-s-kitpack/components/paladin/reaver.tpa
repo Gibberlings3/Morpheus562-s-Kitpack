@@ -2,7 +2,7 @@
 
 ADD_KIT ~MO_REAVER~
   ~MO_REAVER 0 0 0 0 0 0 0 0~
-  ~MO_REAVER 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_REAVER 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~MO_REAVER 12 0 9 0 13 17~ // Minimum Ability - abclasrq
   ~MO_REAVER 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~MO_REAVER 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
