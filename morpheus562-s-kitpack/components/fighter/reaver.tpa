@@ -41,3 +41,11 @@ COPY ~morpheus562-s-kitpack/spl/reaver/morvr11.SPL~ ~override~ // Spell
 COPY ~morpheus562-s-kitpack/spl/reaver/morvr02.spl~ ~override~ // Devour Soul
 COPY ~morpheus562-s-kitpack/spl/reaver/morvr2a.spl~ ~override~ // Devour Soul
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5588) STR_VAR END
+
+LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~WIZARD_LARLOCH_MINOR_DRAIN~ RET spell_res END
+COPY_EXISTING ~%spell_res%.SPL~ ~override/morvr33.SPL~
+  SAY NAME1 @5589 
+COPY ~morpheus562-s-kitpack/spl/reaver/morvr03.spl~ ~override~ // Death Field
+  SAY NAME1 @5590
+  SAY UNIDENTIFIED_DESC @5591
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR resource = ~morvr33~ END

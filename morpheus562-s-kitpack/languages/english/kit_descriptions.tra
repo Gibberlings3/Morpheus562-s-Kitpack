@@ -441,7 +441,11 @@ SIPHON LIFE: Each hit within the next 10 seconds drains 1d4 Hit Points from the 
 
 – 5th Level: Gains the Devour Soul passive ability.
 
-DEVOUR SOUL: When the Reaver kills an opponent, <PRO_HESHE> consumes the remaining life essence and heals 10 hit points.
+DEVOUR SOUL: When the Reaver kills an opponent, there is a 20% chance <PRO_HESHE> consumes the remaining life essence and heals 10 hit points.
+
+– 10th Level: May use the Death Field ability once per day and gains an additional use every 5 levels thereafter.
+
+DEATH FIELD: All enemies within a 15-ft. radius of the Reaver suffers 4 damage each while the Reaver absorbs the enemy's lost life. If the Reaver goes over <PRO_HISHER> maximum Hit Point total with this ability, <PRO_HESHE> loses any extra Hit Points after 1 turn. 
 
 Disadvantages:
 – Hit Die: d8
@@ -451,4 +455,9 @@ Disadvantages:
 @5587 = ~Siphon Life
 Each hit within the next 10 seconds drains 1d4 Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points.~
 
-@5588 = ~Devoured Soul~
+@5588 = ~Devoured enemy's soul~
+@5589 = ~Life force drained~
+
+@5590 = ~Death Field~
+@5591 = ~Death Field
+All enemies within a 15-ft. radius of the Reaver suffers 4 damage each while the Reaver absorbs the enemy's lost life. If the Reaver goes over <PRO_HISHER> maximum Hit Point total with this ability, <PRO_HESHE> loses any extra Hit Points after 1 turn.~
