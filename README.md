@@ -148,6 +148,27 @@ Disadvantages:
 - May not use ranged weapons.
 - May not use shields.
 
+### Reaver (Next Release)
+
+Reavers are evil warriors who revel in death and the destruction of all life. Using necrotic arts, Reavers drain the life essence from their opponents with each strike, and some even devour the souls of those they slay.
+
+Advantages:
+- May use Siphon Life ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.
+
+SIPHON LIFE: Each hit within the next 10 seconds drains 1d4 Hit Points from the target and transfers them to the Reaver. This will not heal beyond the Reaver's maximum Hit Points.
+
+- 5th Level: Gains the Devour Soul passive ability.
+
+DEVOUR SOUL: When the Reaver kills an opponent, there is a 20% chance he consumes the remaining life essence and heals 10 hit points.
+
+- 10th Level: May use the Death Field ability once per day and gains an additional use every 5 levels thereafter.
+
+DEATH FIELD: All enemies within a 15-ft. radius of the Reaver suffers 4 damage each while the Reaver absorbs the enemy's lost life. If the Reaver goes over his maximum Hit Point total with this ability, he loses any extra Hit Points after 1 turn. 
+
+Disadvantages:
+- Hit Die: d8
+- Alignment restricted to evil.
+
 ### Deathbringer (Prestige Kit)
 
 Deathbringers are a special group of warriors of Bhaal trained in the art of intimidation and war. Those trained in the ways of the Deathbringer may fell their foes with a single blow, and every enemy slain at their hand fuels their rage and ferocity.. They are also a group of scattered cultists that are still trying to revive Bhaal, even though his essence is locked up in the Upper Planes.
