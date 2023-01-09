@@ -61,6 +61,10 @@ TELEKINETIC MOVEMENT: The Psi Warrior can move a creature with <PRO_HISHER> mind
 
 GUARDED MIND: The Psi Warrior becomes immune to all psionic attacks, fear, and charm.
 
+– 15th Level: May use Bulwark of Force once per day.
+
+BULWARK OF FORCE: This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit, and the Psi Warrior does not have their own damage resistance improved from using this ability.
+
 – 18th Level: May use Telekinetic Master once per day.
 
 TELEKINETIC MASTER: The Psi Master is able to push or pull all targets within a 15' radius to a selected point. Targets must make a save vs. Death at -4 to resist being moved by the Psi Warrior.
@@ -464,3 +468,7 @@ Each hit within the next 10 seconds drains 1d4 Hit Points from the target and tr
 @5590 = ~Death Field~
 @5591 = ~Death Field
 All enemies within a 15-ft. radius of the Reaver suffers 4 damage each while the Reaver absorbs the enemy's lost life. If the Reaver goes over <PRO_HISHER> maximum Hit Point total with this ability, <PRO_HESHE> loses any extra Hit Points after 1 turn.~
+
+@5592 = ~Bulwark of Force~
+@5593 = ~BULWARK OF FORCE
+This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit, and the Psi Warrior does not have their own damage resistance improved from using this ability.~

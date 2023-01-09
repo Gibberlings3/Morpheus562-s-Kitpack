@@ -73,3 +73,10 @@ COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi60.SPL~ ~override~ // Telekineti
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi61.SPL~ ~override~ // Telekinetic Pull
   SAY NAME1 @5518
   SAY UNIDENTIFIED_DESC @5516
+
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi07.SPL~ ~override~ // Bulwark of Force
+  SAY NAME1 @5592
+  SAY UNIDENTIFIED_DESC @5593
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Bulwark of Force~) STR_VAR bam_file = SPPR406C RET MOPSI7A = icon END
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi70.SPL~ ~override~ // Bulwark of Force
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 142 target = 2 parameter2 = ~MOPSI7A~ timing = 0 duration = 8 END
