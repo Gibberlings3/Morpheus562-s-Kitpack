@@ -4,7 +4,7 @@ January XX, 2023
 
 ### Changed
 
-- Added the Reaver Fighter kit.
+- Added the Reaver Paladin kit.
 - Updated Psi Warrior's Guarded Mind and added Bulwark of Force.
 
 ## Version 1.1 
