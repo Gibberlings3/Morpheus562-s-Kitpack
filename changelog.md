@@ -6,6 +6,7 @@ January XX, 2023
 
 - Added the Reaver Paladin kit.
 - Updated Psi Warrior's Guarded Mind and added Bulwark of Force.
+- Updated Psionic Strike to last 10 seconds (previously one round).
 
 ## Version 1.1 
 

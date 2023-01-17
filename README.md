@@ -71,7 +71,7 @@ Advantages:
 - 3rd Level: May use Psionic Strike once per day and gains an additional use every 4 levels thereafter.
 - 3rd Level: May use Protective Field once per day and gains an additional use every 4 levels thereafter.
 
-PSIONIC STRIKE: This ability allows the Psi Warrior to make a special attack against any enemy. Psi Warriors apply their Intelligence modifier to their damage roll for one round.
+PSIONIC STRIKE: This ability allows the Psi Warrior to make a special attack against any enemy. Psi Warriors apply their Intelligence modifier to their damage roll for 10 seconds.
 <details>
   <summary>Damage Details</summary>
 
