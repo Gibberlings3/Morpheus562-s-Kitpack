@@ -83,7 +83,7 @@ Avantages :
 - 3ème niveau : Peut utiliser « Choc psionique » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.  
 - 3ème niveau : Peut utiliser « Champ de force » une fois par jour au niveau 1, puis une fois supplémentaire tous les 4 niveaux.
 
-CHOC PSIONIQUE : Pendant un round, cette capacité permet à l'Esprit Guerrier d'effectuer une attaque spéciale et des dégâts supplémentaires contre n'importe quel type d'ennemi en appliquant un modificateur lié à l'intelligence.  
+CHOC PSIONIQUE : Pendant 10 secondes, cette capacité permet à l'Esprit Guerrier d'effectuer une attaque spéciale et des dégâts supplémentaires contre n'importe quel type d'ennemi en appliquant un modificateur lié à l'intelligence.  
 <details>
   <summary>Détails des dégâts</summary>
   
@@ -133,7 +133,11 @@ ATTRACTION CINÉTIQUE : L'Esprit Guerrier est capable de déplacer une créature
 
 - 10ème niveau : Gagne la capacité passive « Forteresse mentale ».
 
-FORTERESSE MENTALE : L'Esprit Guerrier devient immunisé contre toutes les attaques psioniques.
+FORTERESSE MENTALE : L'Esprit Guerrier devient immunisé contre toutes les attaques psioniques, la peur et les charmes.
+
+- 15ème niveau : Peut utiliser « Muraille » une fois par jour.
+
+MURAILLE : Cette capacité confère aux alliés se trouvant dans un rayon de 4,5 m autour de l'Esprit Guerrier une résistance aux dégâts de 10 % pendant un tour. Cet avantage n'est effectif qu'à proximité de l'Esprit Guerrier, qui lui-même ne bénéficie pas de ce bonus supplémentaire.
 
 - 18ème niveau : Peut utiliser « Maîtrise cinétique » une fois par jour
 
@@ -260,6 +264,30 @@ Avantages :
 Inconvénients :
 - Ne peut pas utiliser la capacité Repousser les morts-vivants.
 - Ne peut pas investir plus d'un point de compétence dans les armes à deux mains et les armes à distance.
+
+### Ravageur
+
+Les Ravageurs sont des guerriers maléfiques qui se délectent de la mort et de la destruction de toute forme de vie. Utilisant les arts nécrotiques pour le combat, ils drainent l'essence vitale de leurs adversaires, et certains d'entre eux peuvent même dévorer l'âme de leurs victimes.
+
+Avantages :
+- Peut Repousser les morts-vivants comme un paladin.
+- Peut utiliser la capacité « Siphon » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+SIPHON : Chaque coup réussi dans les 10 secondes qui suivent draine 1d4 points de vie à la cible et les transfère au Ravageur. Cette capacité ne permet de dépasser son maximum de points de vie.
+
+- 5ème Niveau : Gagne la capacité passive « Dévoreur d'âme ».
+
+DÉVOREUR D'ÂME : Quand le Ravageur terrasse un adversaire, il a 20 % de chances d'aspirer son essence vitale et de récupérer 10 points de vie.
+
+- 10ème Niveau : Peut utiliser la capacité « Champ de mort » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+CHAMP DE MORT : Tous les ennemis situés dans un rayon de 4,5 mètres autour du Ravageur subissent 4 points de dégâts. Le Ravageur absorbe cette énergie vitale même au-delà de son maximum de points de vie. Ces points de vie supplémentaires disparaîtront après 1 tour. 
+
+Inconvénients :
+- Alignement mauvais uniquement.
+- Ne peut pas lancer « Détection du mal ».
+- Ne dispose pas de la capacité innée « Protection contre le mal ».
+- Ne peut utiliser « Imposition des mains ».
 
 ## Kits de Clerc
 

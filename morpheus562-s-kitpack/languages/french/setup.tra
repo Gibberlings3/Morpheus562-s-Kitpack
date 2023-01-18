@@ -41,6 +41,7 @@
 // Group 3 (Update 300-399)
 @300 = ~Installer le kit de paladin "Defenseur de la Flamme d'Argent"~ 
 @310 = ~Installer le kit de paladin "Chevalier du temple"~
+@320 = ~Installer le "Ravageur" un kit de paladin malefique~
 
 ///////////////////////////////////////////////////////////////////////////
 // Cleric                                                                //
