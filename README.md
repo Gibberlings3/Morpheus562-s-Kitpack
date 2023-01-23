@@ -56,9 +56,9 @@ Advantages:
   Level 18-20: 2d6 piercing
   Level 21+: 1d20 piercing
 
-- 4th Level: May use the Hamstring ability once per day and gains an additional use every 4 levels thereafter.
+- 3rd Level: May use the Leap Attack ability once per day and gains an additional use every 3 levels thereafter.
 
-HAMSTRING: The Dragoon's attacks for the next 10 seconds will progressively slow the movement of any struck enemy by -1. The penalty from each hit is cumulative and will last for 2 rounds. A successful save vs. Death with a -4 penalty negates the penalty to movement speed. 
+LEAP ATTACK: The Dragoon will instantly leap at an enemy within 15 feet dealing piercing damage and stunning the enemy for 2 seconds. The damage inflicted is equal to 1d6 per level of the Dragoon, or half with a successful Saving Throw vs. Death.
 
 Disadvantages:
 - May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
