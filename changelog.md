@@ -1,12 +1,13 @@
 ## Version 2.0
 
-January XX, 2023
+January 22, 2023
 
 ### Changed
 
 - Added the Reaver Paladin kit.
 - Updated Psi Warrior's Guarded Mind and added Bulwark of Force.
 - Updated Psionic Strike to last 10 seconds (previously one round).
+- Replaced Dragoon's Hamstring ability with Leap Attack.
 
 ## Version 1.1 
 
