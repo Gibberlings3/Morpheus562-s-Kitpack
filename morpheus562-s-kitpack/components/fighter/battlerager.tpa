@@ -7,7 +7,7 @@ ADD_KIT ~MO_BATTLERAGER~
   ~MO_BATTLERAGER 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~MO_BATTLERAGER 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
   ~MO_BATTLERAGER 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
-  ~MO_BATTLERAGER 0 1 1 0 1 1 0 1 1~ // Alignment
+  ~MO_BATTLERAGER 0 0 0 1 1 1 1 1 1~ // Alignment
   ~MO_BATTLERAGER 0 0 0 0 0 0~ // Dual Class Options
   ~morpheus562-s-kitpack/2da/mo_btr01.2DA~
   ~K_F_D~
