@@ -1,3 +1,11 @@
+## Version 2.1
+
+February xx, 2023
+
+### Changed
+
+- Added the Battlerager Fighter kit.
+
 ## Version 2.0
 
 January 22, 2023
