@@ -25,6 +25,9 @@
 @140 = ~Install Deathbringer Prestige Kit~
 @141 = ~Assign kit to Sarevok~
 @142 = ~Do NOT assign kit to Sarevok~
+@150 = ~Install Battlerager Kit~
+@151 = ~Assign kit to Korgan~
+@152 = ~Do NOT assign kit to Korgan~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //

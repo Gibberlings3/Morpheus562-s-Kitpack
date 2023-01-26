@@ -45,6 +45,30 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 INCLUDE ~morpheus562-s-kitpack/components/fighter/battle_master.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
+// Battlerager                                                           //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @151 DESIGNATED 151 SUBCOMPONENT @150 GROUP @1 LABEL Morpheus562sKitpackBattlerager1
+REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+
+OUTER_SET korgan_rager=1 // Assign kit to Korgan
+INCLUDE ~morpheus562-s-kitpack/components/fighter/battlerager.tpa~
+
+////////////////////////////////////////////////////
+BEGIN @152 DESIGNATED 152 SUBCOMPONENT @150 GROUP @1 LABEL Morpheus562sKitpackBattlerager2
+REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+
+OUTER_SET korgan_rager=0 // Do NOT Assign kit to Korgan
+INCLUDE ~morpheus562-s-kitpack/components/fighter/battlerager.tpa~
+
+////////////////////////////////////////////////////
+// BGEE and IWDEE ONLY
+BEGIN @150 DESIGNATED 150 GROUP @1 LABEL Morpheus562sKitpackBattlerager3
+REQUIRE_PREDICATE (GAME_IS ~bgee iwdee~) @3000
+
+OUTER_SET korgan_rager=0 // Do NOT Assign kit to Korgan
+INCLUDE ~morpheus562-s-kitpack/components/fighter/battlerager.tpa~
+
+///////////////////////////////////////////////////////////////////////////
 // Dragoon                                                               //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @130 DESIGNATED 130 GROUP @1 LABEL Morpheus562sKitpackDragoon
