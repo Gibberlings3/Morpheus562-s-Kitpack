@@ -55,15 +55,15 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 ///////////////////////////////////////////////////////////////////////////
 // Import Files                                                          //
 ///////////////////////////////////////////////////////////////////////////
-COPY ~morpheus562-s-kitpack/2da/mo_btr01.2DA~              ~override~ // kit
+COPY ~morpheus562-s-kitpack/2da/mo_btr01.2DA~             ~override~ // kit
 
-COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtr01.spl~  ~override~ // Reckless Abandon
+COPY ~morpheus562-s-kitpack/spl/battlerager/mobtr01.spl~  ~override~ // Reckless Abandon
   SAY NAME1 @5597
   SAY UNIDENTIFIED_DESC @5598
-COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtr01a.spl~ ~override~ // Winded
+COPY ~morpheus562-s-kitpack/spl/battlerager/mobtr01a.spl~ ~override~ // Winded
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5541) STR_VAR END
-COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtr02.spl~  ~override~ // Spiked Armor
-COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtr22.spl~  ~override~ // Spiked Armor Damage
+COPY ~morpheus562-s-kitpack/spl/battlerager/mobtr02.spl~  ~override~ // Spiked Armor
+COPY ~morpheus562-s-kitpack/spl/battlerager/mobtr22.spl~  ~override~ // Spiked Armor Damage
   PATCH_FOR_EACH fireshield IN
           balshld2
           bdbarbde
