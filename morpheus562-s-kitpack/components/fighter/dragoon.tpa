@@ -66,11 +66,13 @@ COPY ~morpheus562-s-kitpack/spl/dragoon/modra22.spl~ ~override~ // Spell that ca
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~  ~override~ // Fleet of Foot
 COPY ~morpheus562-s-kitpack/bam/dragoon/modr327b.bam~ ~override~ // Leap Attack BAMb
 COPY ~morpheus562-s-kitpack/bam/dragoon/modr327c.bam~ ~override~ // Leap Attack BAMc
+/*
 COPY ~morpheus562-s-kitpack/2da/mo_dra02.2da~         ~override~ // Leap Attack 2da
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra02.spl~  ~override~ // Leap Attack
   SAY NAME1 @5600
   SAY UNIDENTIFIED_DESC @5601
   LPF ALTER_SPELL_EFFECT INT_VAR check_headers = 1 match_opcode = 214 STR_VAR resource = ~mo_dra02~ END
+*/
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra20.spl~  ~override~ // Chaotic Spring
   SAY NAME1 @5550
   SAY UNIDENTIFIED_DESC @5551
