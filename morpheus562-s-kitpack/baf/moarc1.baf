@@ -1,6 +1,7 @@
 IF
   See(Player1)
   Global("MO_ARCHMAGE_TALKED","LOCALS",0)
+  HaveSpell(CLERIC_COMMAND)  // SPWI611.SPL (Protection From Magical Weapons)
 THEN
   RESPONSE #100
     SetGlobal("MO_ARCHMAGE_TALKED","LOCALS",1)

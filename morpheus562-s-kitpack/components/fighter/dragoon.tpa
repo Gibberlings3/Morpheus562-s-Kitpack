@@ -22,6 +22,17 @@ LAF fl#add_kit_ee STR_VAR kit_name = MO_DRAGOON END
 
 OUTER_SET dragoon_code = (0x4000 + %MO_DRAGOON%)
 
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  SPRINT weapon_name ~%SOURCE_FILE%~
+  READ_SHORT 0x1c type
+  READ_ASCII 0x22 appearance (2)
+
+  // Heavy Armor Restriction
+  PATCH_IF (type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) BEGIN 
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %dragoon_code% parameter2 = 9 power = 0 timing = 2 END
+  END
+  BUT_ONLY
+
 COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
 
 ACTION_FOR_EACH polearm_master IN
