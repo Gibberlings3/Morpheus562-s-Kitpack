@@ -35,6 +35,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 
 COPY ~morpheus562-s-kitpack/2da/mo_dra01.2DA~        ~override~ // kit
 
+/* OLD POLEARM DAMAGE INCREASES
 ACTION_FOR_EACH polearm_master IN
       1
       3
@@ -49,6 +50,7 @@ ACTION_FOR_EACH polearm_master IN
       COPY ~morpheus562-s-kitpack/eff/dragoon/modra0%polearm_master%.eff~                ~override~ // Effect to cast actual spell
       COPY ~morpheus562-s-kitpack/spl/dragoon/modra%polearm_master%%polearm_master%.spl~ ~override~ // Spell that casts per level
     END
+*/
 
 /* OLD HAMSTRING ABILITY
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Hamstring~) STR_VAR bam_file = SPWI221C RET MODRA2A = icon END
@@ -61,8 +63,18 @@ COPY ~morpheus562-s-kitpack/eff/dragoon/modra02.eff~ ~override~ // Hamstring
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra22.spl~ ~override~ // Spell that casts Hamstring
 */
 
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra01.spl~  ~override~ // Fleet of Foot
 COPY ~morpheus562-s-kitpack/bam/dragoon/modr327b.bam~ ~override~ // Leap Attack BAMb
 COPY ~morpheus562-s-kitpack/bam/dragoon/modr327c.bam~ ~override~ // Leap Attack BAMc
+COPY ~morpheus562-s-kitpack/2da/mo_dra02.2da~         ~override~ // Leap Attack 2da
 COPY ~morpheus562-s-kitpack/spl/dragoon/modra02.spl~  ~override~ // Leap Attack
+  SAY NAME1 @5600
+  SAY UNIDENTIFIED_DESC @5601
+  LPF ALTER_SPELL_EFFECT INT_VAR check_headers = 1 match_opcode = 214 STR_VAR resource = ~mo_dra02~ END
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra20.spl~  ~override~ // Chaotic Spring
   SAY NAME1 @5550
   SAY UNIDENTIFIED_DESC @5551
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra21.spl~  ~override~ // Heaven's Thrust
+  SAY NAME1 @5602
+  SAY UNIDENTIFIED_DESC @5603
+COPY ~morpheus562-s-kitpack/spl/dragoon/modra03.spl~  ~override~ // Arm's Length
