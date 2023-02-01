@@ -108,6 +108,14 @@ REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3002
 OUTER_SET sarevok=0 // Sarevok does NOT become a Deathbringer
 INCLUDE ~morpheus562-s-kitpack/components/fighter/deathbringer.tpa~
 
+////////////////////////////////////////////////////
+// BGEE ONLY
+BEGIN @140 DESIGNATED 140 GROUP @1 LABEL Morpheus562sKitpackDBNOSarevok2
+REQUIRE_PREDICATE (GAME_IS ~bgee~) @3003
+
+OUTER_SET sarevok=0 // Sarevok does NOT become a Deathbringer
+INCLUDE ~morpheus562-s-kitpack/components/fighter/deathbringer.tpa~
+
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 // Rangers (Group 2)                                                     //
@@ -187,7 +195,7 @@ INCLUDE ~morpheus562-s-kitpack/components/paladin/reaver.tpa~
 // Archmage Prestige Kit                                                 //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @600 DESIGNATED 600 GROUP @6 LABEL Morpheus562sKitpackArchmage
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~) @3000
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/mage/archmage.tpa~
 
