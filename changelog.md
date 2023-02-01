@@ -1,10 +1,12 @@
-## Version 2.1
+## Version 3.0
 
 February xx, 2023
 
 ### Changed
 
 - Added the Battlerager Fighter kit.
+- Added Prestige Kits to BG: EE to assist with imports into BG2: EE.
+- Dragoon kit overhaul.
 
 ## Version 2.0
 
