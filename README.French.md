@@ -46,34 +46,30 @@ Inconvénients :
 
 ### Lancier Dragon - Kit de Guerrier 
 
-Les Lanciers Dragons sont des guerriers qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers s'efforcent de maintenir leurs ennemis à distance tout en progressant le plus rapidement possible sur le champ de bataille.
+Les Lanciers Dragons sont des guerriers qui consacrent leur vie à la maîtrise des armes d'hast (bâton, lance et hallebarde). Ces guerriers bondissent sur leurs ennemis tout en progressant le plus rapidement possible sur le champ de bataille.
 
 Avantages :
-
 - Vitesse de déplacement augmenté de 2.
-- La compétence avec les armes d'hast ( bâton, lance et hallebarde) donne au Lancier Dragon 20 % de chances de repousser un ennemi lors d'une attaque réussie et de lui infliger des dégâts perforants supplémentaires. Un jet de sauvegarde contre la mort à -2 permet à la cible d'éviter d'être projeté en arrière. Les dégâts supplémentaires augmentent avec les niveaux :
-<details>
-  <summary>Détails des dégâts</summary>
-  
-```	
-  Niveau 1 à 2 : Inflige 1 point de dégâts perforants supplémentaires
-  Niveau 3 à 5 : Inflige 1d4 points de dégâts perforants supplémentaires
-  Niveau 6 à 8 : Inflige 1d6 points de dégâts perforants supplémentaires
-  Niveau 9 à 11 : Inflige 1d8 points de dégâts perforants supplémentaires
-  Niveau 12 à 14 : Inflige 2d4 points de dégâts perforants supplémentaires
-  Niveau 15 à 17 : Inflige 1d10 points de dégâts perforants supplémentaires
-  Niveau 18-20 : Inflige 2d6 points de dégâts perforants supplémentaires
-  Niveau 21 : Inflige 1d20 points de dégâts perforants supplémentaires
-```
 
-</details>
+- 3ème niveau : Peut utiliser la capacité « Ruée » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
 
-- 4ème Niveau : Peut utiliser la capacité « Entrave » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+RUÉE : Le Dragoon bondira sur une distance de 4,5 m, infligeant 1d6 points de dégâts perforants par niveau du Dragoon (jusqu'à un maximum de 10d6) et étourdissant pendant 2 secondes toutes les cibles dans un rayon de 2,5 m. Un jet de sauvegarde contre la mort avec une pénalité de 2 permet d'éviter l'étourdissement et réduit les dégâts de moitié.
 
-ENTRAVE : Le Lancier Dragon est capable de parfaire certaines techniques lui permettant de ralentir ses ennemis. Pendant 10 secondes chaque adversaire touché verra sa vitesse de déplacement réduite de 2 pour deux round. Les effets sont cumulatifs à chaque coup donné. Un jet de sauvegarde contre la mort à -4 est nécessaire pour annuler les effets. 
+- 5ème niveau : Gagne la capacité passive « Légèreté ».
+
+LÉGÈRETÉ : Le Dragoon devient immunisé contre les effets de Toile d'araignée, de la Glisse et de l'Enchevêtrement.
+
+- 7ème niveau : Peut utiliser la capacité « Fondre sur l'ennemi » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+FONDRE SUR L'ENNEMI : Le Dragoon bondira vers une cible sur une distance de 4,5 m, infligeant à 1d8 points de dégâts perforants par niveau du Dragoon (jusqu'à un maximum de 10d8). Un jet de sauvegarde contre la mort avec une pénalité de 2 réduit les dégâts de moitié. Additionnellement, la cible subit 3 points de dégâts d'hémorragie par round pendant 3 rounds.
+
+- 10ème niveau : Gagne la capacité passive « Allonge ».
+
+ALLONGE : Le Dragoon crée une barrière naturelle le protégeant de la plupart des effets de renversement et d'attraction.
 
 Inconvénients :
 - Ne peut atteindre la grande maîtrise qu'avec les armes d'hast, pour toutes les autres armes il ne pourra être que compétent.
+- Ne peut porter d'armure plus lourde que l'armure feuilletée.
 
 ### Esprit Guerrier - Kit de Guerrier 
 
@@ -163,6 +159,26 @@ Inconvénients :
 - Les armes reçoivent une pénalité de 2 aux jets de dégâts.
 - Ne peut utiliser des armes à distance.
 - Ne peut utiliser de boucliers.
+
+### Furieux - Kit de Guerrier
+
+Les Furieux sont des guerriers nains qui privilégient l'instinct brut, la colère et la force physique. Les individus qui pratiquent ce style de combat tristement célèbre sont généralement mentalement instables et ont une faible espérance de vie, tout repose sur une immersion totale dans la bataille, souvent au détriment de leur propre sécurité.
+
+Avantages :
+- Peut utiliser la capacité « Abnégation téméraire » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+ABNÉGATION TÉMÉRAIRE : Le personnage entre en furie pour 1 tour et gagne un bonus de 10 % aux jets de dégâts, devient immunisé contre les charmes, la confusion, la peur, la débilité mentale, l'immobilisation, l'emprisonnement, le drain de niveau, le labyrinthe, l'étourdissement et le sommeil. Le personnage reçoit également une pénalité de 2 à la classe d'armure, une augmentation de 10 % pour les dégâts physiques reçus et subit 1 point de dégâts par round (il tombe inconscient si cet effet réduit ses points de vie à 0).
+
+- 5ème Niveau : Gagne la capacité passive « Armure effilée ».
+
+ARMURE EFFILÉE : Chaque ennemi qui inflige des dégâts au Furieux recevra 1d4 points de dégâts perforants.
+
+Inconvénients :
+- Devient fatigué après l'utilisation de « Abnégation téméraire » : pénalité de 2 à la vitesse de déplacement, au toucher et aux dégâts.
+- Ne peut utiliser les armes à distance.
+- Réservé aux nains uniquement.
+- Doit être d'alignement non loyal.
+
 
 ## Kits de Rôdeur
 
