@@ -25,6 +25,9 @@
 @140 = ~Installer le "Semeur de Mort", un kit de classe de prestige~
 @141 = ~Assigner le kit a Sarevok~
 @142 = ~Ne pas assigner le kit a Sarevok~
+@150 = ~Installer le "Furieux", un kit de guerrier~
+@151 = ~Assigner le kit a Korgan~
+@152 = ~Ne pas assigner le kit a Korgan~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
@@ -99,6 +102,8 @@
 ///////////////////////////////////////////////////////////////////////////
 @3000 = ~Ce composant necessite BG: EE, BGII: EE, EET ou IWD: EE~
 @3001 = ~DLCMerger est necessaire avant d'installer des mods sur les jeux SoD~
+@3002 = ~Ce composant necessite BGII: EE ou EET~
+@3003 = ~Ce composant necessite BG: EE~
 
 /* =============== *
  *  WeiDU prompts  *
