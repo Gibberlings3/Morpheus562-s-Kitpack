@@ -42,13 +42,14 @@ COPY ~morpheus562-s-kitpack/spl/eldritch/MO#tsb02.SPL~     ~override~ // -1 Thac
   
 // Allow Sorcerers to equip any weapon, chain armor, and helmet (must still meet race/ability/alignment reqs)
 // Below code was taken from the Magus created by Subtledoctor, and the original author is either Mike1072 or Aquadrizzt.
-// I further modified the code to only allow sorcerers to use specific items through the use of opcode 319. 
+// I further modified the code to only allow sorcerers to use specific items through the use of opcode 319 (This was removed on 2/9).
 // I also restricted the armor allowed to chain mail and below while the original code allowed all armor to be used.
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     READ_SHORT 0x31 prof ELSE 0
     READ_SHORT 0x1c type ELSE 0
     READ_ASCII 0x22 appearance (2)
+    SPRINT item_name ~%SOURCE_FILE%~
     PATCH_IF (prof = 89 OR //bastard sword
               prof = 90 OR //long sword
               prof = 91 OR //short sword
@@ -70,7 +71,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
             READ_BYTE   0x20 "mage"
             WRITE_BYTE 0x20 ("%mage%" BAND "0b11111011")
             WRITE_BYTE 0x1e ("%bard%" BAND "0b10111111")
-            LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = 1 parameter2 = 5 power = 0 timing = 2 END
+            //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = 1 parameter2 = 5 power = 0 timing = 2 END // Restrict Mage
             //LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = 19 parameter2 = 5 power = 0 timing = 2 END
           END 
     END
