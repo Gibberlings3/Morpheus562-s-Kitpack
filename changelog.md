@@ -7,6 +7,7 @@ February xx, 2023
 - Added the Battlerager Fighter kit.
 - Added Prestige Kits to BG: EE to assist with imports into BG2: EE.
 - Dragoon kit overhaul.
+- Updated APR progression for the Eldritch Scion.
 
 ## Version 2.0
 
