@@ -25,6 +25,14 @@ OUTER_SET deathbringer_code = (0x4000 + %MO_DEATHBRINGER%)
 ///////////////////////////////////////////////////////////////////////////
 // Import                                                                //
 ///////////////////////////////////////////////////////////////////////////
+ACTION_IF !FILE_EXISTS_IN_GAME ~SAREVEFF.SPL~ THEN BEGIN
+  COPY ~morpheus562-s-kitpack/spl/deathbringer/SAREVEFF.spl~ ~override~ // Deathbringer Assault
+END
+
+ACTION_IF !FILE_EXISTS_IN_GAME ~SAREVEFF.EFF~ THEN BEGIN
+  COPY ~morpheus562-s-kitpack/eff/deathbringer/SAREVEFF.eff~ ~override~ // Set AI Script
+END
+
 COPY ~morpheus562-s-kitpack/2da/mo_dbr01.2DA~             ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr01.spl~ ~override~ // Deathbringer Assault
 //COPY ~morpheus562-s-kitpack/spl/deathbringer/modbr02.spl~ ~override~ // Regeneration 1hp per round
