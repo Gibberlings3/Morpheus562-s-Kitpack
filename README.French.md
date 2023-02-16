@@ -332,8 +332,8 @@ Avantages :
 
 ARME ACÉRÉE : L'Eldritch Scion imprègne naturellement son arme avec sa magie ce qui lui permet d'infliger des dégâts additionnels. Il génère un point de dégât magique supplémentaire tous les cinq niveaux, pour un maximum de cinq points de dégâts magiques au niveau 20. La résistance à la magie de la cible aura une influence.
 
-- 8ème niveau : Acquiert une demi attaque supplémentaire par round.
-- 15ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
+- 9ème niveau : Acquiert une demi attaque supplémentaire par round.
+- 16ème niveau : Acquiert à nouveau une demi attaque supplémentaire par round.
 
 Inconvénients :
 - Pénalité de -2 au temps d'incantation des sorts.
