@@ -40,6 +40,25 @@ After the effects end, the character becomes winded, suffering a -2 penalty to A
 Disadvantages:
 - May only attain Grandmaster in two-handed weapons while all other weapons can only attain Proficient.
 
+### Battlerager
+
+Battleragers are a type of dwarf warrior whose combat style relies on raw instinct, anger, and physical strength. The individuals who practice this type of fighting are usually mentally unstable with a low life expectancy. The infamous battlerager fighting style relies on individuals immersing themselves completely into battle, often at the expense of their own personal safety.
+
+Advantages:
+- May use Reckless Abandon ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.
+
+RECKLESS ABANDON: The character becomes enraged for 1 turn. While enraged, the character gains a +10% bonus to <PRO_HISHER> damage rolls and becomes immune to charm, confusion, fear, feeblemind, hold, imprisonment, level drain, maze, stun, and sleep. The character also receives a -2 penalty to Armor Class, takes 1 point of damage per round while enraged (knocking the character unconscious if this causes the character's hit points to be reduced to 0), and receives +10% increase to all physical damage taken.
+
+- 5th Level: Gains the Spiked Armor passive ability.
+
+SPIKED ARMOR: Any enemy who damages the Battlerager will receive 1d4 points of piercing damage.
+
+Disadvantages:
+- Becomes winded after Reckless Abandon: -2 penalty to movement rate, to-hit rolls, and damage rolls.
+- May not use ranged weapons.
+- Race restricted to dwarf.
+- Alignment restricted to any non-lawful.
+
 ### Dragoon
 
 Dragoons are warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while quickly maneuvering around the battlefield.
