@@ -61,26 +61,30 @@ Disadvantages:
 
 ### Dragoon
 
-Dragoons are warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on keeping their enemies at long reach while quickly maneuvering around the battlefield.
+Dragoons are warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on leap attacks at their enemies while quickly maneuvering around the battlefield.
 
 Advantages:
 - Moves 2 points faster than other characters.
-- Skill with polearms (quarterstaff, spear, and halberd) allows the Dragoon to have a 20% chance to knock an enemy back a few feet when hit and deal additional piercing damage. A successful save vs. Death with a -2 penalty negates being knocked back. Damage dealt increases with levels as follows:
-  Level 1-2: 1 piercing
-  Level 3-5: 1d4 piercing
-  Level 6-8: 1d6 piercing
-  Level 9-11: 1d8 piercing
-  Level 12-14: 2d4 piercing
-  Level 15-17: 1d10 piercing
-  Level 18-20: 2d6 piercing
-  Level 21+: 1d20 piercing
 
-- 3rd Level: May use the Leap Attack ability once per day and gains an additional use every 3 levels thereafter.
+- 3rd Level: May use the Chaotic Spring ability once per day and gains an additional use every 3 levels thereafter.
 
-LEAP ATTACK: The Dragoon will instantly leap at an enemy within 15 feet dealing piercing damage and stunning the enemy for 2 seconds. The damage inflicted is equal to 1d6 per level of the Dragoon, or half with a successful Saving Throw vs. Death.
+CHAOTIC SPRING: The Dragoon will instantly leap up to 15 feet away dealing piercing damage and stunning all targets for 2 seconds within 8 feet. The damage inflicted is equal to 1d6 per level of the Dragoon (up to a maximum of 10d6). A successful save vs. Death with a -2 penalty negates the stun and reduces all damage from the leap by half.
+
+- 5th Level: Gains the Fleet of Foot passive ability.
+
+FLEET OF FOOT: The Dragoon becomes immune to Grease, Entanglement, and Web effects.
+
+- 7th Level: May use the Heaven's Thrust ability once per day and gains an additional use every 5 levels thereafter.
+
+HEAVEN'S THRUST: The Dragoon will instantly leap up to 15 feet away dealing piercing damage to a single target. The damage inflicted is equal to 1d8 per level of the Dragoon (up to a maximum of 10d8), or half with a successful Saving Throw vs. Death at -2. Additionally, the hit target suffers 3 points of additional bleeding damage per round for 3 rounds.
+
+- 10th Level: Gains the Arm's Length passive ability.
+
+ARM'S LENGTH: The Dragoon becomes immune to most knockback and draw-in effects.
 
 Disadvantages:
 - May only attain Grandmaster in polearm weapons (quarterstaff, spear, and halberd) while all other weapons can only attain Proficient.
+- May not wear armor heavier than splint mail.
 
 ### Psi Warrior
 
