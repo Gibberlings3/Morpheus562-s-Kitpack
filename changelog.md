@@ -4,7 +4,7 @@ April 29, 2023
 
 ### Changed
 
-- Added Russian translation courtesy of saigon1983.
+- Added Russian translation courtesy of saigon1983 (facilitated by yota13). 
 
 ## Version 3.0
 
