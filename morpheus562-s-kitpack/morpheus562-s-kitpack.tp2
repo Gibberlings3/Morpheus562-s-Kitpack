@@ -7,7 +7,7 @@
 BACKUP ~morpheus562-s-kitpack/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v3.0~
+VERSION ~v3.1~
 README ~morpheus562-s-kitpack/readme.%LANGUAGE%.html~ ~morpheus562-s-kitpack/readme.html~
 AUTO_EVAL_STRINGS
 
@@ -29,6 +29,14 @@ LANGUAGE ~French~
          ~morpheus562-s-kitpack/languages/french/dialog.tra~
          ~morpheus562-s-kitpack/languages/french/setup.tra~
          ~morpheus562-s-kitpack/languages/french/kit_descriptions.tra~
+LANGUAGE ~Russian~
+         ~russian~
+         ~morpheus562-s-kitpack/languages/english/dialog.tra~
+         ~morpheus562-s-kitpack/languages/english/setup.tra~
+         ~morpheus562-s-kitpack/languages/english/kit_descriptions.tra~
+         ~morpheus562-s-kitpack/languages/russian/dialog.tra~
+         ~morpheus562-s-kitpack/languages/russian/setup.tra~
+         ~morpheus562-s-kitpack/languages/russian/kit_descriptions.tra~
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -68,6 +76,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee iwdee~) @3000
 OUTER_SET korgan_rager=0 // Do NOT Assign kit to Korgan
 INCLUDE ~morpheus562-s-kitpack/components/fighter/battlerager.tpa~
 
+/*
 ///////////////////////////////////////////////////////////////////////////
 // Death Knight                                                          //
 ///////////////////////////////////////////////////////////////////////////
@@ -75,6 +84,7 @@ BEGIN @160 DESIGNATED 160 GROUP @1 LABEL Morpheus562sKitpackDeathKnight
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/fighter/deathknight.tpa~
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Dragoon                                                               //

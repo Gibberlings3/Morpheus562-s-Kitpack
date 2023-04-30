@@ -1,3 +1,11 @@
+## Version 3.1
+
+April 29, 2023
+
+### Changed
+
+- Added Russian translation courtesy of saigon1983.
+
 ## Version 3.0
 
 February 26, 2023

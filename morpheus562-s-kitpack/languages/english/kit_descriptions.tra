@@ -522,9 +522,11 @@ The Dragoon will instantly leap up to 15 feet away dealing piercing damage to a 
 @5606 = ~DEATHKNIGHT: Death knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts and often gird themselves in heavy armor. Death knight talents can bolster their defensive abilities by focusing on their ability to heal themselves, increase their damage and spell attacks, or summon forth minions and diseases.
 
 Advantages:
-– May use the Death Coil ability once per day.
+– May use the Death Coil and Death Grip abilities once per day.
 
 DEATH COIL: Deals 2 points of damage per level to an enemy, healing the Death Knight the same number of Hit Points.
+
+DEATH GRIP: The Death Knight pulls the target directly to <PRO_HIMHER>self.
 
 – 2nd Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
 
@@ -538,7 +540,19 @@ UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5
 
 PLAGUE STRIKE: A vicious strike over the next round that infects the target with a blood plague dealing 1d4 damage per second for 2 rounds; however, the Death Knight's attack damage is also reduced by 10% for 2 rounds.
 
-– 5th Level: Death Knights develop a personal connection with their blades and can forge runes into them in order to increase their power. Only one rune may be active at any time.
+– 4th Level: May use the Icy Touch ability once per day and gains an additional use every 4 levels thereafter.
+
+ICY TOUCH: Chills the target for 2d4 cold damage, reduces the target's apr by 1 and movement speed by 2. A successful Saving Throw vs. Spell with a -2 penalty negates the apr and movement speed reduction.
+
+– 5th Level: May cast Death's Advance once per day and gains an additional use every 5 levels thereafter.
+
+DEATH'S ADVANCE: For 10 seconds, the Death Knight gains Free Action and becomes immune to most knockback and draw-in effects.
+
+– 6th Level: May cast Unholy Blight once per day and gains an additional use every 4 levels thereafter.
+
+UNHOLY BLIGHT: Surrounds all enemies within a 10-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
+
+– 7th Level: Death Knights develop a personal connection with their blades and can forge runes into them in order to increase their power. Only one rune may be active at any time.
 
 RUNE OF CINDERGLACIER: Struck enemies have a 10% chance of losing 0.5 APR and 1 movement speed for 1 round. This effect is cumulative.
 
@@ -550,11 +564,23 @@ RUNE OF THE FALLEN CRUSADER: Each hit has a 10% chance of healing the Death Knig
 
 RUNE OF THE STONESKING GARGOYLE: Increases the Death Knight's physical damage resistance by 10%.
 
-– 6th Level: May cast Unholy Blight once per day and gains an additional use every 4 levels thereafter.
+– 8th Level: May cast Lichborne once per day and gains an additional use every 4 levels thereafter.
 
-UNHOLY BLIGHT: Surrounds all enemies within a 10-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
+LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment.
+
+– 10th Level: May cast Anti-Magic Shell once per day and gains an additional use every 3 levels thereafter.
+
+ANTI-MAGIC SHELL: The Death Knight creates a barrier around <PRO_HIMHER>self that increases Magic Damage Resistance by 30% and creates a Spell Shield for 3 rounds.
 
 – 12th Level: May cast Death Fog once per day and gains an additional use every 4 levels thereafter.
+
+– 15th Level: May cast Icebound Fortitude once per day and gains an additional use every 3 levels thereafter.
+
+ICEBOUND FORTITUDE: The Death Knight's blood freezes granting immunity to stun effects and reducing all physical damage taken by 30% for 5 rounds. This ability does not stack with Hardiness.
+
+– 20th Level: May cast Army of the Dead once per day.
+
+ARMY OF THE DEAD: Summons 5 Ghoul Lords to fight for the Death Knight for 1 turn.
 
 Disadvantages:
 – May not exceed Mastery (three slots) in any melee weapon.
