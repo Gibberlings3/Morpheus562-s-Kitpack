@@ -516,3 +516,48 @@ The Dragoon can choose to leap at either a single target using Heaven's Thrust o
 @5602 = ~Heaven's Thrust~
 @5603 = ~Heaven's Thrust 
 The Dragoon will instantly leap up to 15 feet away dealing piercing damage to a single target. The damage inflicted is equal to 1d8 per level of the Dragoon (up to a maximum of 10d8), or half with a successful Saving Throw vs. Death at -2. Additionally, the hit target suffers 3 points of additional bleeding damage per round for 3 rounds.~
+
+@5604 = ~death knight~
+@5605 = ~Death Knight~
+@5606 = ~DEATHKNIGHT: Death knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts and often gird themselves in heavy armor. Death knight talents can bolster their defensive abilities by focusing on their ability to heal themselves, increase their damage and spell attacks, or summon forth minions and diseases.
+
+Advantages:
+– May use the Death Coil ability once per day.
+
+DEATH COIL: Deals 2 points of damage per level to an enemy, healing the Death Knight the same number of Hit Points.
+
+– 2nd Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+
+BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
+
+FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+
+UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
+
+– 3rd Level: May use the Plague Strike ability once per day and gains an additional use every 3 levels thereafter.
+
+PLAGUE STRIKE: A vicious strike over the next round that infects the target with a blood plague dealing 1d4 damage per second for 2 rounds; however, the Death Knight's attack damage is also reduced by 10% for 2 rounds.
+
+– 5th Level: Death Knights develop a personal connection with their blades and can forge runes into them in order to increase their power. Only one rune may be active at any time.
+
+RUNE OF CINDERGLACIER: Struck enemies have a 10% chance of losing 0.5 APR and 1 movement speed for 1 round. This effect is cumulative.
+
+RUNE OF RAZORICE: Each hit has a 10% chance of lowering the target's cold resistance by 10% for 3 rounds and dealing 1d6 cold damage.
+
+RUNE OF SPELLBREAKING: Increases the Death Knight's Magic Resistance by 20%.
+
+RUNE OF THE FALLEN CRUSADER: Each hit has a 10% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 3 rounds. The strength increase is not cumulative.
+
+RUNE OF THE STONESKING GARGOYLE: Increases the Death Knight's physical damage resistance by 10%.
+
+– 6th Level: May cast Unholy Blight once per day and gains an additional use every 4 levels thereafter.
+
+UNHOLY BLIGHT: Surrounds all enemies within a 10-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
+
+– 12th Level: May cast Death Fog once per day and gains an additional use every 4 levels thereafter.
+
+Disadvantages:
+– May not exceed Mastery (three slots) in any melee weapon.
+– May not exceed Proficient (one slot) in any ranged weapon.
+– Alignment restricted to evil.
+– May not dual class.~
