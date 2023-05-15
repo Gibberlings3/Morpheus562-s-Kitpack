@@ -28,6 +28,7 @@
 @150 = ~Installer le "Furieux", un kit de guerrier~
 @151 = ~Assigner le kit a Korgan~
 @152 = ~Ne pas assigner le kit a Korgan~
+@160 = ~Installer le kit de guerrier "Chevalier Demoniaque"~
 
 ///////////////////////////////////////////////////////////////////////////
 // Ranger                                                                //
