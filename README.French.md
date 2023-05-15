@@ -179,6 +179,77 @@ Inconvénients :
 - Réservé aux nains uniquement.
 - Doit être d'alignement non loyal.
 
+### Chevalier Démoniaque - Kit de Guerrier
+
+Les Chevaliers démoniaques attaquent au corps à corps, renforçant leurs coups à l'aide de magie noire, afin de rendre leurs adversaires vulnérables ou en infligeant des dégâts supplémentaires avec leurs pouvoirs occultes. Ils attirent les ennemis dans des affrontements à un contre un et se parent le plus souvent d'une armure lourde. Les aptitudes des chevaliers démoniaques permettent de consolider leurs capacités en se concentrant sur les soins, l'augmentation des dégâts, les sortilèges offensifs, l'invocation de serviteurs ou encore l'utilisation de maladies.
+
+Avantages :
+- Peut utiliser la capacité « Lien démoniaque » et « Étreinte démoniaque » une fois par jour.
+
+LIEN DÉMONIAQUE : Inflige 2 points de dégâts par niveau à l'ennemi et régénère le chevalier démoniaque du même nombre de points de vie.
+
+ÉTREINTE DÉMONIAQUE : Le Chevalier démoniaque entraîne la cible directement à sa portée.
+
+- 2ème Niveau : Peut sélectionner une des capacités passives suivantes : « Présence sanguinaire », « Présence glaciale » ou « Présence infernale ». Une seule présence peut être activée à la fois.
+
+PRÉSENCE SANGUINAIRE : Le sang renforce le Chevalier démoniaque, augmentant ses dégâts de 15 % et lui permet de drainer 2 points de vie à chaque coup. Cette capacité ne permet pas de dépasser son maximum de points de vie.
+
+PRÉSENCE GLACIALE : Endurcit le Chevalier démoniaque, en augmentant son maximum de points de vie de 10 %, lui conférant un bonus de 2 à la classe d'armure et en améliorant sa résistance aux dégâts physiques de 10 %.
+
+PRÉSENCE INFERNALE : Imprègne le Chevalier démoniaque d'une fureur infernale qui accroît sa vitesse de déplacement de 2 et lui confère une demi-attaque supplémentaire par round.
+
+- 3ème Niveau : Peut utiliser la capacité « Porteur de peste » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+
+PORTEUR DE PESTE : Au cours du prochain round, le Chevalier démoniaque assène un coup des plus vicieux, en infectant, telle la peste, le sang de la cible qui subit 1d4 points de dégâts par seconde pendant 2 rounds ; toutefois, les dégâts occasionnés par les attaques du chevalier démoniaque seront également réduits de 10 % pendant 2 rounds.
+
+- 4ème Niveau : Peut utiliser la capacité « Toucher glaçant » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+TOUCHER GLAÇANT : Refroidit les ardeurs de la cible en lui infligeant 2d4 points de dégâts de froid, en la privant d'une attaque par round et en réduisant sa vitesse de déplacement de 2. Un jet de sauvegarde réussi contre le sort avec une pénalité de -2 annule la privation d'une attaque par round et la réduction de la vitesse de déplacement.
+
+- 5ème Niveau : Peut utiliser la capacité « Inéluctable » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
+
+INÉLUCTABLE : Pendant 10 secondes, le Chevalier démoniaque bénéficie des effets d'action libre et devient immunisé contre la plupart des effets d'attraction et d'expulsion.
+
+- 6ème Niveau : Peut utiliser la capacité « Fléau infernal » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+FLÉAU INFERNAL : Pendant deux rounds tous les ennemis situés dans un rayon de 3 mètres autour du chevalier démoniaque sont enveloppés d'une nuée d'insectes immondes. Les personnes affectées subissent 2 points de dégâts perforants par seconde.
+
+- 7ème Niveau : Les chevaliers de la mort développent un lien des plus intimes avec leurs lames et peuvent y graver des runes dans le but d'en accroître la puissance. Une seule rune peut être activée à la fois.
+
+RUNE INFRANCHISSABLE : Les ennemis touchés ont 10 % de chances d'êtres privés d'une demi-attaque par round et de voir leur vitesse de déplacement réduite de 1. Cet effet est cumulatif.
+
+RUNE DE LA LAME DE GLACE : Chaque coup a 10 % de chances d'abaisser la résistance au froid de la cible de 10 % pendant 3 rounds et d'infliger 1d6 points de dégâts de froid.
+
+RUNE DES SORTILÈGES : Augmente de 20 % la résistance à la magie du chevalier démoniaque.
+
+RUNE DU DÉCHU : Chaque coup a 10 % de chances de soigner 10 points de vie du chevalier démoniaque et d'augmenter sa force de 1 pendant 3 rounds. Le gain de force n'est pas cumulatif.
+
+RUNE DU DÉMON DE PIERRE : Augmente de 10% la résistance aux dégâts physiques du chevalier démoniaque.
+
+- 8ème Niveau : Peut lancer « Sorcellerie mortelle » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+SORCELLERIE MORTELLE : En puisant dans l'énergie occulte, le Chevalier démoniaque obtient une immunité aux charmes, à la peur, au sommeil, au drain de niveau et à l'emprisonnement.
+
+- 10ème Niveau : Peut lancer « Cocon » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+
+COCON : Pendant 3 rounds Le Chevalier démoniaque érige une barrière autour de lui, augmentant sa résistance aux dégâts magiques de 30 % et lance « Bouclier de sort ».
+
+- 12ème Niveau : Peut lancer « Brume mortelle » une fois par jour, puis une fois supplémentaire tous les 4 niveaux.
+
+- 15ème Niveau : Peut lancer « Sang-froid » une fois par jour, puis une fois supplémentaire tous les 3 niveaux.
+
+SANG-FROID : Le sang du chevalier démoniaque se glace, lui conférant une immunité à l'étourdissement et réduisant tous les dégâts physiques subis de 30 % pendant 5 rounds. N'est pas cumulable avec la capacité « Robustesse ».
+
+- 20ème Niveau : Peut lancer « Armée de morts » une fois par jour.
+
+ARMÉE DE MORTS : Invoque 5 Seigneurs des goules qui combattent pour le Chevalier démoniaque pendant 1 tour.
+
+Inconvénients :
+- Ne peut dépasser la maîtrise (3 points de compétences) avec les armes de mêlée.
+- Ne peut être que compétent (1 point de compétence) avec les armes à distance.
+- Doit être d'alignement maléfique.
+- Ne peut pas se jumeler.
+
 
 ## Kits de Rôdeur
 
