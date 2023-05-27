@@ -29,6 +29,8 @@ END
 
 OUTER_SET nightcloak_code = (0x4000 + %MO_NIGHTCLOAK%)
 
+APPEND ~FALLEN.2da~ ~MO_NIGHTCLOAK 0~
+
 COPY ~morpheus562-s-kitpack/2da/mo_ncl01.2DA~           ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/nightcloak/moncl01.spl~ ~override~ // Eyes of Shar
 COPY ~morpheus562-s-kitpack/spl/nightcloak/moncl02.spl~ ~override~ // Mind of Shar
