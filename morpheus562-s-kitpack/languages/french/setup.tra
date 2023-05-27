@@ -97,6 +97,9 @@
 @1101 = ~Assigner le kit a Jaheira (Lance)~
 @1102 = ~Assigner le kit a Jaheira (Hache de jet)~
 @1103 = ~Ne pas assigner le kit a Jaheira~
+@1110 = ~Installer le kit de Clerc / Rodeur "Manteau de la nuit"~
+//@1111 = ~Assigner le kit a Viconia~
+//@1112 = ~Ne pas assigner le kit a Viconia~
 
 ///////////////////////////////////////////////////////////////////////////
 // Requirements                                                          //
