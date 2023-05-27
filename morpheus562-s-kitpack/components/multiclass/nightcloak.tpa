@@ -2,7 +2,7 @@
 
 ADD_KIT ~MO_NIGHTCLOAK~
   ~MO_NIGHTCLOAK 0 0 0 0 0 0 0 0~
-  ~MO_NIGHTCLOAK 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~MO_NIGHTCLOAK 0 0 12 0 12 0~ // Minimum Ability - abclasrq
   ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
