@@ -20,6 +20,8 @@ ADD_KIT ~MO_REAVER~
 
 LAF fl#add_kit_ee STR_VAR kit_name = MO_REAVER END
 
+APPEND ~FALLEN.2da~ ~MO_REAVER 0~
+
 OUTER_SET reaver_code = (0x4000 + %MO_REAVER%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_rvr01.2DA~       ~override~ // kit
