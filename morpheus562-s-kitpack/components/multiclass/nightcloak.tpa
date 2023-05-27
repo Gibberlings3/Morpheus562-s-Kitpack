@@ -1,0 +1,45 @@
+// Nightcloak Kit 
+
+ADD_KIT ~MO_NIGHTCLOAK~
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0 0 0~
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_NIGHTCLOAK 0 0 12 0 12 0~ // Minimum Ability - abclasrq
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_NIGHTCLOAK 0 0 1 0 0 1 0 0 1~ // Alignment
+  ~MO_NIGHTCLOAK 0 0 0 0 0 0~ // Dual Class Options
+  ~morpheus562-s-kitpack/2da/mo_ncl01.2DA~
+  ~K_CR_H K_CR_HE K_CR_E~
+  ~0x00004000 18~
+  ~FD0~
+  ~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @5607
+  SAY @5608
+  SAY @5609
+
+LAF fl#add_kit_ee STR_VAR kit_name = MO_NIGHTCLOAK END
+
+LAF qd_multiclass
+  STR_VAR
+    kit_name = ~MO_NIGHTCLOAK~
+    kit_clab = ~mo_ncl01~
+    base_class = ~R~
+END
+
+OUTER_SET nightcloak_code = (0x4000 + %MO_NIGHTCLOAK%)
+
+COPY ~morpheus562-s-kitpack/2da/mo_ncl01.2DA~           ~override~ // kit
+COPY ~morpheus562-s-kitpack/spl/nightcloak/moncl01.spl~ ~override~ // Eyes of Shar
+COPY ~morpheus562-s-kitpack/spl/nightcloak/moncl02.spl~ ~override~ // Mind of Shar
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  SPRINT weapon_name ~%SOURCE_FILE%~
+  READ_SHORT 0x1c type
+  READ_ASCII 0x22 appearance (2)
+
+  // Heavy Armor Restriction
+  PATCH_IF (type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~4a~ = 0) BEGIN 
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 parameter1 = %nightcloak_code% parameter2 = 9 power = 0 timing = 2 END
+  END
+  BUT_ONLY

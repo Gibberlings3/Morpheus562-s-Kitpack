@@ -268,3 +268,11 @@ REQUIRE_PREDICATE (GAME_IS ~iwdee~) @3000
 OUTER_SET jaheira_storm_spear=0 // Assign kit to Jaheira (NOT Spear Focus)
 OUTER_SET jaheira_storm_axe=0 // Assign kit to Jaheira (NOT Throwing Axe Focus)
 INCLUDE ~morpheus562-s-kitpack/components/multiclass/stormlord.tpa~
+
+///////////////////////////////////////////////////////////////////////////
+// Battle Master                                                         //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @1110 DESIGNATED 1110 GROUP @11 LABEL Morpheus562sKitpackNightcloak
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
+
+INCLUDE ~morpheus562-s-kitpack/components/multiclass/nightcloak.tpa~

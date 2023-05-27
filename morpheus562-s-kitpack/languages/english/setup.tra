@@ -97,6 +97,7 @@
 @1101 = ~Assign kit to Jaheira (Spear Focus)~
 @1102 = ~Assign kit to Jaheira (Throwing Axe Focus)~
 @1103 = ~Do NOT assign kit to Jaheira~
+@1110 = ~Install Nightcloak Multiclass Kit for Cleric/Ranger~
 
 ///////////////////////////////////////////////////////////////////////////
 // Requirements                                                          //
