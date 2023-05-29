@@ -433,6 +433,23 @@ Inconvénients :
 
 REMARQUE : Les Seigneurs de l'Orage peuvent investir des points de compétence pour les haches, mais ne pourront utiliser que des haches de jet.
 
+### Manteau de la nuit - Kit de Clerc / Rôdeur
+
+Les Manteaux de la nuit sont les favoris de Shar, ses yeux dévoués à sa vision, protégeant ses secrets et pratiquant sa magie aussi tordue et amère soit elle. Ils ont une volonté de fer au service d'une très grande détermination, bien que cette dernière soit des plus perverse. Ce sont des êtres cruels et intelligents qui n'hésite pas à faire profil bas quelques temps avant de réapparaître pour réduire leurs ennemis en poussière. L'honneur n'a aucune importance pour eux, tant que Shar est satisfaite, ils agissent selon leur bon plaisir.
+
+Avantages :
+- Dispose de la capacité passive « L'Œil de Shar ».
+
+L'ŒIL DE SHAR : Le Manteau de la nuit ne peut pas être aveuglé par la magie.
+
+- 7ème Niveau : Gagne la capacité passive « Volonté de Shar ».
+
+VOLONTÉ DE SHAR : Le manteau de nuit reçoit la bénédiction de Shar qui lui confère un bonus de 2 à tous ses jets de sauvegarde.
+
+Inconvénients :
+- Ne peut porter d'armure plus lourde que l'armure feuilletée.
+- Alignement mauvais uniquement.
+
 ## Classes de Prestige
 
 ### Semeur de Mort - Classe de Guerrier
