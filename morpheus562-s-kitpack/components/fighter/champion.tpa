@@ -1,0 +1,48 @@
+// Champion Kit 
+
+ADD_KIT ~MO_CHAMPION~
+  ~MO_CHAMPION 1 1 1 1 1 1 1 1~
+  ~MO_CHAMPION 0 0 0 0 0 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_CHAMPION 9 0 0 0 0 0~ // Minimum Ability - abclasrq
+  ~MO_CHAMPION 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
+  ~MO_CHAMPION 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
+  ~MO_CHAMPION 0 0 15 0 0 0~ // Requirements to Dual Class (from) - abdcscrq
+  ~MO_CHAMPION 1 1 1 1 1 1 1 1 1~ // Alignment
+  ~MO_CHAMPION 0 1 1 1 1 0~ // Dual Class Options
+  ~morpheus562-s-kitpack/2da/mo_chp01.2DA~
+  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  ~0x00004000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @5610
+  SAY @5612
+  SAY @5613
+
+LAF fl#add_kit_ee STR_VAR kit_name = MO_CHAMPION END
+
+OUTER_SET champion_code = (0x4000 + %MO_CHAMPION%)
+
+COPY ~morpheus562-s-kitpack/2da/mo_chp01.2DA~              ~override~ // kit
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Relentless Assault~) STR_VAR bam_file = SPCL238D RET MOBTM1A = icon END
+COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01.spl~  ~override~ // Relentless Assault
+  SAY NAME1 @5532
+  SAY UNIDENTIFIED_DESC @5533
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBTM1A~ END
+COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm01a.spl~ ~override~ // Winded
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5541) STR_VAR END
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Trip Attack~) STR_VAR bam_file = SPPR308C RET MOBTM2A = icon END
+COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm02.spl~ ~override~ // Trip Attack
+  SAY NAME1 @5552
+  SAY UNIDENTIFIED_DESC @5553
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBTM2A~ END
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2a.eff~ ~override~ // Trip Attack - Level 1
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2b.eff~ ~override~ // Trip Attack - Level 14
+COPY ~morpheus562-s-kitpack/eff/battlemaster/mobtm2c.eff~ ~override~ // Trip Attack - Level 20
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Dash~) STR_VAR bam_file = SPWI305C RET MOBTM3A = icon END
+COPY ~morpheus562-s-kitpack/spl/battlemaster/mobtm03.spl~ ~override~ // Dash
+  SAY NAME1 @5534
+  SAY UNIDENTIFIED_DESC @5535
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBTM3A~ END
