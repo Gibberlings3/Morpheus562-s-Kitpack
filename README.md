@@ -1,6 +1,7 @@
 # Morpheus562's Kitpack
 
 [![Latest Release](https://img.shields.io/github/v/release/gibberlings3/Morpheus562-s-Kitpack?include_prereleases)](https://github.com/Gibberlings3/Morpheus562-s-Kitpack/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/gibberlings3/Morpheus562-s-Kitpack/total.svg?color=informational)](https://github.com/gibberlings3/Morpheus562-s-Kitpack/releases)
 ![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20russian&color=informational)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 
