@@ -1,0 +1,10 @@
+IF
+  !Kit(Player1,MO_OATHBREAKER)
+  FallenPaladin(Myself)
+THEN
+  RESPONSE #100
+    ChangeAlignment(Myself,LAWFUL_EVIL)
+    AddKit(MO_OATHBREAKER)
+    RegainPaladinHood() 
+    ChangeAIScript("",GENERAL)
+END

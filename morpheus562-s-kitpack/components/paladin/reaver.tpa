@@ -50,5 +50,5 @@ COPY ~morpheus562-s-kitpack/spl/reaver/morvr03.spl~ ~override~ // Death Field
 // Fighter Stronghold                                                    //
 ///////////////////////////////////////////////////////////////////////////
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
-  COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/nalia.d~ 
+  COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/naliar.d~ 
 END
