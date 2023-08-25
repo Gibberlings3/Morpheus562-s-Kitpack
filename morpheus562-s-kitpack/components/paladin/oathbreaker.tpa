@@ -67,3 +67,9 @@ COPY_EXISTING ~KITLIST.2DA~ ~override~
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/naliao.d~ 
 END
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY ~morpheus562-s-kitpack/baf/mooat1.baf~ ~override/mooat1.bcs~
+  COMPILE_BAF_TO_BCS
