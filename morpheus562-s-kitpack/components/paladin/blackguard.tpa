@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Update Blackguard Kit                                                 //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Import                                                                //
+///////////////////////////////////////////////////////////////////////////
+COPY ~morpheus562-s-kitpack/2da/mo_bla01.2DA~ ~override~ // Blackguard Presence Selection (2da)
+COPY ~morpheus562-s-kitpack/spl/blackguard/moblac1.spl~ ~override~ // Blackguard Presence Selection (spell)
+  SAY NAME1 @5701
+  SAY UNIDENTIFIED_DESC @5702
+
+// Blood Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5703) STR_VAR bam_file = SPPR314C RET MOBLA1A = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla10.spl~ ~override~ 
+  SAY NAME1 @5703
+  SAY UNIDENTIFIED_DESC @5704
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5709) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1A~ END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla01.spl~ ~override~ // Heal on Hit
+COPY ~morpheus562-s-kitpack/eff/blackguard/mobla01.eff~ ~override~ // Heal on Hit
+
+// Frost Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5705) STR_VAR bam_file = SPPR409C RET MOBLA1B = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla11.spl~ ~override~ 
+  SAY NAME1 @5705
+  SAY UNIDENTIFIED_DESC @5706
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5710) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1B~ END
+
+// Unholy Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5707) STR_VAR bam_file = SPWI905C RET MOBLA1C = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla13.spl~ ~override~ 
+  SAY NAME1 @5707
+  SAY UNIDENTIFIED_DESC @5708
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5711) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1C~ END
+
+///////////////////////////////////////////////////////////////////////////
+// CLAB Updates                                                          //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~CLABPA06.2DA~ override
+    REPLACE_TEXTUALLY ~GA_SPCL423~ ~****~
+    REPLACE_TEXTUALLY ~GA_SPCL103~ ~****~
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_SPCL234 END // Disable Spellcasting
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_SPCL235 END // Disable Turn Undead
+    LPF set_clab_2da_entries INT_VAR f_MinLevel = 2 f_MaxLevel = 2 STR_VAR f_Entry = GA_MOBLAC1 END // Blackguard Presence
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+///////////////////////////////////////////////////////////////////////////
+// Update Kit Descriptions                                               //
+///////////////////////////////////////////////////////////////////////////
+LAF ~GET_KIT_STRREF~ STR_VAR kit_name = ~Blackguard~ RET kit_strref END
+STRING_SET_EVALUATE kit_strref @5700

@@ -29,7 +29,7 @@ LAF fl#add_kit_ee STR_VAR kit_name = MO_PSIWARRIOR END
 COPY ~morpheus562-s-kitpack/2da/mo_psi01.2DA~     ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi01.SPL~ ~override~ // Guarded Mind
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Psionic Strike~) STR_VAR bam_file = SPWI511C RET MOPSI2A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5507) STR_VAR bam_file = SPWI511C RET MOPSI2A = icon END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic2.SPL~ ~override~ // Psionic Strike
   SAY NAME1 @5507
   SAY UNIDENTIFIED_DESC @5508
@@ -38,7 +38,7 @@ COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi21.SPL~ ~override~ // Psionic St
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi22.SPL~ ~override~ // Psionic Strike +3 Dmg
 //COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi03.SPL~ ~override~ // Protective Field
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Protective Field~) STR_VAR bam_file = SPWI114C RET MOPSI3A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5513) STR_VAR bam_file = SPWI114C RET MOPSI3A = icon END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic3.SPL~ ~override~ // Protective Field
   SAY NAME1 @5513
   SAY UNIDENTIFIED_DESC @5514
@@ -77,7 +77,7 @@ COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi61.SPL~ ~override~ // Telekineti
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi07.SPL~ ~override~ // Bulwark of Force
   SAY NAME1 @5592
   SAY UNIDENTIFIED_DESC @5593
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Bulwark of Force~) STR_VAR bam_file = SPPR406C RET MOPSI7A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5592) STR_VAR bam_file = SPPR406C RET MOPSI7A = icon END
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi70.SPL~ ~override~ // Bulwark of Force
   SAY NAME1 @5592
   LPF ADD_SPELL_EFFECT INT_VAR opcode = 142 target = 2 parameter2 = ~MOPSI7A~ timing = 0 duration = 8 END

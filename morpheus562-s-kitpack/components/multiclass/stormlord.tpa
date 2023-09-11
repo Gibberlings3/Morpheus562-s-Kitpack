@@ -32,7 +32,7 @@ OUTER_SET stormlord_code = (0x4000 + %MO_STORMLORD%)
 COPY ~morpheus562-s-kitpack/2da/mo_stl01.2DA~     ~override~ // kit
 COPY ~morpheus562-s-kitpack/spl/stormlord/mostl01.SPL~ ~override~ // +1 bonus to hit and damage
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Shock Weapon~) STR_VAR bam_file = SPWI308C RET MOSTL2A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5539) STR_VAR bam_file = SPWI308C RET MOSTL2A = icon END
 COPY ~morpheus562-s-kitpack/spl/stormlord/mostl02.SPL~ ~override~ // Shock Weapon
   SAY NAME1 @5539
   SAY UNIDENTIFIED_DESC @5540

@@ -626,3 +626,87 @@ Advantages:
 
 Disadvantages:
 – ~
+
+@5700 = ~BLACKGUARD: The Blackguard epitomizes evil and is nothing short of a mortal fiend. The quintessential black knight, this villain carries a reputation of the foulest sort that is very well deserved. Consorting with demons and devils and serving dark deities, the Blackguard is hated and feared by all. Some people call these villains "anti-paladins" due to their completely evil nature.
+
+Advantages:
+– Immune to level drain and fear.
+– May use the Absorb Health ability once per day.
+
+ABSORB HEALTH: Deals 2 points of damage per level to an enemy, healing the Blackguard the same number of Hit Points.
+
+– 2nd Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+
+BLOOD PRESENCE: Strengthens the Blackguard with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Blackguard. This will not heal beyond the Blackguard's maximum Hit Points.
+
+FROST PRESENCE: Hardens the Blackguard with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+
+UNHOLY PRESENCE: Infuses the Blackguard with unholy fury increasing APR by 0.5 and movement by 2.
+
+– 3rd Level: May use the Plague Strike ability once per day and gains an additional use every 3 levels thereafter.
+
+PLAGUE STRIKE: A vicious strike over the next round that infects the target with a blood plague dealing 1d4 damage per second for 2 rounds; however, the Blackguard's attack damage is also reduced by 10% for 2 rounds.
+
+– 4th Level: May use the Icy Touch ability once per day and gains an additional use every 4 levels thereafter.
+
+ICY TOUCH: Chills the target for 2d4 cold damage, reduces the target's apr by 1 and movement speed by 2. A successful Saving Throw vs. Spell with a -2 penalty negates the apr and movement speed reduction.
+
+– 6th Level: May cast Unholy Blight once per day and gains an additional use every 4 levels thereafter.
+
+UNHOLY BLIGHT: Surrounds all enemies within a 10-ft. radius of the Blackguard with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
+
+– 7th Level: Blackguards develop a personal connection with their blades and can forge runes into them in order to increase their power. Only one rune may be active at any time.
+
+RUNE OF CINDERGLACIER: Struck enemies have a 10% chance of losing 0.5 APR and 1 movement speed for 1 round. This effect is cumulative.
+
+RUNE OF RAZORICE: Each hit has a 10% chance of lowering the target's cold resistance by 10% for 3 rounds and dealing 1d6 cold damage.
+
+RUNE OF SPELLBREAKING: Increases the Blackguard's Magic Resistance by 20%.
+
+RUNE OF THE FALLEN CRUSADER: Each hit has a 10% chance of healing the Blackguard for 10 Hit Points and increasing the Blackguard's strength by 1 for 3 rounds. The strength increase is not cumulative.
+
+RUNE OF THE STONESKING GARGOYLE: Increases the Blackguard's physical damage resistance by 10%.
+
+– 10th Level: May cast Anti-Magic Shell once per day and gains an additional use every 3 levels thereafter.
+
+ANTI-MAGIC SHELL: The Blackguard creates a barrier around <PRO_HIMHER>self that increases Magic Damage Resistance by 30% and creates a Spell Shield for 3 rounds.
+
+– 13th Level: May cast Death Fog once per day and gains an additional use every 4 levels thereafter.
+
+– 16th Level: May cast Icebound Fortitude once per day and gains an additional use every 3 levels thereafter.
+
+ICEBOUND FORTITUDE: The Blackguard's blood freezes granting immunity to stun effects and reducing all physical damage taken by 30% for 5 rounds. This ability does not stack with Hardiness.
+
+– 20th Level: May cast Army of the Dead once per day.
+
+ARMY OF THE DEAD: Summons 5 Ghoul Lords to fight for the Blackguard for 1 turn.
+
+Disadvantages:
+– Alignment restricted to evil.
+– May not turn undead.
+– May not cast Detect Evil.
+– May not cast Protection From Evil as an innate ability.
+– May not use the Lay on Hands ability.
+– May not cast priest spells.~
+
+@5701 = ~Blackguard Presence~
+@5702 = ~Blackguard Presence
+May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.~
+
+@5703 = ~Blood Presence~
+@5704 = ~Blood Presence
+Strengthens the Blackguard with the presence of blood, increasing damage by 10% and each hit drains 2 Hit Points from the target and transfers it to the Blackguard. This will not heal beyond the Blackguard's maximum Hit Points.~
+
+@5705 = ~Frost Presence~
+@5706 = ~Frost Presence
+Hardens the Blackguard with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.~
+
+@5707 = ~Unholy Presence~
+@5708 = ~Unholy Presence
+Infuses the Blackguard with unholy fury increasing APR by 0.5 and movement by 2.~
+
+@5709 = ~Blood Presence Active~
+@5710 = ~Frost Presence Active~
+@5711 = ~Unholy Presence Active~
+
+@5712 = ~Carnage~ // Deathbringer

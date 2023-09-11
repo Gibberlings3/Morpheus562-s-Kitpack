@@ -45,7 +45,7 @@ COPY ~morpheus562-s-kitpack/spl/champion_wild/modex04.spl~ ~override~ // Dex Bon
 COPY ~morpheus562-s-kitpack/spl/champion_wild/modex05.spl~ ~override~ // Dex Bonus - 24
 COPY ~morpheus562-s-kitpack/spl/champion_wild/modex06.spl~ ~override~ // Dex Bonus - 25
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(~Wrath of the Wild~) STR_VAR bam_file = SPPR704C RET MOCHW3A = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5545) STR_VAR bam_file = SPPR704C RET MOCHW3A = icon END
 COPY ~morpheus562-s-kitpack/spl/champion_wild/mochw03.spl~ ~override~ // Wrath of the Wild
   SAY NAME1 @5545
   SAY UNIDENTIFIED_DESC @5546
