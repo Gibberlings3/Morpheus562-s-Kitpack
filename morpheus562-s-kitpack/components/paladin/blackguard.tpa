@@ -32,7 +32,7 @@ COPY ~morpheus562-s-kitpack/spl/blackguard/mobla11.spl~ ~override~
 
 // Unholy Presence
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5707) STR_VAR bam_file = SPWI905C RET MOBLA1C = icon END
-COPY ~morpheus562-s-kitpack/spl/blackguard/mobla13.spl~ ~override~ 
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla12.spl~ ~override~ 
   SAY NAME1 @5707
   SAY UNIDENTIFIED_DESC @5708
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5711) STR_VAR END
