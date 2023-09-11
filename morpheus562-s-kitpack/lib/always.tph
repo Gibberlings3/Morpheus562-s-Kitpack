@@ -22,6 +22,7 @@ ACTION_IF !VARIABLE_IS_SET ~initialise~ BEGIN
    INCLUDE ~morpheus562-s-kitpack/lib/qd_multiclass.tpa~
    INCLUDE ~morpheus562-s-kitpack/lib/fl#add_kit_ee.tpa~
    INCLUDE ~morpheus562-s-kitpack/lib/cdfunctions.tpa~ // borrowed with permission from Cam
+   INCLUDE ~morpheus562-s-kitpack/lib/kit_strref.tpa~
    OUTER_SPRINT ~folder~ ~morpheus562-s-kitpack~
    //INCLUDE ~morpheus562-s-kitpack/lib/splprot_attributes.tpa~ // Already present in splprot.2da
    //SILENT
