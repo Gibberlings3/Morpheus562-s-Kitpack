@@ -691,7 +691,13 @@ Disadvantages:
 
 @5701 = ~Blackguard Presence~
 @5702 = ~Blackguard Presence
-May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.~
+May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+
+BLOOD PRESENCE: Strengthens the Blackguard with the presence of blood, increasing damage by 10% and each hit drains 2 Hit Points from the target and transfers it to the Blackguard. This will not heal beyond the Blackguard's maximum Hit Points.
+
+FROST PRESENCE: Hardens the Blackguard with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+
+UNHOLY PRESENCE: Infuses the Blackguard with unholy fury increasing APR by 0.5 and movement by 2.~
 
 @5703 = ~Blood Presence~
 @5704 = ~Blood Presence
