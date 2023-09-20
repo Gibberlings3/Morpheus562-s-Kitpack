@@ -1,3 +1,11 @@
+## Version 4
+
+October xx, 2023
+
+### Changed
+
+- Corrected odd check for Archmage.
+
 ## Version 3.1
 
 April 29, 2023
