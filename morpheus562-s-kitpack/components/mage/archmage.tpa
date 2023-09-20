@@ -28,7 +28,7 @@ OUTER_SET archmage_code = (0x4000 + %MO_ARCHMAGE%)
 COPY ~morpheus562-s-kitpack/2da/MO_ARC01.2DA~         ~override~ // kit
 
 ACTION_IF !FILE_EXISTS_IN_GAME ~CLABMA01.2DA~ THEN BEGIN
-  COPY ~orpheus562-s-kitpack/2da/CLABMA01.2DA~        ~override~
+  COPY ~morpheus562-s-kitpack/2da/CLABMA01.2DA~       ~override~
 END
 
 COPY ~morpheus562-s-kitpack/spl/archmage/moarc01.SPL~ ~override~ // +1 Spell Caster Level
@@ -50,7 +50,7 @@ COPY ~morpheus562-s-kitpack/cre/moweave.cre~          ~override~ // The Weave
 COMPILE EVALUATE_BUFFER ~morpheus562-s-kitpack/dlg/moarc1.d~
 
 ///////////////////////////////////////////////////////////////////////////
-// Update Fighter Kit                                                    //
+// Update Mage Kit                                                       //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~CLABMA01.2DA~ override
     LPF set_clab_2da_entries INT_VAR f_MinLevel = 18 f_MaxLevel = 18 STR_VAR f_Entry = AP_MOARC05 END
