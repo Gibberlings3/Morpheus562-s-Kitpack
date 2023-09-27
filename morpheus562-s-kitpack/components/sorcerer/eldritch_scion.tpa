@@ -63,7 +63,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
               prof = 100 OR //flail/morningstar
               prof = 101 OR //mace
               prof = 115 OR //club
-              ((type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~3a~ = 0)) BEGIN // Chain Armor
+              ((type = 2) AND (~%appearance%~ STRING_COMPARE_CASE ~3a~ = 0))) BEGIN // Chain Armor
               //type = 7) BEGIN // Helm
           READ_BYTE 0x1e "bard"
           READ_BYTE 0x1f "fighter"
