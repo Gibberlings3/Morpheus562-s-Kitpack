@@ -5,6 +5,7 @@ October xx, 2023
 ### Changed
 
 - Corrected odd check for Archmage.
+- Tweaked Psi Warrior.
 
 ## Version 3.1
 
