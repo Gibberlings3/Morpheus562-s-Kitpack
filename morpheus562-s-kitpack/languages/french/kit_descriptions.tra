@@ -38,20 +38,20 @@ CHOC PSIONIQUE : Pendant 10 secondes, cette capacité permet à l'Esprit Guerrie
   24 en Intelligence : +13 points de dégâts
   25 en Intelligence : +14 points de dégâts
 
-CHAMP DE FORCE : Pendant un round, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.
-  13 en Intelligence : +2 % de résistance aux dégâts physiques
-  14 en Intelligence : +4 % de résistance aux dégâts physiques
-  15 en Intelligence : +6 % de résistance aux dégâts physiques
-  16 en Intelligence : +8 % de résistance aux dégâts physiques
-  17 en Intelligence : +8 % de résistance aux dégâts physiques
-  18 en Intelligence : +10 % de résistance aux dégâts physiques
-  19 en Intelligence : +16 % de résistance aux dégâts physiques
-  20 en Intelligence : +18 % de résistance aux dégâts physiques
-  21 en Intelligence : +20 % de résistance aux dégâts physiques
-  22 en Intelligence : +22 % de résistance aux dégâts physiques
-  23 en Intelligence : +24 % de résistance aux dégâts physiques
-  24 en Intelligence : +26 % de résistance aux dégâts physiques
-  25 en Intelligence : +28 % de résistance aux dégâts physiques
+CHAMP DE FORCE : Pendant cinq rounds, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.
+  13 en Intelligence : +1 % de résistance aux dégâts physiques
+  14 en Intelligence : +2 % de résistance aux dégâts physiques
+  15 en Intelligence : +3 % de résistance aux dégâts physiques
+  16 en Intelligence : +4 % de résistance aux dégâts physiques
+  17 en Intelligence : +4 % de résistance aux dégâts physiques
+  18 en Intelligence : +5 % de résistance aux dégâts physiques
+  19 en Intelligence : +8 % de résistance aux dégâts physiques
+  20 en Intelligence : +9 % de résistance aux dégâts physiques
+  21 en Intelligence : +10 % de résistance aux dégâts physiques
+  22 en Intelligence : +11 % de résistance aux dégâts physiques
+  23 en Intelligence : +12 % de résistance aux dégâts physiques
+  24 en Intelligence : +13 % de résistance aux dégâts physiques
+  25 en Intelligence : +14 % de résistance aux dégâts physiques
 
 – 7ème niveau : Peut utiliser « Attraction cinétique » une fois par jour, puis une fois supplémentaire tous les 5 niveaux.
 
@@ -100,20 +100,20 @@ Le maître Esprit Guerrier est capable de catapulter au loin ou d'attirer à sa 
 
 @5513 = ~Champ de force~
 @5514 = ~Champ de force
-Pendant un round, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.
-  13 en Intelligence : +2 % de résistance aux dégâts physiques
-  14 en Intelligence : +4 % de résistance aux dégâts physiques
-  15 en Intelligence : +6 % de résistance aux dégâts physiques
-  16 en Intelligence : +8 % de résistance aux dégâts physiques
-  17 en Intelligence : +8 % de résistance aux dégâts physiques
-  18 en Intelligence : +10 % de résistance aux dégâts physiques
-  19 en Intelligence : +16 % de résistance aux dégâts physiques
-  20 en Intelligence : +18 % de résistance aux dégâts physiques
-  21 en Intelligence : +20 % de résistance aux dégâts physiques
-  22 en Intelligence : +22 % de résistance aux dégâts physiques
-  23 en Intelligence : +24 % de résistance aux dégâts physiques
-  24 en Intelligence : +26 % de résistance aux dégâts physiques
-  25 en Intelligence : +28 % de résistance aux dégâts physiques~
+Pendant cinq rounds, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.
+  13 en Intelligence : +1 % de résistance aux dégâts physiques
+  14 en Intelligence : +2 % de résistance aux dégâts physiques
+  15 en Intelligence : +3 % de résistance aux dégâts physiques
+  16 en Intelligence : +4 % de résistance aux dégâts physiques
+  17 en Intelligence : +4 % de résistance aux dégâts physiques
+  18 en Intelligence : +5 % de résistance aux dégâts physiques
+  19 en Intelligence : +8 % de résistance aux dégâts physiques
+  20 en Intelligence : +9 % de résistance aux dégâts physiques
+  21 en Intelligence : +10 % de résistance aux dégâts physiques
+  22 en Intelligence : +11 % de résistance aux dégâts physiques
+  23 en Intelligence : +12 % de résistance aux dégâts physiques
+  24 en Intelligence : +13 % de résistance aux dégâts physiques
+  25 en Intelligence : +14 % de résistance aux dégâts physiques~
 
 @5515 = ~Attraction cinétique~
 @5516 = ~Attraction cinétique

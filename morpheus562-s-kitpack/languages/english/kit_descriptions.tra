@@ -38,20 +38,20 @@ PSIONIC STRIKE: This ability allows the Psi Warrior to make a special attack aga
   24 Intelligence: +13 damage
   25 Intelligence: +14 damage
 
-PROTECTIVE FIELD: This ability increases the Psi Warrior's damage resistance based on <PRO_HISHER> Intelligence modifier and lasts for one turn.
-  13 Intelligence: +2% physical damage resistance
-  14 Intelligence: +4% physical damage resistance
-  15 Intelligence: +6% physical damage resistance
-  16 Intelligence: +8% physical damage resistance
-  17 Intelligence: +8% physical damage resistance
-  18 Intelligence: +10% physical damage resistance
-  19 Intelligence: +16% physical damage resistance
-  20 Intelligence: +18% physical damage resistance
-  21 Intelligence: +20% physical damage resistance
-  22 Intelligence: +22% physical damage resistance
-  23 Intelligence: +24% physical damage resistance
-  24 Intelligence: +26% physical damage resistance
-  25 Intelligence: +28% physical damage resistance
+PROTECTIVE FIELD: This ability increases the Psi Warrior's damage resistance based on <PRO_HISHER> Intelligence modifier and lasts for five turns.
+  13 Intelligence: +1% physical damage resistance
+  14 Intelligence: +2% physical damage resistance
+  15 Intelligence: +3% physical damage resistance
+  16 Intelligence: +4% physical damage resistance
+  17 Intelligence: +4% physical damage resistance
+  18 Intelligence: +5% physical damage resistance
+  19 Intelligence: +8% physical damage resistance
+  20 Intelligence: +9% physical damage resistance
+  21 Intelligence: +10% physical damage resistance
+  22 Intelligence: +11% physical damage resistance
+  23 Intelligence: +12% physical damage resistance
+  24 Intelligence: +13% physical damage resistance
+  25 Intelligence: +14% physical damage resistance
 
 – 7th Level: May use Telekinetic Movement once per day and gains an additional use every 5 levels thereafter.
 
@@ -63,7 +63,7 @@ GUARDED MIND: The Psi Warrior becomes immune to all psionic attacks, fear, and c
 
 – 15th Level: May use Bulwark of Force once per day.
 
-BULWARK OF FORCE: This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit, and the Psi Warrior does not have their own damage resistance improved from using this ability.
+BULWARK OF FORCE: This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit.
 
 – 18th Level: May use Telekinetic Master once per day.
 
@@ -100,20 +100,20 @@ The Psi Master is able to push or pull all targets within a 15' radius to a sele
 
 @5513 = ~Protective Field~
 @5514 = ~Protective Field
-This ability increases the Psi Warrior's damage resistance based on <PRO_HISHER> Intelligence modifier and lasts for one turn.
-  13 Intelligence: +2% physical damage resistance
-  14 Intelligence: +4% physical damage resistance
-  15 Intelligence: +6% physical damage resistance
-  16 Intelligence: +8% physical damage resistance
-  17 Intelligence: +8% physical damage resistance
-  18 Intelligence: +10% physical damage resistance
-  19 Intelligence: +16% physical damage resistance
-  20 Intelligence: +18% physical damage resistance
-  21 Intelligence: +20% physical damage resistance
-  22 Intelligence: +22% physical damage resistance
-  23 Intelligence: +24% physical damage resistance
-  24 Intelligence: +26% physical damage resistance
-  25 Intelligence: +28% physical damage resistance~
+This ability increases the Psi Warrior's damage resistance based on <PRO_HISHER> Intelligence modifier and lasts for five turns.
+  13 Intelligence: +1% physical damage resistance
+  14 Intelligence: +2% physical damage resistance
+  15 Intelligence: +3% physical damage resistance
+  16 Intelligence: +4% physical damage resistance
+  17 Intelligence: +4% physical damage resistance
+  18 Intelligence: +5% physical damage resistance
+  19 Intelligence: +8% physical damage resistance
+  20 Intelligence: +9% physical damage resistance
+  21 Intelligence: +10% physical damage resistance
+  22 Intelligence: +11% physical damage resistance
+  23 Intelligence: +12% physical damage resistance
+  24 Intelligence: +13% physical damage resistance
+  25 Intelligence: +14% physical damage resistance~
 
 @5515 = ~Telekinetic Movement~
 @5516 = ~Telekinetic Movement
@@ -481,7 +481,7 @@ All enemies within a 15-ft. radius of the Reaver suffers 4 damage each while the
 
 @5592 = ~Bulwark of Force~
 @5593 = ~BULWARK OF FORCE
-This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit, and the Psi Warrior does not have their own damage resistance improved from using this ability.~
+This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit.~
 
 @5594 = ~battlerager~
 @5595 = ~Battlerager~

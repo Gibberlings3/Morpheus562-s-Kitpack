@@ -43,8 +43,8 @@ COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic3.SPL~ ~override~ // Protective
   SAY NAME1 @5513
   SAY UNIDENTIFIED_DESC @5514
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOPSI3A~ END
-COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi31.SPL~ ~override~ // Protective Field +2% DR
-COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi32.SPL~ ~override~ // Protective Field +6% DR
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi31.SPL~ ~override~ // Protective Field +1% DR
+COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsi32.SPL~ ~override~ // Protective Field +3% DR
 
 COPY ~morpheus562-s-kitpack/spl/psiwarrior/mopsic4.SPL~ ~override~ // Psi-Powered Leap
   SAY NAME1 @5509

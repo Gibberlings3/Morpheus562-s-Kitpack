@@ -122,19 +122,19 @@ PROTECTIVE FIELD: This ability increases the Psi Warrior's damage resistance bas
   <summary>Resistance Details</summary>
 
 ```   
-  13 Intelligence: +2% physical damage resistance
-  14 Intelligence: +4% physical damage resistance
-  15 Intelligence: +6% physical damage resistance
-  16 Intelligence: +8% physical damage resistance
-  17 Intelligence: +8% physical damage resistance
-  18 Intelligence: +10% physical damage resistance
-  19 Intelligence: +16% physical damage resistance
-  20 Intelligence: +18% physical damage resistance
-  21 Intelligence: +20% physical damage resistance
-  22 Intelligence: +22% physical damage resistance
-  23 Intelligence: +24% physical damage resistance
-  24 Intelligence: +26% physical damage resistance
-  25 Intelligence: +28% physical damage resistance
+  13 Intelligence: +1% physical damage resistance
+  14 Intelligence: +2% physical damage resistance
+  15 Intelligence: +3% physical damage resistance
+  16 Intelligence: +4% physical damage resistance
+  17 Intelligence: +4% physical damage resistance
+  18 Intelligence: +5% physical damage resistance
+  19 Intelligence: +8% physical damage resistance
+  20 Intelligence: +9% physical damage resistance
+  21 Intelligence: +10% physical damage resistance
+  22 Intelligence: +11% physical damage resistance
+  23 Intelligence: +12% physical damage resistance
+  24 Intelligence: +13% physical damage resistance
+  25 Intelligence: +14% physical damage resistance
 ``` 
 
 </details>
@@ -149,7 +149,7 @@ GUARDED MIND: The Psi Warrior becomes immune to all psionic attacks.
 
 - 15th Level: May use Bulwark of Force once per day.
 
-BULWARK OF FORCE: This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit, and the Psi Warrior does not have their own damage resistance improved from using this ability.
+BULWARK OF FORCE: This ability grants 10% damage resistance for all allies within 15 feet of the Psi Warrior for one turn. Allies need to remain within 15 feet of the Psi Warrior to continue receiving this benefit.
 
 - 18th Level: May use Telekinetic Master once per day.
 

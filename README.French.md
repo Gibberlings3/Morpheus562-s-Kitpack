@@ -101,24 +101,24 @@ CHOC PSIONIQUE : Pendant 10 secondes, cette capacité permet à l'Esprit Guerrie
 
 </details>
 
-CHAMP DE FORCE : Pendant un round, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.  
+CHAMP DE FORCE : Pendant cinq rounds, cette capacité permet à l'Esprit Guerrier d'amortir les dégâts physiques en appliquant un modificateur lié à l'intelligence.  
 <details>
   <summary>Détails des résistances</summary>
   
 ```	
-	13 en Intelligence : Bonus de 2 % de résistance aux dégâts physiques 
-	14 en Intelligence : Bonus de 4 % de résistance aux dégâts physiques  
-	15 en Intelligence : Bonus de 6 % de résistance aux dégâts physiques  
-	16 en Intelligence : Bonus de 8 % de résistance aux dégâts physiques  
-	17 en Intelligence : Bonus de 8 % de résistance aux dégâts physiques  
-	18 en Intelligence : Bonus de 10 % de résistance aux dégâts physiques  
-	19 en Intelligence : Bonus de 16 % de résistance aux dégâts physiques  
-	20 en Intelligence : Bonus de 18 % de résistance aux dégâts physiques  
-	21 en Intelligence : Bonus de 20 % de résistance aux dégâts physiques  
-	22 en Intelligence : Bonus de 22 % de résistance aux dégâts physiques  
-	23 en Intelligence : Bonus de 24 % de résistance aux dégâts physiques  
-	24 en Intelligence : Bonus de 26 % de résistance aux dégâts physiques  
-	25 en Intelligence : Bonus de 28 % de résistance aux dégâts physiques  
+	13 en Intelligence : Bonus de 1 % de résistance aux dégâts physiques 
+	14 en Intelligence : Bonus de 2 % de résistance aux dégâts physiques  
+	15 en Intelligence : Bonus de 3 % de résistance aux dégâts physiques  
+	16 en Intelligence : Bonus de 4 % de résistance aux dégâts physiques  
+	17 en Intelligence : Bonus de 4 % de résistance aux dégâts physiques  
+	18 en Intelligence : Bonus de 5 % de résistance aux dégâts physiques  
+	19 en Intelligence : Bonus de 8 % de résistance aux dégâts physiques  
+	20 en Intelligence : Bonus de 9 % de résistance aux dégâts physiques  
+	21 en Intelligence : Bonus de 10 % de résistance aux dégâts physiques  
+	22 en Intelligence : Bonus de 11 % de résistance aux dégâts physiques  
+	23 en Intelligence : Bonus de 12 % de résistance aux dégâts physiques  
+	24 en Intelligence : Bonus de 13 % de résistance aux dégâts physiques  
+	25 en Intelligence : Bonus de 14 % de résistance aux dégâts physiques  
 ```
 
 </details>
