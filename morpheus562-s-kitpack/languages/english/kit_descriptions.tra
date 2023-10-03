@@ -519,7 +519,7 @@ The Dragoon will instantly leap up to 15 feet away dealing piercing damage to a 
 
 @5604 = ~death knight~
 @5605 = ~Death Knight~
-@5606 = ~DEATHKNIGHT: Death knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts and often gird themselves in heavy armor. Death knight talents can bolster their defensive abilities by focusing on their ability to heal themselves, increase their damage and spell attacks, or summon forth minions and diseases.
+@5606 = ~DEATH KNIGHT: Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts and often gird themselves in heavy armor. Death Knight talents can bolster their defensive abilities by focusing on their ability to heal themselves, increase their damage and spell attacks, or summon forth minions and diseases.
 
 Advantages:
 – May use the Death Coil and Death Grip abilities once per day.
@@ -583,11 +583,38 @@ ICEBOUND FORTITUDE: The Death Knight's blood freezes granting immunity to stun e
 ARMY OF THE DEAD: Summons 5 Ghoul Lords to fight for the Death Knight for 1 turn.
 
 Disadvantages:
-– May not exceed Mastery (three slots) in any melee weapon.
+– May not exceed Specialization (two slots) in any melee weapon.
 – May not exceed Proficient (one slot) in any ranged weapon.
 – Alignment restricted to evil.
 – May not dual class.~
 
+@5607 = ~Death Knight Presence~
+@5608 = ~Death Knight Presence
+May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+
+BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 10% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
+
+FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+
+UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.~
+
+@5609 = ~Blood Presence~
+@5610 = ~Blood Presence
+Strengthens the Death Knight with the presence of blood, increasing damage by 10% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.~
+
+@5611 = ~Frost Presence~
+@5612 = ~Frost Presence
+Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.~
+
+@5613 = ~Unholy Presence~
+@5614 = ~Unholy Presence
+Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.~
+
+@5615 = ~Blood Presence Active~
+@5616 = ~Frost Presence Active~
+@5617 = ~Unholy Presence Active~
+
+/*
 @5607 = ~nightcloak~
 @5608 = ~Nightcloak~
 @5609 = ~NIGHTCLOAK: Nightcloaks are the apple of Shar's eye-devoted to her vision, preserving her secrets, practicing her magic, as twisted and bitter as she is. They are beings of iron will and determination, although that determination is perverse. They are cruel and intelligent, and do not fear slipping away to return and grind their foes to dust at later time. Honor is of no consequence to them. They do as they please, as long as it furthers their,and Shar's, power.
@@ -616,7 +643,9 @@ IMPROVED CRITICAL: The Champion's weapon attacks score a critical hit on a roll 
 
 Disadvantages:
 – ~
+*/
 
+/*
 @5613 = ~oathbreaker~
 @5614 = ~Oathbreaker~
 @5615 = ~OATHBREAKER: 
@@ -626,6 +655,7 @@ Advantages:
 
 Disadvantages:
 – ~
+*/
 
 @5700 = ~BLACKGUARD: The Blackguard epitomizes evil and is nothing short of a mortal fiend. The quintessential black knight, this villain carries a reputation of the foulest sort that is very well deserved. Consorting with demons and devils and serving dark deities, the Blackguard is hated and feared by all. Some people call these villains "anti-paladins" due to their completely evil nature.
 

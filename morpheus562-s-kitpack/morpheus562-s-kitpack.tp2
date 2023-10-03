@@ -76,7 +76,6 @@ REQUIRE_PREDICATE (GAME_IS ~bgee iwdee~) @3000
 OUTER_SET korgan_rager=0 // Do NOT Assign kit to Korgan
 INCLUDE ~morpheus562-s-kitpack/components/fighter/battlerager.tpa~
 
-/*
 ///////////////////////////////////////////////////////////////////////////
 // Death Knight                                                          //
 ///////////////////////////////////////////////////////////////////////////
@@ -84,8 +83,8 @@ BEGIN @160 DESIGNATED 160 GROUP @1 LABEL Morpheus562sKitpackDeathKnight
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/fighter/deathknight.tpa~
-*/
 
+/*
 ///////////////////////////////////////////////////////////////////////////
 // Champion                                                              //
 ///////////////////////////////////////////////////////////////////////////
@@ -93,6 +92,7 @@ BEGIN @170 DESIGNATED 170 GROUP @1 LABEL Morpheus562sKitpackChampion
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/fighter/champion.tpa~
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Dragoon                                                               //

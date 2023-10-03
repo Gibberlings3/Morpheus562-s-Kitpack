@@ -2,7 +2,7 @@
 
 ADD_KIT ~MO_DEATHKNIGHT~
   ~MO_DEATHKNIGHT 1 1 1 1 1 1 1 1~
-  ~MO_DEATHKNIGHT 0 0 0 0 0 0 0 0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~MO_DEATHKNIGHT 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
   ~MO_DEATHKNIGHT 9 0 0 0 0 0~ // Minimum Ability - abclasrq
   ~MO_DEATHKNIGHT 0 0 0 0 0 0~ // Kit Ability Modifiers - abclsmod
   ~MO_DEATHKNIGHT 0 0 17 0 0 0~ // Requirement to Dual Class (to) - abdcedsrq
@@ -14,12 +14,42 @@ ADD_KIT ~MO_DEATHKNIGHT~
   ~0x00004000 2~
   ~Fi0~
   ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
-  SAY @5504
-  SAY @5505
-  SAY @5506
+  SAY @5604
+  SAY @5605
+  SAY @5606
 
 LAF fl#add_kit_ee STR_VAR kit_name = MO_DEATHKNIGHT END
 
 OUTER_SET deathknight_code = (0x4000 + %MO_DEATHKNIGHT%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_dk01.2DA~     ~override~ // kit
+
+COPY ~morpheus562-s-kitpack/spl/blackguard/moblac1.spl~ ~override~ // Death Knight Presence Selection (spell)
+  SAY NAME1 @5607
+  SAY UNIDENTIFIED_DESC @5608
+
+// Blood Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5609) STR_VAR bam_file = SPPR314C RET MOBLA1A = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla10.spl~ ~override~ 
+  SAY NAME1 @5609
+  SAY UNIDENTIFIED_DESC @5610
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5615) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1A~ END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla01.spl~ ~override~ // Heal on Hit
+COPY ~morpheus562-s-kitpack/eff/blackguard/mobla01.eff~ ~override~ // Heal on Hit
+
+// Frost Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5611) STR_VAR bam_file = SPPR409C RET MOBLA1B = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla11.spl~ ~override~ 
+  SAY NAME1 @5611
+  SAY UNIDENTIFIED_DESC @5612
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5616) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1B~ END
+
+// Unholy Presence
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5613) STR_VAR bam_file = SPWI905C RET MOBLA1C = icon END
+COPY ~morpheus562-s-kitpack/spl/blackguard/mobla12.spl~ ~override~ 
+  SAY NAME1 @5613
+  SAY UNIDENTIFIED_DESC @5614
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5617) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MOBLA1C~ END
