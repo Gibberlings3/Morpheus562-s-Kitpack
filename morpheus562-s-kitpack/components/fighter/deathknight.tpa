@@ -59,3 +59,10 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk12.spl~ ~override~
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk02.spl~ ~override~ 
   SAY NAME1 @5618
   SAY UNIDENTIFIED_DESC @5619
+
+// Lichborne
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5620) STR_VAR bam_file = SPCL941C RET MODK3A = icon END
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk03.spl~ ~override~ 
+  SAY NAME1 @5620
+  SAY UNIDENTIFIED_DESC @5621
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 match_parameter2 = 141 parameter2 = ~MODK3A~ END

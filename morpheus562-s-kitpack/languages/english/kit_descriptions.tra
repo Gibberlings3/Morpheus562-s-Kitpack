@@ -594,6 +594,10 @@ Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 
 @5619 = ~Unholy Blight
 Surrounds all enemies within a 15-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.~
 
+@5620 = ~Lichborne~
+@5621 = ~Lichborne
+Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment for 1 turn.~
+
 /*
 @5607 = ~nightcloak~
 @5608 = ~Nightcloak~
