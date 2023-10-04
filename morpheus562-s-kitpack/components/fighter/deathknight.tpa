@@ -54,3 +54,8 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk12.spl~ ~override~
   SAY UNIDENTIFIED_DESC @5614
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5617) STR_VAR END
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK1C~ END
+
+// Unholy Blight
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk02.spl~ ~override~ 
+  SAY NAME1 @5618
+  SAY UNIDENTIFIED_DESC @5619
