@@ -605,7 +605,7 @@ RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resist
 RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 8 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
 
 @5624 = ~Rune of Cinderglacier~
-@5625 ~Rune of Cinderglacier
+@5625 = ~Rune of Cinderglacier
 Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.~
 
 @5626 = ~Rune of Razorice~
@@ -613,7 +613,7 @@ Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target
 Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.~
 
 @5628 = ~Rune of the Fallen Crusader~
-@5629 ~Rune of the Fallen Crusader
+@5629 = ~Rune of the Fallen Crusader
 Each hit has a 20% chance of healing the Death Knight for 8 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
 
 @5630 = ~Rune of Cinderglacier Active~
