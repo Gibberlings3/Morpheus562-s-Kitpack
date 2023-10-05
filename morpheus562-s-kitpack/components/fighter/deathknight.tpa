@@ -108,4 +108,7 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk42.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK4C~ END
 COPY ~morpheus562-s-kitpack/eff/deathknight/modk42a.eff~ ~override~ // Strength Modification
 COPY ~morpheus562-s-kitpack/eff/deathknight/modk42b.eff~ ~override~ // Cure Light Wounds
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk42c.eff~ ~override~ // Cure Light Wounds
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk42d.eff~ ~override~ // Cure Light Wounds
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk42e.eff~ ~override~ // Cure Light Wounds
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk43.spl~  ~override~ // Strength Modification On-Hit
