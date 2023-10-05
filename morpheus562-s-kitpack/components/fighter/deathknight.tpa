@@ -24,6 +24,7 @@ OUTER_SET deathknight_code = (0x4000 + %MO_DEATHKNIGHT%)
 
 COPY ~morpheus562-s-kitpack/2da/mo_dk01.2DA~     ~override~ // kit
 COPY ~morpheus562-s-kitpack/2da/mo_dk02.2DA~     ~override~ // presences
+COPY ~morpheus562-s-kitpack/2da/mo_dk03.2DA~     ~override~ // runes
 
 // Death Knight Presence Selection (spell)
 COPY ~morpheus562-s-kitpack/spl/deathknight/modkc1.spl~ ~override~ 
