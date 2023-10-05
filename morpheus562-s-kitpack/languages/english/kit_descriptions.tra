@@ -609,7 +609,7 @@ RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knig
 Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.~
 
 @5626 = ~Rune of Razorice~
-@5627 ~Rune of Razorice
+@5627 = ~Rune of Razorice
 Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.~
 
 @5628 = ~Rune of the Fallen Crusader~
