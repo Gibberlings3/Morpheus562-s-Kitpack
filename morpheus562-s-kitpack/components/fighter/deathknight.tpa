@@ -25,7 +25,8 @@ OUTER_SET deathknight_code = (0x4000 + %MO_DEATHKNIGHT%)
 COPY ~morpheus562-s-kitpack/2da/mo_dk01.2DA~     ~override~ // kit
 COPY ~morpheus562-s-kitpack/2da/mo_dk02.2DA~     ~override~ // presences
 
-COPY ~morpheus562-s-kitpack/spl/deathknight/modkc1.spl~ ~override~ // Death Knight Presence Selection (spell)
+// Death Knight Presence Selection (spell)
+COPY ~morpheus562-s-kitpack/spl/deathknight/modkc1.spl~ ~override~ 
   SAY NAME1 @5607
   SAY UNIDENTIFIED_DESC @5608
 
@@ -66,3 +67,44 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk03.spl~ ~override~
   SAY NAME1 @5620
   SAY UNIDENTIFIED_DESC @5621
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 match_parameter2 = 141 parameter2 = ~MODK3A~ END
+
+// Death Knight Forge Rune (spell)
+COPY ~morpheus562-s-kitpack/spl/deathknight/modkc4.spl~ ~override~ 
+  SAY NAME1 @5622
+  SAY UNIDENTIFIED_DESC @5623
+
+// Rune of Cinderglacier
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5624) STR_VAR bam_file = SPWI811C RET MODK4A = icon END
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk40.spl~ ~override~ 
+  SAY NAME1 @5624
+  SAY UNIDENTIFIED_DESC @5625
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5630) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK4A~ END
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40a.eff~ ~override~ // -10% Slashing Effect
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40b.eff~ ~override~ // -10% Crushing Effect
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40c.eff~ ~override~ // -10% Piercing Effect
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40d.eff~ ~override~ // -10% Missile Effect
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40e.eff~ ~override~ // Weakened Armor
+  SAY 0x1C @5582
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk40g.eff~ ~override~ // Sound
+
+// Rune of Razorice
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5626) STR_VAR bam_file = SPPR718C RET MODK4B = icon END
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk41.spl~ ~override~ 
+  SAY NAME1 @5626
+  SAY UNIDENTIFIED_DESC @5627
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5631) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK4B~ END
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk41a.eff~ ~override~ // -10% Cold Effect
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk41b.eff~ ~override~ // 1d6 Cold Effect
+
+// Rune of the Fallen Crusader
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5628) STR_VAR bam_file = SPPR719C RET MODK4C = icon END
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk42.spl~ ~override~ 
+  SAY NAME1 @5628
+  SAY UNIDENTIFIED_DESC @5629
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@5632) STR_VAR END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK4C~ END
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk42a.eff~ ~override~ // Strength Modification
+COPY ~morpheus562-s-kitpack/eff/deathknight/modk42b.eff~ ~override~ // Cure Light Wounds
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk43.spl~  ~override~ // Strength Modification On-Hit

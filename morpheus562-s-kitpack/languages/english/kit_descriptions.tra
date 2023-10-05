@@ -524,27 +524,23 @@ The Dragoon will instantly leap up to 15 feet away dealing piercing damage to a 
 Advantages:
 – May use the Absorb Health ability once per day.
 
-DEATH COIL: Deals 2 points of damage per level to an enemy, healing the Death Knight the same number of Hit Points.
+ABSORB HEALTH: Deals 2 points of damage per level to an enemy, healing the Death Knight the same number of Hit Points.
 
-– 2nd Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+– 2nd Level: Death Knights develop a personal connection with their melee weapon and can forge runes into them in order to increase their power. Only one rune may be active at any time, and it takes 1 round to inscribe a rune.
+
+RUNE OF CINDERGLACIER: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
+
+RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.
+
+RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 8 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.
+
+– 6th Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
 
 BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
 
 FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
 
 UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
-
-– 6th Level: Death Knights develop a personal connection with their blades and can forge runes into them in order to increase their power. Only one rune may be active at any time.
-
-RUNE OF CINDERGLACIER: Struck enemies have a 10% chance of losing 0.5 APR and 1 movement speed for 1 round. This effect is cumulative.
-
-RUNE OF RAZORICE: Each hit has a 10% chance of lowering the target's cold resistance by 10% for 3 rounds and dealing 1d6 cold damage.
-
-RUNE OF SPELLBREAKING: Increases the Death Knight's Magic Resistance and Magic Damage Resistance by 10%.
-
-RUNE OF THE FALLEN CRUSADER: Each hit has a 10% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 3 rounds. The strength increase is not cumulative.
-
-RUNE OF THE STONESKIN GARGOYLE: Increases the Death Knight's physical damage resistance by 10%.
 
 – 10th Level: May cast Lichborne once per day and gains an additional use every 4 levels thereafter.
 
@@ -597,6 +593,32 @@ Surrounds all enemies within a 15-ft. radius of the Death Knight with a vile swa
 @5620 = ~Lichborne~
 @5621 = ~Lichborne
 Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment for 1 turn.~
+
+@5622 = ~Death Knight Forge Runes~
+@5623 = ~Death Knight Forge Runes
+Death Knights develop a personal connection with their melee weapon and can forge runes into them in order to increase their power. Only one rune may be active at any time, and it takes 1 round to inscribe a rune.
+
+RUNE OF CINDERGLACIER: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
+
+RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.
+
+RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 8 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
+
+@5624 = ~Rune of Cinderglacier~
+@5625 ~Rune of Cinderglacier
+Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.~
+
+@5626 = ~Rune of Razorice~
+@5627 ~Rune of Razorice
+Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.~
+
+@5628 = ~Rune of the Fallen Crusader~
+@5629 ~Rune of the Fallen Crusader
+Each hit has a 20% chance of healing the Death Knight for 8 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
+
+@5630 = ~Rune of Cinderglacier Active~
+@5631 = ~Rune of Razorice Active~
+@5632 = ~Rune of the Fallen Crusader Active~
 
 /*
 @5607 = ~nightcloak~
