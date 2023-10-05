@@ -74,7 +74,7 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modkc4.spl~ ~override~
   SAY NAME1 @5622
   SAY UNIDENTIFIED_DESC @5623
 
-// Rune of Cinderglacier
+// Rune of Swordshattering
 LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5624) STR_VAR bam_file = SPWI811C RET MODK4A = icon END
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk40.spl~ ~override~ 
   SAY NAME1 @5624

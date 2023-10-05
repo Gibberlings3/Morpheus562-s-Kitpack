@@ -528,7 +528,7 @@ ABSORB HEALTH: Deals 2 points of damage per level to an enemy, healing the Death
 
 – 2nd Level: Death Knights develop a personal connection with their melee weapon and can forge runes into them in order to increase their power. Only one rune may be active at any time.
 
-RUNE OF CINDERGLACIER: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
+RUNE OF SWORDSHATTERING: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
 
 RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.
 
@@ -598,14 +598,14 @@ Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Slee
 @5623 = ~Death Knight Forge Runes
 Death Knights develop a personal connection with their melee weapon and can forge runes into them in order to increase their power. Only one rune may be active at any time.
 
-RUNE OF CINDERGLACIER: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
+RUNE OF SWORDSHATTERING: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
 
 RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.
 
 RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
 
-@5624 = ~Rune of Cinderglacier~
-@5625 = ~Rune of Cinderglacier
+@5624 = ~Rune of Swordshattering ~
+@5625 = ~Rune of Swordshattering 
 Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.~
 
 @5626 = ~Rune of Razorice~
@@ -616,7 +616,7 @@ Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 
 @5629 = ~Rune of the Fallen Crusader
 Each hit has a 20% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.~
 
-@5630 = ~Rune of Cinderglacier Active~
+@5630 = ~Rune of Swordshattering Active~
 @5631 = ~Rune of Razorice Active~
 @5632 = ~Rune of the Fallen Crusader Active~
 
