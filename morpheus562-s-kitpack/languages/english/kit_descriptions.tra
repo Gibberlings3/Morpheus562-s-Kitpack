@@ -554,7 +554,11 @@ DANCING RUNE WEAPON: The Death Knight summons forth a runic sword that acts as a
 
 UNHOLY BLIGHT: Surrounds all enemies within a 15-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
 
-– 20th Level: May cast Army of the Dead once per day.
+– 18th Level: May cast Raise Ally once per day.
+
+RAISE ALLY: 
+
+– 21st Level: May cast Army of the Dead once per day.
 
 ARMY OF THE DEAD: Summons 5 Ghoul Lords to fight for the Death Knight for 1 turn.
 
@@ -635,6 +639,20 @@ Area of Effect: Special
 Saving Throw: None
 
 The Death Knight summons forth a runic sword that acts as a +4 weapon in all respects and deals 5d4 damage upon hitting a target. Once summoned, the runic sword will float in the air completely under the Death Knight's control. This does not prevent the Death Knihgt from doing any other actions during the spell's duration.~
+
+@5635 = ~Raise Ally~
+@5636 = ~Raise Ally
+(Necromancy)
+
+Level: 7
+Sphere: Necromantic
+Range: Touch
+Duration: Permanent
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+Raise Ally will return a character back to life and also heals the character to 60% of their max health so that they are ready for the adventuring life.~ 
 
 /*
 @5607 = ~nightcloak~

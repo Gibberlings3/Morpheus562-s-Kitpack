@@ -115,6 +115,13 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk43.spl~  ~override~ // Strength 
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk44.spl~  ~override~ // Heal On-Hit
   SAY NAME1 @5628
 
+// Dancing Rune Weapon
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk05.spl~ ~override~ 
   SAY NAME1 @5633
   SAY UNIDENTIFIED_DESC @5634
+
+// Raise Ally
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk06.spl~ ~override~ 
+  SAY NAME1 @5635
+  SAY UNIDENTIFIED_DESC @5636
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk06a.spl~ ~override~ 
