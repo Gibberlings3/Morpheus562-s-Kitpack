@@ -558,9 +558,9 @@ UNHOLY BLIGHT: Surrounds all enemies within a 15-ft. radius of the Death Knight 
 
 RAISE ALLY: Returns a character back to life and also heals the character to 60% of their max health so that they are ready for the adventuring life.
 
-– 21st Level: May cast Army of the Dead once per day.
+– 21st Level: Gains the Killing Machine passive ability.
 
-ARMY OF THE DEAD: Summons 5 Ghoul Lords to fight for the Death Knight for 1 turn.
+KILLING MACHINE: When the Death Knight slays an opponent, <PRO_HISHER> critical hit chance for all melee attacks increases by +10% for two rounds. This ability does not stack with itself.
 
 Disadvantages:
 – May not exceed Specialization (two slots) in any melee weapon.
@@ -653,6 +653,8 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 Raise Ally will return a character back to life and also heals the character to 60% of their max health so that they are ready for the adventuring life.~ 
+
+@5637 = ~Killing Machine~
 
 /*
 @5607 = ~nightcloak~

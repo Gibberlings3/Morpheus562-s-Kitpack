@@ -125,3 +125,9 @@ COPY ~morpheus562-s-kitpack/spl/deathknight/modk06.spl~ ~override~
   SAY NAME1 @5635
   SAY UNIDENTIFIED_DESC @5636
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk06a.spl~ ~override~ 
+
+// Killing Machine
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@5637) STR_VAR bam_file = SPWI920C RET MODK7A = icon END
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modk07.spl~ ~override~
+COPY ~morpheus562-s-kitpack/spl/deathbringer/modk07a.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = ~MODK7A~ END
