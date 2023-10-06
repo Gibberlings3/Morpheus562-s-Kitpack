@@ -534,7 +534,11 @@ RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resist
 
 RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.
 
-– 6th Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+– 6th Level: May cast Lichborne once per day and gains an additional use every 4 levels thereafter.
+
+LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment for 1 turn.
+
+– 9th Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
 
 BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
 
@@ -542,9 +546,9 @@ FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit
 
 UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
 
-– 10th Level: May cast Lichborne once per day and gains an additional use every 4 levels thereafter.
+– 12th Level: May summon a Dancing Rune Weapon once per day.
 
-LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment for 1 turn.
+DANCING RUNE WEAPON: The Death Knight summons forth a runic sword that acts as a +4 weapon in all respects and deals 5d4 damage upon hitting a target. Once summoned, the runic sword will float in the air completely under the Death Knight's control for 1 Turn. This does not prevent the Death Knihgt from doing any other actions during the spell's duration.
 
 – 15th Level: May cast Unholy Blight once per day and gains an additional use every 5 levels thereafter.
 
@@ -619,6 +623,18 @@ Each hit has a 20% chance of healing the Death Knight for 10 Hit Points and incr
 @5630 = ~Rune of Swordshattering Active~
 @5631 = ~Rune of Razorice Active~
 @5632 = ~Rune of the Fallen Crusader Active~
+
+@5633 = ~Dancing Rune Weapon~
+@5634 = ~Dancing Rune Weapons
+
+Level: 7
+Range: 0
+Duration: 1 Turn
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+The Death Knight summons forth a runic sword that acts as a +4 weapon in all respects and deals 5d4 damage upon hitting a target. Once summoned, the runic sword will float in the air completely under the Death Knight's control. This does not prevent the Death Knihgt from doing any other actions during the spell's duration.~
 
 /*
 @5607 = ~nightcloak~

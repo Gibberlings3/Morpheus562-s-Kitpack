@@ -114,3 +114,7 @@ COPY ~morpheus562-s-kitpack/eff/deathknight/modk42b.eff~ ~override~ // Cure Ligh
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk43.spl~  ~override~ // Strength Modification On-Hit
 COPY ~morpheus562-s-kitpack/spl/deathknight/modk44.spl~  ~override~ // Heal On-Hit
   SAY NAME1 @5628
+
+COPY ~morpheus562-s-kitpack/spl/deathknight/modk05.spl~ ~override~ 
+  SAY NAME1 @5633
+  SAY UNIDENTIFIED_DESC @5634
