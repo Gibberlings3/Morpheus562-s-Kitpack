@@ -7,7 +7,7 @@
 BACKUP ~morpheus562-s-kitpack/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v3.1~
+VERSION ~v4~
 README ~morpheus562-s-kitpack/readme.%LANGUAGE%.html~ ~morpheus562-s-kitpack/readme.html~
 AUTO_EVAL_STRINGS
 
@@ -211,6 +211,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/paladin/reaver.tpa~
 
+/*
 ///////////////////////////////////////////////////////////////////////////
 // Oathbreaker                                                           //
 ///////////////////////////////////////////////////////////////////////////
@@ -218,6 +219,7 @@ BEGIN @330 DESIGNATED 330 GROUP @3 LABEL Morpheus562sKitpackOathbreaker
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @3000
 
 INCLUDE ~morpheus562-s-kitpack/components/paladin/oathbreaker.tpa~
+*/
 
 /*
 ///////////////////////////////////////////////////////////////////////////

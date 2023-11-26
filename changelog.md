@@ -1,11 +1,12 @@
 ## Version 4
 
-October xx, 2023
+November 26, 2023
 
 ### Changed
 
 - Corrected odd check for Archmage.
 - Tweaked Psi Warrior.
+- Added Deathknight kit
 
 ## Version 3.1
 

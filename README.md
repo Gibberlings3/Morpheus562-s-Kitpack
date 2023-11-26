@@ -60,6 +60,57 @@ Disadvantages:
 - Race restricted to dwarf.
 - Alignment restricted to any non-lawful.
 
+### Death Knight
+
+Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts and often gird themselves in heavy armor. Death Knight talents can bolster their defensive abilities by focusing on their ability to heal themselves, increase their damage and spell attacks, or summon forth minions and diseases.
+
+Advantages:
+- May use the Absorb Health ability once per day.
+
+ABSORB HEALTH: Deals 2 points of damage per level to an enemy, healing the Death Knight the same number of Hit Points.
+
+- 2nd Level: Death Knights develop a personal connection with their melee weapon and can forge runes into them in order to increase their power. Only one rune may be active at any time.
+
+RUNE OF SWORDSHATTERING: Each hit has a 20% chance of bestowing a -10% cumulative reduction in the target's physical damage resistance that lasts for 2 rounds.
+
+RUNE OF RAZORICE: Each hit has a 20% chance of lowering the target's cold resistance by 10% for 2 rounds and dealing 1d6 cold damage.
+
+RUNE OF THE FALLEN CRUSADER: Each hit has a 20% chance of healing the Death Knight for 10 Hit Points and increasing the Death Knight's strength by 1 for 2 rounds. The strength increase is not cumulative.
+
+- 6th Level: May cast Lichborne once per day and gains an additional use every 4 levels thereafter.
+
+LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm, Fear, Sleep, Level Drain, and Imprisonment for 1 turn.
+
+- 9th Level: May select the Blood Presence, Frost Presence, or Unholy Presence modal abilities. Only one presence may be activated at any time.
+
+BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
+
+FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+
+UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
+
+- 12th Level: May summon a Dancing Rune Weapon once per day.
+
+DANCING RUNE WEAPON: The Death Knight summons forth a runic sword that acts as a +4 weapon in all respects and deals 5d4 damage upon hitting a target. Once summoned, the runic sword will float in the air completely under the Death Knight's control for 1 Turn. This does not prevent the Death Knight from doing any other actions during the spell's duration.
+
+- 15th Level: May cast Unholy Blight once per day and gains an additional use every 5 levels thereafter.
+
+UNHOLY BLIGHT: Surrounds all enemies within a 15-ft. radius of the Death Knight with a vile swarm of insects for two rounds. Those affected suffer two points of piercing damage per second.
+
+- 18th Level: May cast Raise Ally once per day.
+
+RAISE ALLY: Returns a character back to life and also heals the character to 60% of their max health so that they are ready for the adventuring life.
+
+- 21st Level: Gains the Killing Machine passive ability.
+
+KILLING MACHINE: When the Death Knight slays an opponent, <PRO_HISHER> critical hit chance for all melee attacks increases by +10% for two rounds. This ability does not stack with itself.
+
+Disadvantages:
+- May not exceed Specialization (two slots) in any melee weapon.
+- May not exceed Proficient (one slot) in any ranged weapon.
+- Alignment restricted to evil.
+- May not dual class.
+
 ### Dragoon
 
 Dragoons are warriors who dedicate their lives to the use of polearm weapons (quarterstaff, spear, and halberd). These warriors focus on leap attacks at their enemies while quickly maneuvering around the battlefield.
