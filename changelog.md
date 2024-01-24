@@ -1,3 +1,8 @@
+## Version 5.0
+
+- Added Kaze no Kama monk kit
+- Corrected infinite HP bug with Death Knight. Frost Presence will now grants +2 Constitution instead of +10% HP Bonus.
+
 ## Version 4.1
 
 November 26, 2023

@@ -542,7 +542,7 @@ LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm,
 
 BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
 
-FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+FROST PRESENCE: Hardens the Death Knight with frozen resolve, +2 Constitution, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
 
 UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
 
@@ -584,7 +584,7 @@ Strengthens the Death Knight with the presence of blood, increasing damage by 10
 
 @5611 = ~Frost Presence~
 @5612 = ~Frost Presence
-Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.~
+Hardens the Death Knight with frozen resolve, +2 Constitution, +2 bonus to Armor Class, and increase physical damage resistance by 10%.~
 
 @5613 = ~Unholy Presence~
 @5614 = ~Unholy Presence

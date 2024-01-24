@@ -85,7 +85,7 @@ LICHBORNE: Drawing upon unholy energy, the Death Knight becomes immune to Charm,
 
 BLOOD PRESENCE: Strengthens the Death Knight with the presence of blood, increasing damage by 15% and each hit drains 2 Hit Points from the target and transfers it to the Death Knight. This will not heal beyond the Death Knight's maximum Hit Points.
 
-FROST PRESENCE: Hardens the Death Knight with frozen resolve, increasing max Hit Points by 10%, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
+FROST PRESENCE: Hardens the Death Knight with frozen resolve, +2 Constitution, +2 bonus to Armor Class, and increase physical damage resistance by 10%.
 
 UNHOLY PRESENCE: Infuses the Death Knight with unholy fury increasing APR by 0.5 and movement by 2.
 
@@ -376,6 +376,30 @@ Advantages:
 Disadvantages:
 - May not turn undead.
 - May not exceed Proficient (one slot) in ranged or two-handed weapons.
+
+## Monks
+
+### Kaze no Kama
+
+The "Scythe of the Wind" is a monk dedicated to the pursuit of physical prowess. Training is focused on increasing the raw power of one's fists over learning attack techniques or healing abilities. Furthermore, the Kaze no Kama trains to improve his hardiness and resistance to typical attacks seen in combat at the expense of Magic Resistance that monks typically achieve.
+
+Advantages:
+- +1 to hit and damage rolls every 5 levels.
+- May use the Kai ability once per day. Gains one use at level 1 and an additional use every 4 levels thereafter.
+
+KAI: All successful attacks within the next round deal maximum damage. The duration increases to 2 rounds at level 5, 3 rounds at level 10, 4 rounds at level 15, and 5 rounds at level 20. 
+
+- 10th level: Gains 10% resistance to crushing, slashing, piercing, and missile damage. An additional 2% is gained per level to a maximum of 40% at level 25.
+
+- Gains access to the Timeless Self High-Level Ability.
+
+TIMELESS SELF: The monk is no longer constrained by the trappings of time. The pause between casting spells and using abilities is erased and the monk becomes immune to Time Stop.
+
+Disadvantages:
+- May not use the Lay On Hands ability.
+- May not use the Stunning Blow ability.
+- May not use Quivering Palm ability.
+- Does not gain Magic Resistance starting at level 14.
 
 ## Mage
 
