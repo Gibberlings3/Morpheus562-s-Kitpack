@@ -1,3 +1,11 @@
+## Version 5.1
+
+February 4, 2024
+
+### Changed
+
+- Updated Russian translations.
+
 ## Version 5.0
 
 January 24, 2024
